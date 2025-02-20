@@ -3,15 +3,21 @@ import { Recipes } from "../types";
 
 type SearchProps = {
   recipes: Recipes[];
+  originalData: Recipes[];
   setRecipes: React.Dispatch<React.SetStateAction<Recipes[]>>;
   handleReset: () => void;
 };
 
-export function SearchBar({ recipes, setRecipes, handleReset }: SearchProps) {
+export function SearchBar({
+  recipes,
+  setRecipes,
+  handleReset,
+  originalData,
+}: SearchProps) {
   const [selectedIngredient, setSelectedIngredient] = useState<string>("");
 
   const handleSearch = () => {
-    const filtered = recipes.filter((recipe) =>
+    const filtered = originalData.filter((recipe) =>
       recipe.ingredients.some((ing) => ing.ingredient === selectedIngredient)
     );
 
@@ -29,7 +35,7 @@ export function SearchBar({ recipes, setRecipes, handleReset }: SearchProps) {
         value={selectedIngredient}
       >
         <option value="">Select an ingredient</option>
-        {recipes
+        {originalData
           ?.map((recipe) => recipe.ingredients)
           .flat()
           .map((ing, index) => (

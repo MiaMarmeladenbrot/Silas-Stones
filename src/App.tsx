@@ -23,6 +23,7 @@ function App() {
       <h1 className="text-center py-10">Recipes</h1>
       <SearchBar
         recipes={recipes}
+        originalData={data}
         setRecipes={setRecipes}
         handleReset={handleReset}
       />
