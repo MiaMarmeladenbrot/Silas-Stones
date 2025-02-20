@@ -1,0 +1,39 @@
+[
+  {
+    "id": "Imi_01",
+    "authorFirstName": "John",
+    "authorLastName": "Imison",
+    "date": 1822,
+    "manual": "Elements of Science and Art. Vol. 2",
+    "page": 332,
+    "name": "cement for fixing…stones",
+    "ingredients": [
+      { "ingredient": "resin", "amount": "", "unit": "" },
+      { "ingredient": "pitch", "amount": "", "unit": "" },
+      { "ingredient": "beeswax", "amount": "", "unit": "" },
+      { "ingredient": "marble of freestone", "amount": "", "unit": "" },
+      { "ingredient": "sulphur", "amount": "", "unit": "" }
+    ],
+    "description": "Resin, pitch and beeswax. Add powdered marble or freestone and a little sulphur",
+    "source": "IMISON, John.: Elements of Science and Art. being a familiar introduction to natural philosophy and chemistry; together with their application to a variety of elegant and useful arts (in two Volumes), Vol.2. First edition 1788. Published by the University of California. 1822. https://archive.org/details/elementsscience01websgoog/page/n8/mode/2up"
+  },
+  {
+    "id": "Crö_01",
+    "authorFirstName": "Johann Melchior",
+    "authorLastName": "Cröcker",
+    "date": 1736,
+    "manual": "Der wohl anführende Mahler.",
+    "page": 505,
+    "name": "Stein- und Holz Kitt",
+    "ingredients": [
+      { "ingredient": "Wachs", "amount": "1", "unit": "loth" },
+      { "ingredient": "Pech", "amount": "2", "unit": "loth" },
+      { "ingredient": "Schwefel", "amount": "2", "unit": "loth" },
+      { "ingredient": "Ziegel-Mehl", "amount": "1", "unit": "loth" },
+      { "ingredient": "Kalk", "amount": "1", "unit": "loth" },
+      { "ingredient": "L(ein)Öl", "amount": "1", "unit": "loth" }
+    ],
+    "description": "Wachs 1 loth, Pech 2 l., Schwefel 2l. Ziegel-Mehl 1 l., Kalk 1 l., L(ein)Öl 1 l.",
+    "source": "CRÖKER, Johann Melchior Der wohl anführende Mahler. Jena. 1736. München, Bayerische Staatsbibliothek, Art. 463 i"
+  }
+]
