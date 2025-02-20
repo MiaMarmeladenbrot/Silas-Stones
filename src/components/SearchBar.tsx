@@ -2,14 +2,12 @@ import { useState } from "react";
 import { Recipes } from "../types";
 
 type SearchProps = {
-  recipes: Recipes[];
   originalData: Recipes[];
   setRecipes: React.Dispatch<React.SetStateAction<Recipes[]>>;
   handleReset: () => void;
 };
 
 export function SearchBar({
-  recipes,
   setRecipes,
   handleReset,
   originalData,
@@ -21,7 +19,6 @@ export function SearchBar({
       recipe.ingredients.some((ing) => ing.ingredient === selectedIngredient)
     );
 
-    console.log(filtered);
     setRecipes(filtered);
   };
 
