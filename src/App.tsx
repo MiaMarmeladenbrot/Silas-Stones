@@ -3,9 +3,13 @@ import "./App.css";
 import { SearchBar } from "./components/SearchBar";
 import { Table } from "./components/Table";
 import data from "./data/data.json";
+import { DetailsPopUp } from "./components/DetailsPopUp";
+import { Recipes } from "./types";
 
 function App() {
   const [recipes, setRecipes] = useState(data);
+  const [openDetails, setOpenDetails] = useState(false);
+  const [selectedRecipe, setSelectedRecipe] = useState<Recipes | null>(null);
 
   const handleReset = () => {
     setRecipes(data);
@@ -26,7 +30,17 @@ function App() {
         setRecipes={setRecipes}
         handleReset={handleReset}
       />
-      <Table recipes={recipes} />
+      <Table
+        recipes={recipes}
+        setOpenDetails={setOpenDetails}
+        setSelectedRecipe={setSelectedRecipe}
+      />
+      {openDetails && (
+        <DetailsPopUp
+          setOpenDetails={setOpenDetails}
+          selectedRecipe={selectedRecipe}
+        />
+      )}
     </>
   );
 }

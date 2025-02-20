@@ -10,7 +10,3 @@ export type Recipes = {
   description: string;
   source: string;
 };
-
-export type Props = {
-  recipes: Recipes[];
-};

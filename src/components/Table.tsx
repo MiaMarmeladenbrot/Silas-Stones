@@ -1,6 +1,16 @@
-import { Props } from "../types";
+import { Recipes } from "../types";
 
-export function Table({ recipes }: Props) {
+type TableProps = {
+  recipes: Recipes[];
+  setOpenDetails: React.Dispatch<React.SetStateAction<boolean>>;
+  setSelectedRecipe: React.Dispatch<React.SetStateAction<Recipes | null>>;
+};
+
+export function Table({
+  recipes,
+  setOpenDetails,
+  setSelectedRecipe,
+}: TableProps) {
   const tableHeader = [
     "Author",
     "Manual",
@@ -12,8 +22,8 @@ export function Table({ recipes }: Props) {
   ];
 
   return (
-    <div className="relative flex flex-col w-full h-full overflow-scroll shadow-md rounded-xl bg-clip-border mb-5">
-      <table className="w-full text-left table-auto min-w-max border border-slate-400 ">
+    <div className="relative flex flex-col w-full h-full overflow-hidden shadow-md rounded-xl bg-clip-border mb-5">
+      <table className="w-full text-left table-fixed min-w-max border border-slate-400">
         <thead>
           <tr>
             {tableHeader.map((header) => (
@@ -28,7 +38,13 @@ export function Table({ recipes }: Props) {
         </thead>
         {recipes?.map((recipe) => (
           <tbody key={recipe.id}>
-            <tr>
+            <tr
+              onClick={() => {
+                setOpenDetails(true);
+                setSelectedRecipe(recipe);
+              }}
+              className="cursor-pointer"
+            >
               <td className="p-4 border-b border-slate-400 border-l">
                 <p>
                   {recipe.authorFirstName} {recipe.authorLastName}

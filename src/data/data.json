@@ -35,5 +35,28 @@
     ],
     "description": "Wachs 1 loth, Pech 2 l., Schwefel 2l. Ziegel-Mehl 1 l., Kalk 1 l., L(ein)Öl 1 l.",
     "source": "CRÖKER, Johann Melchior Der wohl anführende Mahler. Jena. 1736. München, Bayerische Staatsbibliothek, Art. 463 i"
+  },
+  {
+    "id": "Crö_02",
+    "authorFirstName": "Johann Melchior",
+    "authorLastName": "Cröcker",
+    "date": 1736,
+    "manual": "Der wohl anführende Mahler.",
+    "page": 506,
+    "name": "Ein Stein-Leim",
+    "ingredients": [
+      { "ingredient": "Harz", "amount": "1", "unit": "Pfund" },
+      { "ingredient": "Schwefel", "amount": "8", "unit": "loth" },
+      {
+        "ingredient": "Pech",
+        "amount": "so viel als wie ein Eh groß ist",
+        "unit": ""
+      },
+      { "ingredient": "Hammerschlag", "amount": "2 Hände voll", "unit": "" },
+      { "ingredient": "Steinstaub", "amount": "2 Hände voll", "unit": "" },
+      { "ingredient": "wachs", "amount": "soviel wie pech", "unit": "" }
+    ],
+    "description": "Harz 1 pfund, Schwefel 8 loth, Pech (so viel als ein Eh groß ist), Hammerschlag 2 Hände voll, Steinstaub (ebenso), Wachs (soviel wie Pech) = 1:1",
+    "source": "CRÖKER, Johann Melchior Der wohl anführende Mahler. Jena. 1736. München, Bayerische Staatsbibliothek, Art. 463 i"
   }
 ]
