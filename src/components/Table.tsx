@@ -22,7 +22,7 @@ export function Table({
   ];
 
   return (
-    <div className="relative flex flex-col w-full h-full overflow-hidden shadow-md rounded-xl bg-clip-border mb-5">
+    <div className="px-10 mb-20 relative flex flex-col w-full h-full">
       <table className="w-full text-left table-fixed min-w-max border border-slate-400">
         <thead>
           <tr>
@@ -45,21 +45,21 @@ export function Table({
               }}
               className="cursor-pointer"
             >
-              <td className="p-4 border-b border-slate-400 border-l">
+              <td className="p-4 border-b border-slate-400 border-l align-text-top">
                 <p>
                   {recipe.authorFirstName} {recipe.authorLastName}
                 </p>
               </td>
-              <td className="p-4 border-b border-slate-400 border-l">
+              <td className="p-4 border-b border-slate-400 border-l align-text-top">
                 <p>{recipe.manual}</p>
               </td>
-              <td className="p-4 border-b border-slate-400 border-l">
+              <td className="p-4 border-b border-slate-400 border-l align-text-top">
                 <p>{recipe.date}</p>
               </td>
-              <td className="p-4 border-b border-slate-400 border-l">
+              <td className="p-4 border-b border-slate-400 border-l align-text-top">
                 <p>{recipe.name}</p>
               </td>
-              <td className="p-4 border-b border-slate-400 border-l">
+              <td className="p-4 border-b border-slate-400 border-l align-text-top">
                 <ul className="list-disc ml-4">
                   {recipe.ingredients.map((ing) => (
                     <li key={ing.ingredient}>
@@ -69,10 +69,10 @@ export function Table({
                   ))}
                 </ul>
               </td>
-              <td className="p-4 border-b border-slate-400 border-l">
+              <td className="p-4 border-b border-slate-400 border-l align-text-top">
                 <p>{recipe.description}</p>
               </td>
-              <td className="p-4 border-b border-slate-400 border-l">
+              <td className="p-4 border-b border-slate-400 border-l align-text-top">
                 <p>{recipe.page}</p>
               </td>
             </tr>

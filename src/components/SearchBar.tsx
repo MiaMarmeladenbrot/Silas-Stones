@@ -13,11 +13,38 @@ export function SearchBar({
   originalData,
 }: SearchProps) {
   const [selectedIngredient, setSelectedIngredient] = useState<string>("");
+  const [selectedAuthor, setSelectedAuthor] = useState<string>("");
+  const [selectedDate, setSelectedDate] = useState<number>(0);
+
+  const getUniqueSortedValues = <T,>(
+    extractor: (recipe: Recipes) => T | T[]
+  ): T[] => {
+    return Array.from(
+      new Set(
+        originalData.flatMap((recipe) => {
+          const extracted = extractor(recipe);
+          return Array.isArray(extracted) ? extracted : [extracted];
+        })
+      )
+    ).sort();
+  };
 
   const handleSearch = () => {
-    const filtered = originalData.filter((recipe) =>
-      recipe.ingredients.some((ing) => ing.ingredient === selectedIngredient)
-    );
+    const filtered = originalData.filter((recipe) => {
+      const matchesIngredient =
+        !selectedIngredient ||
+        recipe.ingredients.some(
+          (ing) => ing.ingredient.toLowerCase() === selectedIngredient
+        );
+
+      const matchesAuthor =
+        !selectedAuthor ||
+        recipe.authorLastName.toLowerCase() === selectedAuthor;
+
+      const matchesDate = !selectedDate || recipe.date === selectedDate;
+
+      return matchesIngredient && matchesAuthor && matchesDate;
+    });
 
     setRecipes(filtered);
   };
@@ -32,14 +59,45 @@ export function SearchBar({
         value={selectedIngredient}
       >
         <option value="">Select an ingredient</option>
-        {originalData
-          ?.map((recipe) => recipe.ingredients)
-          .flat()
-          .map((ing, index) => (
-            <option key={index} value={ing.ingredient}>
-              {ing.ingredient}
-            </option>
-          ))}
+        {getUniqueSortedValues((recipe) =>
+          recipe.ingredients.map((ing) => ing.ingredient.toLowerCase())
+        ).map((ingredient, index) => (
+          <option key={index} value={ingredient}>
+            {ingredient}
+          </option>
+        ))}
+      </select>
+
+      <select
+        name="author"
+        id="author"
+        className="border rounded px-2 py-1"
+        onChange={(e) => setSelectedAuthor(e.target.value)}
+        value={selectedAuthor}
+      >
+        <option value="">Select an author</option>
+        {getUniqueSortedValues((recipe) =>
+          recipe.authorLastName.toLowerCase()
+        ).map((name) => (
+          <option key={name} value={name}>
+            {name}
+          </option>
+        ))}
+      </select>
+
+      <select
+        name="date"
+        id="date"
+        className="border rounded px-2 py-1"
+        onChange={(e) => setSelectedDate(Number(e.target.value))}
+        value={selectedDate}
+      >
+        <option value="">Select a date</option>
+        {getUniqueSortedValues((recipe) => recipe.date).map((date) => (
+          <option key={date} value={date}>
+            {date}
+          </option>
+        ))}
       </select>
 
       <button
@@ -53,6 +111,8 @@ export function SearchBar({
         onClick={() => {
           handleReset();
           setSelectedIngredient("");
+          setSelectedAuthor("");
+          setSelectedDate(0);
         }}
       >
         Reset

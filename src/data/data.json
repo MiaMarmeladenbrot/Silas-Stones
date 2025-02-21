@@ -58,5 +58,45 @@
     ],
     "description": "Harz 1 pfund, Schwefel 8 loth, Pech (so viel als ein Eh groß ist), Hammerschlag 2 Hände voll, Steinstaub (ebenso), Wachs (soviel wie Pech) = 1:1",
     "source": "CRÖKER, Johann Melchior Der wohl anführende Mahler. Jena. 1736. München, Bayerische Staatsbibliothek, Art. 463 i"
+  },
+  {
+    "id": "Crö_03",
+    "authorFirstName": "Johann Melchior",
+    "authorLastName": "Cröcker",
+    "date": 1736,
+    "manual": "Der wohl anführende Mahler.",
+    "page": 506,
+    "name": "oder (s. ein Stein-Leim)",
+    "ingredients": [
+      { "ingredient": "Pech", "amount": "", "unit": "" },
+      { "ingredient": "Kreide", "amount": "", "unit": "" },
+      { "ingredient": "Bleiweiß", "amount": "", "unit": "" },
+      { "ingredient": "Wachs", "amount": "soviel wie pech", "unit": "" }
+    ],
+    "description": "Pech, Kreide, Bleiweiß und Wachs",
+    "source": "CRÖKER, Johann Melchior Der wohl anführende Mahler. Jena. 1736. München, Bayerische Staatsbibliothek, Art. 463 i"
+  },
+  {
+    "id": "Güt_01",
+    "authorFirstName": "Johann Conrad",
+    "authorLastName": "Gütle",
+    "date": 1812,
+    "manual": "Hand- und Hülfsbuch für alle Künstler und Handwerker…",
+    "page": 43,
+    "name": "Der Loßius'sche verbesserte Steinkitt oder sogenannte Feuerkitt",
+    "ingredients": [
+      {
+        "ingredient": "Kollophonium oder Pech",
+        "amount": "24",
+        "unit": "loth"
+      },
+      { "ingredient": "gelbes Wachs", "amount": "3", "unit": "loth" },
+      { "ingredient": "terpentin", "amount": "2", "unit": "loth" },
+      { "ingredient": "mastix", "amount": "1", "unit": "loth" },
+      { "ingredient": "schwefel", "amount": "1", "unit": "loth" },
+      { "ingredient": "ziegelmehl", "amount": "1", "unit": "handvoll" }
+    ],
+    "description": "§.83 Der Loßius'sche verbesserte Steinkitt oder sogenannte Feuerkittbesteht aus 24 Loth Kollophonium oder Pech, 3 loth gelben Wachs, 2 Loth Terpentin, 1 loth gestossenen Mastix, 1 loth schwefel und einer handvoll Ziegelmehl. Diese Masse wird in einem eisernen Topfe am Feuer zerlassen, und fleißig umf´gerührt. Wenn deser Kitt gebraucht werden soll, so müssen die Fugen mit glühenden Holzkohlen oder aber mit einem glühenden Eisen heiß gemacht werden, und so wird auch die Masse heiß eingegossen. - Dieser Kitt, wen man ihn be platt liegenden Steinen, oder auch sonst bei eisernen Platten wohl anwendet, wird gleich hart, so daß das überstehende weggemeißelt wedren muss. Von diesem Ferkitt kann man sich auf viele Jahre Vorat machen, ihn in Stücken aufheben und bei Gebrauch so viel abschlagen und schmelzen, als man eben nöthig hat.",
+    "source": "GÜTLE, J. C.: Hand- und Hülfsbuch für alle Künstler und Handwerker, die Kitte, Formen und Massen zugebrauchen: oder eine Auswahl von 600 verschiedenen Recepten, alle Arten Kitte, Leime, Formen und Massenzu verfertigen. Nürnberg. 1812"
   }
 ]
