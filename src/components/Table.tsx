@@ -13,7 +13,6 @@ export function Table({
   setSelectedRecipe,
 }: TableProps) {
   const tableHeader = [
-    "Country",
     "Author",
     "Manual",
     "Date",
@@ -24,7 +23,7 @@ export function Table({
 
   return (
     <div className="px-10 mb-20 relative flex flex-col w-full h-full">
-      <table className="w-full text-left table-fixed min-w-max border border-slate-400">
+      <table className="w-full text-left table-auto border border-slate-400">
         <thead>
           <tr>
             {tableHeader.map((header) => (
@@ -46,9 +45,6 @@ export function Table({
               }}
               className="cursor-pointer"
             >
-              <td className="p-4 border-b border-slate-400 border-l align-text-top">
-                <p></p>
-              </td>
               <td className="p-4 border-b border-slate-400 border-l align-text-top">
                 <p>
                   {recipe.authorFirstName} {recipe.authorLastName}
@@ -72,7 +68,7 @@ export function Table({
                   ))}
                 </ul>
               </td>
-              <td className="p-4 border-b border-slate-400 border-l align-text-top whitespace-pre-line">
+              <td className="p-4 border-b border-slate-400 border-l align-text-top whitespace-pre-line max-w-[2000px]">
                 <p>{recipe.description}</p>
               </td>
             </tr>

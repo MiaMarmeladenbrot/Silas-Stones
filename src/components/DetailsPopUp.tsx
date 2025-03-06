@@ -12,7 +12,10 @@ export function DetailsPopUp({ setOpenDetails, selectedRecipe }: DetailsProps) {
     <>
       <div className="fixed inset-0 bg-slate-300 opacity-20 z-10 h-full"></div>
 
-      <div className="flex justify-center items-center fixed inset-0 z-20 ">
+      <div
+        className="flex justify-center items-center fixed inset-0 z-20"
+        onClick={() => setOpenDetails(false)}
+      >
         <div className="bg-white p-6 rounded-lg shadow-lg relative">
           <IoMdClose
             onClick={() => setOpenDetails(false)}
