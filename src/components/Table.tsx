@@ -1,4 +1,5 @@
 import { Recipes } from "../types";
+import { FaArrowUp } from "react-icons/fa";
 
 type TableProps = {
   recipes: Recipes[];
@@ -12,13 +13,13 @@ export function Table({
   setSelectedRecipe,
 }: TableProps) {
   const tableHeader = [
+    "Country",
     "Author",
     "Manual",
     "Date",
     "Recipename",
     "Ingredients",
     "Description",
-    "Page",
   ];
 
   return (
@@ -46,6 +47,9 @@ export function Table({
               className="cursor-pointer"
             >
               <td className="p-4 border-b border-slate-400 border-l align-text-top">
+                <p></p>
+              </td>
+              <td className="p-4 border-b border-slate-400 border-l align-text-top">
                 <p>
                   {recipe.authorFirstName} {recipe.authorLastName}
                 </p>
@@ -62,23 +66,26 @@ export function Table({
               <td className="p-4 border-b border-slate-400 border-l align-text-top">
                 <ul className="list-disc ml-4">
                   {recipe.ingredients.map((ing) => (
-                    <li key={ing.ingredient}>
-                      {ing.amount}
-                      {ing.unit} {ing.ingredient}
+                    <li key={ing.ingredient} className="diagonal-fractions">
+                      {ing.amount} {ing.unit} {ing.ingredient}
                     </li>
                   ))}
                 </ul>
               </td>
-              <td className="p-4 border-b border-slate-400 border-l align-text-top">
+              <td className="p-4 border-b border-slate-400 border-l align-text-top whitespace-pre-line">
                 <p>{recipe.description}</p>
-              </td>
-              <td className="p-4 border-b border-slate-400 border-l align-text-top">
-                <p>{recipe.page}</p>
               </td>
             </tr>
           </tbody>
         ))}
       </table>
+
+      <div
+        className="fixed bottom-5 right-11 bg-[#dca87a] text-white p-3 rounded-full cursor-pointer"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      >
+        <FaArrowUp />
+      </div>
     </div>
   );
 }

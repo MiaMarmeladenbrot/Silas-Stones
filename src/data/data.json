@@ -15,7 +15,8 @@
       { "ingredient": "sulphur", "amount": "", "unit": "" }
     ],
     "description": "Resin, pitch and beeswax. Add powdered marble or freestone and a little sulphur",
-    "source": "IMISON, John.: Elements of Science and Art. being a familiar introduction to natural philosophy and chemistry; together with their application to a variety of elegant and useful arts (in two Volumes), Vol.2. First edition 1788. Published by the University of California. 1822. https://archive.org/details/elementsscience01websgoog/page/n8/mode/2up"
+    "source": "IMISON, John.: Elements of Science and Art. being a familiar introduction to natural philosophy and chemistry; together with their application to a variety of elegant and useful arts (in two Volumes), Vol.2. First edition 1788. Published by the University of California. 1822.",
+    "url": "https://archive.org/details/elementsscience01websgoog/page/n8/mode/2up"
   },
   {
     "id": "Crö_01",
@@ -98,5 +99,316 @@
     ],
     "description": "§.83 Der Loßius'sche verbesserte Steinkitt oder sogenannte Feuerkittbesteht aus 24 Loth Kollophonium oder Pech, 3 loth gelben Wachs, 2 Loth Terpentin, 1 loth gestossenen Mastix, 1 loth schwefel und einer handvoll Ziegelmehl. Diese Masse wird in einem eisernen Topfe am Feuer zerlassen, und fleißig umf´gerührt. Wenn deser Kitt gebraucht werden soll, so müssen die Fugen mit glühenden Holzkohlen oder aber mit einem glühenden Eisen heiß gemacht werden, und so wird auch die Masse heiß eingegossen. - Dieser Kitt, wen man ihn be platt liegenden Steinen, oder auch sonst bei eisernen Platten wohl anwendet, wird gleich hart, so daß das überstehende weggemeißelt wedren muss. Von diesem Ferkitt kann man sich auf viele Jahre Vorat machen, ihn in Stücken aufheben und bei Gebrauch so viel abschlagen und schmelzen, als man eben nöthig hat.",
     "source": "GÜTLE, J. C.: Hand- und Hülfsbuch für alle Künstler und Handwerker, die Kitte, Formen und Massen zugebrauchen: oder eine Auswahl von 600 verschiedenen Recepten, alle Arten Kitte, Leime, Formen und Massenzu verfertigen. Nürnberg. 1812"
+  },
+  {
+    "id": "Sal_01",
+    "authorFirstName": "Louis Francis",
+    "authorLastName": "Salzmann",
+    "date": 1258,
+    "manual": "Building in England down to 1540. A documentary history",
+    "page": 153,
+    "name": "requirements for the cistern in the King’s court at Westminster",
+    "ingredients": [
+      { "ingredient": "pitch", "amount": "19", "unit": "lb [pound]" },
+      { "ingredient": "wax", "amount": "5", "unit": "lb [pound]" },
+      { "ingredient": "mastix", "amount": "1", "unit": "loth" },
+      { "ingredient": "schwefel", "amount": "1", "unit": "loth" },
+      { "ingredient": "ziegelmehl", "amount": "1", "unit": "handvoll" }
+    ],
+    "description": "19 lb. of pitch and 5 lb of wax, bought for 14 s. [shilling]; and 7d. [pence] was paid ‘for charcoal for cementing the cistern’",
+    "source": "SALZMANN, Louis Francis: Building in England down to 1540. A documentary history. Oxford University Press. 1952. Reissued 1992. Special edition for Sandpiper Books 1997.",
+    "url": "https://archive.org/details/buildinginenglan0000salz"
+  },
+  {
+    "id": "Sal_02",
+    "authorFirstName": "Louis Francis",
+    "authorLastName": "Salzmann",
+    "date": 1340,
+    "manual": "Building in England down to 1540. A documentary history",
+    "page": 153,
+    "name": "repairs to a buttress of Westminster palace (which projected into the Thames)",
+    "ingredients": [
+      { "ingredient": "pitch", "amount": "60", "unit": "lb [pound]" },
+      { "ingredient": "Flemish tiles", "amount": "100", "unit": "" },
+      { "ingredient": "earthen pans (patellis)", "amount": "3", "unit": "" },
+      { "ingredient": "straw", "amount": "", "unit": "" },
+      { "ingredient": "iron", "amount": "1", "unit": "" }
+    ],
+    "description": "For 60 lbs. of pitch for making cement (symento) for the buttress – 3s. \n For 100 Flemish tiles for making dust for the same cement – 12d. \n For three earthen pans (patellis) in which to make cement – 6d. \n For straw bought for the same buttress, to burn upon it and warm it after the Thames flood (inundaciones), because the stone could not otherwise have held the cement -7d. \n For an iron for directing (addressandum) and pouring cement between the stones – 4d.",
+    "source": "SALZMANN, Louis Francis: Building in England down to 1540. A documentary history. Oxford University Press. 1952. Reissued 1992. Special edition for Sandpiper Books 1997.",
+    "url": "https://archive.org/details/buildinginenglan0000salz"
+  },
+  {
+    "id": "Sal_03",
+    "authorFirstName": "Louis Francis",
+    "authorLastName": "Salzmann",
+    "date": 1258,
+    "manual": "Building in England down to 1540. A documentary history",
+    "page": 154,
+    "name": "the Tower, repair of the foundations of the turret beside the Thames opposite to the King’s Exchange’",
+    "ingredients": [
+      { "ingredient": "iron pan", "amount": "1", "unit": "" },
+      { "ingredient": "cauldron", "amount": "1", "unit": "" },
+      { "ingredient": "iron ladel", "amount": "1", "unit": "" },
+      { "ingredient": "iron slice", "amount": "1", "unit": "" },
+      { "ingredient": "tylpoudre [tile-powder] ", "amount": "", "unit": "" },
+      { "ingredient": "pitch", "amount": "75", "unit": "lbs. [pound]" },
+      { "ingredient": "bushel of tyldust", "amount": "", "unit": "" },
+      { "ingredient": "rosyn", "amount": "2", "unit": "lbs. [pound]" },
+      { "ingredient": "straw", "amount": "", "unit": "" }
+    ],
+    "description": "for an iron pan in which to heat cement (cemento) for mending the said foundation, holding 2 gallons –6s. \n Also for a cauldron (cacabo) bound with iron, in which to make cement, holding 3 gallons -20d. \n For an iron ladel (?) and an iron slice (?), with a tripod, to serve the masons making cement -2s. \n 6d…for straw to warm the stones for the repair and mending of the foundation of the turret -18d. … \n For tylpoudre [tile-powder] for making cement for the foundations of the turret -18d. \n For 75 lbs. of pitch for making cement -6s. 3d. \n For a bushel (~40 liters) of tyldust [tile-dust] for the same -18d. \n For straw to warm the stones for the said foundation – 8d. … \n For 2 lbs of rosyn, of which to make cement -4d.",
+    "source": "SALZMANN, Louis Francis: Building in England down to 1540. A documentary history. Oxford University Press. 1952. Reissued 1992. Special edition for Sandpiper Books 1997.",
+    "url": "https://archive.org/details/buildinginenglan0000salz"
+  },
+  {
+    "id": "Sal_04",
+    "authorFirstName": "Louis Francis",
+    "authorLastName": "Salzmann",
+    "date": 1279,
+    "manual": "Building in England down to 1540. A documentary history",
+    "page": 154,
+    "name": "for the steyning of a well at Silverston",
+    "ingredients": [
+      { "ingredient": "wax", "amount": "6.5", "unit": "lb [pound]" },
+      { "ingredient": "pitch", "amount": "4", "unit": "stone" },
+      {
+        "ingredient": "sulphur to the value of 1.5d.",
+        "amount": "",
+        "unit": ""
+      },
+      { "ingredient": "eggs", "amount": "1", "unit": "pennyworth" },
+      { "ingredient": "ziegelmehl", "amount": "1", "unit": "handvoll" }
+    ],
+    "description": "6,5 lb. wax \n 4 stone of pitch \n Sulphur to the value of 1,5 d. \n  A pennyworth of eggs \n All said to be ‘for cement’ \n And a payment of 8 d. for making the said cement",
+    "source": "SALZMANN, Louis Francis: Building in England down to 1540. A documentary history. Oxford University Press. 1952. Reissued 1992. Special edition for Sandpiper Books 1997.",
+    "url": "https://archive.org/details/buildinginenglan0000salz"
+  },
+  {
+    "id": "Sal_05",
+    "authorFirstName": "Louis Francis",
+    "authorLastName": "Salzmann",
+    "date": 1324,
+    "manual": "Building in England down to 1540. A documentary history",
+    "page": 154,
+    "name": "for the steyning of a well at Silverston",
+    "ingredients": [
+      { "ingredient": "sulphur", "amount": "4", "unit": "lb [pound]" },
+      { "ingredient": "wax", "amount": "1", "unit": "lb [pound]" },
+      { "ingredient": "resin", "amount": "4", "unit": "lb [pound]" }
+    ],
+    "description": "4 lb. of sulphur \n 1 lb. of wax, \n 4 lb. of resin \n Used for cement",
+    "source": "SALZMANN, Louis Francis: Building in England down to 1540. A documentary history. Oxford University Press. 1952. Reissued 1992. Special edition for Sandpiper Books 1997.",
+    "url": "https://archive.org/details/buildinginenglan0000salz"
+  },
+  {
+    "id": "Sal_06",
+    "authorFirstName": "Louis Francis",
+    "authorLastName": "Salzmann",
+    "date": 1279,
+    "manual": "Building in England down to 1540. A documentary history",
+    "page": 154,
+    "name": "Vale Royal, ‘for making cement for broken stones’",
+    "ingredients": [
+      { "ingredient": "wax", "amount": "", "unit": "" },
+      { "ingredient": "pitch", "amount": "", "unit": "" }
+    ],
+    "description": "wax and pitch",
+    "source": "SALZMANN, Louis Francis: Building in England down to 1540. A documentary history. Oxford University Press. 1952. Reissued 1992. Special edition for Sandpiper Books 1997.",
+    "url": "https://archive.org/details/buildinginenglan0000salz"
+  },
+  {
+    "id": "Sal_07",
+    "authorFirstName": "Louis Francis",
+    "authorLastName": "Salzmann",
+    "date": 1355,
+    "manual": "Building in England down to 1540. A documentary history",
+    "page": 154,
+    "name": "Westminster",
+    "ingredients": [
+      { "ingredient": "wax", "amount": "", "unit": "" },
+      { "ingredient": "pitch", "amount": "", "unit": "" },
+      { "ingredient": "cobblers wax", "amount": "", "unit": "" }
+    ],
+    "description": "Wax, pitch and cobblers wax (code)",
+    "source": "SALZMANN, Louis Francis: Building in England down to 1540. A documentary history. Oxford University Press. 1952. Reissued 1992. Special edition for Sandpiper Books 1997.",
+    "url": "https://archive.org/details/buildinginenglan0000salz"
+  },
+  {
+    "id": "Sal_08",
+    "authorFirstName": "Louis Francis",
+    "authorLastName": "Salzmann",
+    "date": 1365,
+    "manual": "Building in England down to 1540. A documentary history",
+    "page": 154,
+    "name": "Wallingford, ‘to make cement for joining stones’",
+    "ingredients": [
+      { "ingredient": "wax", "amount": "", "unit": "" },
+      { "ingredient": "resin", "amount": "", "unit": "" },
+      { "ingredient": "pitch", "amount": "", "unit": "" }
+    ],
+    "description": "Equal quantities of wax, resin and pitch",
+    "source": "SALZMANN, Louis Francis: Building in England down to 1540. A documentary history. Oxford University Press. 1952. Reissued 1992. Special edition for Sandpiper Books 1997.",
+    "url": "https://archive.org/details/buildinginenglan0000salz"
+  },
+  {
+    "id": "Sal_09",
+    "authorFirstName": "Louis Francis",
+    "authorLastName": "Salzmann",
+    "date": 1406,
+    "manual": "Building in England down to 1540. A documentary history",
+    "page": 154,
+    "name": "Berwick, to make cement (cimento)",
+    "ingredients": [
+      { "ingredient": "pitch", "amount": "1", "unit": "barrel" },
+      { "ingredient": "resin", "amount": "1", "unit": "stone" }
+    ],
+    "description": "A barrel of pitch and ‘a stone of resin (rosyn), to make cement (cimento)’",
+    "source": "SALZMANN, Louis Francis: Building in England down to 1540. A documentary history. Oxford University Press. 1952. Reissued 1992. Special edition for Sandpiper Books 1997.",
+    "url": "https://archive.org/details/buildinginenglan0000salz"
+  },
+  {
+    "id": "Sal_10",
+    "authorFirstName": "Louis Francis",
+    "authorLastName": "Salzmann",
+    "date": 1362,
+    "manual": "Building in England down to 1540. A documentary history",
+    "page": 154,
+    "name": "Leeds Castle",
+    "ingredients": [
+      { "ingredient": "wax", "amount": "", "unit": "" },
+      { "ingredient": "resin", "amount": "", "unit": "" }
+    ],
+    "description": "Wax and resin",
+    "source": "SALZMANN, Louis Francis: Building in England down to 1540. A documentary history. Oxford University Press. 1952. Reissued 1992. Special edition for Sandpiper Books 1997.",
+    "url": "https://archive.org/details/buildinginenglan0000salz"
+  },
+  {
+    "id": "Sal_11",
+    "authorFirstName": "Louis Francis",
+    "authorLastName": "Salzmann",
+    "date": 1396,
+    "manual": "Building in England down to 1540. A documentary history",
+    "page": 154,
+    "name": "Oxford",
+    "ingredients": [
+      { "ingredient": "resin", "amount": "", "unit": "" },
+      { "ingredient": "wax", "amount": "", "unit": "" }
+    ],
+    "description": "Resin and wax",
+    "source": "SALZMANN, Louis Francis: Building in England down to 1540. A documentary history. Oxford University Press. 1952. Reissued 1992. Special edition for Sandpiper Books 1997.",
+    "url": "https://archive.org/details/buildinginenglan0000salz"
+  },
+  {
+    "id": "Sal_12",
+    "authorFirstName": "Louis Francis",
+    "authorLastName": "Salzmann",
+    "date": 1400,
+    "manual": "Building in England down to 1540. A documentary history",
+    "page": 154,
+    "name": "Sutton Manor in Surrey",
+    "ingredients": [
+      { "ingredient": "resin", "amount": "", "unit": "" },
+      { "ingredient": "wax", "amount": "", "unit": "" }
+    ],
+    "description": "Resin and wax",
+    "source": "SALZMANN, Louis Francis: Building in England down to 1540. A documentary history. Oxford University Press. 1952. Reissued 1992. Special edition for Sandpiper Books 1997.",
+    "url": "https://archive.org/details/buildinginenglan0000salz"
+  },
+  {
+    "id": "Sal_13",
+    "authorFirstName": "Louis Francis",
+    "authorLastName": "Salzmann",
+    "date": 1515,
+    "manual": "Building in England down to 1540. A documentary history",
+    "page": 154,
+    "name": "London",
+    "ingredients": [
+      { "ingredient": "waxe", "amount": "j", "unit": "lb [pound]" },
+      { "ingredient": "rosyn", "amount": "ij", "unit": "lb [pound]" }
+    ],
+    "description": "j lb. waxe (at 6d.) \n ij lb. rosyn (at 1d.) \n ‘for the masons to make thereof symon’",
+    "source": "SALZMANN, Louis Francis: Building in England down to 1540. A documentary history. Oxford University Press. 1952. Reissued 1992. Special edition for Sandpiper Books 1997.",
+    "url": "https://archive.org/details/buildinginenglan0000salz"
+  },
+  {
+    "id": "Sal_14",
+    "authorFirstName": "Louis Francis",
+    "authorLastName": "Salzmann",
+    "date": 1532,
+    "manual": "Building in England down to 1540. A documentary history",
+    "page": 154,
+    "name": "Westminster",
+    "ingredients": [
+      { "ingredient": "wax", "amount": "", "unit": "" },
+      { "ingredient": "roosen", "amount": "", "unit": "" }
+    ],
+    "description": "The same quantities of wax an ‘roosen’ were used for making ‘symonde’",
+    "source": "SALZMANN, Louis Francis: Building in England down to 1540. A documentary history. Oxford University Press. 1952. Reissued 1992. Special edition for Sandpiper Books 1997.",
+    "url": "https://archive.org/details/buildinginenglan0000salz"
+  },
+  {
+    "id": "Sal_15",
+    "authorFirstName": "Louis Francis",
+    "authorLastName": "Salzmann",
+    "date": "",
+    "manual": "Building in England down to 1540. A documentary history",
+    "page": 154,
+    "name": "Westminster",
+    "ingredients": [{ "ingredient": "waxe", "amount": "", "unit": "" }],
+    "description": "waxe made in seamente for masons",
+    "source": "SALZMANN, Louis Francis: Building in England down to 1540. A documentary history. Oxford University Press. 1952. Reissued 1992. Special edition for Sandpiper Books 1997.",
+    "url": "https://archive.org/details/buildinginenglan0000salz"
+  },
+  {
+    "id": "Sal_16",
+    "authorFirstName": "Louis Francis",
+    "authorLastName": "Salzmann",
+    "date": 1538,
+    "manual": "Building in England down to 1540. A documentary history",
+    "page": 154,
+    "name": "Nonesuch [Palace?]",
+    "ingredients": [
+      { "ingredient": "wax", "amount": "", "unit": "" },
+      { "ingredient": "rosin", "amount": "", "unit": "" }
+    ],
+    "description": "Wax and rosin ‘to make simon for the masons’",
+    "source": "SALZMANN, Louis Francis: Building in England down to 1540. A documentary history. Oxford University Press. 1952. Reissued 1992. Special edition for Sandpiper Books 1997.",
+    "url": "https://archive.org/details/buildinginenglan0000salz"
+  },
+  {
+    "id": "Nev_01",
+    "authorFirstName": "Richard",
+    "authorLastName": "Neve",
+    "date": 1736,
+    "manual": "The city and country purchaser's and builder's dictionary: or, the complete builder's guide.",
+    "page": 103,
+    "name": "To make hot Cement.",
+    "ingredients": [
+      { "ingredient": "rosin", "amount": "1", "unit": "pound" },
+      { "ingredient": "beeswax", "amount": "1/4", "unit": "pound" },
+      { "ingredient": "brickdust", "amount": "1/2", "unit": "ounce" },
+      { "ingredient": "chalkdust", "amount": "1/2", "unit": "ounce" }
+    ],
+    "description": "Take one Pound of Rosin, and a Quarter of a Pound of Bees-wax, halt an Ounce of fine Brickdust, half an Ounce of Chalkdust, or Powder of Chalk ; sift both the Brickdust and Chalk-dust thro' a fine Hair Sieve (you may beat the Brick and the Chalk in a Mortar, before you sift it) boil all together in a Pipkin, about a quarter of an Hour, stirring it all the while with an Iron, or a Piece of Lath, or such like; then take it off, and let it stand 4 or five Minutes, and it is fit for Use. \n Note, The Bricks to be cemented with this kind of Cement, must be made hot by the Fire before you spread the Cement on them, and then rub them to and fro, one upon another, as Joiners do, when they glew two Boards together.",
+    "source": "NEVE, Richard: The city and country purchaser's and builder's dictionary: or, the complete builder's guide. ... Originally written and compiled by Richard Neve, Philomath. The third edition, corrected and improved throughout. 1736",
+    "url": "https://archive.org/details/bim_eighteenth-century_the-city-and-country-pur_neve-richard_1736"
+  },
+  {
+    "id": "Cen_01",
+    "authorFirstName": "Daniel V. Jr.",
+    "authorLastName": "Thompson",
+    "date": "2005",
+    "manual": "The craftsman's handbook : the Italian 'Il libro dell'arte'",
+    "page": 66,
+    "name": "How you should make cement for mending stones – Chapter CVI",
+    "ingredients": [
+      { "ingredient": "mastic", "amount": "", "unit": "" },
+      { "ingredient": "fresh wax", "amount": "", "unit": "" },
+      { "ingredient": "sifted pounded stone", "amount": "", "unit": "" }
+    ],
+    "description": "There is a cement which is good for mending stones: and this one is made of mastic, fresh wax, sifted pounded stone; and then all melted up thoroughly together on the fire. Take your broken stone, and warm it well; put some of this cement on it. It will last forever, in the wind; and in water if you were to mend sharpening or grinding wheels, or millstones, with it.",
+    "source": "THOMPSON, Daniel V. Jr. The craftsman's handbook : the Italian 'Il libro dell'arte' / Cennino d'Andrea Cennini ; translated by Daniel V. Thompson, Jr. New York. Dover. 2005",
+    "url": "https://archive.org/details/illibrodellarte1933cenn/page/n9/mode/2up"
   }
 ]

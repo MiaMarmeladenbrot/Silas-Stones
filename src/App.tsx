@@ -7,7 +7,7 @@ import { DetailsPopUp } from "./components/DetailsPopUp";
 import { Recipes } from "./types";
 
 function App() {
-  const [recipes, setRecipes] = useState(data);
+  const [recipes, setRecipes] = useState<Recipes[]>(data);
   const [openDetails, setOpenDetails] = useState(false);
   const [selectedRecipe, setSelectedRecipe] = useState<Recipes | null>(null);
 

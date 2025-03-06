@@ -54,7 +54,7 @@ export function SearchBar({
       <select
         name="ingredients"
         id="ingredients"
-        className="border rounded px-2 py-1"
+        className="border rounded-lg px-2 py-1"
         onChange={(e) => setSelectedIngredient(e.target.value)}
         value={selectedIngredient}
       >
@@ -71,7 +71,7 @@ export function SearchBar({
       <select
         name="author"
         id="author"
-        className="border rounded px-2 py-1"
+        className="border rounded-lg px-2 py-1"
         onChange={(e) => setSelectedAuthor(e.target.value)}
         value={selectedAuthor}
       >
@@ -88,7 +88,7 @@ export function SearchBar({
       <select
         name="date"
         id="date"
-        className="border rounded px-2 py-1"
+        className="border rounded-lg px-2 py-1"
         onChange={(e) => setSelectedDate(Number(e.target.value))}
         value={selectedDate}
       >
@@ -101,13 +101,13 @@ export function SearchBar({
       </select>
 
       <button
-        className="border rounded px-2 py-1 cursor-pointer"
+        className="border rounded-lg px-2 py-1 cursor-pointer bg-[#dca87a] text-white"
         onClick={handleSearch}
       >
         Search
       </button>
       <button
-        className="border rounded px-2 py-1 cursor-pointer"
+        className="border rounded-lg px-2 py-1 cursor-pointer"
         onClick={() => {
           handleReset();
           setSelectedIngredient("");
