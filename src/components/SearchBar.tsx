@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Recipes } from "../types";
+import CustomDropdown from "./CustomDropDown";
 
 type SearchProps = {
   originalData: Recipes[];
@@ -14,7 +15,7 @@ export function SearchBar({
 }: SearchProps) {
   const [selectedIngredient, setSelectedIngredient] = useState<string>("");
   const [selectedAuthor, setSelectedAuthor] = useState<string>("");
-  const [selectedDate, setSelectedDate] = useState<number>(0);
+  const [selectedDate, setSelectedDate] = useState<string>("");
 
   const getUniqueSortedValues = <T,>(
     extractor: (recipe: Recipes) => T | T[]
@@ -51,54 +52,30 @@ export function SearchBar({
 
   return (
     <div className="flex gap-4 justify-center mb-5">
-      <select
-        name="ingredients"
-        id="ingredients"
-        className="border rounded-lg px-2 py-1"
-        onChange={(e) => setSelectedIngredient(e.target.value)}
+      <CustomDropdown
+        label="Select an ingredient"
         value={selectedIngredient}
-      >
-        <option value="">Select an ingredient</option>
-        {getUniqueSortedValues((recipe) =>
+        options={getUniqueSortedValues((recipe) =>
           recipe.ingredients.map((ing) => ing.ingredient.toLowerCase())
-        ).map((ingredient, index) => (
-          <option key={index} value={ingredient}>
-            {ingredient}
-          </option>
-        ))}
-      </select>
+        )}
+        onChange={setSelectedIngredient}
+      />
 
-      <select
-        name="author"
-        id="author"
-        className="border rounded-lg px-2 py-1"
-        onChange={(e) => setSelectedAuthor(e.target.value)}
+      <CustomDropdown
+        label="Select an author"
         value={selectedAuthor}
-      >
-        <option value="">Select an author</option>
-        {getUniqueSortedValues((recipe) =>
+        options={getUniqueSortedValues((recipe) =>
           recipe.authorLastName.toLowerCase()
-        ).map((name) => (
-          <option key={name} value={name}>
-            {name}
-          </option>
-        ))}
-      </select>
+        )}
+        onChange={setSelectedAuthor}
+      />
 
-      <select
-        name="date"
-        id="date"
-        className="border rounded-lg px-2 py-1"
-        onChange={(e) => setSelectedDate(Number(e.target.value))}
+      <CustomDropdown
+        label="Select a date"
         value={selectedDate}
-      >
-        <option value="">Select a date</option>
-        {getUniqueSortedValues((recipe) => recipe.date).map((date) => (
-          <option key={date} value={date}>
-            {date}
-          </option>
-        ))}
-      </select>
+        options={getUniqueSortedValues((recipe) => recipe.date.toString())}
+        onChange={setSelectedDate}
+      />
 
       <button
         className="border rounded-lg px-2 py-1 cursor-pointer bg-[#dca87a] text-white"
@@ -112,7 +89,7 @@ export function SearchBar({
           handleReset();
           setSelectedIngredient("");
           setSelectedAuthor("");
-          setSelectedDate(0);
+          setSelectedDate("");
         }}
       >
         Reset
