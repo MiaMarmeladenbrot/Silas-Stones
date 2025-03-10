@@ -14,7 +14,6 @@ const CustomDropdown: FC<CustomDropdownProps<string>> = ({
   onChange,
 }) => {
   const [openOptions, setOpenOptions] = useState(false);
-  console.log(openOptions);
 
   return (
     <div className="relative border rounded-lg px-2 py-1">
