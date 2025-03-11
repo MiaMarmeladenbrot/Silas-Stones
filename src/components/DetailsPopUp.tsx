@@ -54,7 +54,7 @@ export function DetailsPopUp({ setOpenDetails, selectedRecipe }: DetailsProps) {
               <p className="text-sm mb-1">in: {selectedRecipe?.source}</p>
               {selectedRecipe?.url && (
                 <a
-                  className="text-[#dca87a] cursor-pointer flex items-center gap-1"
+                  className="text-dark cursor-pointer flex items-center gap-1"
                   target="_blank"
                   href={selectedRecipe?.url}
                 >
@@ -62,6 +62,12 @@ export function DetailsPopUp({ setOpenDetails, selectedRecipe }: DetailsProps) {
                   <FaArrowRight />
                 </a>
               )}
+            </div>
+
+            <div className="flex flex-col gap-4 items-center my-5">
+              {selectedRecipe?.images?.map((img) => (
+                <img key={img} src={img} alt={selectedRecipe.name} />
+              ))}
             </div>
           </div>
         </div>

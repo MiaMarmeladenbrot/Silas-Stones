@@ -43,7 +43,7 @@ export function Table({
                 setOpenDetails(true);
                 setSelectedRecipe(recipe);
               }}
-              className="cursor-pointer"
+              className="cursor-pointer hover:bg-light"
             >
               <td className="p-4 border-b border-slate-400 border-l align-text-top">
                 <p>
@@ -77,7 +77,7 @@ export function Table({
       </table>
 
       <div
-        className="fixed bottom-5 right-11 bg-[#dca87a] text-white p-3 rounded-full cursor-pointer"
+        className="fixed bottom-5 right-11 bg-dark text-white p-3 rounded-full cursor-pointer"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
         <FaArrowUp />

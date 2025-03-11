@@ -87,13 +87,13 @@ export function SearchBar({
 
       <div className="flex gap-2">
         <button
-          className="border rounded-lg px-2 py-1 cursor-pointer bg-[#dca87a] text-white"
+          className="border rounded-lg px-2 py-1 cursor-pointer bg-dark text-white"
           onClick={handleSearch}
         >
           Search
         </button>
         <button
-          className="border rounded-lg px-2 py-1 cursor-pointer"
+          className="border border-dark text-dark rounded-lg px-2 py-1 cursor-pointer"
           onClick={() => {
             handleReset();
             setSelectedIngredient("");

@@ -13,7 +13,7 @@ export function RecipeCard({
 }: RecipeCardProps) {
   return (
     <div
-      className="mb-4 rounded-sm p-2 max-w-72 cursor-pointer shadow hover:shadow-lg bg-[#dca87a16]"
+      className="mb-4 rounded-sm p-2 max-w-72 cursor-pointer shadow hover:shadow-lg bg-light"
       onClick={() => {
         setOpenDetails(true);
         setSelectedRecipe(recipe);

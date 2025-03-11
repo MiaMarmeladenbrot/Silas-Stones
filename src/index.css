@@ -7,6 +7,8 @@
 
 @theme {
   --main-font: "Gabarito";
+  --color-light: #dca87a16;
+  --color-dark: #dca87a;
 }
 
 @layer base {

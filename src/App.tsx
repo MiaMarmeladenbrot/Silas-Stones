@@ -12,7 +12,6 @@ function App() {
   const [openDetails, setOpenDetails] = useState(false);
   const [selectedRecipe, setSelectedRecipe] = useState<Recipes | null>(null);
   const [isMobile, setIsMobile] = useState(false);
-  console.log(isMobile);
 
   const handleReset = () => {
     setRecipes(data);

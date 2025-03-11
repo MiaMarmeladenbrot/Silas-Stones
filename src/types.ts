@@ -6,6 +6,7 @@ export type Recipes = {
   manual: string;
   page: number;
   name: string;
+  images?: string[];
   ingredients: { ingredient: string; amount: string; unit: string }[];
   description: string;
   source: string;

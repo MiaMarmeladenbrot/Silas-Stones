@@ -24,19 +24,21 @@ const CustomDropdown = <T extends string | number>({
         {value || label}
       </p>
       {openOptions && (
-        <div className="absolute left-0 right-0 mt-1 bg-white shadow-lg rounded-lg max-h-60 overflow-y-auto z-10">
-          {options.map((option, index) => (
-            <p
-              key={index}
-              className="cursor-pointer px-2 py-1 hover:bg-gray-200"
-              onClick={() => {
-                onChange(option);
-                setOpenOptions(false);
-              }}
-            >
-              {option}
-            </p>
-          ))}
+        <div className="absolute left-0 right-0 bg-white shadow-lg rounded-b-lg max-h-60 overflow-y-auto z-10 mt-0.5">
+          <div className="max-h-60 overflow-y-auto rounded-b-lg">
+            {options.map((option, index) => (
+              <p
+                key={index}
+                className="cursor-pointer px-2 py-1 hover:hover:bg-light"
+                onClick={() => {
+                  onChange(option);
+                  setOpenOptions(false);
+                }}
+              >
+                {option}
+              </p>
+            ))}
+          </div>
         </div>
       )}
     </div>

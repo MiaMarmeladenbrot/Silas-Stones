@@ -7,6 +7,7 @@
     "manual": "Elements of Science and Art. Vol. 2",
     "page": 332,
     "name": "cement for fixing…stones",
+    "images": ["/img/recipeImages/Imi_01.PNG"],
     "ingredients": [
       { "ingredient": "resin", "amount": "", "unit": "" },
       { "ingredient": "pitch", "amount": "", "unit": "" },
@@ -26,6 +27,7 @@
     "manual": "Der wohl anführende Mahler.",
     "page": 505,
     "name": "Stein- und Holz Kitt",
+    "images": ["/img/recipeImages/Croe_01.png"],
     "ingredients": [
       { "ingredient": "Wachs", "amount": "1", "unit": "loth" },
       { "ingredient": "Pech", "amount": "2", "unit": "loth" },
@@ -45,6 +47,7 @@
     "manual": "Der wohl anführende Mahler.",
     "page": 506,
     "name": "Ein Stein-Leim",
+    "images": ["/img/recipeImages/Croe_02-03.png"],
     "ingredients": [
       { "ingredient": "Harz", "amount": "1", "unit": "Pfund" },
       { "ingredient": "Schwefel", "amount": "8", "unit": "loth" },
@@ -68,6 +71,7 @@
     "manual": "Der wohl anführende Mahler.",
     "page": 506,
     "name": "oder (s. ein Stein-Leim)",
+    "images": ["/img/recipeImages/Croe_02-03.png"],
     "ingredients": [
       { "ingredient": "Pech", "amount": "", "unit": "" },
       { "ingredient": "Kreide", "amount": "", "unit": "" },
@@ -85,6 +89,7 @@
     "manual": "Hand- und Hülfsbuch für alle Künstler und Handwerker…",
     "page": 43,
     "name": "Der Loßius'sche verbesserte Steinkitt oder sogenannte Feuerkitt",
+    "images": [],
     "ingredients": [
       {
         "ingredient": "Kollophonium oder Pech",
@@ -108,6 +113,7 @@
     "manual": "Building in England down to 1540. A documentary history",
     "page": 153,
     "name": "requirements for the cistern in the King’s court at Westminster",
+    "images": [],
     "ingredients": [
       { "ingredient": "pitch", "amount": "19", "unit": "lb [pound]" },
       { "ingredient": "wax", "amount": "5", "unit": "lb [pound]" },
@@ -127,6 +133,7 @@
     "manual": "Building in England down to 1540. A documentary history",
     "page": 153,
     "name": "repairs to a buttress of Westminster palace (which projected into the Thames)",
+    "images": [],
     "ingredients": [
       { "ingredient": "pitch", "amount": "60", "unit": "lb [pound]" },
       { "ingredient": "Flemish tiles", "amount": "100", "unit": "" },
@@ -146,6 +153,7 @@
     "manual": "Building in England down to 1540. A documentary history",
     "page": 154,
     "name": "the Tower, repair of the foundations of the turret beside the Thames opposite to the King’s Exchange’",
+    "images": [],
     "ingredients": [
       { "ingredient": "iron pan", "amount": "1", "unit": "" },
       { "ingredient": "cauldron", "amount": "1", "unit": "" },
@@ -169,6 +177,7 @@
     "manual": "Building in England down to 1540. A documentary history",
     "page": 154,
     "name": "for the steyning of a well at Silverston",
+    "images": [],
     "ingredients": [
       { "ingredient": "wax", "amount": "6.5", "unit": "lb [pound]" },
       { "ingredient": "pitch", "amount": "4", "unit": "stone" },
@@ -192,6 +201,7 @@
     "manual": "Building in England down to 1540. A documentary history",
     "page": 154,
     "name": "for the steyning of a well at Silverston",
+    "images": [],
     "ingredients": [
       { "ingredient": "sulphur", "amount": "4", "unit": "lb [pound]" },
       { "ingredient": "wax", "amount": "1", "unit": "lb [pound]" },
@@ -209,6 +219,7 @@
     "manual": "Building in England down to 1540. A documentary history",
     "page": 154,
     "name": "Vale Royal, ‘for making cement for broken stones’",
+    "images": [],
     "ingredients": [
       { "ingredient": "wax", "amount": "", "unit": "" },
       { "ingredient": "pitch", "amount": "", "unit": "" }
@@ -225,6 +236,7 @@
     "manual": "Building in England down to 1540. A documentary history",
     "page": 154,
     "name": "Westminster",
+    "images": [],
     "ingredients": [
       { "ingredient": "wax", "amount": "", "unit": "" },
       { "ingredient": "pitch", "amount": "", "unit": "" },
@@ -242,6 +254,7 @@
     "manual": "Building in England down to 1540. A documentary history",
     "page": 154,
     "name": "Wallingford, ‘to make cement for joining stones’",
+    "images": [],
     "ingredients": [
       { "ingredient": "wax", "amount": "", "unit": "" },
       { "ingredient": "resin", "amount": "", "unit": "" },
@@ -259,6 +272,7 @@
     "manual": "Building in England down to 1540. A documentary history",
     "page": 154,
     "name": "Berwick, to make cement (cimento)",
+    "images": [],
     "ingredients": [
       { "ingredient": "pitch", "amount": "1", "unit": "barrel" },
       { "ingredient": "resin", "amount": "1", "unit": "stone" }
@@ -275,6 +289,7 @@
     "manual": "Building in England down to 1540. A documentary history",
     "page": 154,
     "name": "Leeds Castle",
+    "images": [],
     "ingredients": [
       { "ingredient": "wax", "amount": "", "unit": "" },
       { "ingredient": "resin", "amount": "", "unit": "" }
@@ -291,6 +306,7 @@
     "manual": "Building in England down to 1540. A documentary history",
     "page": 154,
     "name": "Oxford",
+    "images": [],
     "ingredients": [
       { "ingredient": "resin", "amount": "", "unit": "" },
       { "ingredient": "wax", "amount": "", "unit": "" }
@@ -307,6 +323,7 @@
     "manual": "Building in England down to 1540. A documentary history",
     "page": 154,
     "name": "Sutton Manor in Surrey",
+    "images": [],
     "ingredients": [
       { "ingredient": "resin", "amount": "", "unit": "" },
       { "ingredient": "wax", "amount": "", "unit": "" }
@@ -323,6 +340,7 @@
     "manual": "Building in England down to 1540. A documentary history",
     "page": 154,
     "name": "London",
+    "images": [],
     "ingredients": [
       { "ingredient": "waxe", "amount": "j", "unit": "lb [pound]" },
       { "ingredient": "rosyn", "amount": "ij", "unit": "lb [pound]" }
@@ -339,6 +357,7 @@
     "manual": "Building in England down to 1540. A documentary history",
     "page": 154,
     "name": "Westminster",
+    "images": [],
     "ingredients": [
       { "ingredient": "wax", "amount": "", "unit": "" },
       { "ingredient": "roosen", "amount": "", "unit": "" }
@@ -355,6 +374,7 @@
     "manual": "Building in England down to 1540. A documentary history",
     "page": 154,
     "name": "Westminster",
+    "images": [],
     "ingredients": [{ "ingredient": "waxe", "amount": "", "unit": "" }],
     "description": "waxe made in seamente for masons",
     "source": "SALZMANN, Louis Francis: Building in England down to 1540. A documentary history. Oxford University Press. 1952. Reissued 1992. Special edition for Sandpiper Books 1997.",
@@ -368,6 +388,7 @@
     "manual": "Building in England down to 1540. A documentary history",
     "page": 154,
     "name": "Nonesuch [Palace?]",
+    "images": [],
     "ingredients": [
       { "ingredient": "wax", "amount": "", "unit": "" },
       { "ingredient": "rosin", "amount": "", "unit": "" }
@@ -384,6 +405,7 @@
     "manual": "The city and country purchaser's and builder's dictionary: or, the complete builder's guide.",
     "page": 103,
     "name": "To make hot Cement.",
+    "images": [],
     "ingredients": [
       { "ingredient": "rosin", "amount": "1", "unit": "pound" },
       { "ingredient": "beeswax", "amount": "1/4", "unit": "pound" },
@@ -402,6 +424,7 @@
     "manual": "The craftsman's handbook : the Italian 'Il libro dell'arte'",
     "page": 66,
     "name": "How you should make cement for mending stones – Chapter CVI",
+    "images": [],
     "ingredients": [
       { "ingredient": "mastic", "amount": "", "unit": "" },
       { "ingredient": "fresh wax", "amount": "", "unit": "" },
@@ -410,5 +433,25 @@
     "description": "There is a cement which is good for mending stones: and this one is made of mastic, fresh wax, sifted pounded stone; and then all melted up thoroughly together on the fire. Take your broken stone, and warm it well; put some of this cement on it. It will last forever, in the wind; and in water if you were to mend sharpening or grinding wheels, or millstones, with it.",
     "source": "THOMPSON, Daniel V. Jr. The craftsman's handbook : the Italian 'Il libro dell'arte' / Cennino d'Andrea Cennini ; translated by Daniel V. Thompson, Jr. New York. Dover. 2005",
     "url": "https://archive.org/details/illibrodellarte1933cenn/page/n9/mode/2up"
+  },
+  {
+    "id": "Car_01",
+    "authorFirstName": "Francesco",
+    "authorLastName": "Carradori",
+    "date": 1802,
+    "manual": "Istruzione elementare per gli studiosi della scultura",
+    "page": 28,
+    "name": "About restoring ancient sculptures",
+    "images": [
+      "/img/recipeImages/Car_01a.png",
+      "/img/recipeImages/Car_01b.png"
+    ],
+    "ingredients": [
+      { "ingredient": "Greek pitch", "amount": "", "unit": "" },
+      { "ingredient": "finely ground marble powder", "amount": "", "unit": "" }
+    ],
+    "description": "But for greater security, a mixture of Greek pitch is made, clear and clean, which is put to simmer on the fire, and in which, when it is thick and boiling, add/add(?) finely ground marble powder, passed through a silk veil or taffeta sieve, stirring it all at the same time with a wooden stick, to the point of making a thick glue. This is kept warm, while both parts to be joined together, as well as the pivot, are heated with burning coals. Then, leaving a wet slab above, pour a little of the warm mixture to make two small lumps to be placed inside the holes where the pivot is to go. Then both the joints of the parts are greased with the same tender mixture, which must first be marked, and then with skill, when they are very hot, they are applied diligently in place, trying to cool the pieces as quickly as possible with water and a sponge, always supporting them in the same place until, when the mixture has set, they can no longer move.",
+    "source": "CARRADORI, Francesco: Istruzione elementare per gli studiosi della scultura, Firenze, 1802",
+    "url": "https://archive.org/details/istruzioneelemen00carr/page/32/mode/2up"
   }
 ]
