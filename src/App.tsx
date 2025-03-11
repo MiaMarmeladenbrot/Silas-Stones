@@ -44,13 +44,14 @@ function App() {
         </div>
       </div>
 
-      <h1 className="text-center py-10">
+      <h1 className="text-center pt-10 mb-5">
         {recipes.length} {recipes.length === 1 ? "recipe" : "recipes"} found
       </h1>
       <SearchBar
         originalData={data}
         setRecipes={setRecipes}
         handleReset={handleReset}
+        isMobile={isMobile}
       />
       {isMobile && (
         <RecipeCards

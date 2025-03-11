@@ -6,16 +6,18 @@ type SearchProps = {
   originalData: Recipes[];
   setRecipes: React.Dispatch<React.SetStateAction<Recipes[]>>;
   handleReset: () => void;
+  isMobile: boolean;
 };
 
 export function SearchBar({
   setRecipes,
   handleReset,
   originalData,
+  isMobile,
 }: SearchProps) {
   const [selectedIngredient, setSelectedIngredient] = useState<string>("");
   const [selectedAuthor, setSelectedAuthor] = useState<string>("");
-  const [selectedDate, setSelectedDate] = useState<string>("");
+  const [selectedDate, setSelectedDate] = useState<number>(0);
 
   const getUniqueSortedValues = <T,>(
     extractor: (recipe: Recipes) => T | T[]
@@ -51,7 +53,13 @@ export function SearchBar({
   };
 
   return (
-    <div className="flex gap-4 justify-center mb-5">
+    <div
+      className={`${
+        isMobile
+          ? "flex flex-col gap-2 items-center"
+          : "flex gap-4 justify-center"
+      } mb-5`}
+    >
       <CustomDropdown
         label="Select an ingredient"
         value={selectedIngredient}
@@ -73,27 +81,29 @@ export function SearchBar({
       <CustomDropdown
         label="Select a date"
         value={selectedDate}
-        options={getUniqueSortedValues((recipe) => recipe.date.toString())}
+        options={getUniqueSortedValues((recipe) => recipe.date)}
         onChange={setSelectedDate}
       />
 
-      <button
-        className="border rounded-lg px-2 py-1 cursor-pointer bg-[#dca87a] text-white"
-        onClick={handleSearch}
-      >
-        Search
-      </button>
-      <button
-        className="border rounded-lg px-2 py-1 cursor-pointer"
-        onClick={() => {
-          handleReset();
-          setSelectedIngredient("");
-          setSelectedAuthor("");
-          setSelectedDate("");
-        }}
-      >
-        Reset
-      </button>
+      <div className="flex gap-2">
+        <button
+          className="border rounded-lg px-2 py-1 cursor-pointer bg-[#dca87a] text-white"
+          onClick={handleSearch}
+        >
+          Search
+        </button>
+        <button
+          className="border rounded-lg px-2 py-1 cursor-pointer"
+          onClick={() => {
+            handleReset();
+            setSelectedIngredient("");
+            setSelectedAuthor("");
+            setSelectedDate(0);
+          }}
+        >
+          Reset
+        </button>
+      </div>
     </div>
   );
 }

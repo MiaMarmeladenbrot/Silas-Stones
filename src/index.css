@@ -12,6 +12,7 @@
 @layer base {
   * {
     font-family: var(--main-font), sans-serif;
+    margin-bottom: 0.5rem;
   }
   h1 {
     @apply text-4xl;
@@ -19,6 +20,10 @@
 
   h2 {
     @apply text-3xl;
+  }
+
+  h3 {
+    @apply text-2xl;
   }
 
   p {

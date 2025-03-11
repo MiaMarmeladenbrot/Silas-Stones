@@ -13,20 +13,17 @@ export function RecipeCard({
 }: RecipeCardProps) {
   return (
     <div
-      className="mb-4 bg-[#dca87a] text-white rounded-sm p-2 max-w-72 cursor-pointer"
+      className="mb-4 rounded-sm p-2 max-w-72 cursor-pointer shadow hover:shadow-lg bg-[#dca87a16]"
       onClick={() => {
         setOpenDetails(true);
         setSelectedRecipe(recipe);
       }}
     >
       <h3>{recipe.name}</h3>
-      <ul className="list-disc ml-10">
-        {recipe.ingredients.map((ing) => (
-          <li key={ing.ingredient} className="diagonal-fractions">
-            {ing.amount} {ing.unit} {ing.ingredient}
-          </li>
-        ))}
-      </ul>
+      <p>in: {recipe.manual}</p>
+      <p>
+        {recipe.authorFirstName} {recipe.authorLastName}
+      </p>
     </div>
   );
 }

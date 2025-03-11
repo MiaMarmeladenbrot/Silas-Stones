@@ -1,18 +1,18 @@
-import { Dispatch, FC, SetStateAction, useState } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 
-interface CustomDropdownProps<T> {
+interface CustomDropdownProps<T extends string | number> {
   label: string;
   value: T;
   options: T[];
-  onChange: Dispatch<SetStateAction<string>>;
+  onChange: Dispatch<SetStateAction<T>>;
 }
 
-const CustomDropdown: FC<CustomDropdownProps<string>> = ({
+const CustomDropdown = <T extends string | number>({
   label,
   value,
   options,
   onChange,
-}) => {
+}: CustomDropdownProps<T>) => {
   const [openOptions, setOpenOptions] = useState(false);
 
   return (
