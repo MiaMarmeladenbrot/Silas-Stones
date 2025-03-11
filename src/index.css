@@ -12,8 +12,8 @@
 @layer base {
   * {
     font-family: var(--main-font), sans-serif;
-    margin-bottom: 0.5rem;
   }
+
   h1 {
     @apply text-4xl;
   }

@@ -19,7 +19,7 @@ export function RecipeCard({
         setSelectedRecipe(recipe);
       }}
     >
-      <h3>{recipe.name}</h3>
+      <h3 className="mb-1">{recipe.name}</h3>
       <p>in: {recipe.manual}</p>
       <p>
         {recipe.authorFirstName} {recipe.authorLastName}
