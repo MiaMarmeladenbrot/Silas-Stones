@@ -11,7 +11,7 @@ function App() {
   const [recipes, setRecipes] = useState<Recipes[]>(data);
   const [openDetails, setOpenDetails] = useState(false);
   const [selectedRecipe, setSelectedRecipe] = useState<Recipes | null>(null);
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(() => window.innerWidth <= 768);
 
   const handleReset = () => {
     setRecipes(data);
@@ -19,14 +19,9 @@ function App() {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 768) {
-        setIsMobile(true);
-      } else {
-        setIsMobile(false);
-      }
+      setIsMobile(window.innerWidth <= 768);
     };
 
-    handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => {
