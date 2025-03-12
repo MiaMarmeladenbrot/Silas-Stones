@@ -12,7 +12,7 @@
       { "ingredient": "resin", "amount": "", "unit": "" },
       { "ingredient": "pitch", "amount": "", "unit": "" },
       { "ingredient": "beeswax", "amount": "", "unit": "" },
-      { "ingredient": "marble of freestone", "amount": "", "unit": "" },
+      { "ingredient": "marble or freestone", "amount": "", "unit": "" },
       { "ingredient": "sulphur", "amount": "", "unit": "" }
     ],
     "description": "Resin, pitch and beeswax. Add powdered marble or freestone and a little sulphur",
