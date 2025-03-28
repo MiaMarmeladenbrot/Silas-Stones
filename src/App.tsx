@@ -6,15 +6,20 @@ import data from "./data/data.json";
 import { DetailsPopUp } from "./components/DetailsPopUp";
 import { Recipes } from "./types";
 import { RecipeCards } from "./components/RecipeCards";
+import { ScrollToTop } from "./components/ScrollToTop";
 
 function App() {
   const [recipes, setRecipes] = useState<Recipes[]>(data);
   const [openDetails, setOpenDetails] = useState(false);
   const [selectedRecipe, setSelectedRecipe] = useState<Recipes | null>(null);
   const [isMobile, setIsMobile] = useState(() => window.innerWidth <= 768);
+  const [sortColumn, setSortColumn] = useState<string | null>(null);
+  const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc");
 
   const handleReset = () => {
     setRecipes(data);
+    setSortColumn(null);
+    setSortOrder("asc");
   };
 
   useEffect(() => {
@@ -59,6 +64,10 @@ function App() {
           recipes={recipes}
           setOpenDetails={setOpenDetails}
           setSelectedRecipe={setSelectedRecipe}
+          sortColumn={sortColumn}
+          setSortColumn={setSortColumn}
+          sortOrder={sortOrder}
+          setSortOrder={setSortOrder}
         />
       )}
       {openDetails && (
@@ -67,6 +76,7 @@ function App() {
           selectedRecipe={selectedRecipe}
         />
       )}
+      <ScrollToTop />
     </>
   );
 }

@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 
 interface CustomDropdownProps<T extends string | number> {
   label: string;
@@ -14,9 +14,27 @@ const CustomDropdown = <T extends string | number>({
   onChange,
 }: CustomDropdownProps<T>) => {
   const [openOptions, setOpenOptions] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setOpenOptions(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
-    <div className="relative border rounded-lg px-2 py-1">
+    <div ref={dropdownRef} className="relative border rounded-lg px-2 py-1">
       <p
         className="cursor-pointer min-w-40"
         onClick={() => setOpenOptions(!openOptions)}
