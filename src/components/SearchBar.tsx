@@ -104,10 +104,10 @@ export function SearchBar({
 
   return (
     <>
-      <h1 className="text-center pt-10 mb-5">
+      <h2 className="text-center pt-10 mb-5">
         {filteredRecipes.length}{" "}
         {filteredRecipes.length === 1 ? "recipe" : "recipes"} found
-      </h1>
+      </h2>
       <div className="flex flex-col gap-2 items-center mb-5">
         <div
           className={`${

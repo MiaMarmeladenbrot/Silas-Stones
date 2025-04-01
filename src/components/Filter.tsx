@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { FiFilter } from "react-icons/fi";
 import { Recipes } from "../types";
 import { IoMdClose } from "react-icons/io";
 import { getUniqueSortedValues } from "../utils/utils";
 import { FilterOptions } from "./FilterOptions";
+import { LuSlidersHorizontal } from "react-icons/lu";
 
 export type SelectedFilters = {
   selectedDate: number | null;
@@ -61,8 +61,11 @@ export function Filter({
 
   return (
     <>
-      <div onClick={() => setOpenFilter(true)} className="relative">
-        <FiFilter className="text-2xl cursor-pointer" />
+      <div
+        onClick={() => setOpenFilter(true)}
+        className="relative border p-1 rounded-lg"
+      >
+        <LuSlidersHorizontal className="text-2xl cursor-pointer" />
         {activeFiltersCount > 0 && (
           <p className="absolute -top-2 -right-2 bg-dark text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
             {activeFiltersCount}
