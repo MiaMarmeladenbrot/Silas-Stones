@@ -1,6 +1,5 @@
 import { IoMdClose } from "react-icons/io";
 import { Recipes } from "../types";
-import { FaArrowRight } from "react-icons/fa";
 
 type DetailsProps = {
   setOpenDetails: React.Dispatch<React.SetStateAction<boolean>>;
@@ -58,8 +57,7 @@ export function DetailsPopUp({ setOpenDetails, selectedRecipe }: DetailsProps) {
                   target="_blank"
                   href={selectedRecipe?.url}
                 >
-                  <p>Go to source</p>
-                  <FaArrowRight />
+                  <p>Open source in new tab</p>
                 </a>
               )}
             </div>

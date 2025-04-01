@@ -7,6 +7,7 @@ import { DetailsPopUp } from "./components/DetailsPopUp";
 import { Recipes } from "./types";
 import { RecipeCards } from "./components/RecipeCards";
 import { ScrollToTop } from "./components/ScrollToTop";
+import { Header } from "./components/Header";
 
 function App() {
   const [recipes, setRecipes] = useState<Recipes[]>(data);
@@ -36,16 +37,8 @@ function App() {
 
   return (
     <>
-      <div className="bg-[url(/img/detail.jpg)] h-[40vh] flex justify-center items-center text-center">
-        <div>
-          <h1 className="text-white">Silas' Stones</h1>
-          <p className="text-white">Find your adhesive now</p>
-        </div>
-      </div>
+      <Header />
 
-      <h1 className="text-center pt-10 mb-5">
-        {recipes.length} {recipes.length === 1 ? "recipe" : "recipes"} found
-      </h1>
       <SearchBar
         originalData={data}
         setRecipes={setRecipes}

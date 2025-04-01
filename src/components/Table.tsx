@@ -34,7 +34,7 @@ export function Table({
       case "author":
         return `${recipe.authorFirstName} ${recipe.authorLastName}`;
       case "date":
-        return new Date(recipe.date).getTime();
+        return recipe.date !== null ? new Date(recipe.date).getTime() : 0;
       default:
         return recipe[key as keyof Recipes];
     }
@@ -129,6 +129,7 @@ export function Table({
         </thead>
         {sortedRecipes?.map((recipe) => (
           <TableBody
+            key={recipe.id}
             recipe={recipe}
             setOpenDetails={setOpenDetails}
             setSelectedRecipe={setSelectedRecipe}

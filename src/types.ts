@@ -2,7 +2,7 @@ export type Recipes = {
   id: string;
   authorFirstName: string;
   authorLastName: string;
-  date: number;
+  date: number | null;
   manual: string;
   page: number;
   name: string;
