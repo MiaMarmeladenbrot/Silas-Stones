@@ -36,7 +36,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <section className="bg-[url(/img/BG.jpg)]  bg-fixed">
       <Header />
 
       <SearchBar
@@ -70,7 +70,7 @@ function App() {
         />
       )}
       <ScrollToTop />
-    </>
+    </section>
   );
 }
 

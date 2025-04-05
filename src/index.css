@@ -1,23 +1,34 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: Gabarito;
-  src: url("/fonts/Gabarito-VariableFont_wght.ttf");
+  font-family: Inter;
+  src: url("/fonts/Inter-VariableFont_opsz,wght.ttf");
+}
+
+@font-face {
+  font-family: Playfair;
+  src: url("/fonts/Playfair-VariableFont_opsz,wdth,wght.ttf");
 }
 
 @theme {
-  --main-font: "Gabarito";
-  --color-light: #dca87a16;
-  --color-dark: #dca87a;
+  --main-font: "Inter";
+  --color-lightSand: #d7ae8066;
+  --color-darkSand: #d7ae80;
 }
 
 @layer base {
   * {
     font-family: var(--main-font), sans-serif;
+    color: white;
+  }
+
+  h1,
+  h2 {
+    font-family: "Playfair", serif;
   }
 
   h1 {
-    @apply text-4xl;
+    @apply text-5xl;
   }
 
   h2 {
@@ -26,6 +37,10 @@
 
   h3 {
     @apply text-2xl;
+  }
+
+  h4 {
+    @apply text-xl;
   }
 
   p {

@@ -141,13 +141,13 @@ export function SearchBar({
 
         <div className="flex gap-2 mb-5">
           <button
-            className="border rounded-lg px-2 py-1 cursor-pointer bg-dark text-white"
+            className="border rounded-lg px-2 py-1 cursor-pointer bg-darkSand text-white"
             onClick={handleSearch}
           >
             Search
           </button>
           <button
-            className="border border-dark text-dark rounded-lg px-2 py-1 cursor-pointer"
+            className="border border-darkSand text-darkSand rounded-lg px-2 py-1 cursor-pointer"
             onClick={() => {
               handleReset();
               setSelectedIngredients([]);

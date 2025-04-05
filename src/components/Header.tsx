@@ -1,10 +1,19 @@
 export function Header() {
   return (
-    <div className="bg-[url(/img/detail.jpg)] h-[40vh] flex justify-center items-center text-center">
-      <div>
-        <h1 className="text-white">Silas' Stones</h1>
-        <p className="text-white">Find your adhesive now</p>
-      </div>
+    <div className="flex-col flex justify-center items-center text-center pt-30 pb-10">
+      <h1 className="text-white max-w-xl mb-10">
+        The Database of Historic Stone Adhesives
+      </h1>
+      <h4 className="text-white max-w-4xl">
+        This site is a growing collection of historical recipes, texts, and
+        references related to stone adhesives - from ancient binding techniques
+        to early modern formulations. The sources range from artist manuals and
+        fabric rolls from medieval cathedrals to invoices and instruction
+        booklets from historic restoration workshops. Whether you're a
+        researcher, a conservator, or simply curious about how people in the
+        past made stones stick, you'll find sources and context to explore this
+        fascinating craft tradition.
+      </h4>
     </div>
   );
 }

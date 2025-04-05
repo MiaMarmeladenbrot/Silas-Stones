@@ -53,7 +53,7 @@ export function DetailsPopUp({ setOpenDetails, selectedRecipe }: DetailsProps) {
               <p className="text-sm mb-1">in: {selectedRecipe?.source}</p>
               {selectedRecipe?.url && (
                 <a
-                  className="text-dark cursor-pointer flex items-center gap-1"
+                  className="text-darkSand cursor-pointer flex items-center gap-1"
                   target="_blank"
                   href={selectedRecipe?.url}
                 >

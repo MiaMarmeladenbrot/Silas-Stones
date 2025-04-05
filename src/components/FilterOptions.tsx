@@ -33,7 +33,7 @@ export function FilterOptions({
             <p
               key={date}
               className={`py-1 px-2 rounded cursor-pointer ${
-                selectedDate === date ? "bg-dark" : "bg-light "
+                selectedDate === date ? "bg-darkSand" : "bg-lightSand"
               } ${isDisabled ? "opacity-30 pointer-events-none" : ""}`}
               onClick={() => {
                 setSelectedDate(selectedDate === date ? 0 : date);
@@ -51,7 +51,7 @@ export function FilterOptions({
             <p
               key={author}
               className={`py-1 px-2 rounded cursor-pointer ${
-                selectedAuthor === author ? "bg-dark" : "bg-light "
+                selectedAuthor === author ? "bg-darkSand" : "bg-lightSand"
               } ${isDisabled ? "opacity-30 pointer-events-none" : ""}`}
               onClick={() =>
                 setSelectedAuthor(selectedAuthor === author ? "" : author)
@@ -72,7 +72,7 @@ export function FilterOptions({
             <p
               key={ingredient}
               className={`py-1 px-2 rounded cursor-pointer ${
-                isSelected ? "bg-dark text-white" : "bg-light"
+                isSelected ? "bg-darkSand text-white" : "bg-lightSand"
               } ${isDisabled ? "opacity-30 pointer-events-none" : ""}`}
               onClick={() => {
                 if (isSelected) {

@@ -67,7 +67,7 @@ export function Filter({
       >
         <LuSlidersHorizontal className="text-2xl cursor-pointer" />
         {activeFiltersCount > 0 && (
-          <p className="absolute -top-2 -right-2 bg-dark text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
+          <p className="absolute -top-2 -right-2 bg-darkSand text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
             {activeFiltersCount}
           </p>
         )}
@@ -105,7 +105,7 @@ export function Filter({
                   {filteredRecipes.length === 1 ? "recipe" : "recipes"} found
                 </p>
                 <button
-                  className="border rounded-lg px-2 py-1 cursor-pointer bg-dark text-white"
+                  className="border rounded-lg px-2 py-1 cursor-pointer bg-darkSand text-white"
                   onClick={() => {
                     setOpenFilter(false);
                     handleSearch();
