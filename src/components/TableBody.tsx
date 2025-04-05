@@ -18,7 +18,7 @@ export function TableBody({
           setOpenDetails(true);
           setSelectedRecipe(recipe);
         }}
-        className="cursor-pointer hover:bg-lightSand"
+        className="cursor-pointer hover:bg-transparentSand"
       >
         <td className="p-4 border-b border-slate-400 border-l align-text-top">
           <p>

@@ -70,7 +70,7 @@ export function FilterOptions({
         })}
       </div>
 
-      <p className="text-darkSand mb-2">Select ingredients:</p>
+      <p className="text-darkSand mb-2">Select one or more ingredients:</p>
       <div className="flex flex-wrap gap-2 mb-6">
         {sortedIngredients?.map((ingredient) => {
           const isSelected = selectedIngredients.includes(ingredient);

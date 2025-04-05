@@ -1,6 +1,6 @@
 export function Header() {
   return (
-    <div className="flex-col flex justify-center items-center text-center pt-30 pb-10">
+    <div className="flex-col flex justify-center items-center text-center pt-30 pb-10 mx-5">
       <h1 className="text-white max-w-xl mb-10">
         The Database of Historic Stone Adhesives
       </h1>

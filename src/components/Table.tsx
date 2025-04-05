@@ -72,9 +72,9 @@ export function Table({
     }
   };
   return (
-    <div className="px-10 mb-20 relative flex flex-col w-full h-full">
-      <table className="w-full text-left table-auto border border-slate-400">
-        <thead>
+    <div className="px-10 relative flex flex-col w-full h-full text-black">
+      <table className="w-full text-left table-auto border border-slate-400 bg-white/80 rounded-xl overflow-hidden">
+        <thead className="bg-darkSand text-white">
           <tr>
             {tableHeader.map(({ key, label }) => {
               const isActive = sortColumn === key;
@@ -91,37 +91,35 @@ export function Table({
                         }
                   }
                   className={`p-4 border-b border-slate-400 border-l ${
-                    isSortable && "cursor-pointer hover:bg-gray-200"
+                    isSortable && "cursor-pointer"
                   }`}
                 >
-                  <p className="flex items-center gap-1">
+                  <h5 className="flex items-center gap-1">
                     {label}
 
                     {isSortable && (
                       <span
                         className={`transition-transform flex gap-1 ${
-                          isActive
-                            ? "text-xl font-bold"
-                            : "text-gray-500 text-sm"
+                          isActive ? "text-xl font-bold" : "text-sm"
                         }`}
                       >
                         <IoIosArrowUp
                           className={
                             sortOrder === "asc" && isActive
-                              ? "text-lg font-bold"
-                              : "text-gray-500 text-sm"
+                              ? "text-lg font-bold text-gray-500"
+                              : "text-sm"
                           }
                         />
                         <IoIosArrowDown
                           className={
                             sortOrder === "desc" && isActive
-                              ? "text-lg font-bold"
-                              : "text-gray-500 text-sm"
+                              ? "text-lg font-bold text-gray-500"
+                              : "text-sm"
                           }
                         />
                       </span>
                     )}
-                  </p>
+                  </h5>
                 </th>
               );
             })}

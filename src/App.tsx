@@ -36,7 +36,7 @@ function App() {
   }, []);
 
   return (
-    <section className="bg-[url(/img/BG.jpg)]  bg-fixed">
+    <section className="bg-[url(/img/BG.jpg)] pb-20 bg-fixed">
       <Header />
 
       <SearchBar

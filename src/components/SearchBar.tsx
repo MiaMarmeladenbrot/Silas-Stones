@@ -155,7 +155,7 @@ export function SearchBar({
             Reset
           </button>
         </div>
-        <h2 className="text-center mt-5 mb-10">
+        <h2 className="text-center mt-5 mb-10 text-white">
           {filteredRecipes.length}{" "}
           {filteredRecipes.length === 1 ? "recipe" : "recipes"} found
         </h2>
