@@ -43,7 +43,8 @@
     @apply text-xl;
   }
 
-  p {
+  p,
+  button {
     @apply text-base font-light;
   }
 

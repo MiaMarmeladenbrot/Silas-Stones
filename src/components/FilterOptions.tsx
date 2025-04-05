@@ -25,6 +25,7 @@ export function FilterOptions({
 
   return (
     <div className="mb-5">
+      <p className="text-darkSand mb-2">Select a date:</p>
       <div className="flex flex-wrap gap-2 mb-6">
         {sortedDates.map((date) => {
           const isDisabled = !activeDateOptions.includes(date);
@@ -33,8 +34,10 @@ export function FilterOptions({
             <p
               key={date}
               className={`py-1 px-2 rounded cursor-pointer ${
-                selectedDate === date ? "bg-darkSand" : "bg-lightSand"
-              } ${isDisabled ? "opacity-30 pointer-events-none" : ""}`}
+                selectedDate === date
+                  ? "bg-darkSand"
+                  : "text-darkSand border-darkSand border"
+              } ${isDisabled ? "opacity-40 pointer-events-none" : ""}`}
               onClick={() => {
                 setSelectedDate(selectedDate === date ? 0 : date);
               }}
@@ -44,6 +47,8 @@ export function FilterOptions({
           );
         })}
       </div>
+
+      <p className="text-darkSand mb-2">Select an author:</p>
       <div className="flex flex-wrap gap-2 mb-6">
         {sortedAuthors?.map((author) => {
           const isDisabled = !activeAuthorOptions.includes(author);
@@ -51,7 +56,9 @@ export function FilterOptions({
             <p
               key={author}
               className={`py-1 px-2 rounded cursor-pointer ${
-                selectedAuthor === author ? "bg-darkSand" : "bg-lightSand"
+                selectedAuthor === author
+                  ? "bg-darkSand"
+                  : "text-darkSand border-darkSand border"
               } ${isDisabled ? "opacity-30 pointer-events-none" : ""}`}
               onClick={() =>
                 setSelectedAuthor(selectedAuthor === author ? "" : author)
@@ -62,6 +69,8 @@ export function FilterOptions({
           );
         })}
       </div>
+
+      <p className="text-darkSand mb-2">Select ingredients:</p>
       <div className="flex flex-wrap gap-2 mb-6">
         {sortedIngredients?.map((ingredient) => {
           const isSelected = selectedIngredients.includes(ingredient);
@@ -72,7 +81,9 @@ export function FilterOptions({
             <p
               key={ingredient}
               className={`py-1 px-2 rounded cursor-pointer ${
-                isSelected ? "bg-darkSand text-white" : "bg-lightSand"
+                isSelected
+                  ? "bg-darkSand text-white"
+                  : "text-darkSand border-darkSand border"
               } ${isDisabled ? "opacity-30 pointer-events-none" : ""}`}
               onClick={() => {
                 if (isSelected) {

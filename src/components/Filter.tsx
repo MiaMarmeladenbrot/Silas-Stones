@@ -63,9 +63,9 @@ export function Filter({
     <>
       <div
         onClick={() => setOpenFilter(true)}
-        className="relative border p-1 rounded-lg"
+        className="relative border border-darkSand p-3 rounded-lg"
       >
-        <LuSlidersHorizontal className="text-2xl cursor-pointer" />
+        <LuSlidersHorizontal className="text-2xl cursor-pointer stroke-darkSand" />
         {activeFiltersCount > 0 && (
           <p className="absolute -top-2 -right-2 bg-darkSand text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
             {activeFiltersCount}
@@ -105,7 +105,7 @@ export function Filter({
                   {filteredRecipes.length === 1 ? "recipe" : "recipes"} found
                 </p>
                 <button
-                  className="border rounded-lg px-2 py-1 cursor-pointer bg-darkSand text-white"
+                  className="border rounded-lg px-6 py-3 cursor-pointer bg-darkSand text-white"
                   onClick={() => {
                     setOpenFilter(false);
                     handleSearch();

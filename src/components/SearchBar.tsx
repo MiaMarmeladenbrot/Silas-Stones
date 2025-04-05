@@ -104,11 +104,7 @@ export function SearchBar({
 
   return (
     <>
-      <h2 className="text-center pt-10 mb-5">
-        {filteredRecipes.length}{" "}
-        {filteredRecipes.length === 1 ? "recipe" : "recipes"} found
-      </h2>
-      <div className="flex flex-col gap-2 items-center mb-5">
+      <div className="flex flex-col gap-2 items-center">
         <div
           className={`${
             isMobile
@@ -117,14 +113,14 @@ export function SearchBar({
           } mb-2`}
         >
           <div className="flex gap-3 items-center">
-            <div className="flex items-center border rounded-lg px-2 py-1 w-full max-w-md">
-              <IoSearchOutline className="text-gray-500 mr-2 text-2xl" />
+            <div className="flex items-center border rounded-lg px-2 py-3 w-full sm:w-md bg-white">
+              <IoSearchOutline className="mr-2 text-2xl stroke-darkSand" />
               <input
-                type="text"
+                type="search"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search recipes..."
-                className="outline-none w-full"
+                className="outline-none w-full text-darkSand"
               />
             </div>
 
@@ -141,13 +137,13 @@ export function SearchBar({
 
         <div className="flex gap-2 mb-5">
           <button
-            className="border rounded-lg px-2 py-1 cursor-pointer bg-darkSand text-white"
+            className="rounded-lg px-6 py-3 cursor-pointer bg-darkSand text-white"
             onClick={handleSearch}
           >
             Search
           </button>
           <button
-            className="border border-darkSand text-darkSand rounded-lg px-2 py-1 cursor-pointer"
+            className="border text-darkSand rounded-lg px-6 py-3 cursor-pointer bg-white"
             onClick={() => {
               handleReset();
               setSelectedIngredients([]);
@@ -159,6 +155,10 @@ export function SearchBar({
             Reset
           </button>
         </div>
+        <h2 className="text-center mt-5 mb-10">
+          {filteredRecipes.length}{" "}
+          {filteredRecipes.length === 1 ? "recipe" : "recipes"} found
+        </h2>
       </div>
     </>
   );
