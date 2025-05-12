@@ -72,7 +72,7 @@ export function Table({
     }
   };
   return (
-    <div className="px-10 relative flex flex-col w-full h-full text-black">
+    <div className="px-24 relative flex flex-col w-full h-full text-black">
       <table className="w-full text-left table-auto border border-slate-400 bg-white/80 rounded-xl overflow-hidden">
         <thead className="bg-darkSand text-white">
           <tr>

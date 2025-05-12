@@ -8,10 +8,12 @@ import { Recipes } from "./types";
 import { RecipeCards } from "./components/RecipeCards";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { Header } from "./components/Header";
+import ContactPopUp from "./components/ContactPopUp";
 
 function App() {
   const [recipes, setRecipes] = useState<Recipes[]>(data);
   const [openDetails, setOpenDetails] = useState(false);
+  const [openContact, setOpenContact] = useState(false);
   const [selectedRecipe, setSelectedRecipe] = useState<Recipes | null>(null);
   const [isMobile, setIsMobile] = useState(() => window.innerWidth <= 768);
   const [sortColumn, setSortColumn] = useState<string | null>(null);
@@ -37,7 +39,10 @@ function App() {
 
   return (
     <section className="bg-[url(/img/BG.jpg)] pb-20 bg-fixed">
-      <Header />
+      <Header onOpenContact={() => setOpenContact(true)} />
+      {openContact && (
+        <ContactPopUp onCloseContact={() => setOpenContact(false)} />
+      )}
 
       <SearchBar
         originalData={data}

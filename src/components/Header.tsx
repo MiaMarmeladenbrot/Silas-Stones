@@ -1,9 +1,9 @@
 import { Nav } from "./Nav";
 
-export function Header() {
+export function Header({ onOpenContact }: { onOpenContact: () => void }) {
   return (
     <>
-      <Nav />
+      <Nav onOpenContact={onOpenContact} />
       <div className="flex-col flex justify-center items-center text-center pt-20 pb-10 mx-5">
         <h1 className="text-white max-w-xl mb-10">
           The Database of Historic Stone Adhesives
