@@ -1,29 +1,16 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import { SearchBar } from "./components/SearchBar";
-import { Table } from "./components/Table";
-import data from "./data/data.json";
-import { DetailsPopUp } from "./components/DetailsPopUp";
-import { Recipes } from "./types";
-import { RecipeCards } from "./components/RecipeCards";
+
 import { ScrollToTop } from "./components/ScrollToTop";
 import { Header } from "./components/Header";
-import ContactPopUp from "./components/ContactPopUp";
+import { Footer } from "./components/Footer";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { MainPage } from "./pages/MainPage";
+import { ImpressumPage } from "./pages/ImpressumPage";
+import { AboutPage } from "./pages/AboutPage";
 
 function App() {
-  const [recipes, setRecipes] = useState<Recipes[]>(data);
-  const [openDetails, setOpenDetails] = useState(false);
-  const [openContact, setOpenContact] = useState(false);
-  const [selectedRecipe, setSelectedRecipe] = useState<Recipes | null>(null);
   const [isMobile, setIsMobile] = useState(() => window.innerWidth <= 768);
-  const [sortColumn, setSortColumn] = useState<string | null>(null);
-  const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc");
-
-  const handleReset = () => {
-    setRecipes(data);
-    setSortColumn(null);
-    setSortOrder("asc");
-  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -38,44 +25,23 @@ function App() {
   }, []);
 
   return (
-    <section className="bg-[url(/img/BG.jpg)] pb-20 bg-fixed">
-      <Header onOpenContact={() => setOpenContact(true)} />
-      {openContact && (
-        <ContactPopUp onCloseContact={() => setOpenContact(false)} />
-      )}
+    <BrowserRouter>
+      <section className=" min-h-screen bg-[url(/img/BG.jpg)] pb-20 bg-fixed bg-cover bg-no-repeat flex flex-col justify-between">
+        <Header />
 
-      <SearchBar
-        originalData={data}
-        setRecipes={setRecipes}
-        handleReset={handleReset}
-        isMobile={isMobile}
-      />
-      {isMobile && (
-        <RecipeCards
-          recipes={recipes}
-          setOpenDetails={setOpenDetails}
-          setSelectedRecipe={setSelectedRecipe}
-        />
-      )}
-      {!isMobile && (
-        <Table
-          recipes={recipes}
-          setOpenDetails={setOpenDetails}
-          setSelectedRecipe={setSelectedRecipe}
-          sortColumn={sortColumn}
-          setSortColumn={setSortColumn}
-          sortOrder={sortOrder}
-          setSortOrder={setSortOrder}
-        />
-      )}
-      {openDetails && (
-        <DetailsPopUp
-          setOpenDetails={setOpenDetails}
-          selectedRecipe={selectedRecipe}
-        />
-      )}
-      <ScrollToTop />
-    </section>
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<MainPage isMobile={isMobile} />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/impressum" element={<ImpressumPage />} />
+          </Routes>
+        </main>
+
+        <Footer />
+
+        <ScrollToTop />
+      </section>
+    </BrowserRouter>
   );
 }
 

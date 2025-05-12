@@ -1,5 +1,6 @@
 import { IoMdClose } from "react-icons/io";
 import { Recipes } from "../types";
+import { Link } from "react-router-dom";
 
 type DetailsProps = {
   setOpenDetails: React.Dispatch<React.SetStateAction<boolean>>;
@@ -53,13 +54,13 @@ export function DetailsPopUp({ setOpenDetails, selectedRecipe }: DetailsProps) {
               <p className="text-sm mb-1">page {selectedRecipe?.page}</p>
               <p className="text-sm mb-1">in: {selectedRecipe?.source}</p>
               {selectedRecipe?.url && (
-                <a
+                <Link
                   className="text-white cursor-pointer flex items-center gap-1"
                   target="_blank"
-                  href={selectedRecipe?.url}
+                  to={selectedRecipe?.url}
                 >
                   <p>Open source in new tab</p>
-                </a>
+                </Link>
               )}
             </div>
 
