@@ -5,14 +5,15 @@ export function Hero() {
         The Database of Historic Stone Adhesives
       </h1>
       <h4 className="text-white max-w-4xl">
-        This site is a growing collection of historical recipes, texts, and
-        references related to stone adhesives - from ancient binding techniques
-        to early modern formulations. The sources range from artist manuals and
-        fabric rolls from medieval cathedrals to invoices and instruction
-        booklets from historic restoration workshops. Whether you're a
-        researcher, a conservator, or simply curious about how people in the
-        past made stones stick, you'll find sources and context to explore this
-        fascinating craft tradition.
+        This website features a growing collection of historical recipes, texts
+        and references relating to stone adhesives. The formulations range from
+        ancient binding techniques to early modern recipes. Sources include
+        artist manuals, fabric rolls from medieval cathedrals, invoices and
+        instruction booklets from historic restoration workshops. Whether you're
+        a researcher or conservator interested in the history of stone adhesives
+        or simply curious about how people in the past made stones stick, you'll
+        find the sources and context you need to explore this fascinating craft
+        tradition.
       </h4>
     </div>
   );
