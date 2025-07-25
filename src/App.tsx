@@ -1,29 +1,29 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import "./App.css";
 
 import { ScrollToTop } from "./components/ScrollToTop";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { MainPage } from "./pages/MainPage";
+// import { MainPage } from "./pages/MainPage";
 import { ImpressumPage } from "./pages/ImpressumPage";
 import { AboutPage } from "./pages/AboutPage";
 import { MaintenancePage } from "./pages/MaintenancePage";
 
 function App() {
-  const [isMobile, setIsMobile] = useState(() => window.innerWidth <= 768);
+  // const [isMobile, setIsMobile] = useState(() => window.innerWidth <= 768);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setIsMobile(window.innerWidth <= 768);
+  //   };
 
-    window.addEventListener("resize", handleResize);
+  //   window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
 
   return (
     <BrowserRouter>
