@@ -12,12 +12,12 @@ export function Nav({ onOpenContact }: { onOpenContact: () => void }) {
       </NavLink>
 
       <div className="flex gap-6 items-center">
-        <NavLink
+        {/* <NavLink
           to="/about"
           className="border text-darkSand rounded-lg px-6 py-3 cursor-pointer bg-white"
         >
           About
-        </NavLink>
+        </NavLink> */}
         <button
           className="rounded-lg px-4 py-3 cursor-pointer bg-darkSand text-white"
           onClick={onOpenContact}

@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { MainPage } from "./pages/MainPage";
 import { ImpressumPage } from "./pages/ImpressumPage";
 import { AboutPage } from "./pages/AboutPage";
+import { MaintenancePage } from "./pages/MaintenancePage";
 
 function App() {
   const [isMobile, setIsMobile] = useState(() => window.innerWidth <= 768);
@@ -31,7 +32,8 @@ function App() {
 
         <main className="flex-grow">
           <Routes>
-            <Route path="/" element={<MainPage isMobile={isMobile} />} />
+            <Route path="/" element={<MaintenancePage />} />
+            {/* <Route path="/" element={<MainPage isMobile={isMobile} />} /> */}
             <Route path="/about" element={<AboutPage />} />
             <Route path="/impressum" element={<ImpressumPage />} />
           </Routes>
