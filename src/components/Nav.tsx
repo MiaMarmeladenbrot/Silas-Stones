@@ -5,8 +5,8 @@ export function Nav({ onOpenContact }: { onOpenContact: () => void }) {
     <nav className="flex justify-between px-10 py-5 text-white">
       <NavLink to="/">
         <img
-          src="/img/masonry-logo-svg-vector.svg"
-          alt="masonry logo"
+          src="/img/sticking-stones-project.png"
+          alt="logo of the sticking stones project"
           className="h-10 invert"
         />
       </NavLink>
