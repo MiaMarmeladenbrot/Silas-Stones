@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 
 export default function ContactPopUp({
@@ -26,24 +26,43 @@ export default function ContactPopUp({
       return;
     }
 
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setResult("Please enter a valid email address.");
+      return;
+    }
+
     setResult("Sending....");
 
     const formData = new FormData(form);
-    formData.append("access_key", "e7e304f8-fe64-4946-a196-f8285bb533cc");
+    const apiKey = import.meta.env.VITE_WEB3FORMS_KEY;
+    if (!apiKey) {
+      setResult("Contact form is not configured. Please try again later.");
+      return;
+    }
+    formData.append("access_key", apiKey);
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
-    });
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
 
-    const data = await response.json();
+      if (!response.ok) {
+        setResult("Failed to send message. Please try again later.");
+        return;
+      }
 
-    if (data.success) {
-      setResult("Your message was sent, thanks for getting in touch.");
-      form.reset();
-    } else {
-      console.log("Error", data);
-      setResult(data.message);
+      const data = await response.json();
+
+      if (data.success) {
+        setResult("Your message was sent, thanks for getting in touch.");
+        form.reset();
+      } else {
+        setResult(data.message || "Failed to send message. Please try again.");
+      }
+    } catch {
+      setResult("Network error. Please check your connection and try again.");
     }
   };
 
@@ -53,30 +72,46 @@ export default function ContactPopUp({
 
       <div className="flex justify-center fixed inset-0 h-fit z-20 m-10">
         <div className="bg-darkSand text-white pt-6 px-12 m-5 rounded-lg shadow-lg relative overflow-y-auto p-10">
-          <IoMdClose
+          <button
             onClick={onCloseContact}
-            className="cursor-pointer text-2xl absolute top-4 right-4"
-          />
+            aria-label="Close contact form"
+            className="absolute top-4 right-4 cursor-pointer"
+          >
+            <IoMdClose className="text-2xl" />
+          </button>
 
           <h2 className="pt-10">Get in touch</h2>
 
           <form
             onSubmit={onSubmit}
             className="flex flex-col gap-2 items-center pt-10"
+            noValidate
           >
+            <label htmlFor="contact-name" className="sr-only">
+              Name
+            </label>
             <input
+              id="contact-name"
               type="text"
               name="name"
               placeholder="Name*"
               className="outline-none text-darkSand border rounded-lg px-2 py-3 sm:w-md bg-white"
             />
+            <label htmlFor="contact-email" className="sr-only">
+              Email
+            </label>
             <input
+              id="contact-email"
               type="email"
               name="email"
               placeholder="Email*"
               className="outline-none text-darkSand border rounded-lg px-2 py-3 sm:w-md bg-white"
             />
+            <label htmlFor="contact-message" className="sr-only">
+              Message
+            </label>
             <textarea
+              id="contact-message"
               name="message"
               placeholder="Your message*"
               className="outline-none text-darkSand border rounded-lg px-2 py-3 sm:w-md bg-white"

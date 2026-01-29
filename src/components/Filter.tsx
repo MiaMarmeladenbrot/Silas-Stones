@@ -61,17 +61,18 @@ export function Filter({
 
   return (
     <>
-      <div
+      <button
         onClick={() => setOpenFilter(true)}
-        className="relative border border-darkSand p-3 rounded-lg"
+        aria-label="Open filters"
+        className="relative border border-darkSand p-3 rounded-lg cursor-pointer"
       >
-        <LuSlidersHorizontal className="text-2xl cursor-pointer stroke-darkSand" />
+        <LuSlidersHorizontal className="text-2xl stroke-darkSand" />
         {activeFiltersCount > 0 && (
           <p className="absolute -top-2 -right-2 bg-darkSand text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
             {activeFiltersCount}
           </p>
         )}
-      </div>
+      </button>
 
       {openFilter && (
         <>
@@ -85,10 +86,13 @@ export function Filter({
               className="bg-white p-6 rounded-lg shadow-lg relative max-w-2xl w-full max-h-[90vh] overflow-y-auto"
               onClick={(e) => e.stopPropagation()}
             >
-              <IoMdClose
+              <button
                 onClick={() => setOpenFilter(false)}
-                className="cursor-pointer text-2xl absolute top-4 right-4"
-              />
+                aria-label="Close filters"
+                className="absolute top-4 right-4 cursor-pointer"
+              >
+                <IoMdClose className="text-2xl" />
+              </button>
 
               <FilterOptions
                 sortedDates={sortedDates}

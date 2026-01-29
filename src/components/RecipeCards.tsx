@@ -17,6 +17,7 @@ export function RecipeCards({
       <div className="flex gap-4 flex-wrap justify-center mx-2 mb-10">
         {recipes.map((recipe) => (
           <RecipeCard
+            key={recipe.id}
             recipe={recipe}
             setOpenDetails={setOpenDetails}
             setSelectedRecipe={setSelectedRecipe}

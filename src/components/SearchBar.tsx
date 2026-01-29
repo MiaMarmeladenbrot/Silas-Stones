@@ -119,6 +119,11 @@ export function SearchBar({
                 type="search"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    handleSearch();
+                  }
+                }}
                 placeholder="Search recipes..."
                 className="outline-none w-full text-darkSand"
               />

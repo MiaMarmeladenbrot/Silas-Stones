@@ -1,6 +1,6 @@
+import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import { Recipes } from "../types";
-import { Link } from "react-router-dom";
 
 type DetailsProps = {
   setOpenDetails: React.Dispatch<React.SetStateAction<boolean>>;
@@ -8,6 +8,8 @@ type DetailsProps = {
 };
 
 export function DetailsPopUp({ setOpenDetails, selectedRecipe }: DetailsProps) {
+  const [failedImages, setFailedImages] = useState<Set<string>>(new Set());
+
   return (
     <>
       <div className="fixed inset-0 bg-slate-300 opacity-20 z-10 h-full"></div>
@@ -17,10 +19,13 @@ export function DetailsPopUp({ setOpenDetails, selectedRecipe }: DetailsProps) {
         onClick={() => setOpenDetails(false)}
       >
         <div className="bg-darkSand text-white pt-6 px-8 m-5 rounded-lg shadow-lg relative overflow-y-auto">
-          <IoMdClose
+          <button
             onClick={() => setOpenDetails(false)}
-            className="cursor-pointer text-2xl absolute top-4 right-4"
-          />
+            aria-label="Close recipe details"
+            className="absolute top-4 right-4 cursor-pointer"
+          >
+            <IoMdClose className="text-2xl" />
+          </button>
           <div className="max-w-3xl break-words">
             <h2 className="mb-3">{selectedRecipe?.name}</h2>
             <div className="mb-3">
@@ -29,7 +34,7 @@ export function DetailsPopUp({ setOpenDetails, selectedRecipe }: DetailsProps) {
                 {selectedRecipe?.authorLastName}
               </p>
               <p>from the manual: {selectedRecipe?.manual}</p>
-              <p>dated: {selectedRecipe?.date}</p>
+              <p>dated: {selectedRecipe?.date ?? "Unknown"}</p>
             </div>
 
             <div className="mb-3">
@@ -54,19 +59,27 @@ export function DetailsPopUp({ setOpenDetails, selectedRecipe }: DetailsProps) {
               <p className="text-sm mb-1">page {selectedRecipe?.page}</p>
               <p className="text-sm mb-1">in: {selectedRecipe?.source}</p>
               {selectedRecipe?.url && (
-                <Link
-                  className="text-white cursor-pointer flex items-center gap-1"
+                <a
+                  className="text-white cursor-pointer flex items-center gap-1 underline"
                   target="_blank"
-                  to={selectedRecipe?.url}
+                  rel="noopener noreferrer"
+                  href={selectedRecipe.url}
                 >
-                  <p>Open source in new tab</p>
-                </Link>
+                  Open source in new tab
+                </a>
               )}
             </div>
 
             <div className="flex flex-col gap-4 items-center mt-5">
               {selectedRecipe?.images?.map((img) => (
-                <img key={img} src={img} alt={selectedRecipe.name} />
+                !failedImages.has(img) && (
+                  <img
+                    key={img}
+                    src={img}
+                    alt={`Recipe image from ${selectedRecipe.name}`}
+                    onError={() => setFailedImages((prev) => new Set(prev).add(img))}
+                  />
+                )
               ))}
             </div>
           </div>
