@@ -12,63 +12,65 @@ export function DetailsPopUp({ setOpenDetails, selectedRecipe }: DetailsProps) {
 
   return (
     <>
-      <div className="fixed inset-0 bg-slate-300 opacity-20 z-10 h-full"></div>
+      <div className="fixed inset-0 bg-ink/40 backdrop-blur-sm z-40"></div>
 
       <div
-        className="flex justify-center my-10 fixed inset-0 z-20"
+        className="flex justify-center py-10 px-5 fixed inset-0 z-50"
         onClick={() => setOpenDetails(false)}
       >
-        <div className="bg-darkSand text-white pt-6 px-8 m-5 rounded-lg shadow-lg relative overflow-y-auto">
+        <div
+          className="bg-paperRaised text-ink pt-8 px-8 pb-8 rounded-2xl shadow-xl relative overflow-y-auto border border-line max-w-3xl w-full"
+          onClick={(e) => e.stopPropagation()}
+        >
           <button
             onClick={() => setOpenDetails(false)}
             aria-label="Close recipe details"
-            className="absolute top-4 right-4 cursor-pointer"
+            className="absolute top-5 right-5 cursor-pointer text-inkSoft hover:text-ink transition-colors"
           >
             <IoMdClose className="text-2xl" />
           </button>
-          <div className="max-w-3xl break-words">
-            <h2 className="mb-1">{selectedRecipe?.name}</h2>
+          <div className="break-words">
+            <h2 className="mb-1 text-ink pr-8">{selectedRecipe?.name}</h2>
             {selectedRecipe?.originalTitle &&
               selectedRecipe.originalTitle !== selectedRecipe.name && (
-                <p className="italic text-white/80 mb-2">
+                <p className="italic text-inkSoft mb-3">
                   {selectedRecipe.originalTitle}
                 </p>
               )}
-            <div className="mb-3">
-              <p>
-                by {selectedRecipe?.authorFirstName}{" "}
-                {selectedRecipe?.authorLastName}
-              </p>
-              {selectedRecipe?.site && <p>in: {selectedRecipe.site}</p>}
-              <p>from the manual: {selectedRecipe?.manual}</p>
-              <p>
-                dated:{" "}
-                {selectedRecipe?.dateDisplay ??
-                  selectedRecipe?.date ??
-                  "Unknown"}
-              </p>
-              {selectedRecipe?.country && (
-                <p>country: {selectedRecipe.country}</p>
-              )}
-            </div>
 
-            <div className="mb-3">
-              <h5>description:</h5>
-              <p className="whitespace-pre-line"> {selectedRecipe?.description}</p>
+            {/* meta line */}
+            <p className="text-sm text-inkSoft mb-6">
+              {selectedRecipe?.authorFirstName} {selectedRecipe?.authorLastName}
+              {" · "}
+              {selectedRecipe?.dateDisplay ??
+                selectedRecipe?.date ??
+                "Date unknown"}
+              {selectedRecipe?.manual ? ` · ${selectedRecipe.manual}` : ""}
+              {selectedRecipe?.site ? ` · ${selectedRecipe.site}` : ""}
+              {selectedRecipe?.country ? ` · ${selectedRecipe.country}` : ""}
+            </p>
+
+            <div className="h-px bg-line mb-6" />
+
+            <div className="mb-6">
+              <h5 className="mb-2">Description</h5>
+              <p className="whitespace-pre-line leading-relaxed">
+                {selectedRecipe?.description}
+              </p>
             </div>
 
             {selectedRecipe?.originalText && (
-              <div className="mb-3">
-                <h5>original text:</h5>
-                <p className="whitespace-pre-line italic text-white/80">
+              <div className="mb-6">
+                <h5 className="mb-2">Original text</h5>
+                <p className="whitespace-pre-line italic text-inkSoft leading-relaxed">
                   {selectedRecipe.originalText}
                 </p>
               </div>
             )}
 
-            <div className="mb-3">
-              <h5>ingredients:</h5>
-              <ul className="list-disc ml-4">
+            <div className="mb-6">
+              <h5 className="mb-2">Ingredients</h5>
+              <ul className="list-disc ml-4 space-y-1">
                 {selectedRecipe?.ingredients.map((ing) => (
                   <li key={ing.ingredient} className="diagonal-fractions">
                     {ing.amount} {ing.unit} {ing.ingredient}
@@ -78,28 +80,30 @@ export function DetailsPopUp({ setOpenDetails, selectedRecipe }: DetailsProps) {
             </div>
 
             {selectedRecipe?.notes && (
-              <div className="mb-3">
-                <h5>notes:</h5>
-                <p className="text-sm whitespace-pre-line">
+              <div className="mb-6">
+                <h5 className="mb-2">Notes</h5>
+                <p className="text-sm whitespace-pre-line text-inkSoft leading-relaxed">
                   {selectedRecipe.notes}
                 </p>
               </div>
             )}
 
             <div>
-              <h5>source:</h5>
+              <h5 className="mb-2">Source</h5>
               {selectedRecipe?.page && (
-                <p className="text-sm mb-1">p.{selectedRecipe.page}</p>
+                <p className="text-sm mb-1 text-inkSoft">p.{selectedRecipe.page}</p>
               )}
-              <p className="text-sm mb-1">in: {selectedRecipe?.source}</p>
+              <p className="text-sm mb-1 text-inkSoft">
+                in: {selectedRecipe?.source}
+              </p>
               {selectedRecipe?.furtherBibliography && (
-                <p className="text-sm mb-1">
+                <p className="text-sm mb-1 text-inkSoft">
                   further: {selectedRecipe.furtherBibliography}
                 </p>
               )}
               {selectedRecipe?.url && (
                 <a
-                  className="text-white cursor-pointer flex items-center gap-1 underline"
+                  className="text-sandDeep cursor-pointer inline-flex items-center gap-1 underline mt-1"
                   target="_blank"
                   rel="noopener noreferrer"
                   href={selectedRecipe.url}
@@ -109,13 +113,14 @@ export function DetailsPopUp({ setOpenDetails, selectedRecipe }: DetailsProps) {
               )}
             </div>
 
-            <div className="flex flex-col gap-4 items-center mt-5">
+            <div className="flex flex-col gap-4 items-center mt-6">
               {selectedRecipe?.images?.map((img) => (
                 !failedImages.has(img) && (
                   <img
                     key={img}
                     src={img}
                     alt={`Recipe image from ${selectedRecipe.name}`}
+                    className="rounded-lg max-w-full"
                     onError={() => setFailedImages((prev) => new Set(prev).add(img))}
                   />
                 )

@@ -1,4 +1,5 @@
 import { Recipes } from "../types";
+import { IoIosArrowForward } from "react-icons/io";
 
 type TableBodyProps = {
   recipe: Recipes;
@@ -18,33 +19,42 @@ export function TableBody({
           setOpenDetails(true);
           setSelectedRecipe(recipe);
         }}
-        className="cursor-pointer hover:bg-transparentSand"
+        className="group cursor-pointer border-b border-line transition-colors hover:bg-sand/15"
       >
-        <td className="p-4 border-b border-slate-400 border-l align-text-top">
-          <p>
+        <td className="px-5 py-4 align-top break-words">
+          <p className="font-normal text-ink">
             {recipe.authorFirstName} {recipe.authorLastName}
           </p>
         </td>
-        <td className="p-4 border-b border-slate-400 border-l align-text-top">
+        <td className="px-5 py-4 align-top text-inkSoft break-words">
           <p>{recipe.manual}</p>
         </td>
-        <td className="p-4 border-b border-slate-400 border-l align-text-top">
+        <td className="px-5 py-4 align-top text-inkSoft tabular-nums">
           <p>{recipe.date}</p>
         </td>
-        <td className="p-4 border-b border-slate-400 border-l align-text-top">
-          <p>{recipe.name}</p>
+        <td className="px-5 py-4 align-top break-words">
+          <p className="text-ink">{recipe.name}</p>
         </td>
-        <td className="p-4 border-b border-slate-400 border-l align-text-top">
-          <ul className="list-disc ml-4">
+        <td className="px-5 py-4 align-top">
+          <div className="flex flex-wrap gap-1.5">
             {recipe.ingredients.map((ing) => (
-              <li key={ing.ingredient} className="diagonal-fractions">
-                {ing.amount} {ing.unit} {ing.ingredient}
-              </li>
+              <span
+                key={ing.ingredient}
+                className="rounded-full bg-sand/20 text-ink/80 px-2.5 py-0.5 text-xs"
+                title={`${ing.amount} ${ing.unit} ${ing.ingredient}`.trim()}
+              >
+                {ing.ingredient}
+              </span>
             ))}
-          </ul>
+          </div>
         </td>
-        <td className="p-4 border-b border-slate-400 border-l align-text-top whitespace-pre-line max-w-[2000px]">
-          <p>{recipe.description}</p>
+        <td className="px-5 py-4 align-top text-inkSoft">
+          <p className="whitespace-pre-line line-clamp-4 text-sm leading-relaxed">
+            {recipe.description}
+          </p>
+        </td>
+        <td className="px-2 align-middle text-center">
+          <IoIosArrowForward className="inline text-inkSoft/0 group-hover:text-sandDeep transition-colors" />
         </td>
       </tr>
     </tbody>

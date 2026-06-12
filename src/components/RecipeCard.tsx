@@ -13,17 +13,18 @@ export function RecipeCard({
 }: RecipeCardProps) {
   return (
     <div
-      className="mb-4 rounded-lg py-2 px-3 max-w-72 cursor-pointer shadow hover:shadow-lg bg-darkSand text-white"
+      className="w-full rounded-xl border border-line bg-paperRaised py-4 px-5 cursor-pointer shadow-sm transition-shadow hover:shadow-md border-l-2 border-l-sand"
       onClick={() => {
         setOpenDetails(true);
         setSelectedRecipe(recipe);
       }}
     >
-      <h3 className="mb-1">{recipe.name}</h3>
-      <p>in: {recipe.manual}</p>
-      <p>
+      <h3 className="mb-2 text-ink">{recipe.name}</h3>
+      <p className="text-sm text-inkSoft">
         {recipe.authorFirstName} {recipe.authorLastName}
+        {recipe.date ? ` · ${recipe.date}` : ""}
       </p>
+      <p className="text-sm text-inkSoft italic">in: {recipe.manual}</p>
     </div>
   );
 }

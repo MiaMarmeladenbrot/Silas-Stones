@@ -12,9 +12,20 @@
 
 @theme {
   --main-font: "Inter";
+
+  /* --- legacy sand tokens (kept for backwards-compat) --- */
   --color-transparentSand: #d7ae8066;
   --color-darkSand: #d7ae80;
   --color-transparentWhite: #777777;
+
+  /* --- editorial palette --- */
+  --color-paper: #f4efe6; /* page background */
+  --color-paperRaised: #fbf9f4; /* cards, table, panels */
+  --color-ink: #2c2722; /* primary text */
+  --color-inkSoft: #6f655a; /* secondary text / captions */
+  --color-line: #e4ddcf; /* hairline borders & dividers */
+  --color-sand: #d7ae80; /* the single decorative accent */
+  --color-sandDeep: #ad7b46; /* links, active state, stronger accent */
 }
 
 @layer base {
@@ -22,30 +33,36 @@
     font-family: var(--main-font), sans-serif;
   }
 
+  body {
+    @apply text-ink;
+  }
+
   h1,
   h2,
   h3 {
     font-family: "Playfair", serif;
+    @apply tracking-tight;
   }
 
   h1 {
-    @apply text-4xl sm:text-5xl;
+    @apply text-4xl sm:text-6xl font-medium leading-none;
   }
 
   h2 {
-    @apply text-3xl;
+    @apply text-2xl sm:text-3xl;
   }
 
   h3 {
-    @apply text-2xl;
+    @apply text-xl sm:text-2xl;
   }
 
   h4 {
-    @apply text-lg sm:text-xl font-light;
+    @apply text-lg sm:text-xl font-light leading-relaxed;
   }
 
   h5 {
-    @apply text-base font-medium;
+    /* small uppercase caption used as section labels in table/detail views */
+    @apply text-xs font-medium uppercase tracking-widest text-inkSoft;
   }
 
   p,

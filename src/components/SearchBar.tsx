@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Recipes } from "../types";
 import { Filter } from "./Filter";
 import { IoSearchOutline } from "react-icons/io5";
@@ -18,22 +18,25 @@ export function SearchBar({
 }: SearchProps) {
   const [selectedIngredients, setSelectedIngredients] = useState<string[]>([]);
   const [selectedAuthor, setSelectedAuthor] = useState<string>("");
-  const [selectedDate, setSelectedDate] = useState<number | null>(null);
+  const [dateFrom, setDateFrom] = useState<number | null>(null);
+  const [dateTo, setDateTo] = useState<number | null>(null);
   const [searchQuery, setSearchQuery] = useState<string>("");
 
   const selected = {
-    selectedDate,
     selectedAuthor,
+    dateFrom,
+    dateTo,
     selectedIngredients,
   };
 
   const setters = {
-    setSelectedDate,
     setSelectedAuthor,
+    setDateFrom,
+    setDateTo,
     setSelectedIngredients,
   };
 
-  const { filteredRecipes, activeOptions } = useMemo(() => {
+  const filteredRecipes = useMemo(() => {
     const baseFiltered = originalData.filter((recipe) => {
       const matchesSearchQuery =
         !searchQuery ||
@@ -54,7 +57,7 @@ export function SearchBar({
       return matchesSearchQuery;
     });
 
-    const filteredRecipes = baseFiltered.filter((recipe) => {
+    return baseFiltered.filter((recipe) => {
       const matchesIngredient =
         selectedIngredients.length === 0 ||
         selectedIngredients.every((selectedIng) =>
@@ -67,108 +70,73 @@ export function SearchBar({
         !selectedAuthor ||
         recipe.authorLastName.toLowerCase() === selectedAuthor;
 
-      const matchesDate = !selectedDate || recipe.date === selectedDate;
+      const matchesDate =
+        (dateFrom === null ||
+          (recipe.date !== null && recipe.date >= dateFrom)) &&
+        (dateTo === null || (recipe.date !== null && recipe.date <= dateTo));
 
       return matchesIngredient && matchesAuthor && matchesDate;
     });
-
-    const activeIngredientOptions = Array.from(
-      new Set(
-        filteredRecipes.flatMap((r) =>
-          r.ingredients.map((i) => i.ingredient.toLowerCase())
-        )
-      )
-    ).sort();
-
-    const activeAuthorOptions = Array.from(
-      new Set(filteredRecipes.map((r) => r.authorLastName.toLowerCase()))
-    ).sort();
-
-    const activeDateOptions = Array.from(
-      new Set(filteredRecipes.map((r) => r.date))
-    ).sort();
-
-    return {
-      filteredRecipes,
-      activeOptions: {
-        activeIngredientOptions,
-        activeAuthorOptions,
-        activeDateOptions,
-      },
-    };
   }, [
     originalData,
     selectedIngredients,
     selectedAuthor,
-    selectedDate,
+    dateFrom,
+    dateTo,
     searchQuery,
   ]);
 
-  const handleSearch = () => setRecipes(filteredRecipes);
+  // live search — results update on every keystroke / filter change, no submit
+  useEffect(() => {
+    setRecipes(filteredRecipes);
+  }, [filteredRecipes, setRecipes]);
 
   return (
-    <>
-      <div className="flex flex-col gap-2 items-center">
+    <div className="sticky top-16 z-30 bg-paper flex items-center md:h-40">
+      <div className="mx-auto w-full max-w-6xl px-5 py-6 md:py-0">
         <div
           className={`${
-            isMobile
-              ? "flex flex-col gap-2 items-center"
-              : "flex gap-4 justify-center"
-          } mb-2`}
+            isMobile ? "flex flex-col gap-3" : "flex gap-3 items-center"
+          }`}
         >
-          <div className="flex gap-3 items-center">
-            <div className="flex items-center border rounded-lg px-2 py-3 w-full sm:w-md bg-white">
-              <IoSearchOutline className="mr-2 text-2xl stroke-darkSand" />
-              <input
-                type="search"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter") {
-                    handleSearch();
-                  }
-                }}
-                placeholder="Search recipes..."
-                className="outline-none w-full text-darkSand"
-              />
-            </div>
+        <div className="flex items-center gap-2 flex-1 rounded-full border border-line bg-paperRaised px-4 py-3 shadow-sm focus-within:border-sandDeep transition-colors">
+          <IoSearchOutline className="text-xl text-inkSoft shrink-0" />
+          <input
+            type="search"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            placeholder="Search recipes, authors, ingredients…"
+            className="outline-none w-full bg-transparent text-ink placeholder:text-inkSoft/60"
+          />
 
-            <Filter
-              originalData={originalData}
-              filteredRecipes={filteredRecipes}
-              handleSearch={handleSearch}
-              activeOptions={activeOptions}
-              selected={selected}
-              setters={setters}
-            />
-          </div>
+          <Filter
+            originalData={originalData}
+            filteredRecipes={filteredRecipes}
+            selected={selected}
+            setters={setters}
+          />
         </div>
 
-        <div className="flex gap-2 mb-5">
-          <button
-            className="rounded-lg px-6 py-3 cursor-pointer bg-darkSand text-white"
-            onClick={handleSearch}
-          >
-            Search
-          </button>
-          <button
-            className="border text-darkSand rounded-lg px-6 py-3 cursor-pointer bg-white"
-            onClick={() => {
-              handleReset();
-              setSelectedIngredients([]);
-              setSelectedAuthor("");
-              setSelectedDate(null);
-              setSearchQuery("");
-            }}
-          >
-            Reset
-          </button>
-        </div>
-        <h2 className="text-center mt-5 mb-10 text-white">
-          {filteredRecipes.length}{" "}
-          {filteredRecipes.length === 1 ? "recipe" : "recipes"} found
-        </h2>
+        <button
+          className="rounded-full border border-ink/25 px-6 py-3 cursor-pointer text-ink text-sm transition-colors hover:bg-ink/5"
+          onClick={() => {
+            handleReset();
+            setSelectedIngredients([]);
+            setSelectedAuthor("");
+            setDateFrom(null);
+            setDateTo(null);
+            setSearchQuery("");
+          }}
+        >
+          Reset
+        </button>
       </div>
-    </>
+
+        <p className="mt-6 text-sm uppercase tracking-widest text-inkSoft">
+          {filteredRecipes.length}{" "}
+          {filteredRecipes.length === 1 ? "recipe" : "recipes"}
+        </p>
+      </div>
+    </div>
   );
 }

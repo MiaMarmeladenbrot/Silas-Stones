@@ -68,25 +68,33 @@ export default function ContactPopUp({
 
   return (
     <>
-      <div className="fixed inset-0 bg-slate-300 opacity-20 z-10 h-full"></div>
+      <div
+        className="fixed inset-0 bg-ink/40 backdrop-blur-sm z-40"
+        onClick={onCloseContact}
+      ></div>
 
-      <div className="flex justify-center fixed inset-0 h-fit z-20 m-10">
-        <div className="bg-darkSand text-white pt-6 px-12 m-5 rounded-lg shadow-lg relative overflow-y-auto p-10">
+      <div
+        className="flex justify-center items-start fixed inset-0 z-50 p-5 sm:py-16 overflow-y-auto"
+        onClick={onCloseContact}
+      >
+        <div
+          className="bg-paperRaised text-ink rounded-2xl shadow-xl relative border border-line p-8 sm:p-10 w-full max-w-md"
+          onClick={(e) => e.stopPropagation()}
+        >
           <button
             onClick={onCloseContact}
             aria-label="Close contact form"
-            className="absolute top-4 right-4 cursor-pointer"
+            className="absolute top-5 right-5 cursor-pointer text-inkSoft hover:text-ink transition-colors"
           >
             <IoMdClose className="text-2xl" />
           </button>
 
-          <h2 className="pt-10">Get in touch</h2>
+          <h2 className="text-ink">Get in touch</h2>
+          <p className="text-sm text-inkSoft mt-2 mb-6">
+            Questions, corrections or a source to contribute? Send a note.
+          </p>
 
-          <form
-            onSubmit={onSubmit}
-            className="flex flex-col gap-2 items-center pt-10"
-            noValidate
-          >
+          <form onSubmit={onSubmit} className="flex flex-col gap-3" noValidate>
             <label htmlFor="contact-name" className="sr-only">
               Name
             </label>
@@ -95,7 +103,7 @@ export default function ContactPopUp({
               type="text"
               name="name"
               placeholder="Name*"
-              className="outline-none text-darkSand border rounded-lg px-2 py-3 sm:w-md bg-white"
+              className="outline-none text-ink placeholder:text-inkSoft/60 border border-line rounded-xl px-4 py-3 bg-paper focus:border-sandDeep transition-colors"
             />
             <label htmlFor="contact-email" className="sr-only">
               Email
@@ -105,7 +113,7 @@ export default function ContactPopUp({
               type="email"
               name="email"
               placeholder="Email*"
-              className="outline-none text-darkSand border rounded-lg px-2 py-3 sm:w-md bg-white"
+              className="outline-none text-ink placeholder:text-inkSoft/60 border border-line rounded-xl px-4 py-3 bg-paper focus:border-sandDeep transition-colors"
             />
             <label htmlFor="contact-message" className="sr-only">
               Message
@@ -114,7 +122,8 @@ export default function ContactPopUp({
               id="contact-message"
               name="message"
               placeholder="Your message*"
-              className="outline-none text-darkSand border rounded-lg px-2 py-3 sm:w-md bg-white"
+              rows={4}
+              className="outline-none text-ink placeholder:text-inkSoft/60 border border-line rounded-xl px-4 py-3 bg-paper focus:border-sandDeep transition-colors resize-y"
             />
 
             <input
@@ -127,11 +136,13 @@ export default function ContactPopUp({
 
             <button
               type="submit"
-              className="border text-darkSand rounded-lg px-6 py-3 cursor-pointer bg-white hover:bg-gray-50 mt-6"
+              className="rounded-full px-6 py-3 cursor-pointer bg-ink text-paper text-sm transition-opacity hover:opacity-85 mt-2"
             >
               Send
             </button>
-            <p className="mt-6">{result}</p>
+            {result && (
+              <p className="mt-2 text-sm text-inkSoft text-center">{result}</p>
+            )}
           </form>
         </div>
       </div>

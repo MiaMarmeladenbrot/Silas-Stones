@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { Recipes } from "../types";
 import { IoMdClose } from "react-icons/io";
 import { getUniqueSortedValues } from "../utils/utils";
@@ -6,116 +6,142 @@ import { FilterOptions } from "./FilterOptions";
 import { LuSlidersHorizontal } from "react-icons/lu";
 
 export type SelectedFilters = {
-  selectedDate: number | null;
   selectedAuthor: string;
+  dateFrom: number | null;
+  dateTo: number | null;
   selectedIngredients: string[];
 };
 
 export type Setters = {
-  setSelectedDate: React.Dispatch<React.SetStateAction<number | null>>;
   setSelectedAuthor: React.Dispatch<React.SetStateAction<string>>;
+  setDateFrom: React.Dispatch<React.SetStateAction<number | null>>;
+  setDateTo: React.Dispatch<React.SetStateAction<number | null>>;
   setSelectedIngredients: React.Dispatch<React.SetStateAction<string[]>>;
 };
 
-export type ActiveOptions = {
-  activeDateOptions: (number | null)[];
-  activeAuthorOptions: string[];
-  activeIngredientOptions: string[];
-};
-
 type FilterProps = {
-  handleSearch: () => void;
   originalData: Recipes[];
   filteredRecipes: Recipes[];
   selected: SelectedFilters;
   setters: Setters;
-  activeOptions: ActiveOptions;
 };
 
 export function Filter({
-  handleSearch,
   originalData,
   filteredRecipes,
   selected,
   setters,
-  activeOptions,
 }: FilterProps) {
   const [openFilter, setOpenFilter] = useState(false);
 
   const sortedDates = getUniqueSortedValues(
     originalData,
     (recipe) => recipe.date
-  );
+  ) as number[];
   const sortedAuthors = getUniqueSortedValues(originalData, (recipe) =>
     recipe.authorLastName.toLowerCase()
   );
-  const sortedIngredients = getUniqueSortedValues(originalData, (recipe) =>
-    recipe.ingredients.map((ing) => ing.ingredient.toLowerCase())
+
+  // ingredient name -> how many recipes use it (drives the "most common" picks)
+  const ingredientCounts = useMemo(() => {
+    const counts = new Map<string, number>();
+    originalData.forEach((recipe) =>
+      recipe.ingredients.forEach((ing) => {
+        const key = ing.ingredient.trim().toLowerCase();
+        if (key) counts.set(key, (counts.get(key) ?? 0) + 1);
+      })
+    );
+    return counts;
+  }, [originalData]);
+
+  const allIngredients = useMemo(
+    () => [...ingredientCounts.keys()].sort(),
+    [ingredientCounts]
+  );
+  const commonIngredients = useMemo(
+    () =>
+      [...ingredientCounts.entries()]
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 15)
+        .map(([name]) => name),
+    [ingredientCounts]
   );
 
   const activeFiltersCount = [
-    selected.selectedDate !== null,
     selected.selectedAuthor !== "",
+    selected.dateFrom !== null || selected.dateTo !== null,
     selected.selectedIngredients.length > 0,
   ].filter(Boolean).length;
+
+  const clearFilters = () => {
+    setters.setSelectedAuthor("");
+    setters.setDateFrom(null);
+    setters.setDateTo(null);
+    setters.setSelectedIngredients([]);
+  };
 
   return (
     <>
       <button
         onClick={() => setOpenFilter(true)}
         aria-label="Open filters"
-        className="relative border border-darkSand p-3 rounded-lg cursor-pointer"
+        className="relative shrink-0 p-1.5 rounded-full cursor-pointer text-inkSoft hover:text-ink transition-colors"
       >
-        <LuSlidersHorizontal className="text-2xl stroke-darkSand" />
+        <LuSlidersHorizontal className="text-xl" />
         {activeFiltersCount > 0 && (
-          <p className="absolute -top-2 -right-2 bg-darkSand text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
+          <span className="absolute -top-1 -right-1 bg-sandDeep text-paper text-xs rounded-full w-4 h-4 flex items-center justify-center">
             {activeFiltersCount}
-          </p>
+          </span>
         )}
       </button>
 
       {openFilter && (
         <>
-          <div className="fixed inset-0 bg-slate-300 opacity-20 z-10 h-full"></div>
+          <div className="fixed inset-0 bg-ink/40 backdrop-blur-sm z-40"></div>
 
           <div
-            className="fixed inset-0 z-20 flex items-center justify-center px-5 "
+            className="fixed inset-0 z-50 flex items-center justify-center px-5"
             onClick={() => setOpenFilter(false)}
           >
             <div
-              className="bg-white p-6 rounded-lg shadow-lg relative max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+              className="bg-paperRaised text-ink p-8 rounded-2xl shadow-xl relative max-w-2xl w-full overflow-y-auto border border-line"
+              style={{ maxHeight: "90vh" }}
               onClick={(e) => e.stopPropagation()}
             >
               <button
                 onClick={() => setOpenFilter(false)}
                 aria-label="Close filters"
-                className="absolute top-4 right-4 cursor-pointer"
+                className="absolute top-5 right-5 cursor-pointer text-inkSoft hover:text-ink transition-colors"
               >
                 <IoMdClose className="text-2xl" />
               </button>
 
+              <h2 className="mb-6">Filters</h2>
+
               <FilterOptions
                 sortedDates={sortedDates}
+                sortedAuthors={sortedAuthors}
+                allIngredients={allIngredients}
+                commonIngredients={commonIngredients}
+                ingredientCounts={ingredientCounts}
                 setters={setters}
                 selected={selected}
-                activeOptions={activeOptions}
-                sortedAuthors={sortedAuthors}
-                sortedIngredients={sortedIngredients}
               />
 
-              <div className="flex flex-col items-center">
-                <p className="mb-2">
-                  {filteredRecipes.length}{" "}
-                  {filteredRecipes.length === 1 ? "recipe" : "recipes"} found
-                </p>
+              <div className="flex items-center justify-between gap-4 mt-2 pt-5 border-t border-line">
                 <button
-                  className="border rounded-lg px-6 py-3 cursor-pointer bg-darkSand text-white"
-                  onClick={() => {
-                    setOpenFilter(false);
-                    handleSearch();
-                  }}
+                  className="text-sm text-inkSoft hover:text-ink transition-colors cursor-pointer disabled:opacity-40 disabled:cursor-default"
+                  onClick={clearFilters}
+                  disabled={activeFiltersCount === 0}
                 >
-                  Apply filter
+                  Clear all
+                </button>
+                <button
+                  className="rounded-full px-8 py-3 cursor-pointer bg-ink text-paper text-sm transition-opacity hover:opacity-85"
+                  onClick={() => setOpenFilter(false)}
+                >
+                  Show {filteredRecipes.length}{" "}
+                  {filteredRecipes.length === 1 ? "recipe" : "recipes"}
                 </button>
               </div>
             </div>
