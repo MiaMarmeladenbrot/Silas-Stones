@@ -32,9 +32,11 @@ export function Table({
   const extractValue = (recipe: Recipes, key: string) => {
     switch (key) {
       case "author":
-        return `${recipe.authorFirstName} ${recipe.authorLastName}`;
+        // trim so authorless records (first name "") don't sort under a
+        // leading space ahead of "A" — "unknown" then sorts under U instead.
+        return `${recipe.authorFirstName} ${recipe.authorLastName}`.trim();
       case "date":
-        return recipe.date !== null ? new Date(recipe.date).getTime() : 0;
+        return recipe.date ?? 0;
       default:
         return recipe[key as keyof Recipes];
     }

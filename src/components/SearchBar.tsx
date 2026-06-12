@@ -42,6 +42,10 @@ export function SearchBar({
           .includes(searchQuery.toLowerCase()) ||
         recipe.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         recipe.manual.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        (recipe.site?.toLowerCase().includes(searchQuery.toLowerCase()) ??
+          false) ||
+        (recipe.country?.toLowerCase().includes(searchQuery.toLowerCase()) ??
+          false) ||
         recipe.ingredients.some((ing) =>
           ing.ingredient.toLowerCase().includes(searchQuery.toLowerCase())
         ) ||

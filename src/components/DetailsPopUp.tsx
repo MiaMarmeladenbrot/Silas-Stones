@@ -27,37 +27,76 @@ export function DetailsPopUp({ setOpenDetails, selectedRecipe }: DetailsProps) {
             <IoMdClose className="text-2xl" />
           </button>
           <div className="max-w-3xl break-words">
-            <h2 className="mb-3">{selectedRecipe?.name}</h2>
+            <h2 className="mb-1">{selectedRecipe?.name}</h2>
+            {selectedRecipe?.originalTitle &&
+              selectedRecipe.originalTitle !== selectedRecipe.name && (
+                <p className="italic text-white/80 mb-2">
+                  {selectedRecipe.originalTitle}
+                </p>
+              )}
             <div className="mb-3">
               <p>
                 by {selectedRecipe?.authorFirstName}{" "}
                 {selectedRecipe?.authorLastName}
               </p>
+              {selectedRecipe?.site && <p>in: {selectedRecipe.site}</p>}
               <p>from the manual: {selectedRecipe?.manual}</p>
-              <p>dated: {selectedRecipe?.date ?? "Unknown"}</p>
+              <p>
+                dated:{" "}
+                {selectedRecipe?.dateDisplay ??
+                  selectedRecipe?.date ??
+                  "Unknown"}
+              </p>
+              {selectedRecipe?.country && (
+                <p>country: {selectedRecipe.country}</p>
+              )}
             </div>
 
             <div className="mb-3">
               <h5>description:</h5>
-              <p> {selectedRecipe?.description}</p>
+              <p className="whitespace-pre-line"> {selectedRecipe?.description}</p>
             </div>
+
+            {selectedRecipe?.originalText && (
+              <div className="mb-3">
+                <h5>original text:</h5>
+                <p className="whitespace-pre-line italic text-white/80">
+                  {selectedRecipe.originalText}
+                </p>
+              </div>
+            )}
 
             <div className="mb-3">
               <h5>ingredients:</h5>
               <ul className="list-disc ml-4">
                 {selectedRecipe?.ingredients.map((ing) => (
-                  <li key={ing.ingredient}>
-                    {ing.amount}
-                    {ing.unit} {ing.ingredient}
+                  <li key={ing.ingredient} className="diagonal-fractions">
+                    {ing.amount} {ing.unit} {ing.ingredient}
                   </li>
                 ))}
               </ul>
             </div>
 
+            {selectedRecipe?.notes && (
+              <div className="mb-3">
+                <h5>notes:</h5>
+                <p className="text-sm whitespace-pre-line">
+                  {selectedRecipe.notes}
+                </p>
+              </div>
+            )}
+
             <div>
               <h5>source:</h5>
-              <p className="text-sm mb-1">page {selectedRecipe?.page}</p>
+              {selectedRecipe?.page && (
+                <p className="text-sm mb-1">p.{selectedRecipe.page}</p>
+              )}
               <p className="text-sm mb-1">in: {selectedRecipe?.source}</p>
+              {selectedRecipe?.furtherBibliography && (
+                <p className="text-sm mb-1">
+                  further: {selectedRecipe.furtherBibliography}
+                </p>
+              )}
               {selectedRecipe?.url && (
                 <a
                   className="text-white cursor-pointer flex items-center gap-1 underline"
