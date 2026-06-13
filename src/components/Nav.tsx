@@ -12,6 +12,16 @@ export function Nav({ onOpenContact }: { onOpenContact: () => void }) {
       </NavLink>
 
       <div className="flex gap-6 items-center">
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            `text-sm transition-colors hover:text-sandDeep ${
+              isActive ? "text-sandDeep" : "text-ink"
+            }`
+          }
+        >
+          About
+        </NavLink>
         <button
           className="rounded-full border border-ink/25 px-5 py-2 text-sm cursor-pointer text-ink transition-colors hover:bg-ink hover:text-paper"
           onClick={onOpenContact}
