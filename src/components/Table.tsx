@@ -74,50 +74,57 @@ export function Table({
     }
   };
   return (
-    <div className="px-24 relative flex flex-col w-full h-full text-black">
-      <table className="w-full text-left table-auto border border-slate-400 bg-white/80 rounded-xl overflow-hidden">
-        <thead className="bg-darkSand text-white">
+    <div className="mx-auto w-full max-w-6xl px-5 mt-4">
+      {/* frame on a plain wrapper (no overflow-clip) so the sticky thead can
+          stick relative to the page instead of being trapped in the table box */}
+      <div className="rounded-2xl border border-line shadow-sm bg-paperRaised">
+        <table className="w-full text-left table-fixed">
+          <colgroup>
+          <col style={{ width: "15%" }} />
+          <col style={{ width: "15%" }} />
+          <col style={{ width: "7%" }} />
+          <col style={{ width: "17%" }} />
+          <col style={{ width: "22%" }} />
+          <col style={{ width: "20%" }} />
+          <col style={{ width: "4%" }} />
+        </colgroup>
+        <thead className="sticky top-56 z-20">
           <tr>
-            {tableHeader.map(({ key, label }) => {
+            {tableHeader.map(({ key, label }, idx) => {
               const isActive = sortColumn === key;
               const isSortable =
                 key === "author" || key === "manual" || key === "date";
               return (
                 <th
                   key={key}
-                  onClick={
-                    isSortable
-                      ? () => handleSort(key)
-                      : () => {
-                          return;
-                        }
-                  }
-                  className={`p-4 border-b border-slate-400 border-l ${
-                    isSortable && "cursor-pointer"
+                  onClick={isSortable ? () => handleSort(key) : undefined}
+                  className={`px-5 py-4 select-none bg-paperRaised border-b border-line ${
+                    idx === 0 ? "rounded-tl-2xl" : ""
+                  } ${isSortable ? "cursor-pointer hover:text-ink" : ""} ${
+                    isActive ? "text-sandDeep" : "text-inkSoft"
                   }`}
                 >
-                  <h5 className="flex items-center gap-1">
+                  <h5
+                    className={`flex items-center gap-1 ${
+                      isActive ? "text-sandDeep" : ""
+                    }`}
+                  >
                     {label}
-
                     {isSortable && (
-                      <span
-                        className={`transition-transform flex gap-1 ${
-                          isActive ? "text-xl font-bold" : "text-sm"
-                        }`}
-                      >
+                      <span className="flex flex-col leading-none -space-y-1">
                         <IoIosArrowUp
-                          className={
+                          className={`text-xs ${
                             sortOrder === "asc" && isActive
-                              ? "text-lg font-bold text-gray-500"
-                              : "text-sm"
-                          }
+                              ? "text-sandDeep"
+                              : "text-inkSoft/40"
+                          }`}
                         />
                         <IoIosArrowDown
-                          className={
+                          className={`text-xs ${
                             sortOrder === "desc" && isActive
-                              ? "text-lg font-bold text-gray-500"
-                              : "text-sm"
-                          }
+                              ? "text-sandDeep"
+                              : "text-inkSoft/40"
+                          }`}
                         />
                       </span>
                     )}
@@ -125,6 +132,10 @@ export function Table({
                 </th>
               );
             })}
+            <th
+              className="px-2 bg-paperRaised border-b border-line rounded-tr-2xl"
+              aria-hidden="true"
+            />
           </tr>
         </thead>
         {sortedRecipes?.map((recipe) => (
@@ -135,7 +146,8 @@ export function Table({
             setSelectedRecipe={setSelectedRecipe}
           />
         ))}
-      </table>
+        </table>
+      </div>
     </div>
   );
 }

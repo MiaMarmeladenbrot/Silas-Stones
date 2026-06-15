@@ -14,7 +14,7 @@ export function RecipeCards({
 }: RecipeCardsProps) {
   return (
     <>
-      <div className="flex gap-4 flex-wrap justify-center mx-2 mb-10">
+      <div className="mx-auto w-full max-w-2xl px-5 mt-4 flex flex-col gap-3 mb-10">
         {recipes.map((recipe) => (
           <RecipeCard
             key={recipe.id}

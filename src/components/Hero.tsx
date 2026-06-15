@@ -1,20 +1,30 @@
 export function Hero() {
   return (
-    <div className="flex-col flex justify-center items-center text-center pt-20 pb-10 mx-5">
-      <h1 className="text-white max-w-xl mb-10">
-        The Database of Historic Stone Adhesives
-      </h1>
-      <h4 className="text-white max-w-4xl">
-        This website features a growing collection of historical recipes, texts
-        and references relating to stone adhesives. The formulations range from
-        ancient binding techniques to early modern recipes. Sources include
-        artist manuals, fabric rolls from medieval cathedrals, invoices and
-        instruction booklets from historic restoration workshops. Whether you're
-        a researcher or conservator interested in the history of stone adhesives
-        or simply curious about how people in the past made stones stick, you'll
-        find the sources and context you need to explore this fascinating craft
-        tradition.
-      </h4>
-    </div>
+    <header className="mx-auto w-full max-w-6xl px-5 pt-8 sm:pt-12">
+      <div className="relative overflow-hidden rounded-2xl">
+        <img
+          src="/img/BG.jpg"
+          alt=""
+          aria-hidden="true"
+          className="h-64 sm:h-80 w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/45 to-ink/20" />
+        <div className="absolute inset-0 flex flex-col justify-between p-6 sm:p-10">
+          <p className="ml-auto max-w-sm text-right text-xs sm:text-sm leading-relaxed text-paper/85 [text-shadow:0_1px_8px_rgba(0,0,0,0.45)]">
+            A collection of historical recipes and texts relating to stone
+            adhesives. From ancient binding techniques to early modern mixtures.
+            For anyone curious about how people in the past made stones stick.
+          </p>
+          <div>
+            <p className="mb-2 text-xs uppercase tracking-widest text-paper/80">
+              A scholarly archive
+            </p>
+            <h1 className="max-w-2xl text-paper text-3xl sm:text-6xl">
+              The Database of Historic Stone Adhesives
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
   );
 }

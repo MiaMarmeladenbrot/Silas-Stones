@@ -27,7 +27,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <section className=" min-h-screen bg-[url(/img/BG.jpg)] pb-20 bg-fixed bg-cover bg-no-repeat flex flex-col justify-between">
+      <section className="min-h-screen bg-paper text-ink pb-16 flex flex-col justify-between">
         <Header />
 
         <main className="flex-grow">
