@@ -13,6 +13,10 @@
 @theme {
   --main-font: "Inter";
 
+  /* extends Tailwind's max-width scale (6xl=72rem, 7xl=80rem) so the main
+     page containers (hero, search, table) can breathe on wide screens */
+  --container-8xl: 90rem;
+
   /* --- legacy sand tokens (kept for backwards-compat) --- */
   --color-transparentSand: #d7ae8066;
   --color-darkSand: #d7ae80;

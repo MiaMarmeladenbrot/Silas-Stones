@@ -7,14 +7,12 @@ type SearchProps = {
   originalData: Recipes[];
   setRecipes: React.Dispatch<React.SetStateAction<Recipes[]>>;
   handleReset: () => void;
-  isMobile: boolean;
 };
 
 export function SearchBar({
   setRecipes,
   handleReset,
   originalData,
-  isMobile,
 }: SearchProps) {
   const [selectedIngredients, setSelectedIngredients] = useState<string[]>([]);
   const [selectedAuthor, setSelectedAuthor] = useState<string>("");
@@ -93,12 +91,8 @@ export function SearchBar({
 
   return (
     <div className="sticky top-16 z-30 bg-paper flex items-center md:h-40">
-      <div className="mx-auto w-full max-w-6xl px-5 py-6 md:py-0">
-        <div
-          className={`${
-            isMobile ? "flex flex-col gap-3" : "flex gap-3 items-center"
-          }`}
-        >
+      <div className="mx-auto w-full max-w-8xl px-5 py-6 md:py-0">
+        <div className="flex flex-col gap-3 md:flex-row md:items-center">
         <div className="flex items-center gap-2 flex-1 rounded-full border border-line bg-paperRaised px-4 py-3 shadow-sm focus-within:border-sandDeep transition-colors">
           <IoSearchOutline className="text-xl text-inkSoft shrink-0" />
           <input

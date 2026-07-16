@@ -7,7 +7,7 @@ import { Recipes } from "../types";
 import data from "../data/data.json";
 import { Hero } from "../components/Hero";
 
-export function MainPage({ isMobile }: { isMobile: boolean }) {
+export function MainPage() {
   const [recipes, setRecipes] = useState<Recipes[]>(data);
 
   const [openDetails, setOpenDetails] = useState(false);
@@ -28,16 +28,17 @@ export function MainPage({ isMobile }: { isMobile: boolean }) {
         originalData={data}
         setRecipes={setRecipes}
         handleReset={handleReset}
-        isMobile={isMobile}
       />
-      {isMobile && (
+      {/* card layout on phones, table from md up — toggled purely via CSS so
+          there is no JS breakpoint to keep in sync with Tailwind's `md` */}
+      <div className="md:hidden">
         <RecipeCards
           recipes={recipes}
           setOpenDetails={setOpenDetails}
           setSelectedRecipe={setSelectedRecipe}
         />
-      )}
-      {!isMobile && (
+      </div>
+      <div className="hidden md:block">
         <Table
           recipes={recipes}
           setOpenDetails={setOpenDetails}
@@ -47,7 +48,7 @@ export function MainPage({ isMobile }: { isMobile: boolean }) {
           sortOrder={sortOrder}
           setSortOrder={setSortOrder}
         />
-      )}
+      </div>
       {openDetails && (
         <DetailsPopUp
           setOpenDetails={setOpenDetails}

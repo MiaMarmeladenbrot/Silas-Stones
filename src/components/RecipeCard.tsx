@@ -19,7 +19,14 @@ export function RecipeCard({
         setSelectedRecipe(recipe);
       }}
     >
-      <h3 className="mb-2 text-ink">{recipe.name}</h3>
+      <div className="mb-2 flex items-start justify-between gap-2">
+        <h3 className="text-ink">{recipe.name}</h3>
+        {recipe.type && (
+          <span className="shrink-0 inline-block rounded-full border border-line bg-sand/15 text-ink/80 px-2.5 py-0.5 text-xs whitespace-nowrap">
+            {recipe.type}
+          </span>
+        )}
+      </div>
       <p className="text-sm text-inkSoft">
         {recipe.authorFirstName} {recipe.authorLastName}
         {recipe.date ? ` · ${recipe.date}` : ""}

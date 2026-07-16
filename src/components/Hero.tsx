@@ -1,6 +1,6 @@
 export function Hero() {
   return (
-    <header className="mx-auto w-full max-w-6xl px-5 pt-8 sm:pt-12">
+    <header className="mx-auto w-full max-w-8xl px-5 pt-8 sm:pt-12">
       <div className="relative overflow-hidden rounded-2xl">
         <img
           src="/img/BG.jpg"

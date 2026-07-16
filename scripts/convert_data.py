@@ -2,20 +2,28 @@
 """
 Convert the curated source Excel into src/data/data.json.
 
-Re-run this whenever a new Excel drop arrives:
+Re-run this whenever a new Excel drop arrives. Two modes:
 
-    python3 scripts/convert_data.py \
-        --xlsx "/path/to/sources sent to Mia.xlsx" \
-        --images "/path/to/data send folder"
+  # a fresh drop that ALSO ships a new image folder -> match + copy images:
+  python3 scripts/convert_data.py \
+      --xlsx "/path/to/_MASTERFILE all sources sorted.xlsx" \
+      --images "/path/to/data send folder"
 
-Defaults point at the 260611 drop in ~/Downloads.
+  # a data-only drop (no new images) -> keep the images already in
+  # public/img/recipeImages and re-attach them to records by id:
+  python3 scripts/convert_data.py --carry-images
+
+Defaults point at the _MASTERFILE in ~/Projects/_privat.
 
 It does three things:
-  1. reads every recipe row (carrying forward "same"/blank year/file/author/country),
+  1. reads every recipe row from the MASTERFILE sheet (carrying forward
+     blank file/author/country),
   2. parses the free-text ingredient column into {ingredient, amount, unit} best-effort,
-  3. copies + matches the source images into public/img/recipeImages and attaches them.
+  3. either copies + matches a source image folder into public/img/recipeImages,
+     OR (with --carry-images) re-uses the image URLs already in data.json,
+     matched back to records by id.
 
-A report is printed at the end (counts, unparsed ranges, unmatched images).
+A report is printed at the end (counts, unparsed ranges, unmatched/carried images).
 """
 
 import argparse
@@ -29,32 +37,48 @@ from pathlib import Path
 import openpyxl
 
 PROJECT = Path(__file__).resolve().parent.parent
-DEFAULT_XLSX = Path.home() / "Downloads/260611 data send/260611 sources sent to Mia.xlsx"
+DEFAULT_XLSX = Path.home() / "Projects/_privat/_MASTERFILE all sources sorted.xlsx"
 DEFAULT_IMAGES = Path.home() / "Downloads/260611 data send"
 OUT_JSON = PROJECT / "src/data/data.json"
 IMG_DIR = PROJECT / "public/img/recipeImages"
 IMG_URL_PREFIX = "/img/recipeImages"
 
-# Column letters on the "data for website" sheet (header row is row 3, data from row 4).
+# Column letters on the MASTERFILE sheet (label row is row 2, data from row 4).
+# Note vs. earlier drops: a second date column (B "YEAR real") and two new
+# columns (F "Type", G "Score") were inserted, so everything from E onward
+# shifted two to the right. Column A ("YEAR sort") is the pre-cleaned integer
+# date; G ("Score") is an internal field and is intentionally NOT mapped.
 COL = {
-    "year": "A", "file": "B", "author": "C", "country": "D",
-    "source": "E", "bibl": "F", "page": "G", "abbr": "H",
-    "title_tr": "I", "text_tr": "J", "ingredients": "K", "transl_kind": "L",
-    "comment_tr": "M", "title_orig": "N", "text_orig": "O", "comment_text": "P",
-    "link": "Q", "notes": "R", "further_bibl": "S",
+    "year": "A", "year_real": "B", "file": "C", "author": "D", "country": "E",
+    "type": "F", "source": "H", "bibl": "I", "page": "J", "abbr": "K",
+    "title_tr": "L", "text_tr": "M", "ingredients": "N", "transl_kind": "O",
+    "comment_tr": "P", "title_orig": "Q", "text_orig": "R", "comment_text": "S",
+    "link": "T", "notes": "U", "further_bibl": "V",
 }
 
 # Units we recognise at the start of an ingredient line. Longer/multiword first.
+# "d" is an old weight/measure abbreviation used in the accounts (e.g. "6 d. pitch").
 UNITS = [
     "hände voll", "hand voll", "hundredweight", "pfund", "loth", "lot", "quentchen",
     "unze", "unzen", "maß", "mass", "eimer", "nössel", "seidel", "gran", "theil", "teil",
-    "libbra", "libbre", "oncia", "once", "pound", "pounds", "stone", "gallon", "gallons",
-    "pint", "pints", "quart", "ounce", "ounces", "oz", "lb", "lbs", "g", "kg", "ml", "l",
+    "libbra", "libbre", "libre", "oncia", "once", "pound", "pounds", "stone", "gallon",
+    "gallons", "pint", "pints", "quart", "ounce", "ounces", "oz", "lb", "lbs", "jug",
+    "jugs", "g", "kg", "ml", "l", "d",
 ]
+# Normalised lookup used to recognise a bracketed unit gloss ("[Loth]", "[Pfund]").
+UNIT_SET = {u.lower() for u in UNITS}
 # Build a regex alternation, escaping, with optional trailing dot.
 _UNIT_RE = "|".join(sorted((re.escape(u) for u in UNITS), key=len, reverse=True))
-# Leading numeric quantity: 19  6,5  1/2  2-3  1½ ...
-_QTY = r"\d+(?:[.,]\d+)?(?:\s*[-–/]\s*\d+(?:[.,]\d+)?)?|[½¼¾⅓⅔⅛]"
+# Leading numeric quantity: 19  6,5  1/2  1½  ½  and ranges 2-3, 1/16 - 1/8 ...
+_NUM = r"\d+(?:[.,]\d+)?"          # 19  6,5
+_FRAC = r"\d+\s*/\s*\d+"          # 1/2  1/16
+_UNI = r"[½¼¾⅓⅔⅛]"               # unicode fractions
+# a single quantity value: a fraction, a number (optionally + a unicode fraction
+# like "1½"), or a bare unicode fraction. Fraction first so "1/16" isn't cut to "1".
+_VALUE = rf"(?:{_FRAC}|{_NUM}{_UNI}?|{_UNI})"
+# a quantity is one value, optionally a dash-range to a second value ("2-3",
+# "1/16 - 1/8") — so the whole range is the amount, not part of the ingredient.
+_QTY = rf"{_VALUE}(?:\s*[-–]\s*{_VALUE})?"
 # A leading quantity, anchored.
 QTY_RE = re.compile(rf"^(?:{_QTY})", re.IGNORECASE)
 # A unit, but ONLY as a whole token (followed by space, dot, or end) — so we never
@@ -82,22 +106,33 @@ def clean(v):
 
 
 def parse_year(raw, prev):
-    """Return (date:int|None, display:str|None)."""
+    """Clean integer date from column A ("YEAR sort"). This column is already
+    cleaned by the supplier (no ranges, no "c."), so we just coerce to int and
+    fall back to the first 3-4 digit run / the carried-forward year."""
     if raw is None:
-        return prev, None
+        return prev
     if isinstance(raw, (int, float)):
-        return int(raw), None
+        return int(raw)
     s = str(raw).strip()
-    if s.lower() == "same":
-        return prev, None
-    # range like 1294-1358 or 1300-1600
-    m = re.match(r"^\s*(\d{3,4})\s*[-–]\s*(\d{3,4})\s*$", s)
-    if m:
-        return int(m.group(1)), f"{m.group(1)}–{m.group(2)}"
+    if not s or s.lower() == "same":
+        return prev
     m = re.search(r"\d{3,4}", s)
-    if m:
-        return int(m.group(0)), s
-    return prev, s
+    return int(m.group(0)) if m else prev
+
+
+def display_date(raw, date_int):
+    """The human-facing date from column B ("YEAR real"), which may carry the
+    nuance the sort year drops: ranges ("1301-1302"), approximations ("c.1400"),
+    or a republished-vs-original note ("1904 (1880s)"). Returns None when it is
+    just the plain sort year again (so the detail view falls back to `date`)."""
+    if raw is None:
+        return None
+    s = re.sub(r"\s+", " ", str(raw)).strip()
+    if not s:
+        return None
+    if re.fullmatch(r"\d{3,4}", s) and date_int is not None and int(s) == date_int:
+        return None
+    return s
 
 
 def parse_page(raw):
@@ -137,8 +172,29 @@ def parse_ingredients(raw):
             um = UNIT_RE.match(rest)
             if um:
                 unit = um.group(0).rstrip(".").strip()
-                rest = rest[um.end():].lstrip()
+                # UNIT_RE stops before the unit's own abbreviation dot ("lb." or
+                # "lb ."), so the leftover starts with ". " — strip that (and any
+                # stray leading punctuation) so we get "wax", not ". wax".
+                rest = re.sub(r"^[\s.]+", "", rest[um.end():])
+            # A bracketed unit gloss ("[Loth]", "[Pfund]") sits where the unit
+            # would be — sometimes duplicating an English unit already parsed
+            # ("1 pound [Pfund] resin"). Unwrap it, adopting it as the unit if we
+            # don't have one yet, and drop the brackets from the name either way.
+            mb = re.match(r"^\[\s*([^\]]+?)\s*\]\s*", rest)
+            if mb and mb.group(1).lower() in UNIT_SET:
+                if not unit:
+                    unit = mb.group(1).strip()
+                rest = rest[mb.end():]
             name = rest
+        name = name.strip().strip(".").strip()
+        # a leftover leading connector from "<qty> <unit> of <ingredient>"
+        # ("1 pound of wax" -> "wax") or an alternative line ("or unslacked lime
+        # and pig fat" -> "unslacked lime and pig fat") is not part of the name.
+        name = re.sub(r"^(?:of|or)\s+", "", name, flags=re.IGNORECASE)
+        # a line that is nothing but a connector ("or", "and") is a split artifact
+        # from "X or Y" / "X and Y" spread over lines — drop it entirely.
+        if name.strip().lower() in {"of", "or", "and", "&", "oder", "und"}:
+            continue
         # If stripping the quantity/unit left no name, the line was really just a name.
         if not name:
             amount, unit, name = "", "", line
@@ -323,6 +379,10 @@ def main():
     ap.add_argument("--xlsx", type=Path, default=DEFAULT_XLSX)
     ap.add_argument("--images", type=Path, default=DEFAULT_IMAGES)
     ap.add_argument("--no-images", action="store_true", help="skip image copy/match")
+    ap.add_argument("--carry-images", action="store_true",
+                    help="data-only drop: keep the images already in public/img/"
+                         "recipeImages and re-attach them from the existing data.json "
+                         "by record id (no source folder needed, IMG_DIR untouched)")
     args = ap.parse_args()
 
     if not args.xlsx.exists():
@@ -355,13 +415,23 @@ def main():
             v = cell(r, k)
             if v and v.lower() != "same":
                 prev[k] = v
-        date, date_display = parse_year(ws.cell(row=r, column=ci(COL["year"])).value, prev["year"])
+        date = parse_year(ws.cell(row=r, column=ci(COL["year"])).value, prev["year"])
         prev["year"] = date
+        date_display = display_date(ws.cell(row=r, column=ci(COL["year_real"])).value, date)
         if date_display:
             ranges.append((cell(r, "abbr"), date_display))
 
+        src_type = cell(r, "type") or ""
         author = cell(r, "author") or prev["author"]
         first, last = split_author(author)
+        # Accounts (and other author-less sources, e.g. the Report) have no known
+        # author. Per the supplier's request we surface the place (the FILE column,
+        # e.g. "Westminster Palace") in the author slot instead; the date is shown
+        # alongside as usual, giving the requested "date and place". Manuals (and the
+        # Instruction, which names Richard Voigtel) keep their real author name.
+        author_known = bool(author) and author.strip().lower() != "unknown"
+        if not author_known:
+            first, last = "", (cell(r, "file") or prev["file"] or "")
 
         abbr = cell(r, "abbr") or f"row{r}"
         rid = abbr
@@ -383,6 +453,7 @@ def main():
             "ingredients": parse_ingredients(cell(r, "ingredients")),
             "description": cell(r, "text_tr") or "",
             "source": cell(r, "bibl") or "",
+            "type": src_type,
             "url": cell(r, "link"),
             # --- detail-view only (not in the table) ---
             "country": cell(r, "country") or prev["country"] or "",
@@ -407,7 +478,23 @@ def main():
     used_dest = set()  # canonical names already taken (collision guard)
     unmatched_files = []
     flags = []  # naming inconsistencies / images-without-records
-    if not args.no_images and args.images.exists():
+    carried = 0
+    if args.carry_images:
+        # Data-only drop: no new image folder shipped. The images already sitting
+        # in public/img/recipeImages were matched on a previous run and named after
+        # record ids; re-attach them by reading the URLs out of the existing
+        # data.json (keyed by the unchanged id / ABBR.2). IMG_DIR is left untouched.
+        prev_images = {}
+        if OUT_JSON.exists():
+            for rec0 in json.loads(OUT_JSON.read_text(encoding="utf-8")):
+                if rec0.get("images"):
+                    prev_images[rec0["id"]] = rec0["images"]
+        for rec in records:
+            imgs = prev_images.get(rec["id"])
+            if imgs:
+                rec["images"] = list(imgs)
+                carried += 1
+    elif not args.no_images and args.images.exists():
         if IMG_DIR.exists():
             shutil.rmtree(IMG_DIR)
         IMG_DIR.mkdir(parents=True, exist_ok=True)
@@ -546,10 +633,15 @@ def main():
     print(f"✓ wrote {len(records)} records -> {OUT_JSON.relative_to(PROJECT)}")
     with_img = sum(1 for r in records if r.get("images"))
     print(f"  records with images : {with_img}")
-    print(f"  matched image files : {len(matched_files)}")
-    print(f"  unmatched images    : {len(unmatched_files)}")
-    for p in unmatched_files:
-        print(f"      · {p.relative_to(args.images)}")
+    if args.carry_images:
+        print(f"  carried from data.json: {carried} records (public/img untouched)")
+        no_img = [r["id"] for r in records if not r.get("images")]
+        print(f"  records WITHOUT images: {len(no_img)}")
+    else:
+        print(f"  matched image files : {len(matched_files)}")
+        print(f"  unmatched images    : {len(unmatched_files)}")
+        for p in unmatched_files:
+            print(f"      · {p.relative_to(args.images)}")
     if flags:
         print(f"  ⚠ flags ({len(flags)}) — need a human decision:")
         for f in flags:

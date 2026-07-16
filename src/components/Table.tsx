@@ -23,6 +23,7 @@ export function Table({
 }: TableProps) {
   const tableHeader = [
     { key: "author", label: "Author" },
+    { key: "type", label: "Type" },
     { key: "manual", label: "Manual" },
     { key: "date", label: "Date" },
     { key: "name", label: "Recipe Name" },
@@ -74,18 +75,19 @@ export function Table({
     }
   };
   return (
-    <div className="mx-auto w-full max-w-6xl px-5 mt-4">
+    <div className="mx-auto w-full max-w-8xl px-5 mt-4">
       {/* frame on a plain wrapper (no overflow-clip) so the sticky thead can
           stick relative to the page instead of being trapped in the table box */}
       <div className="rounded-2xl border border-line shadow-sm bg-paperRaised">
         <table className="w-full text-left table-fixed">
           <colgroup>
-          <col style={{ width: "15%" }} />
-          <col style={{ width: "15%" }} />
-          <col style={{ width: "7%" }} />
-          <col style={{ width: "17%" }} />
-          <col style={{ width: "22%" }} />
-          <col style={{ width: "20%" }} />
+          <col style={{ width: "13%" }} />
+          <col style={{ width: "9%" }} />
+          <col style={{ width: "13%" }} />
+          <col style={{ width: "6%" }} />
+          <col style={{ width: "16%" }} />
+          <col style={{ width: "21%" }} />
+          <col style={{ width: "18%" }} />
           <col style={{ width: "4%" }} />
         </colgroup>
         <thead className="sticky top-56 z-20">
@@ -93,7 +95,10 @@ export function Table({
             {tableHeader.map(({ key, label }, idx) => {
               const isActive = sortColumn === key;
               const isSortable =
-                key === "author" || key === "manual" || key === "date";
+                key === "author" ||
+                key === "type" ||
+                key === "manual" ||
+                key === "date";
               return (
                 <th
                   key={key}

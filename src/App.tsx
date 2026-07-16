@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import "./App.css";
 
 import { ScrollToTop } from "./components/ScrollToTop";
@@ -11,20 +10,6 @@ import { AboutPage } from "./pages/AboutPage";
 // import { MaintenancePage } from "./pages/MaintenancePage";
 
 function App() {
-  const [isMobile, setIsMobile] = useState(() => window.innerWidth <= 768);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
     <BrowserRouter>
       <section className="min-h-screen bg-paper text-ink pb-16 flex flex-col justify-between">
@@ -32,7 +17,7 @@ function App() {
 
         <main className="flex-grow">
           <Routes>
-            <Route path="/" element={<MainPage isMobile={isMobile} />} />
+            <Route path="/" element={<MainPage />} />
             {/* <Route path="/" element={<MaintenancePage />} /> */}
             <Route path="/about" element={<AboutPage />} />
             <Route path="/impressum" element={<ImpressumPage />} />

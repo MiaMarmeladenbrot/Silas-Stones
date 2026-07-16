@@ -26,6 +26,13 @@ export function TableBody({
             {recipe.authorFirstName} {recipe.authorLastName}
           </p>
         </td>
+        <td className="px-5 py-4 align-top">
+          {recipe.type && (
+            <span className="inline-block rounded-full border border-line bg-sand/15 text-ink/80 px-2.5 py-0.5 text-xs whitespace-nowrap">
+              {recipe.type}
+            </span>
+          )}
+        </td>
         <td className="px-5 py-4 align-top text-inkSoft break-words">
           <p>{recipe.manual}</p>
         </td>

@@ -10,6 +10,7 @@ export type Recipes = {
   ingredients: { ingredient: string; amount: string; unit: string }[];
   description: string;
   source: string;
+  type: string;
   url?: string | undefined;
   // --- shown only in the detail view, not in the table ---
   country?: string;
