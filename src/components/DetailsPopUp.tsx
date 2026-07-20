@@ -30,6 +30,11 @@ export function DetailsPopUp({ setOpenDetails, selectedRecipe }: DetailsProps) {
             <IoMdClose className="text-2xl" />
           </button>
           <div className="break-words">
+            {selectedRecipe?.id && (
+              <p className="font-mono text-xs tracking-wide text-inkSoft mb-1 pr-8">
+                {selectedRecipe.id}
+              </p>
+            )}
             <h2 className="mb-1 text-ink pr-8">{selectedRecipe?.name}</h2>
             {selectedRecipe?.originalTitle &&
               selectedRecipe.originalTitle !== selectedRecipe.name && (
@@ -53,7 +58,7 @@ export function DetailsPopUp({ setOpenDetails, selectedRecipe }: DetailsProps) {
             <div className="h-px bg-line mb-6" />
 
             <div className="mb-6">
-              <h5 className="mb-2">Description</h5>
+              <h5 className="mb-2">Text, Translation</h5>
               <p className="whitespace-pre-line leading-relaxed">
                 {selectedRecipe?.description}
               </p>

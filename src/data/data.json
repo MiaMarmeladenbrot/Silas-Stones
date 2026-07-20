@@ -1678,9 +1678,9 @@
         "unit": ""
       },
       {
-        "ingredient": "a bushel tyldust (tiledust)",
-        "amount": "",
-        "unit": ""
+        "ingredient": "tyldust (tiledust)",
+        "amount": "1",
+        "unit": "bushel"
       },
       {
         "ingredient": "rosin",
@@ -1870,9 +1870,9 @@
         "unit": "pounds"
       },
       {
-        "ingredient": "(3 stones of onions)",
-        "amount": "",
-        "unit": ""
+        "ingredient": "onions",
+        "amount": "3",
+        "unit": "stones"
       }
     ],
     "description": "Purchase of wax and resin. And for 5 pounds of wax bought for the masons: 2 shillings and 1 penny.\nAnd for 10 pounds of resin bought for the same: 20 pence.\nAnd for 3 stones of onions bought for greasing cables: 4 shillings 6 pence.\nTotal: 8 shillings 3 pence.",
@@ -2413,14 +2413,14 @@
     "name": "Westminster, 1532 – For making cement",
     "ingredients": [
       {
-        "ingredient": "part roosen (rosin)",
+        "ingredient": "roosen (rosin)",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       },
       {
-        "ingredient": "part wax",
+        "ingredient": "wax",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       }
     ],
     "description": "The same quantities of wax an ‘roosen’ were used for making ‘symonde’",
@@ -2898,24 +2898,29 @@
         "unit": ""
       },
       {
-        "ingredient": "ox gall (Ochsen-Gall);0.5 quintlein mastic (Mastix)",
+        "ingredient": "ox gall (Ochsen-Gall)",
         "amount": "1",
         "unit": "loth"
       },
       {
-        "ingredient": "quintlein sarcocollae (gum resin)",
+        "ingredient": "mastic (Mastix)",
         "amount": "0.5",
-        "unit": ""
+        "unit": "quintlein"
       },
       {
-        "ingredient": "quintlein sandarac (resin)",
-        "amount": "1",
-        "unit": ""
+        "ingredient": "sarcocollae (gum resin)",
+        "amount": "0.5",
+        "unit": "quintlein"
       },
       {
-        "ingredient": "quintlein turpentine",
+        "ingredient": "sandarac (resin)",
         "amount": "1",
-        "unit": ""
+        "unit": "quintlein"
+      },
+      {
+        "ingredient": "turpentine",
+        "amount": "1",
+        "unit": "quintlein"
       },
       {
         "ingredient": "brandy (Brantweins)",
@@ -2953,24 +2958,24 @@
     ],
     "ingredients": [
       {
-        "ingredient": "parts resin",
+        "ingredient": "resin",
         "amount": "2",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts yellow wax",
+        "ingredient": "yellow wax",
         "amount": "4",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts stone powder/stone dust",
+        "ingredient": "stone powder/stone dust",
         "amount": "2-3",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "part powdered sulfur",
+        "ingredient": "powdered sulfur",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       }
     ],
     "description": "Take two parts resin, melt it, and skim off the foam. Then add four parts yellow wax.\nWhen it has fully melted together, take stone powder (stone dust) from the very stone you wish to glue or cement—two or three parts, or as much as needed so that the glue takes on the color of the stone. To this, add one part powdered sulfur.\nIncorporate everything together—first over gentle heat, then finally knead it by hand in warm water. This will hold very well.\nHowever, the stones to be glued must be thoroughly dry and made fairly hot beforehand,\nso that the cement or glue may bond with them more effectively.",
@@ -3133,9 +3138,9 @@
         "unit": "pound"
       },
       {
-        "ingredient": "quarter of a pound beeswax",
+        "ingredient": "beeswax",
         "amount": "1",
-        "unit": ""
+        "unit": "quarter of a pound"
       },
       {
         "ingredient": "fine brickdust or chalkdust",
@@ -3238,9 +3243,9 @@
         "unit": "pound"
       },
       {
-        "ingredient": "a pint cows milk",
-        "amount": "",
-        "unit": ""
+        "ingredient": "cows milk",
+        "amount": "1",
+        "unit": "pint"
       },
       {
         "ingredient": "egg whites",
@@ -3282,9 +3287,9 @@
         "unit": "pound"
       },
       {
-        "ingredient": "quarter of a pound beeswax",
+        "ingredient": "beeswax",
         "amount": "1",
-        "unit": ""
+        "unit": "quarter of a pound"
       },
       {
         "ingredient": "fine brickdust or chalkdust",
@@ -3405,9 +3410,9 @@
         "unit": "loth"
       },
       {
-        "ingredient": "quentl. lead white",
+        "ingredient": "lead white",
         "amount": "1",
-        "unit": ""
+        "unit": "quentl"
       }
     ],
     "description": "Take 1 loth of wax, 1½ loths of mastic, 1 quentl. of  lead white, grind everything into powder and mix with wax. For red stones, take goat's blood, unslaked lime and red chalk and mix together.",
@@ -3524,19 +3529,19 @@
     ],
     "ingredients": [
       {
-        "ingredient": "part pitch",
+        "ingredient": "pitch",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       },
       {
-        "ingredient": "part resin",
+        "ingredient": "resin",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       },
       {
-        "ingredient": "part sulfur",
+        "ingredient": "sulfur",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       },
       {
         "ingredient": "a little wax",
@@ -3643,9 +3648,9 @@
         "unit": "loth"
       },
       {
-        "ingredient": "handfull white marble powder/hard stones/brick powder",
+        "ingredient": "white marble powder/hard stones/brick powder",
         "amount": "2",
-        "unit": ""
+        "unit": "handfull"
       }
     ],
     "description": "Take 12 loth of colophony, one and a half loth of yellow wax, 1 loth of Venetian turpentine, 1/2 loth of crushed mastic, melt everything in a cauldron, then add 2 handfuls of white marble or other hard stones crushed into powder, or just brick powder, and stir continuously. This will form a paste that can be used to fill the joints between the quarter pieces. It is resistant to water, cold and sun.",
@@ -3779,24 +3784,24 @@
         "unit": "loth"
       },
       {
-        "ingredient": "Eh pitch",
+        "ingredient": "pitch",
         "amount": "1",
-        "unit": ""
+        "unit": "Eh"
       },
       {
-        "ingredient": "handfull hammer scale",
+        "ingredient": "hammer scale",
         "amount": "2",
-        "unit": ""
+        "unit": "handfull"
       },
       {
-        "ingredient": "handfull stone dust",
+        "ingredient": "stone dust",
         "amount": "2",
-        "unit": ""
+        "unit": "handfull"
       },
       {
-        "ingredient": "Eh wax",
+        "ingredient": "wax",
         "amount": "1",
-        "unit": ""
+        "unit": "Eh"
       }
     ],
     "description": "Take 1 pound resin, 8 loth of sulfur, pitch as much as an Eh [translation] is big, 2 handfuls of hammer-waste, as much stone dust, as much wax as pitch, put everything together in a pot, let it melt, in another dish, melt the sulphur, pour it into the pot with the other ingredients, and let it stand a little longer over the fire, pour it into cold water and mix it carefully with wet hands.",
@@ -4170,14 +4175,14 @@
     ],
     "ingredients": [
       {
-        "ingredient": "part pitch (Bech)",
+        "ingredient": "pitch (Bech)",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       },
       {
-        "ingredient": "parts brick dust (Tegelmjöl)",
+        "ingredient": "brick dust (Tegelmjöl)",
         "amount": "4",
-        "unit": ""
+        "unit": "parts"
       },
       {
         "ingredient": "tallow/tar",
@@ -4207,14 +4212,14 @@
     ],
     "ingredients": [
       {
-        "ingredient": "parts black pitch (svart Beck)",
+        "ingredient": "black pitch (svart Beck)",
         "amount": "2",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "part white pitch (hvit Beck)",
+        "ingredient": "white pitch (hvit Beck)",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       },
       {
         "ingredient": "mstic (Mastix)",
@@ -4222,9 +4227,9 @@
         "unit": ""
       },
       {
-        "ingredient": "part brick dust (Tegelmjöl)",
+        "ingredient": "brick dust (Tegelmjöl)",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       }
     ],
     "description": "Stone grinder putty is made from two parts black, the other part white Beck, which is melted, and when it is melted, one sixteenth to one eighth part of clean and picked mastic is added, and when that is also melted, one part of fine brick powder, all of which is mixed very well.\n\n1.Note: This is used to fix precious and non-precious stones to the grinding stone during grinding, as well as glass. It can also be used to fix porcelain and glass vessels that do not contain hot liquids or spirits.",
@@ -4249,19 +4254,19 @@
     ],
     "ingredients": [
       {
-        "ingredient": "parts pitch (Beck)",
+        "ingredient": "pitch (Beck)",
         "amount": "2",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "part sulfur (Svafel)",
+        "ingredient": "sulfur (Svafel)",
         "amount": "1/8",
-        "unit": ""
+        "unit": "part"
       },
       {
-        "ingredient": "part mastic (Mastix)",
+        "ingredient": "mastic (Mastix)",
         "amount": "1/8",
-        "unit": ""
+        "unit": "part"
       },
       {
         "ingredient": "brick dust or finely powdered glass",
@@ -4290,14 +4295,14 @@
     ],
     "ingredients": [
       {
-        "ingredient": "(1 part) Pitch - black, white or Burgundy",
-        "amount": "",
-        "unit": ""
+        "ingredient": "Pitch - black, white or Burgundy",
+        "amount": "1",
+        "unit": "part"
       },
       {
-        "ingredient": "part Draglim",
+        "ingredient": "Draglim",
         "amount": "0.25",
-        "unit": ""
+        "unit": "part"
       },
       {
         "ingredient": "powdered burned gypsum and marble",
@@ -4359,19 +4364,19 @@
     ],
     "ingredients": [
       {
-        "ingredient": "part resin",
+        "ingredient": "resin",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       },
       {
-        "ingredient": "part ash",
+        "ingredient": "ash",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       },
       {
-        "ingredient": "part brickdust or unslacked lime",
+        "ingredient": "brickdust or unslacked lime",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       }
     ],
     "description": "Take equal parts of resin, ash, brick dust or unslaked lime. Mix the ash and lime or brick dust into the hot resin.\nIt holds very well.",
@@ -4396,19 +4401,19 @@
     ],
     "ingredients": [
       {
-        "ingredient": "parts resin",
+        "ingredient": "resin",
         "amount": "2",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts powdered stone",
+        "ingredient": "powdered stone",
         "amount": "2-3",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "part powdered sulphur",
+        "ingredient": "powdered sulphur",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       }
     ],
     "description": "Take two parts resin, melt it, separate the foam, and add four parts yellow wax. When it has melted together well, take stone powder from the stones you want to putty or glue, 2 or 3 parts, but enough so that the putty takes on the colour of the stone, then add one part powdered sulphur, mix everything together, first over a low heat and then with your hands in warm water, and it will hold very well. However, the stones to be puttied must be well dried and made fairly hot so that the putty can bind to them all the better.",
@@ -4541,19 +4546,19 @@
     ],
     "ingredients": [
       {
-        "ingredient": "part pitch",
+        "ingredient": "pitch",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       },
       {
-        "ingredient": "part hot wax",
+        "ingredient": "hot wax",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       },
       {
-        "ingredient": "part tar",
+        "ingredient": "tar",
         "amount": "0.5",
-        "unit": ""
+        "unit": "part"
       },
       {
         "ingredient": "tow",
@@ -4670,9 +4675,9 @@
         "unit": "ounces"
       },
       {
-        "ingredient": "handfull hammer scale and stone dust",
+        "ingredient": "hammer scale and stone dust",
         "amount": "1",
-        "unit": ""
+        "unit": "handfull"
       },
       {
         "ingredient": "wax",
@@ -4763,9 +4768,9 @@
         "unit": "ounce"
       },
       {
-        "ingredient": "two handfuls grounded white marble, other hard stone or brick powder",
-        "amount": "",
-        "unit": ""
+        "ingredient": "grounded white marble, other hard stone or brick powder",
+        "amount": "2",
+        "unit": "handfuls"
       }
     ],
     "description": "Take 12 ounces [Loth] of rosin, 1 1/2 ounces [Loth] of yellow wax, 1 ounce [Loth] of Venetian turpentine, 1/2 ounce of crushed mastic, melt everything in a pot over the fire, then sprinkle in two handfuls of white marble or other hard stone ground to a powder, or, if this is not available, just brick powder, and stir everything constantly with a spatula, so that a dough is formed, with which you can fill the joints of the squared masonry, as well as grotto work and wood, so that it can withstand water, cold and sun.",
@@ -4993,29 +4998,29 @@
         "unit": "pound"
       },
       {
-        "ingredient": "1/2 jugs  linseed oil",
-        "amount": "1",
-        "unit": ""
+        "ingredient": "linseed oil",
+        "amount": "1 1/2",
+        "unit": "jugs"
       },
       {
-        "ingredient": "measures [Maas]  unslaked lime",
+        "ingredient": "unslaked lime",
         "amount": "2",
-        "unit": ""
+        "unit": "measures"
       },
       {
-        "ingredient": "measure [Maas]  brick dust",
+        "ingredient": "brick dust",
         "amount": "1",
-        "unit": ""
+        "unit": "measure"
       },
       {
-        "ingredient": "spoonful  hammer-scale",
+        "ingredient": "hammer-scale",
         "amount": "1",
-        "unit": ""
+        "unit": "spoonful"
       },
       {
-        "ingredient": "spoonful of sulphur",
+        "ingredient": "sulphur",
         "amount": "1/2",
-        "unit": ""
+        "unit": "spoonful"
       },
       {
         "ingredient": "turpentine",
@@ -5156,19 +5161,19 @@
     ],
     "ingredients": [
       {
-        "ingredient": "part crushed brick",
+        "ingredient": "crushed brick",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       },
       {
-        "ingredient": "part unslacked lime",
+        "ingredient": "unslacked lime",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       },
       {
-        "ingredient": "part hammer scale",
+        "ingredient": "hammer scale",
         "amount": "0.5",
-        "unit": ""
+        "unit": "part"
       },
       {
         "ingredient": "beef blood",
@@ -5197,14 +5202,14 @@
     ],
     "ingredients": [
       {
-        "ingredient": "part unslacked lime",
+        "ingredient": "unslacked lime",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       },
       {
-        "ingredient": "part ash",
+        "ingredient": "ash",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       },
       {
         "ingredient": "handfull of brickdust",
@@ -5287,24 +5292,24 @@
     ],
     "ingredients": [
       {
-        "ingredient": "parts fine clay",
+        "ingredient": "fine clay",
         "amount": "9",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts sifted ash",
+        "ingredient": "sifted ash",
         "amount": "6",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts fine sand",
+        "ingredient": "fine sand",
         "amount": "3",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts linseed oil",
+        "ingredient": "linseed oil",
         "amount": "6",
-        "unit": ""
+        "unit": "parts"
       },
       {
         "ingredient": "water",
@@ -5425,24 +5430,24 @@
     ],
     "ingredients": [
       {
-        "ingredient": "part egg white",
+        "ingredient": "egg white",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       },
       {
-        "ingredient": "part white lead",
+        "ingredient": "white lead",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       },
       {
-        "ingredient": "part varnish",
+        "ingredient": "varnish",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       },
       {
-        "ingredient": "part red lead [Menninge]",
+        "ingredient": "red lead [Menninge]",
         "amount": "0.25",
-        "unit": ""
+        "unit": "part"
       }
     ],
     "description": "One takes egg white, white lead, and varnish, each in equal parts, and a quarter as much of red lead [Menninge], and mixes them together. However, the white lead, like the red lead, must be very finely ground, though dry, and the egg white must be beaten.\nOnce this preparation is ready, the pieces of marble are warmed, and then coated with this mixture, which will bind firmly.\nMarble will only bind while it is warm, never when cold.\n\n§ 103.\nTo cement stone objects, such as porcelain, flowerpots, and other similar stone-like items:\nThey are to be warmed and coated with the cement described in the previous paragraph, just as with marble. However, for porcelain, the red lead (minium) can be omitted.",
@@ -5467,19 +5472,19 @@
     ],
     "ingredients": [
       {
-        "ingredient": "parts colophony",
+        "ingredient": "colophony",
         "amount": "7",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "part wax",
+        "ingredient": "wax",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       },
       {
-        "ingredient": "part powdered gypsum",
+        "ingredient": "powdered gypsum",
         "amount": "1/4",
-        "unit": ""
+        "unit": "part"
       }
     ],
     "description": "Make a putty paste from 7 parts colophony, 1 part wax and 1/4 part powdered gypsum.",
@@ -5534,14 +5539,14 @@
     ],
     "ingredients": [
       {
-        "ingredient": "parts resin",
+        "ingredient": "resin",
         "amount": "7-8",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "part beeswax",
+        "ingredient": "beeswax",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       },
       {
         "ingredient": "small quantity plaster of paris",
@@ -5879,19 +5884,19 @@
     ],
     "ingredients": [
       {
-        "ingredient": "parts colophony/pitch",
+        "ingredient": "colophony/pitch",
         "amount": "7-8",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "part wax",
+        "ingredient": "wax",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       },
       {
-        "ingredient": "part gypsum",
+        "ingredient": "gypsum",
         "amount": "0.25",
-        "unit": ""
+        "unit": "part"
       }
     ],
     "description": "The usual additive to pitch or colophony is wax (yellow). Thus, 7 to 8 parts of colophony or pitch, melted together with 1 part of wax, then mixed with burnt gypsum (about 1/4 part), produce a common stone putty, which is applied to the stone joint previously heated with coals, and then the stones are fitted together so that as little putty as possible remains between them.",
@@ -5917,19 +5922,19 @@
     ],
     "ingredients": [
       {
-        "ingredient": "parts colophony/pitch",
+        "ingredient": "colophony/pitch",
         "amount": "24",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts wax",
+        "ingredient": "wax",
         "amount": "3",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts turpentine",
+        "ingredient": "turpentine",
         "amount": "2",
-        "unit": ""
+        "unit": "parts"
       },
       {
         "ingredient": "brick dust",
@@ -5960,24 +5965,24 @@
     ],
     "ingredients": [
       {
-        "ingredient": "parts colophony",
+        "ingredient": "colophony",
         "amount": "12",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts Venetian turpentine",
+        "ingredient": "Venetian turpentine",
         "amount": "3",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "part white wax",
+        "ingredient": "white wax",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       },
       {
-        "ingredient": "parts mastic",
+        "ingredient": "mastic",
         "amount": "2",
-        "unit": ""
+        "unit": "parts"
       },
       {
         "ingredient": "brick dust or gypsum",
@@ -6046,19 +6051,19 @@
     ],
     "ingredients": [
       {
-        "ingredient": "parts pitch",
+        "ingredient": "pitch",
         "amount": "4",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "part wax",
+        "ingredient": "wax",
         "amount": "0.25",
-        "unit": ""
+        "unit": "part"
       },
       {
-        "ingredient": "parts powdered chalk or lime",
+        "ingredient": "powdered chalk or lime",
         "amount": "4",
-        "unit": ""
+        "unit": "parts"
       }
     ],
     "description": "A mixture of 4 parts pitch, 1/4 part wax, and 4 parts powdered chalk or air lime also serves this purpose.",
@@ -6085,34 +6090,34 @@
     ],
     "ingredients": [
       {
-        "ingredient": "parts yellow pitch",
+        "ingredient": "yellow pitch",
         "amount": "4",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "part black pitch",
+        "ingredient": "black pitch",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       },
       {
-        "ingredient": "parts wax",
+        "ingredient": "wax",
         "amount": "2",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts pitch",
+        "ingredient": "pitch",
         "amount": "4",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "part wax",
+        "ingredient": "wax",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       },
       {
-        "ingredient": "part brick dust",
+        "ingredient": "brick dust",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       }
     ],
     "description": "A mixture of 4 parts yellow pitch, 1 part black pitch, and 2 parts wax, or 4 parts pitch, 1 part wax, and 1 part brick dust, is used to caulk metal to wood",
@@ -6276,19 +6281,19 @@
     ],
     "ingredients": [
       {
-        "ingredient": "resin 1 pound",
-        "amount": "",
-        "unit": ""
+        "ingredient": "resin",
+        "amount": "1",
+        "unit": "pound"
       },
       {
-        "ingredient": "wax 2 pound",
-        "amount": "",
-        "unit": ""
+        "ingredient": "wax",
+        "amount": "2",
+        "unit": "pound"
       },
       {
-        "ingredient": "stone powder 1.5 pound",
-        "amount": "",
-        "unit": ""
+        "ingredient": "stone powder",
+        "amount": "1.5",
+        "unit": "pound"
       }
     ],
     "description": "Melt 1 pound of resin and 2 pounds of wax together, then add 1½ pounds of powder made from the same type of stone that is to be repaired, stir everything thoroughly, and knead the mixture with water until it is completely blended. \n\nIf this putty is to be used on alabaster, marble, porphyry and other stones, it must be warmed, and the pieces to be joined must be completely dry and, where possible, also warmed.",
@@ -6312,14 +6317,14 @@
     ],
     "ingredients": [
       {
-        "ingredient": "Resin 7 - 8 parts",
-        "amount": "",
-        "unit": ""
+        "ingredient": "Resin",
+        "amount": "7-8",
+        "unit": "parts"
       },
       {
-        "ingredient": "wax 1 part",
-        "amount": "",
-        "unit": ""
+        "ingredient": "wax",
+        "amount": "1",
+        "unit": "part"
       }
     ],
     "description": "Resin, 7 to 8 parts; wax, 1 part, are melted together with a little fine plaster, and once these ingredients have blended well, they are allowed to cool slightly and then kneaded together more thoroughly by hand. The pieces of stone to be joined are now heated over a charcoal fire until they melt the applied putty; once this has happened, they are pressed firmly together for some time.",
@@ -6344,14 +6349,14 @@
     ],
     "ingredients": [
       {
-        "ingredient": "resin 1 pound",
-        "amount": "",
-        "unit": ""
+        "ingredient": "resin",
+        "amount": "1",
+        "unit": "pound"
       },
       {
-        "ingredient": "wax 1 pound",
-        "amount": "",
-        "unit": ""
+        "ingredient": "wax",
+        "amount": "1",
+        "unit": "pound"
       },
       {
         "ingredient": "hammer scale",
@@ -6386,19 +6391,19 @@
     ],
     "ingredients": [
       {
-        "ingredient": "Turpentine 4 loth",
-        "amount": "",
-        "unit": ""
+        "ingredient": "Turpentine",
+        "amount": "4",
+        "unit": "loth"
       },
       {
-        "ingredient": "wax 2 loth",
-        "amount": "",
-        "unit": ""
+        "ingredient": "wax",
+        "amount": "2",
+        "unit": "loth"
       },
       {
-        "ingredient": "sulphur 8 loth",
-        "amount": "",
-        "unit": ""
+        "ingredient": "sulphur",
+        "amount": "8",
+        "unit": "loth"
       },
       {
         "ingredient": "stone dust",
@@ -6428,29 +6433,34 @@
     ],
     "ingredients": [
       {
-        "ingredient": "Resin, 4 parts",
-        "amount": "",
-        "unit": ""
+        "ingredient": "resin",
+        "amount": "4",
+        "unit": "parts"
       },
       {
-        "ingredient": "sulphur 2 parts",
-        "amount": "",
-        "unit": ""
+        "ingredient": "sulphur",
+        "amount": "2",
+        "unit": "parts"
       },
       {
-        "ingredient": "brick dust 1 part, quicklime 2 parts",
-        "amount": "",
-        "unit": ""
+        "ingredient": "brick dust",
+        "amount": "1",
+        "unit": "part"
       },
       {
-        "ingredient": "stone dust 1 part",
-        "amount": "",
-        "unit": ""
+        "ingredient": "quicklime",
+        "amount": "2",
+        "unit": "parts"
       },
       {
-        "ingredient": "grounded glass 1 part",
-        "amount": "",
-        "unit": ""
+        "ingredient": "stone dust",
+        "amount": "1",
+        "unit": "part"
+      },
+      {
+        "ingredient": "grounded glass",
+        "amount": "1",
+        "unit": "part"
       }
     ],
     "description": "Resin, 4 parts; sulphur, 2 parts; brick dust, 1 part; quicklime, ground to a powder, 2 parts; stone dust, 1 part; grounded glass, 1 part. — \n(...)\n — Once the fusible ingredients have melted in a suitable pot over a gentle charcoal fire, the non-fusible ingredients are added as a very fine powder; everything is thoroughly mixed together whilst stirring diligently, and the mixture is applied in the usual manner whilst still warm or hot.",
@@ -6522,24 +6532,24 @@
     ],
     "ingredients": [
       {
-        "ingredient": "Colophony 12 loth",
-        "amount": "",
-        "unit": ""
+        "ingredient": "Colophony",
+        "amount": "12",
+        "unit": "loth"
       },
       {
-        "ingredient": "wax 1.5 loth",
-        "amount": "",
-        "unit": ""
+        "ingredient": "wax",
+        "amount": "1.5",
+        "unit": "loth"
       },
       {
-        "ingredient": "Venetian turpentine 1.5 loth",
-        "amount": "",
-        "unit": ""
+        "ingredient": "Venetian turpentine",
+        "amount": "1.5",
+        "unit": "loth"
       },
       {
-        "ingredient": "mastic 0.5 loth",
-        "amount": "",
-        "unit": ""
+        "ingredient": "mastic",
+        "amount": "0.5",
+        "unit": "loth"
       }
     ],
     "description": "Colophony, 12 loth; yellow wax, 1½ loth; Venetian turpentine, 1½ loth; mastic, ½ loth, are slowly melted in an earthenware pot over a gentle charcoal fire whilst stirring constantly; four handfuls of white marble dust or brick dust are mixed into the liquid mass, and this is then applied whilst hot to the joints between the stones.",
@@ -6563,19 +6573,19 @@
     ],
     "ingredients": [
       {
-        "ingredient": "Mastic 1.5 loth",
-        "amount": "",
-        "unit": ""
+        "ingredient": "Mastic",
+        "amount": "1.5",
+        "unit": "loth"
       },
       {
-        "ingredient": "leadwhite 1 bit",
-        "amount": "",
-        "unit": ""
+        "ingredient": "leadwhite",
+        "amount": "1",
+        "unit": "bit"
       },
       {
-        "ingredient": "wax 1 loth",
-        "amount": "",
-        "unit": ""
+        "ingredient": "wax",
+        "amount": "1",
+        "unit": "loth"
       }
     ],
     "description": "Mastic, 1½ loth;  lead white, 1 quarter-ounce, are ground into a very fine powder and then melted together with 1 ounce of wax in a new pot over a gentle charcoal fire to form a thick paste. This putty, which is well suited for sculpting, can only be used whilst warm.",
@@ -6600,34 +6610,34 @@
     ],
     "ingredients": [
       {
-        "ingredient": "Tree oil 2 parts",
-        "amount": "",
-        "unit": ""
+        "ingredient": "Tree oil",
+        "amount": "2",
+        "unit": "parts"
       },
       {
-        "ingredient": "tallow 1 part",
-        "amount": "",
-        "unit": ""
+        "ingredient": "tallow",
+        "amount": "1",
+        "unit": "part"
       },
       {
-        "ingredient": "wool 1 part",
-        "amount": "",
-        "unit": ""
+        "ingredient": "wool",
+        "amount": "1",
+        "unit": "part"
       },
       {
-        "ingredient": "crushed glass 2 parts",
-        "amount": "",
-        "unit": ""
+        "ingredient": "crushed glass",
+        "amount": "2",
+        "unit": "parts"
       },
       {
-        "ingredient": "quicklime 2 parts",
-        "amount": "",
-        "unit": ""
+        "ingredient": "quicklime",
+        "amount": "2",
+        "unit": "parts"
       },
       {
-        "ingredient": "resin 2 parts",
-        "amount": "",
-        "unit": ""
+        "ingredient": "resin",
+        "amount": "2",
+        "unit": "parts"
       }
     ],
     "description": "Tree oil, 2 parts; unrefined tallow, 1 part; cut wool (sheared wool), 1 part; crushed glass, 2 parts; quicklime, ground to a powder, 2 parts; resin, 2 parts. Mix these ingredients thoroughly, place them in a sturdy pot over a charcoal fire, and melt them together into a thick mass. — This stone putty is suitable for fortifications, wells, etc.",
@@ -6652,39 +6662,39 @@
     ],
     "ingredients": [
       {
-        "ingredient": "Iron ash 1 part",
-        "amount": "",
-        "unit": ""
+        "ingredient": "Iron ash",
+        "amount": "1",
+        "unit": "part"
       },
       {
-        "ingredient": "iron filings 1 part",
-        "amount": "",
-        "unit": ""
+        "ingredient": "iron filings",
+        "amount": "1",
+        "unit": "part"
       },
       {
-        "ingredient": "powdered glass 1 part",
-        "amount": "",
-        "unit": ""
+        "ingredient": "powdered glass",
+        "amount": "1",
+        "unit": "part"
       },
       {
-        "ingredient": "brick dust 3 parts",
-        "amount": "",
-        "unit": ""
+        "ingredient": "brick dust",
+        "amount": "3",
+        "unit": "parts"
       },
       {
-        "ingredient": "pitch 6 parts",
-        "amount": "",
-        "unit": ""
+        "ingredient": "pitch",
+        "amount": "6",
+        "unit": "parts"
       },
       {
-        "ingredient": "resin 6 parts",
-        "amount": "",
-        "unit": ""
+        "ingredient": "resin",
+        "amount": "6",
+        "unit": "parts"
       },
       {
-        "ingredient": "beef tallow 2 parts",
-        "amount": "",
-        "unit": ""
+        "ingredient": "beef tallow",
+        "amount": "2",
+        "unit": "parts"
       }
     ],
     "description": "Iron ash, iron filings, powdered glass, 1 part of each; \nbrick dust, 3 parts, are mixed together thoroughly. Then melt 6 parts of pitch; 6 parts resin and 2 parts beef tallow, stir the powder into the liquid mass as it melts over the fire and use it immediately. — However, if the putty has cooled and you wish to use it later, break it into small pieces with a hammer, place these in a pot over the fire, and when the mixture is liquid, use it for puttying.",
@@ -6708,34 +6718,34 @@
     ],
     "ingredients": [
       {
-        "ingredient": "resin 3 pounds",
-        "amount": "",
-        "unit": ""
+        "ingredient": "resin",
+        "amount": "3",
+        "unit": "pounds"
       },
       {
-        "ingredient": "sulphur 1 pound",
-        "amount": "",
-        "unit": ""
+        "ingredient": "sulphur",
+        "amount": "1",
+        "unit": "pound"
       },
       {
-        "ingredient": "brick dust 2 pounds",
-        "amount": "",
-        "unit": ""
+        "ingredient": "brick dust",
+        "amount": "2",
+        "unit": "pounds"
       },
       {
-        "ingredient": "tallow 20 loth",
-        "amount": "",
-        "unit": ""
+        "ingredient": "tallow",
+        "amount": "20",
+        "unit": "loth"
       },
       {
-        "ingredient": "glass 20 loth",
-        "amount": "",
-        "unit": ""
+        "ingredient": "glass",
+        "amount": "20",
+        "unit": "loth"
       },
       {
-        "ingredient": "cooked linseed-oil 1.5 pound",
-        "amount": "",
-        "unit": ""
+        "ingredient": "cooked linseed-oil",
+        "amount": "1.5",
+        "unit": "pound"
       }
     ],
     "description": "Resin, 3 pounds; sulphur, 1 pound; brick dust, 2 pounds; unrefined lead and glass, 20 loth of each, are finely ground or crushed, slowly melted in a pot over a gentle charcoal fire, and 1½ pounds of boiled linseed oil is gradually added whilst stirring constantly; the mixture is used whilst still warm.",
@@ -6759,29 +6769,29 @@
     ],
     "ingredients": [
       {
-        "ingredient": "Pitch 25 pound",
-        "amount": "",
-        "unit": ""
+        "ingredient": "Pitch",
+        "amount": "25",
+        "unit": "pound"
       },
       {
-        "ingredient": "rosin 12.5 pounds",
-        "amount": "",
-        "unit": ""
+        "ingredient": "rosin",
+        "amount": "12.5",
+        "unit": "pounds"
       },
       {
-        "ingredient": "red lead or silver white 6.25 pound",
-        "amount": "",
-        "unit": ""
+        "ingredient": "red lead or silver white",
+        "amount": "6.25",
+        "unit": "pound"
       },
       {
-        "ingredient": "egg white 6.25 pound",
-        "amount": "",
-        "unit": ""
+        "ingredient": "egg white",
+        "amount": "6.25",
+        "unit": "pound"
       },
       {
-        "ingredient": "brick dust, 3.125 pound",
-        "amount": "",
-        "unit": ""
+        "ingredient": "brick dust",
+        "amount": "3.125",
+        "unit": "pound"
       }
     ],
     "description": "Pitch, 25 pounds; rosin, 12½ pounds; red lead or silver white, 6¼ pounds; egg white, 6¼ pounds; ground brick dust, 3 1/8 pounds, are boiled in an iron cauldron over a charcoal fire to form a liquid mass, and this is then poured, whilst still hot, into the heated joints, e.g. of large stone water tanks, pipe boxes, gutters, etc., which are intended to hold water. Cf. Chapter 7, No. 54.",
@@ -6806,24 +6816,24 @@
     ],
     "ingredients": [
       {
-        "ingredient": "Yellow or brown resin 1 pound",
-        "amount": "",
-        "unit": ""
+        "ingredient": "Yellow or brown resin",
+        "amount": "1",
+        "unit": "pound"
       },
       {
-        "ingredient": "turpentine 2 loth",
-        "amount": "",
-        "unit": ""
+        "ingredient": "turpentine",
+        "amount": "2",
+        "unit": "loth"
       },
       {
-        "ingredient": "ground chalk 0.25 pound",
-        "amount": "",
-        "unit": ""
+        "ingredient": "ground chalk",
+        "amount": "0.25",
+        "unit": "pound"
       },
       {
-        "ingredient": "black burnt bones 0.25 pound",
-        "amount": "",
-        "unit": ""
+        "ingredient": "black burnt bones",
+        "amount": "0.25",
+        "unit": "pound"
       }
     ],
     "description": "Yellow or brown resin, 1 pound; turpentine, 2 loth; ground chalk, 1/4 pound; black burnt bones, 1/4 pound, are melted in a pot, stirred thoroughly and, whilst hot, poured into the joints, holes, etc., previously sprinkled with powdered brick dust, and the surface, after cooling, smoothed with a hot iron. If the stone has a specific colour, then instead of chalk, one uses either yellow ochre, or umber, or brick dust, or stone dust of the same type of stone.",
@@ -6847,29 +6857,29 @@
     ],
     "ingredients": [
       {
-        "ingredient": "Resin 1 pound",
-        "amount": "",
-        "unit": ""
+        "ingredient": "Resin",
+        "amount": "1",
+        "unit": "pound"
       },
       {
-        "ingredient": "wax 1 pound",
-        "amount": "",
-        "unit": ""
+        "ingredient": "wax",
+        "amount": "1",
+        "unit": "pound"
       },
       {
-        "ingredient": "hammer clase or iron fillings 4 loth",
-        "amount": "",
-        "unit": ""
+        "ingredient": "hammer clase or iron fillings",
+        "amount": "4",
+        "unit": "loth"
       },
       {
-        "ingredient": "stone dust 4 loth",
-        "amount": "",
-        "unit": ""
+        "ingredient": "stone dust",
+        "amount": "4",
+        "unit": "loth"
       },
       {
-        "ingredient": "sulphur 8 loth",
-        "amount": "",
-        "unit": ""
+        "ingredient": "sulphur",
+        "amount": "8",
+        "unit": "loth"
       }
     ],
     "description": "One pound each of wax and resin;  crushed hammer scale  or iron filings, and ground stone from both  four loth are melted in a pot. At the same time, 8 lods of sulphur are melted in another vessel, mixed with the previous mixture, and when the whole has stood on a charcoal fire for half an hour, being stirred frequently, the mass is poured into cold water and thoroughly kneaded by hand. — To repair stones, vases, busts, statues, urns, monuments, etc., with this putty, heat as much putty as is required, coat the joints (which have also been heated) with it, and press them firmly together after coating. — According to another account, a little melted wax is also added.",
@@ -6893,19 +6903,19 @@
     ],
     "ingredients": [
       {
-        "ingredient": "Sulphur 8 loth",
-        "amount": "",
-        "unit": ""
+        "ingredient": "Sulphur",
+        "amount": "8",
+        "unit": "loth"
       },
       {
-        "ingredient": "Resin 8 loth",
-        "amount": "",
-        "unit": ""
+        "ingredient": "Resin",
+        "amount": "8",
+        "unit": "loth"
       },
       {
-        "ingredient": "stone dust  3 pounds",
-        "amount": "",
-        "unit": ""
+        "ingredient": "stone dust",
+        "amount": "3",
+        "unit": "pounds"
       }
     ],
     "description": "— Or: sulphur, 8 loth; resin, the same amount [8 loth]; stone dust, 3 pounds. \n(...)\n — Once the fusible ingredients have melted in a suitable pot over a gentle charcoal fire, the non-fusible ingredients are added as a very fine powder; everything is thoroughly combined whilst stirring diligently, and the mixture is applied in the usual manner whilst still warm or hot.",
@@ -6931,29 +6941,29 @@
     ],
     "ingredients": [
       {
-        "ingredient": "pitch 1 part",
-        "amount": "",
-        "unit": ""
+        "ingredient": "pitch",
+        "amount": "1",
+        "unit": "part"
       },
       {
-        "ingredient": "resin 1 part",
-        "amount": "",
-        "unit": ""
+        "ingredient": "resin",
+        "amount": "1",
+        "unit": "part"
       },
       {
-        "ingredient": "sulphur 1 part",
-        "amount": "",
-        "unit": ""
+        "ingredient": "sulphur",
+        "amount": "1",
+        "unit": "part"
       },
       {
-        "ingredient": "crushed glass 1 part",
-        "amount": "",
-        "unit": ""
+        "ingredient": "crushed glass",
+        "amount": "1",
+        "unit": "part"
       },
       {
-        "ingredient": "brick dust 1 part",
-        "amount": "",
-        "unit": ""
+        "ingredient": "brick dust",
+        "amount": "1",
+        "unit": "part"
       }
     ],
     "description": "— Or: pitch, resin, sulphur, crushed glass and brick dust, all in equal parts.\n(...)\n— Once the fusible ingredients have melted in a suitable pot over a gentle charcoal fire, the non-fusible ingredients are added as a very fine powder; everything is thoroughly combined whilst stirring diligently, and the mixture is applied in the usual manner whilst still warm or hot.",
@@ -6979,24 +6989,24 @@
     ],
     "ingredients": [
       {
-        "ingredient": "resin 1 part",
-        "amount": "",
-        "unit": ""
+        "ingredient": "resin",
+        "amount": "1",
+        "unit": "part"
       },
       {
-        "ingredient": "sulphur 1 part",
-        "amount": "",
-        "unit": ""
+        "ingredient": "sulphur",
+        "amount": "1",
+        "unit": "part"
       },
       {
-        "ingredient": "glass 1 part",
-        "amount": "",
-        "unit": ""
+        "ingredient": "glass",
+        "amount": "1",
+        "unit": "part"
       },
       {
-        "ingredient": "chalk 1 part",
-        "amount": "",
-        "unit": ""
+        "ingredient": "chalk",
+        "amount": "1",
+        "unit": "part"
       }
     ],
     "description": "— Or: resin, sulphur, glass and chalk, also in equal parts. \n(...)\n — Once the fusible ingredients have melted in a suitable pot over a gentle charcoal fire, the non-fusible ingredients are added as a very fine powder; everything is thoroughly combined whilst stirring diligently, and the mixture is applied in the usual manner whilst still warm or hot.",
@@ -7022,24 +7032,24 @@
     ],
     "ingredients": [
       {
-        "ingredient": "turpentine 4 loth",
-        "amount": "",
-        "unit": ""
+        "ingredient": "turpentine",
+        "amount": "4",
+        "unit": "loth"
       },
       {
-        "ingredient": "wax 2 loth",
-        "amount": "",
-        "unit": ""
+        "ingredient": "wax",
+        "amount": "2",
+        "unit": "loth"
       },
       {
-        "ingredient": "sulphur 8 loth",
-        "amount": "",
-        "unit": ""
+        "ingredient": "sulphur",
+        "amount": "8",
+        "unit": "loth"
       },
       {
-        "ingredient": "stone dust 4 loth",
-        "amount": "",
-        "unit": ""
+        "ingredient": "stone dust",
+        "amount": "4",
+        "unit": "loth"
       }
     ],
     "description": "— Or: turpentine, 4 loth; wax, 2 loth; finely ground sulphur, 8 loth; stone dust, 4 loth.\n(...)\n — Once the fusible ingredients have melted in a suitable pot over a gentle charcoal fire, the non-fusible ingredients are added as a very fine powder; everything is thoroughly combined whilst stirring diligently, and the mixture is applied in the usual manner whilst still warm or hot.",
@@ -7171,19 +7181,19 @@
     ],
     "ingredients": [
       {
-        "ingredient": "parts rosin",
+        "ingredient": "rosin",
         "amount": "20",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts sulphur",
+        "ingredient": "sulphur",
         "amount": "5",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts iron filings",
+        "ingredient": "iron filings",
         "amount": "8",
-        "unit": ""
+        "unit": "parts"
       }
     ],
     "description": "20 parts rosin, 5 parts sulphur, 8 parts iron filings. Pour the mixture whilst hot into the heated sleeve and insert the knife, which has also been heated.",
@@ -7209,24 +7219,24 @@
     ],
     "ingredients": [
       {
-        "ingredient": "parts rosin",
+        "ingredient": "rosin",
         "amount": "60",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts wax",
+        "ingredient": "wax",
         "amount": "10",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts turpentine",
+        "ingredient": "turpentine",
         "amount": "10",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts gypsum powder",
+        "ingredient": "gypsum powder",
         "amount": "8",
-        "unit": ""
+        "unit": "parts"
       }
     ],
     "description": "60 parts rosin, 10 parts wax, 10 parts turpentine, 8 parts gypsum powder. The putty is applied whilst hot; if the putty joints are to be as inconspicuous as possible, the appropriate colourants should be added to the putty: red lead for red, smalt for blue, and a little asphalt for grey.",
@@ -7252,29 +7262,29 @@
     ],
     "ingredients": [
       {
-        "ingredient": "parts spruce resin",
+        "ingredient": "spruce resin",
         "amount": "70",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts wax",
+        "ingredient": "wax",
         "amount": "70",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts iron filings",
+        "ingredient": "iron filings",
         "amount": "8",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts wells sand",
+        "ingredient": "wells sand",
         "amount": "8",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts sulphur",
+        "ingredient": "sulphur",
         "amount": "16",
-        "unit": ""
+        "unit": "parts"
       }
     ],
     "description": "Spruce resin 70 parts, wax 70 parts, iron filings 8 parts, Wells sand 8 parts, sulphur 16 parts. The resin, wax and sulphur are melted together, then thoroughly mixed with the iron filings and sand by stirring; the broken surfaces are coated with turpentine oil, the putty is applied quickly and the broken surfaces are pressed together. It is highly advisable to heat the terracotta to 70–80 degrees beforehand. Once the putty has been applied, the putty joints are smoothed using a heated knife, and the still-soft putty is dusted with very fine terracotta powder contained in a muslin bag, in order to give the putty exactly the same colouring as the terracotta object itself.",
@@ -7300,19 +7310,19 @@
     ],
     "ingredients": [
       {
-        "ingredient": "parts ship's pitch",
+        "ingredient": "ship's pitch",
         "amount": "75",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts sulphur",
+        "ingredient": "sulphur",
         "amount": "45",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts wax",
+        "ingredient": "wax",
         "amount": "10",
-        "unit": ""
+        "unit": "parts"
       }
     ],
     "description": "75 parts ship's pitch, 45 parts sulphur, 10 parts wax. Instead of expensive genuine beeswax, one may in this case also use the much cheaper earth wax or ceresin; indeed, when this mixture is used, the result is a putty which, owing to its greater elasticity, is of superior quality to putty made with beeswax.",
@@ -7339,19 +7349,19 @@
     ],
     "ingredients": [
       {
-        "ingredient": "parts water",
+        "ingredient": "water",
         "amount": "12",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "part borax",
+        "ingredient": "borax",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       },
       {
-        "ingredient": "parts shellac",
+        "ingredient": "shellac",
         "amount": "2",
-        "unit": ""
+        "unit": "parts"
       }
     ],
     "description": "12 parts water, 1 part borax, 2 parts shellac. Dissolve the borax in hot water, heat the solution to boiling point and add the shellac in batches, waiting until the previous batch has dissolved before adding the next. This water-resistant putty is characterised by a lower degree of brittleness compared with other shellac putties.",
@@ -7376,29 +7386,29 @@
     ],
     "ingredients": [
       {
-        "ingredient": "parts slaked lime",
+        "ingredient": "slaked lime",
         "amount": "40",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts brick dust",
+        "ingredient": "brick dust",
         "amount": "40",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts iron filings",
+        "ingredient": "iron filings",
         "amount": "10",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts ox blood",
+        "ingredient": "ox blood",
         "amount": "8",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts water",
+        "ingredient": "water",
         "amount": "8",
-        "unit": ""
+        "unit": "parts"
       }
     ],
     "description": "40 parts slaked lime, 40 parts brick dust, 10 parts iron filings, 8 parts ox blood, 8 parts water. The ox blood, as it comes from the carcasses of the slaughtered animals, is whipped with a whisk for about twenty minutes so that the fibrous matter, which coagulates at normal temperature, is separated out and the blood does not set; the blood is then mixed with the water and the powder kneaded in. This mortar is particularly suitable for filling the joints between bricks in building shells.",
@@ -7423,19 +7433,19 @@
     ],
     "ingredients": [
       {
-        "ingredient": "parts slaked lime",
+        "ingredient": "slaked lime",
         "amount": "100",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts sieved coal ash",
+        "ingredient": "sieved coal ash",
         "amount": "50",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts beaten ox blood",
+        "ingredient": "beaten ox blood",
         "amount": "15",
-        "unit": ""
+        "unit": "parts"
       }
     ],
     "description": "100 parts slaked lime, 50 parts sieved coal ash, 15 parts beaten ox blood. This mortar is used for filling the joints between bricks as well as between stones.",
@@ -7460,19 +7470,19 @@
     ],
     "ingredients": [
       {
-        "ingredient": "parts ceresin",
+        "ingredient": "ceresin",
         "amount": "2",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts sulphur",
+        "ingredient": "sulphur",
         "amount": "9",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts black pitch",
+        "ingredient": "black pitch",
         "amount": "15",
-        "unit": ""
+        "unit": "parts"
       }
     ],
     "description": "Stir 2 parts of ceresin into 9 parts of molten sulphur (in bar form), then incorporate 15 parts of black pitch into the mixture whilst continuing to heat it. This putty has good adhesive strength and a certain softness, which makes it suitable for a variety of purposes.",
@@ -7496,34 +7506,34 @@
     ],
     "ingredients": [
       {
-        "ingredient": "parts rosin",
+        "ingredient": "rosin",
         "amount": "4",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts yellow wax",
+        "ingredient": "yellow wax",
         "amount": "2",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts pitch",
+        "ingredient": "pitch",
         "amount": "3",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts powdered hammered iron",
+        "ingredient": "powdered hammered iron",
         "amount": "6",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts finely ground brick dust",
+        "ingredient": "finely ground brick dust",
         "amount": "5",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "part sulphur",
+        "ingredient": "sulphur",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       }
     ],
     "description": "Melt 4 parts rosin together with 2 parts yellow wax and 3 parts pitch, then stir in 6 parts powdered hammered iron and 5 parts finely ground brick dust. \nMeanwhile, melt 1 part of bar sulphur in a separate vessel. When it has become completely liquid, add it to the mixture described above, stir everything together well and pour it into cold water, then shape it into small balls with wet hands. The pieces to be filled must be warmed up beforehand, just like the putty.",
@@ -7588,19 +7598,19 @@
     ],
     "ingredients": [
       {
-        "ingredient": "parts spruce resin",
+        "ingredient": "spruce resin",
         "amount": "5",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts sulphur",
+        "ingredient": "sulphur",
         "amount": "5",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts stone powder",
+        "ingredient": "stone powder",
         "amount": "10–15",
-        "unit": ""
+        "unit": "parts"
       }
     ],
     "description": "Melt together 5 parts spruce resin, 5 parts sulphur and 10–15 parts stone powder. The mixture is used whilst still hot.\nDepending on the type of object to be repaired, brick dust, pumice powder, etc. can be used as the stone powder.",
@@ -7624,14 +7634,14 @@
     ],
     "ingredients": [
       {
-        "ingredient": "parts brick dust",
+        "ingredient": "brick dust",
         "amount": "9",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "part litharge",
+        "ingredient": "litharge",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       },
       {
         "ingredient": "linseed oil varnish",
@@ -7660,19 +7670,19 @@
     ],
     "ingredients": [
       {
-        "ingredient": "parts linseed oil varnish",
+        "ingredient": "linseed oil varnish",
         "amount": "5",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts brick dust",
+        "ingredient": "brick dust",
         "amount": "25",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts lead white",
+        "ingredient": "lead white",
         "amount": "3",
-        "unit": ""
+        "unit": "parts"
       }
     ],
     "description": "Mix 5 parts linseed oil varnish with 25 parts of the finest brick dust, then thoroughly work in a further 3 parts of slaked lead white.\nThe marble fragments to be joined should first be coated with linseed oil varnish on the broken surfaces. To avoid grease stains, it is better to use a copal varnish heavily diluted with turpentine oil on light-coloured marble. Only once this preliminary coat has dried should the putty be applied (in the thinnest possible layer where the broken surfaces fit together perfectly), ensuring the pieces remain firmly bonded for a long time.",
@@ -7696,19 +7706,19 @@
     ],
     "ingredients": [
       {
-        "ingredient": "part brick dust",
+        "ingredient": "brick dust",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       },
       {
-        "ingredient": "part iron filings",
+        "ingredient": "iron filings",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       },
       {
-        "ingredient": "part sulphur",
+        "ingredient": "sulphur",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       },
       {
         "ingredient": "vinegar",
@@ -7734,19 +7744,19 @@
     "name": "Weber, 1909 – XXIV. The cementing of marble",
     "ingredients": [
       {
-        "ingredient": "parts resin",
+        "ingredient": "resin",
         "amount": "8",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "part wax",
+        "ingredient": "wax",
         "amount": "1",
-        "unit": ""
+        "unit": "part"
       },
       {
-        "ingredient": "parts gypsum",
+        "ingredient": "gypsum",
         "amount": "4",
-        "unit": ""
+        "unit": "parts"
       }
     ],
     "description": "1. Melt 8 parts resin and 1 part wax, then stir in 4 parts gypsum. The pieces to be joined with the cement must be heated beforehand.",
@@ -7838,14 +7848,14 @@
     "name": "Rathgen, 1915 – Putty for stone and earthenware",
     "ingredients": [
       {
-        "ingredient": "parts colophony",
+        "ingredient": "colophony",
         "amount": "100",
-        "unit": ""
+        "unit": "parts"
       },
       {
-        "ingredient": "parts chalk",
+        "ingredient": "chalk",
         "amount": "125-150",
-        "unit": ""
+        "unit": "parts"
       }
     ],
     "description": "In many cases, a putty made from melted light-colored colophony (100 parts) and dry slaked chalk (125-150 parts) is suitable. The colophony is melted in a metal crucible or porcelain bowl by moderate heating, and the slaked lime is gradually added and stirred in until it is completely evenly distributed. Hold the vessel firmly with tongs, as considerable pressure must be applied when stirring in the slaked lime. The putty is light yellow in color; it can be colored by adding earth pigments or brick dust during mixing; in this case, less chalk should be used. Roll the hot, still soft putty back and forth on a smooth surface to form rods of the desired thickness, which are melted for use by holding them in a flame; the putty joint should also be heated.",

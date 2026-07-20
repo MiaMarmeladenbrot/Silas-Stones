@@ -1,12 +1,13 @@
 import { useMemo, useState } from "react";
 import { Recipes } from "../types";
 import { IoMdClose } from "react-icons/io";
-import { getUniqueSortedValues } from "../utils/utils";
+import { getUniqueSortedValues, normalizeIngredient } from "../utils/utils";
 import { FilterOptions } from "./FilterOptions";
 import { LuSlidersHorizontal } from "react-icons/lu";
 
 export type SelectedFilters = {
   selectedAuthor: string;
+  selectedId: string;
   dateFrom: number | null;
   dateTo: number | null;
   selectedIngredients: string[];
@@ -14,6 +15,7 @@ export type SelectedFilters = {
 
 export type Setters = {
   setSelectedAuthor: React.Dispatch<React.SetStateAction<string>>;
+  setSelectedId: React.Dispatch<React.SetStateAction<string>>;
   setDateFrom: React.Dispatch<React.SetStateAction<number | null>>;
   setDateTo: React.Dispatch<React.SetStateAction<number | null>>;
   setSelectedIngredients: React.Dispatch<React.SetStateAction<string[]>>;
@@ -36,27 +38,29 @@ export function Filter({
 
   const sortedDates = getUniqueSortedValues(
     originalData,
-    (recipe) => recipe.date
+    (recipe) => recipe.date,
   ) as number[];
   const sortedAuthors = getUniqueSortedValues(originalData, (recipe) =>
-    recipe.authorLastName.toLowerCase()
+    recipe.authorLastName.toLowerCase(),
   );
 
-  // ingredient name -> how many recipes use it (drives the "most common" picks)
+  // normalized ingredient -> how many recipes use it (drives the "most common"
+  // picks and the ingredient filter). Variants like "brickdust", "handful brick
+  // dust" and "brick dust (tile)" all fold into one "brick dust" key here.
   const ingredientCounts = useMemo(() => {
     const counts = new Map<string, number>();
     originalData.forEach((recipe) =>
       recipe.ingredients.forEach((ing) => {
-        const key = ing.ingredient.trim().toLowerCase();
+        const key = normalizeIngredient(ing.ingredient);
         if (key) counts.set(key, (counts.get(key) ?? 0) + 1);
-      })
+      }),
     );
     return counts;
   }, [originalData]);
 
   const allIngredients = useMemo(
     () => [...ingredientCounts.keys()].sort(),
-    [ingredientCounts]
+    [ingredientCounts],
   );
   const commonIngredients = useMemo(
     () =>
@@ -64,17 +68,25 @@ export function Filter({
         .sort((a, b) => b[1] - a[1])
         .slice(0, 15)
         .map(([name]) => name),
-    [ingredientCounts]
+    [ingredientCounts],
+  );
+
+  // every source id paired with its title, for the id lookup field
+  const sourceIds = useMemo(
+    () => originalData.map((recipe) => ({ id: recipe.id, name: recipe.name })),
+    [originalData],
   );
 
   const activeFiltersCount = [
     selected.selectedAuthor !== "",
+    selected.selectedId !== "",
     selected.dateFrom !== null || selected.dateTo !== null,
     selected.selectedIngredients.length > 0,
   ].filter(Boolean).length;
 
   const clearFilters = () => {
     setters.setSelectedAuthor("");
+    setters.setSelectedId("");
     setters.setDateFrom(null);
     setters.setDateTo(null);
     setters.setSelectedIngredients([]);
@@ -124,6 +136,7 @@ export function Filter({
                 allIngredients={allIngredients}
                 commonIngredients={commonIngredients}
                 ingredientCounts={ingredientCounts}
+                sourceIds={sourceIds}
                 setters={setters}
                 selected={selected}
               />
@@ -141,7 +154,7 @@ export function Filter({
                   onClick={() => setOpenFilter(false)}
                 >
                   Show {filteredRecipes.length}{" "}
-                  {filteredRecipes.length === 1 ? "recipe" : "recipes"}
+                  {filteredRecipes.length === 1 ? "source" : "sources"}
                 </button>
               </div>
             </div>

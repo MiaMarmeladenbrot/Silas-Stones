@@ -62,11 +62,14 @@ COL = {
 # Units we recognise at the start of an ingredient line. Longer/multiword first.
 # "d" is an old weight/measure abbreviation used in the accounts (e.g. "6 d. pitch").
 UNITS = [
-    "hände voll", "hand voll", "hundredweight", "pfund", "loth", "lot", "quentchen",
-    "unze", "unzen", "maß", "mass", "eimer", "nössel", "seidel", "gran", "theil", "teil",
-    "libbra", "libbre", "libre", "oncia", "once", "pound", "pounds", "stone", "gallon",
-    "gallons", "pint", "pints", "quart", "ounce", "ounces", "oz", "lb", "lbs", "jug",
-    "jugs", "g", "kg", "ml", "l", "d",
+    "quarter of a pound", "hände voll", "hand voll", "handfuls", "handfull",
+    "handful", "hundredweight", "pfund",
+    "loth", "lot", "quentchen", "quintlein", "quentl", "unze", "unzen", "spoonfuls", "spoonful",
+    "measures", "measure", "maß", "mass", "maas", "eimer", "nössel",
+    "seidel", "gran", "theil", "teil", "libbra", "libbre", "libre", "oncia",
+    "once", "pound", "pounds", "stone", "stones", "gallon", "gallons", "pint",
+    "pints", "quart", "ounce", "ounces", "oz", "lb", "lbs", "jug", "jugs",
+    "bushels", "bushel", "parts", "part", "bits", "bit", "eh", "g", "kg", "ml", "l", "d",
 ]
 # Normalised lookup used to recognise a bracketed unit gloss ("[Loth]", "[Pfund]").
 UNIT_SET = {u.lower() for u in UNITS}
@@ -76,9 +79,11 @@ _UNIT_RE = "|".join(sorted((re.escape(u) for u in UNITS), key=len, reverse=True)
 _NUM = r"\d+(?:[.,]\d+)?"          # 19  6,5
 _FRAC = r"\d+\s*/\s*\d+"          # 1/2  1/16
 _UNI = r"[½¼¾⅓⅔⅛]"               # unicode fractions
-# a single quantity value: a fraction, a number (optionally + a unicode fraction
-# like "1½"), or a bare unicode fraction. Fraction first so "1/16" isn't cut to "1".
-_VALUE = rf"(?:{_FRAC}|{_NUM}{_UNI}?|{_UNI})"
+# a single quantity value: a mixed number ("1 1/2"), a fraction, a number
+# (optionally + a unicode fraction like "1½"), or a bare unicode fraction. The
+# mixed form comes first so "1 1/2" is taken whole; the bare fraction next so
+# "1/16" isn't cut to "1".
+_VALUE = rf"(?:{_NUM}\s+{_FRAC}|{_FRAC}|{_NUM}{_UNI}?|{_UNI})"
 # a quantity is one value, optionally a dash-range to a second value ("2-3",
 # "1/16 - 1/8") — so the whole range is the amount, not part of the ingredient.
 _QTY = rf"{_VALUE}(?:\s*[-–]\s*{_VALUE})?"
@@ -89,6 +94,17 @@ QTY_RE = re.compile(rf"^(?:{_QTY})", re.IGNORECASE)
 # stone|dust). A unit is also only honoured when it follows a quantity (see
 # parse_ingredients): a bare "stone"/"glass"/"lime" is an ingredient, not a measure.
 UNIT_RE = re.compile(rf"(?:{_UNIT_RE})(?=[\s.]|$)", re.IGNORECASE)
+# A TRAILING quantity: "resin 1 part", "wax 2 loth", "stone dust 3 pounds",
+# "Resin 7 - 8 parts". When a line has no LEADING quantity, the measure is often
+# written after the ingredient (name + amount + unit). We only treat the tail as
+# a measure when a real unit token closes the line, so a plain name that merely
+# ends in a number ("no. 2") is left untouched.
+TRAIL_RE = re.compile(rf"\s+({_QTY})\s+({_UNIT_RE})\.?$", re.IGNORECASE)
+# Spelled-out quantities written before a unit: "a bushel …", "two handfuls …".
+WORDED = {"a": "1", "an": "1", "one": "1", "two": "2", "three": "3", "four": "4",
+          "five": "5", "six": "6", "seven": "7", "eight": "8", "nine": "9",
+          "ten": "10", "half": "1/2"}
+_WORDED_RE = "|".join(sorted(WORDED, key=len, reverse=True))
 
 
 def strip_diacritics(s: str) -> str:
@@ -166,6 +182,13 @@ def parse_ingredients(raw):
         line = line.strip().strip(";,").strip()
         if not line:
             continue
+        # A leading parenthetical that starts with a number is really the quantity
+        # written in brackets: "(1 part) Pitch..." -> "1 part Pitch...". A wholly
+        # bracketed line unwraps the same way ("(3 stones of onions)" -> the tail
+        # is empty, so we just drop the brackets and parse the inside).
+        mp = re.match(r"^\(\s*([^)]*)\)\s*(.*)$", line)
+        if mp and re.match(r"\s*\d", mp.group(1)):
+            line = f"{mp.group(1).strip()} {mp.group(2).strip()}".strip()
         amount, unit, name = "", "", line
         qm = QTY_RE.match(line)
         if qm:
@@ -189,6 +212,25 @@ def parse_ingredients(raw):
                     unit = mb.group(1).strip()
                 rest = rest[mb.end():]
             name = rest
+        else:
+            # A spelled-out quantity before a unit: "a bushel tyldust" (=1),
+            # "two handfuls marble" (=2). Only fires right before a real unit, so
+            # "a little wax" ("little" is no unit) stays a plain name.
+            am = re.match(rf"^({_WORDED_RE})\s+({_UNIT_RE})(?=[\s.])\s+(.+)$",
+                          line, re.IGNORECASE)
+            if am:
+                amount = WORDED[am.group(1).lower()]
+                unit = am.group(2).rstrip(".").strip()
+                name = am.group(3).strip()
+            else:
+                # No leading quantity — the measure may trail the ingredient instead
+                # ("resin 1 part", "wax 2 loth", "ground chalk 0.25 pound"). Only split
+                # off the tail when a real unit closes the line and a name precedes it.
+                tm = TRAIL_RE.search(line)
+                if tm and line[:tm.start()].strip():
+                    amount = re.sub(r"\s*[-–]\s*", "-", tm.group(1).strip())  # "7 - 8"->"7-8"
+                    unit = tm.group(2).rstrip(".").strip()
+                    name = line[:tm.start()].strip()
         name = name.strip().strip(".").strip()
         # a leftover leading connector from "<qty> <unit> of <ingredient>"
         # ("1 pound of wax" -> "wax") or an alternative line ("or unslacked lime
