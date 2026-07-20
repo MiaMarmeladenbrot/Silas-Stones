@@ -11,6 +11,7 @@ export type SelectedFilters = {
   dateFrom: number | null;
   dateTo: number | null;
   selectedIngredients: string[];
+  selectedTypes: string[];
 };
 
 export type Setters = {
@@ -19,6 +20,7 @@ export type Setters = {
   setDateFrom: React.Dispatch<React.SetStateAction<number | null>>;
   setDateTo: React.Dispatch<React.SetStateAction<number | null>>;
   setSelectedIngredients: React.Dispatch<React.SetStateAction<string[]>>;
+  setSelectedTypes: React.Dispatch<React.SetStateAction<string[]>>;
 };
 
 type FilterProps = {
@@ -77,11 +79,22 @@ export function Filter({
     [originalData],
   );
 
+  // source type -> count (Account, Manual, Report, Instruction), most common first
+  const typeCounts = useMemo(() => {
+    const counts = new Map<string, number>();
+    originalData.forEach((recipe) => {
+      const t = recipe.type?.trim();
+      if (t) counts.set(t, (counts.get(t) ?? 0) + 1);
+    });
+    return [...counts.entries()].sort((a, b) => b[1] - a[1]);
+  }, [originalData]);
+
   const activeFiltersCount = [
     selected.selectedAuthor !== "",
     selected.selectedId !== "",
     selected.dateFrom !== null || selected.dateTo !== null,
     selected.selectedIngredients.length > 0,
+    selected.selectedTypes.length > 0,
   ].filter(Boolean).length;
 
   const clearFilters = () => {
@@ -90,6 +103,7 @@ export function Filter({
     setters.setDateFrom(null);
     setters.setDateTo(null);
     setters.setSelectedIngredients([]);
+    setters.setSelectedTypes([]);
   };
 
   return (
@@ -137,6 +151,7 @@ export function Filter({
                 commonIngredients={commonIngredients}
                 ingredientCounts={ingredientCounts}
                 sourceIds={sourceIds}
+                typeCounts={typeCounts}
                 setters={setters}
                 selected={selected}
               />

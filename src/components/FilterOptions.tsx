@@ -10,6 +10,7 @@ type FilterOptionsProps = {
   commonIngredients: string[];
   ingredientCounts: Map<string, number>;
   sourceIds: { id: string; name: string }[];
+  typeCounts: [string, number][];
   selected: SelectedFilters;
   setters: Setters;
 };
@@ -27,6 +28,7 @@ export function FilterOptions({
   commonIngredients,
   ingredientCounts,
   sourceIds,
+  typeCounts,
   selected,
   setters,
 }: FilterOptionsProps) {
@@ -36,9 +38,21 @@ export function FilterOptions({
     setDateFrom,
     setDateTo,
     setSelectedIngredients,
+    setSelectedTypes,
   } = setters;
-  const { selectedAuthor, selectedId, dateFrom, dateTo, selectedIngredients } =
-    selected;
+  const {
+    selectedAuthor,
+    selectedId,
+    dateFrom,
+    dateTo,
+    selectedIngredients,
+    selectedTypes,
+  } = selected;
+
+  const toggleType = (type: string) =>
+    setSelectedTypes((prev) =>
+      prev.includes(type) ? prev.filter((t) => t !== type) : [...prev, type]
+    );
 
   const [ingQuery, setIngQuery] = useState("");
   const [idQuery, setIdQuery] = useState("");
@@ -86,6 +100,32 @@ export function FilterOptions({
             ))}
           </select>
           <IoIosArrowDown className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-inkSoft" />
+        </div>
+      </div>
+
+      {/* Source type */}
+      <div>
+        <span className="block text-xs uppercase tracking-widest text-inkSoft mb-2">
+          Type
+        </span>
+        <div className="flex flex-wrap gap-1.5">
+          {typeCounts.map(([type, count]) => {
+            const isSelected = selectedTypes.includes(type);
+            return (
+              <button
+                key={type}
+                onClick={() => toggleType(type)}
+                className={`flex items-center gap-1.5 rounded-full px-3 py-1 text-sm cursor-pointer transition-colors ${
+                  isSelected
+                    ? "bg-ink text-paper"
+                    : "bg-sand/20 text-ink/80 hover:bg-sand/40"
+                }`}
+              >
+                {type}
+                <span className="opacity-60 tabular-nums">{count}</span>
+              </button>
+            );
+          })}
         </div>
       </div>
 

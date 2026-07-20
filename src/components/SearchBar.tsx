@@ -16,6 +16,7 @@ export function SearchBar({
   originalData,
 }: SearchProps) {
   const [selectedIngredients, setSelectedIngredients] = useState<string[]>([]);
+  const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
   const [selectedAuthor, setSelectedAuthor] = useState<string>("");
   const [selectedId, setSelectedId] = useState<string>("");
   const [dateFrom, setDateFrom] = useState<number | null>(null);
@@ -28,6 +29,7 @@ export function SearchBar({
     dateFrom,
     dateTo,
     selectedIngredients,
+    selectedTypes,
   };
 
   const setters = {
@@ -36,6 +38,7 @@ export function SearchBar({
     setDateFrom,
     setDateTo,
     setSelectedIngredients,
+    setSelectedTypes,
   };
 
   const filteredRecipes = useMemo(() => {
@@ -60,7 +63,7 @@ export function SearchBar({
       return matchesSearchQuery;
     });
 
-    return baseFiltered.filter((recipe) => {
+    const matched = baseFiltered.filter((recipe) => {
       const matchesIngredient =
         selectedIngredients.length === 0 ||
         selectedIngredients.every((selectedIng) =>
@@ -73,6 +76,9 @@ export function SearchBar({
         !selectedAuthor ||
         recipe.authorLastName.toLowerCase() === selectedAuthor;
 
+      const matchesType =
+        selectedTypes.length === 0 || selectedTypes.includes(recipe.type);
+
       const matchesId = !selectedId || recipe.id === selectedId;
 
       const matchesDate =
@@ -80,11 +86,23 @@ export function SearchBar({
           (recipe.date !== null && recipe.date >= dateFrom)) &&
         (dateTo === null || (recipe.date !== null && recipe.date <= dateTo));
 
-      return matchesIngredient && matchesAuthor && matchesId && matchesDate;
+      return (
+        matchesIngredient &&
+        matchesAuthor &&
+        matchesType &&
+        matchesId &&
+        matchesDate
+      );
     });
+
+    // Baseline order is chronological (oldest first), so results — especially a
+    // filtered date range — read in order in both the cards and the table. The
+    // table's column headers still re-sort this list when the user picks one.
+    return [...matched].sort((a, b) => (a.date ?? 0) - (b.date ?? 0));
   }, [
     originalData,
     selectedIngredients,
+    selectedTypes,
     selectedAuthor,
     selectedId,
     dateFrom,
@@ -124,6 +142,7 @@ export function SearchBar({
             onClick={() => {
               handleReset();
               setSelectedIngredients([]);
+              setSelectedTypes([]);
               setSelectedAuthor("");
               setSelectedId("");
               setDateFrom(null);
