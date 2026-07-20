@@ -22,12 +22,12 @@ export function Table({
   setSortOrder,
 }: TableProps) {
   const tableHeader = [
-    { key: "author", label: "Author" },
+    { key: "author", label: "Author / Place" },
     { key: "type", label: "Type" },
     { key: "manual", label: "Manual" },
     { key: "date", label: "Date" },
     { key: "name", label: "Recipe Name" },
-    { key: "ingredients", label: "Ingredients" },
+    { key: "ingredients", label: "Ingredients / Tools" },
     { key: "description", label: "Description" },
   ];
   const extractValue = (recipe: Recipes, key: string) => {
@@ -62,8 +62,8 @@ export function Table({
         ? 1
         : -1
       : aValue < bValue
-      ? 1
-      : -1;
+        ? 1
+        : -1;
   });
 
   const handleSort = (key: string) => {
@@ -81,76 +81,76 @@ export function Table({
       <div className="rounded-2xl border border-line shadow-sm bg-paperRaised">
         <table className="w-full text-left table-fixed">
           <colgroup>
-          <col style={{ width: "13%" }} />
-          <col style={{ width: "9%" }} />
-          <col style={{ width: "13%" }} />
-          <col style={{ width: "6%" }} />
-          <col style={{ width: "16%" }} />
-          <col style={{ width: "21%" }} />
-          <col style={{ width: "18%" }} />
-          <col style={{ width: "4%" }} />
-        </colgroup>
-        <thead className="sticky top-56 z-20">
-          <tr>
-            {tableHeader.map(({ key, label }, idx) => {
-              const isActive = sortColumn === key;
-              const isSortable =
-                key === "author" ||
-                key === "type" ||
-                key === "manual" ||
-                key === "date";
-              return (
-                <th
-                  key={key}
-                  onClick={isSortable ? () => handleSort(key) : undefined}
-                  className={`px-5 py-4 select-none bg-paperRaised border-b border-line ${
-                    idx === 0 ? "rounded-tl-2xl" : ""
-                  } ${isSortable ? "cursor-pointer hover:text-ink" : ""} ${
-                    isActive ? "text-sandDeep" : "text-inkSoft"
-                  }`}
-                >
-                  <h5
-                    className={`flex items-center gap-1 ${
-                      isActive ? "text-sandDeep" : ""
+            <col style={{ width: "13%" }} />
+            <col style={{ width: "9%" }} />
+            <col style={{ width: "13%" }} />
+            <col style={{ width: "6%" }} />
+            <col style={{ width: "16%" }} />
+            <col style={{ width: "21%" }} />
+            <col style={{ width: "18%" }} />
+            <col style={{ width: "4%" }} />
+          </colgroup>
+          <thead className="sticky top-56 z-20">
+            <tr>
+              {tableHeader.map(({ key, label }, idx) => {
+                const isActive = sortColumn === key;
+                const isSortable =
+                  key === "author" ||
+                  key === "type" ||
+                  key === "manual" ||
+                  key === "date";
+                return (
+                  <th
+                    key={key}
+                    onClick={isSortable ? () => handleSort(key) : undefined}
+                    className={`px-5 py-4 select-none bg-paperRaised border-b border-line ${
+                      idx === 0 ? "rounded-tl-2xl" : ""
+                    } ${isSortable ? "cursor-pointer hover:text-ink" : ""} ${
+                      isActive ? "text-sandDeep" : "text-inkSoft"
                     }`}
                   >
-                    {label}
-                    {isSortable && (
-                      <span className="flex flex-col leading-none -space-y-1">
-                        <IoIosArrowUp
-                          className={`text-xs ${
-                            sortOrder === "asc" && isActive
-                              ? "text-sandDeep"
-                              : "text-inkSoft/40"
-                          }`}
-                        />
-                        <IoIosArrowDown
-                          className={`text-xs ${
-                            sortOrder === "desc" && isActive
-                              ? "text-sandDeep"
-                              : "text-inkSoft/40"
-                          }`}
-                        />
-                      </span>
-                    )}
-                  </h5>
-                </th>
-              );
-            })}
-            <th
-              className="px-2 bg-paperRaised border-b border-line rounded-tr-2xl"
-              aria-hidden="true"
+                    <h5
+                      className={`flex items-center gap-1 ${
+                        isActive ? "text-sandDeep" : ""
+                      }`}
+                    >
+                      {label}
+                      {isSortable && (
+                        <span className="flex flex-col leading-none -space-y-1">
+                          <IoIosArrowUp
+                            className={`text-xs ${
+                              sortOrder === "asc" && isActive
+                                ? "text-sandDeep"
+                                : "text-inkSoft/40"
+                            }`}
+                          />
+                          <IoIosArrowDown
+                            className={`text-xs ${
+                              sortOrder === "desc" && isActive
+                                ? "text-sandDeep"
+                                : "text-inkSoft/40"
+                            }`}
+                          />
+                        </span>
+                      )}
+                    </h5>
+                  </th>
+                );
+              })}
+              <th
+                className="px-2 bg-paperRaised border-b border-line rounded-tr-2xl"
+                aria-hidden="true"
+              />
+            </tr>
+          </thead>
+          {sortedRecipes?.map((recipe) => (
+            <TableBody
+              key={recipe.id}
+              recipe={recipe}
+              setOpenDetails={setOpenDetails}
+              setSelectedRecipe={setSelectedRecipe}
             />
-          </tr>
-        </thead>
-        {sortedRecipes?.map((recipe) => (
-          <TableBody
-            key={recipe.id}
-            recipe={recipe}
-            setOpenDetails={setOpenDetails}
-            setSelectedRecipe={setSelectedRecipe}
-          />
-        ))}
+          ))}
         </table>
       </div>
     </div>

@@ -85,7 +85,7 @@ export function FilterOptions({
             htmlFor="filter-author"
             className="block text-xs uppercase tracking-widest text-inkSoft mb-2"
           >
-            Author
+            Author / Place
           </label>
           <div className="relative">
             <select
@@ -131,7 +131,7 @@ export function FilterOptions({
               type="search"
               value={idQuery}
               onChange={(e) => setIdQuery(e.target.value)}
-              placeholder="Search source id…"
+              placeholder="Search source ID"
               className="outline-none w-full bg-transparent text-ink placeholder:text-inkSoft/60 font-mono"
             />
           </div>
@@ -234,7 +234,7 @@ export function FilterOptions({
       {/* Ingredients */}
       <div>
         <span className="block text-xs uppercase tracking-widest text-inkSoft mb-2">
-          Ingredients
+          Ingredients / Tools
         </span>
 
         {/* currently selected, removable */}

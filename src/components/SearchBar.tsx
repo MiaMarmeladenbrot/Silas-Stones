@@ -125,7 +125,7 @@ export function SearchBar({
               type="search"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search for recipes, authors, ingredients, source ids"
+              placeholder="Search for recipes, authors, ingredients, source IDs"
               className="outline-none w-full bg-transparent text-ink placeholder:text-inkSoft/60"
             />
 
