@@ -37,23 +37,26 @@ from pathlib import Path
 import openpyxl
 
 PROJECT = Path(__file__).resolve().parent.parent
-DEFAULT_XLSX = Path.home() / "Projects/_privat/_MASTERFILE all sources sorted.xlsx"
+DEFAULT_XLSX = Path.home() / "Projects/_privat/_MASTERFILE all sources sorted[22].xlsx"
 DEFAULT_IMAGES = Path.home() / "Downloads/260611 data send"
 OUT_JSON = PROJECT / "src/data/data.json"
 IMG_DIR = PROJECT / "public/img/recipeImages"
 IMG_URL_PREFIX = "/img/recipeImages"
 
 # Column letters on the MASTERFILE sheet (label row is row 2, data from row 4).
-# Note vs. earlier drops: a second date column (B "YEAR real") and two new
-# columns (F "Type", G "Score") were inserted, so everything from E onward
-# shifted two to the right. Column A ("YEAR sort") is the pre-cleaned integer
-# date; G ("Score") is an internal field and is intentionally NOT mapped.
+# Note vs. earlier drops: a new column L ("TITLE Website") was inserted to hold
+# the curated, human-facing display title, so everything from M onward shifted
+# one to the right. This website title is what we now use for the record `name`
+# (falling back to the raw translated/original title). Column A ("YEAR sort") is
+# the pre-cleaned integer date; G ("Score") is an internal field and is
+# intentionally NOT mapped.
 COL = {
     "year": "A", "year_real": "B", "file": "C", "author": "D", "country": "E",
     "type": "F", "source": "H", "bibl": "I", "page": "J", "abbr": "K",
-    "title_tr": "L", "text_tr": "M", "ingredients": "N", "transl_kind": "O",
-    "comment_tr": "P", "title_orig": "Q", "text_orig": "R", "comment_text": "S",
-    "link": "T", "notes": "U", "further_bibl": "V",
+    "title_website": "L",
+    "title_tr": "M", "text_tr": "N", "ingredients": "O", "transl_kind": "P",
+    "comment_tr": "Q", "title_orig": "R", "text_orig": "S", "comment_text": "T",
+    "link": "U", "notes": "V", "further_bibl": "W",
 }
 
 # Units we recognise at the start of an ingredient line. Longer/multiword first.
@@ -407,8 +410,9 @@ def main():
         # skip rows with no recipe content at all (e.g. a stray editorial note left
         # in the YEAR column): a real recipe has at least an id, a title, body text,
         # or ingredients. Otherwise carry-forward would mint a phantom "(untitled)".
-        if not any(cell(r, k) for k in ("abbr", "title_tr", "title_orig",
-                                        "text_tr", "text_orig", "ingredients")):
+        if not any(cell(r, k) for k in ("abbr", "title_website", "title_tr",
+                                        "title_orig", "text_tr", "text_orig",
+                                        "ingredients")):
             continue
         # carry-forward fields
         for k in ("file", "author", "country"):
@@ -448,7 +452,8 @@ def main():
             "date": date,
             "manual": cell(r, "source") or cell(r, "file") or "",
             "page": parse_page(ws.cell(row=r, column=ci(COL["page"])).value),
-            "name": cell(r, "title_tr") or cell(r, "title_orig") or "(untitled)",
+            "name": cell(r, "title_website") or cell(r, "title_tr")
+            or cell(r, "title_orig") or "(untitled)",
             "images": [],
             "ingredients": parse_ingredients(cell(r, "ingredients")),
             "description": cell(r, "text_tr") or "",

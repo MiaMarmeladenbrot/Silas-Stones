@@ -6,7 +6,7 @@
     "date": 1061,
     "manual": "Textes Relatifs A L'Histoire (1056-1081)\nXLIX\n1056-1081 et 1091, décembre.",
     "page": "170",
-    "name": "(untitled)",
+    "name": "Saint Peter at Oudenburg, 1061",
     "images": [
       "/img/recipeImages/1061.Mor.cover.jpg",
       "/img/recipeImages/1061.Mor.p168.jpg",
@@ -30,7 +30,7 @@
     "date": 1259,
     "manual": "Exch. K.R. Accts; bundle 467 document 2",
     "page": "153",
-    "name": "requirements for the cistern in the King’s court at Westminster",
+    "name": "Westminster Palace, 1259",
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -64,8 +64,19 @@
     "date": 1259,
     "manual": "Westminster Palace",
     "page": "304-5",
-    "name": "Westminster Palace\nVarious purchases for the works of the court",
-    "ingredients": [],
+    "name": "Westminster Palace, 1259",
+    "ingredients": [
+      {
+        "ingredient": "pitch",
+        "amount": "19",
+        "unit": "lb"
+      },
+      {
+        "ingredient": "wax",
+        "amount": "5",
+        "unit": "lb"
+      }
+    ],
     "description": "1259 June 5-22\nAnd for 15 pounds of pitch for the cistern of the court, 9d.\nAnd for four pounds of pitch and five pounds of wax for the same, 4s. 8.5d.",
     "source": "H.M Colvin, ed.: Building Accounts of King Henry III. Oxford. 1971",
     "type": "Account",
@@ -81,8 +92,24 @@
     "date": 1259,
     "manual": "Westminster Palace",
     "page": "354-5",
-    "name": "Westminster Palace",
-    "ingredients": [],
+    "name": "Westminster Palace, 1259",
+    "ingredients": [
+      {
+        "ingredient": "pitch",
+        "amount": "19",
+        "unit": "lb"
+      },
+      {
+        "ingredient": "Wax",
+        "amount": "5",
+        "unit": "lb"
+      },
+      {
+        "ingredient": "charcoal",
+        "amount": "",
+        "unit": ""
+      }
+    ],
     "description": "1259, 4th payment June 5-22\nAnd for 19 pounds of pitch and 5 pounds of wax bought for the king's cistern, 14s. 1d.\nAnd for half a hundred-weight of charcoal to cement the cistern, 7d.",
     "source": "H.M Colvin, ed.: Building Accounts of King Henry III. Oxford. 1971",
     "type": "Account",
@@ -98,7 +125,7 @@
     "date": 1279,
     "manual": "Exch. K.R. Accts; bundle 485 document 22",
     "page": "154",
-    "name": "Vale Royal, ‘for making cement for broken stones’",
+    "name": "Vale Royal, 1279 – For making cement for broken stones",
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -124,7 +151,7 @@
     "date": 1279,
     "manual": "Exch. K.R. Accts; bundle 484 document 7",
     "page": "154",
-    "name": "for the steyning of a well at Silverston",
+    "name": "Silverston, 1279 – For the steyning of a well",
     "ingredients": [
       {
         "ingredient": "Wax",
@@ -162,7 +189,7 @@
     "date": 1294,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "373",
-    "name": "September 1294",
+    "name": "St. Stephens Chapel, Westminster, 1294 – For cement",
     "ingredients": [
       {
         "ingredient": "soft pitch",
@@ -195,7 +222,7 @@
     "date": 1301,
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "19",
-    "name": "n.a.",
+    "name": "Exeter Cathedral, 1301 – For cement",
     "ingredients": [
       {
         "ingredient": "wax",
@@ -218,7 +245,7 @@
     "date": 1302,
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "25-26",
-    "name": "n.a.",
+    "name": "Exeter Cathedral, 1302 – For cement",
     "ingredients": [
       {
         "ingredient": "wax",
@@ -241,7 +268,7 @@
     "date": 1303,
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "35",
-    "name": "n.a.",
+    "name": "Exeter Cathedral, 1303 – For cement",
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -269,7 +296,7 @@
     "date": 1310,
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "53",
-    "name": "n.a.",
+    "name": "Exeter Cathedral, 1310 – For cement",
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -291,7 +318,7 @@
     "date": 1310,
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "55",
-    "name": "n.a.",
+    "name": "Exeter Cathedral, 1310 – For cement",
     "ingredients": [
       {
         "ingredient": "wax",
@@ -314,7 +341,7 @@
     "date": 1310,
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "56",
-    "name": "n.a.",
+    "name": "Exeter Cathedral, 1310 – For cement",
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -337,7 +364,7 @@
     "date": 1312,
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "65",
-    "name": "n.a.",
+    "name": "Exeter Cathedral, 1312 – For cement",
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -364,7 +391,7 @@
     "date": 1316,
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "78",
-    "name": "n.a.",
+    "name": "Exeter Cathedral, 1316 – For cement",
     "ingredients": [],
     "description": "for one pot (olia) bought for cement 1/4 d.",
     "source": "Audrey M. Erskine (ed. & transl.): The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326. Devon & Cornwall Record Society, Vol. 26. The Devonshire Press. 1983",
@@ -381,7 +408,7 @@
     "date": 1317,
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "92",
-    "name": "n.a.",
+    "name": "Exeter Cathedral, 1317 – For cement",
     "ingredients": [
       {
         "ingredient": "wax",
@@ -403,7 +430,7 @@
     "date": 1319,
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "119",
-    "name": "n.a.",
+    "name": "Exeter Cathedral, 1319 – For cement",
     "ingredients": [
       {
         "ingredient": "wax",
@@ -425,7 +452,7 @@
     "date": 1319,
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "122",
-    "name": "n.a.",
+    "name": "Exeter Cathedral, 1319 – For cement",
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -447,7 +474,7 @@
     "date": 1319,
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "123",
-    "name": "n.a.",
+    "name": "Exeter Cathedral, 1319 – For cement",
     "ingredients": [
       {
         "ingredient": "wax",
@@ -469,7 +496,7 @@
     "date": 1321,
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "136",
-    "name": "n.a.",
+    "name": "Exeter Cathedral, 1321 – For cement",
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -491,7 +518,7 @@
     "date": 1323,
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "151",
-    "name": "n.a.",
+    "name": "Exeter Cathedral, 1323 – For cement",
     "ingredients": [
       {
         "ingredient": "wax",
@@ -513,7 +540,7 @@
     "date": 1324,
     "manual": "Exch. K.R. Accts; bundle 469 document 9",
     "page": "154",
-    "name": "St. Stephens Chapel Westminster",
+    "name": "St. Stephens Chapel, Westminster, 1324 – For cement",
     "ingredients": [
       {
         "ingredient": "sulfur",
@@ -546,7 +573,7 @@
     "date": 1324,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "521",
-    "name": "Februar 1324",
+    "name": "St. Stephens Chapel, Westminster, 1324 – For cement",
     "ingredients": [
       {
         "ingredient": "Wax",
@@ -573,7 +600,7 @@
     "date": 1324,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "535",
-    "name": "April 1324",
+    "name": "St. Stephens Chapel, Westminster, 1324 – To cement stone",
     "ingredients": [
       {
         "ingredient": "Wax",
@@ -601,7 +628,7 @@
     "date": 1324,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "543",
-    "name": "May 1324",
+    "name": "St. Stephens Chapel, Westminster, 1324 – To cement stone",
     "ingredients": [
       {
         "ingredient": "Wax",
@@ -628,7 +655,7 @@
     "date": 1324,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "581",
-    "name": "October 1324",
+    "name": "St. Stephens Chapel, Westminster, 1324 – To cement stone",
     "ingredients": [
       {
         "ingredient": "Wax",
@@ -655,7 +682,7 @@
     "date": 1324,
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "157",
-    "name": "n.a.",
+    "name": "Exeter Cathedral, 1324 – For cement",
     "ingredients": [
       {
         "ingredient": "wax",
@@ -677,7 +704,7 @@
     "date": 1325,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "593",
-    "name": "Februar 1325",
+    "name": "St. Stephens Chapel, Westminster, 1325 – For cement",
     "ingredients": [
       {
         "ingredient": "Wax",
@@ -704,7 +731,7 @@
     "date": 1325,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "599",
-    "name": "March 1325",
+    "name": "St. Stephens Chapel, Westminster, 1325 – To cement stone",
     "ingredients": [
       {
         "ingredient": "Wax",
@@ -737,7 +764,7 @@
     "date": 1325,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "609",
-    "name": "May 1325",
+    "name": "St. Stephens Chapel, Westminster, 1325 – To cement stone",
     "ingredients": [
       {
         "ingredient": "wax",
@@ -764,7 +791,7 @@
     "date": 1325,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "651",
-    "name": "September 1325",
+    "name": "St. Stephens Chapel, Westminster, 1325 – To cement stone",
     "ingredients": [
       {
         "ingredient": "wax",
@@ -791,7 +818,7 @@
     "date": 1325,
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "165",
-    "name": "n.a.",
+    "name": "Exeter Cathedral, 1325 – For cement",
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -813,7 +840,7 @@
     "date": 1326,
     "manual": "Roll 1042",
     "page": "105",
-    "name": "(untitled)",
+    "name": "Norwich Cathedral, 1326 – For cement",
     "ingredients": [
       {
         "ingredient": "pitch (pic')",
@@ -843,7 +870,7 @@
     "date": 1329,
     "manual": "Roll 1043",
     "page": "115",
-    "name": "(untitled)",
+    "name": "Norwich Cathedral, 1329 – For cement",
     "ingredients": [
       {
         "ingredient": "pitch (pice)",
@@ -873,7 +900,7 @@
     "date": 1331,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "743",
-    "name": "July 1331",
+    "name": "St. Stephens Chapel, Westminster, 1331 – For cement",
     "ingredients": [
       {
         "ingredient": "wax",
@@ -900,7 +927,7 @@
     "date": 1332,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "765",
-    "name": "Jan 1332",
+    "name": "St. Stephens Chapel, Westminster, 1332 – To join stones",
     "ingredients": [
       {
         "ingredient": "wax",
@@ -928,7 +955,7 @@
     "date": 1332,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "775",
-    "name": "April 1332",
+    "name": "St. Stephens Chapel, Westminster, 1332 – For making cement",
     "ingredients": [
       {
         "ingredient": "wax",
@@ -955,7 +982,7 @@
     "date": 1332,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "801",
-    "name": "September 1332",
+    "name": "St. Stephens Chapel, Westminster, 1332 – For cementing stones",
     "ingredients": [
       {
         "ingredient": "wax",
@@ -978,7 +1005,7 @@
     "date": 1332,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "819",
-    "name": "November 1332",
+    "name": "St. Stephens Chapel, Westminster, 1332 – For cementing stones",
     "ingredients": [
       {
         "ingredient": "wax",
@@ -1006,7 +1033,7 @@
     "date": 1333,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "831",
-    "name": "February 1333",
+    "name": "St. Stephens Chapel, Westminster, 1333 – For making cement",
     "ingredients": [
       {
         "ingredient": "wax",
@@ -1034,7 +1061,7 @@
     "date": 1333,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "839",
-    "name": "April 1333",
+    "name": "St. Stephens Chapel, Westminster, 1333 – For making cement",
     "ingredients": [
       {
         "ingredient": "wax",
@@ -1062,7 +1089,7 @@
     "date": 1333,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "855",
-    "name": "August 1333",
+    "name": "St. Stephens Chapel, Westminster, 1333 – For soldering stones",
     "ingredients": [
       {
         "ingredient": "wax",
@@ -1095,7 +1122,7 @@
     "date": 1333,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "859",
-    "name": "August 1333",
+    "name": "St. Stephens Chapel, Westminster, 1333 – Mason's cement",
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -1118,7 +1145,7 @@
     "date": 1333,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "861",
-    "name": "September 1333",
+    "name": "St. Stephens Chapel, Westminster, 1333 – Cement to join stones",
     "ingredients": [
       {
         "ingredient": "wax",
@@ -1146,7 +1173,7 @@
     "date": 1333,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "873",
-    "name": "October 1333",
+    "name": "St. Stephens Chapel, Westminster, 1333 – For joining and strengthening stones",
     "ingredients": [
       {
         "ingredient": "wax",
@@ -1178,7 +1205,7 @@
     "date": 1333,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "881",
-    "name": "November 1333",
+    "name": "St. Stephens Chapel, Westminster, 1333 – For making cement",
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -1200,7 +1227,7 @@
     "date": 1333,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "887",
-    "name": "December 1333",
+    "name": "St. Stephens Chapel, Westminster, 1333 – Making cement",
     "ingredients": [
       {
         "ingredient": "wax",
@@ -1227,7 +1254,7 @@
     "date": 1334,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "893",
-    "name": "January 1334",
+    "name": "St. Stephens Chapel, Westminster, 1334 – For making cement",
     "ingredients": [
       {
         "ingredient": "hard pitch",
@@ -1255,7 +1282,7 @@
     "date": 1334,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "903",
-    "name": "April 1334",
+    "name": "St. Stephens Chapel, Westminster, 1334 – For making cement",
     "ingredients": [
       {
         "ingredient": "hard pitch",
@@ -1283,7 +1310,7 @@
     "date": 1334,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "913",
-    "name": "June 1334",
+    "name": "St. Stephens Chapel, Westminster, 1334 – To make cement",
     "ingredients": [
       {
         "ingredient": "hard pitch",
@@ -1311,7 +1338,7 @@
     "date": 1334,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "917",
-    "name": "July 1334",
+    "name": "St. Stephens Chapel, Westminster, 1334 – To make cement",
     "ingredients": [
       {
         "ingredient": "hard pitch",
@@ -1339,7 +1366,7 @@
     "date": 1340,
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 2. 1328–1353",
     "page": "262",
-    "name": "n.a.",
+    "name": "Exeter Cathedral, 1340 – For cement",
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -1361,7 +1388,7 @@
     "date": 1340,
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 2. 1328–1353",
     "page": "263",
-    "name": "n.a.",
+    "name": "Exeter Cathedral, 1340 – For making cement",
     "ingredients": [
       {
         "ingredient": "wax",
@@ -1389,7 +1416,7 @@
     "date": 1340,
     "manual": "Original source: Exch. K.R. Accts; bundle 469 document 1",
     "page": "153",
-    "name": "repairs to a buttress of Westminster palace (which projected into the Thames)",
+    "name": "Westminster Palace, 1340 – Repairs to a buttress",
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -1433,7 +1460,7 @@
     "date": 1341,
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 2. 1328–1353",
     "page": "268",
-    "name": "n.a.",
+    "name": "Exeter Cathedral, 1341 – For cement",
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -1455,7 +1482,7 @@
     "date": 1343,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "1023",
-    "name": "January 1343",
+    "name": "St. Stephens Chapel, Westminster, 1343 – For making white cement",
     "ingredients": [
       {
         "ingredient": "resin",
@@ -1483,7 +1510,7 @@
     "date": 1347,
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 2. 1328–1353",
     "page": "277",
-    "name": "n.a.",
+    "name": "Exeter Cathedral, 1347",
     "ingredients": [
       {
         "ingredient": "wax",
@@ -1515,7 +1542,7 @@
     "date": 1347,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "1063",
-    "name": "October 1347",
+    "name": "St. Stephens Chapel, Westminster, 1347 – For joining together diverse stones",
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -1538,7 +1565,7 @@
     "date": 1347,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "1065",
-    "name": "October 1347",
+    "name": "St. Stephens Chapel, Westminster, 1347 – For cement for the masons",
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -1565,7 +1592,7 @@
     "date": 1348,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "1091",
-    "name": "May 1348",
+    "name": "St. Stephens Chapel, Westminster, 1348 – For joining together stones",
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -1588,7 +1615,7 @@
     "date": 1348,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "1109",
-    "name": "August 1348",
+    "name": "St. Stephens Chapel, Westminster, 1348 – For cement for the masons",
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -1615,7 +1642,7 @@
     "date": 1348,
     "manual": "Roll 1053",
     "page": "38",
-    "name": "(untitled)",
+    "name": "Norwich Cathedral, 1348 – For cement",
     "ingredients": [
       {
         "ingredient": "rynpick",
@@ -1638,7 +1665,7 @@
     "date": 1349,
     "manual": "Exch. K.R. Accts; bundle 471 document 3",
     "page": "154",
-    "name": "the Tower, repair of the foundations of the turret beside the Thames opposite to the King’s Exchange’",
+    "name": "London Tower, 1349 – Repair of the foundations",
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -1682,7 +1709,7 @@
     "date": 1352,
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 2. 1328–1353",
     "page": "292",
-    "name": "(untitled)",
+    "name": "Exeter Cathedral, 1352 – For soldering stones",
     "ingredients": [
       {
         "ingredient": "wax",
@@ -1715,7 +1742,7 @@
     "date": 1354,
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "1197",
-    "name": "May 1354",
+    "name": "St. Stephens Chapel, Westminster, 1354 – For making cement",
     "ingredients": [
       {
         "ingredient": "rosin",
@@ -1741,7 +1768,7 @@
     "date": 1355,
     "manual": "Exch. K.R. Accts; bundle 502 document 17",
     "page": "143",
-    "name": "Westminster",
+    "name": "Westminster, 1355",
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -1773,7 +1800,7 @@
     "date": 1362,
     "manual": "Exch. K.R. Accts; bundle 466 document 19",
     "page": "154",
-    "name": "Leeds Castle",
+    "name": "Leeds Castle, 1362",
     "ingredients": [
       {
         "ingredient": "resin",
@@ -1799,7 +1826,7 @@
     "date": 1365,
     "manual": "Exch. K.R. Accts; bundle 490 document 2",
     "page": "154",
-    "name": "Wallingford, ‘to make cement for joining stones’",
+    "name": "Wallingford, 1365 – To make cement for joining stones",
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -1830,7 +1857,7 @@
     "date": 1371,
     "manual": "Fabric rolls of York Minster",
     "page": "7",
-    "name": "Roll II -Account of the Keeper of the Fabric",
+    "name": "York Minster, 1371 – For the masons",
     "ingredients": [
       {
         "ingredient": "wax",
@@ -1865,7 +1892,7 @@
     "date": 1390,
     "manual": "Wells Cathedral Fabric Accounts",
     "page": "8",
-    "name": "The Accounts of John Bovyngdon Keeper of the Church of Wells of all Receipts, Expenses and Payments made by him from the Feast of St. Michael A.D.1390 to the same Feast next following.",
+    "name": "Wells Cathedral, 1390 – For making cement",
     "images": [
       "/img/recipeImages/1390.Wel.01.png"
     ],
@@ -1896,7 +1923,7 @@
     "date": 1396,
     "manual": "Oxford City Docts. (O.H.S.), 310",
     "page": "154",
-    "name": "Oxford",
+    "name": "Oxford, 1396",
     "ingredients": [
       {
         "ingredient": "resin",
@@ -1922,7 +1949,7 @@
     "date": 1396,
     "manual": "§125. Particulars of Account 1396-9 (P.R.O. E101/ 479/23-4)\nEdited by ELIZABETH GUE and JOHN BLAIR\nE101/479/23\nRoll One (29 April 1396-20 December 1396)",
     "page": "185",
-    "name": "1.7 Necessary expenses",
+    "name": "Portchester Castle, 1396 – Soldering of the stones",
     "ingredients": [
       {
         "ingredient": "pitch and rosin",
@@ -1946,7 +1973,7 @@
     "date": 1397,
     "manual": "§125. Particulars of Account 1396-9 (P.R.O. E101/ 479/23-4)\nEdited by ELIZABETH GUE and JOHN BLAIR\nE101/479/23\nRoll Two (29 January 1397-20 December 1397)",
     "page": "191",
-    "name": "2.6 Purchase of tiles, pitch, rosin, and wax.",
+    "name": "Portchester Castle, 1397 – Beer stone set and fixed",
     "ingredients": [
       {
         "ingredient": "barrels pitch",
@@ -1980,7 +2007,7 @@
     "date": 1398,
     "manual": "§125. Particulars of Account 1396-9 (P.R.O. E101/ 479/23-4)\nEdited by ELIZABETH GUE and JOHN BLAIR\nE101/479/23\nRoll 3 (1 January-24 June 1398)",
     "page": "196",
-    "name": "3.6 Purchase of boards, tiles, pitch, rosin, and oil.",
+    "name": "Portchester Castle, 1398 – Securing and joining stones",
     "ingredients": [
       {
         "ingredient": "rosin",
@@ -2004,7 +2031,7 @@
     "date": 1398,
     "manual": "§125. Particulars of Account 1396-9 (P.R.O. E101/ 479/23-4)\nEdited by ELIZABETH GUE and JOHN BLAIR\nE1O1/479/24\nRoll 4 (25 June 1398 to 23 August 1399)",
     "page": "201",
-    "name": "4.6 “Purchase of boards, rosin, and wax.",
+    "name": "Portchester Castle, 1398 – Securing and joining stones",
     "ingredients": [
       {
         "ingredient": "? Rosin",
@@ -2033,7 +2060,7 @@
     "date": 1399,
     "manual": "Fabric rolls of York Minster",
     "page": "17",
-    "name": "Roll III – Account of the keeper of the fabric, in the year (1399) – The head/title of the roll is missing.\nVarious expenses …",
+    "name": "York Minster, 1399 – Manufacture of masons' cement",
     "images": [
       "/img/recipeImages/1399.Yor.01.png",
       "/img/recipeImages/1399.Yor.01b.png"
@@ -2062,7 +2089,7 @@
     "date": 1400,
     "manual": "Exch. K.R. Accts; bundle 502 document 15",
     "page": "154",
-    "name": "Sutton Manor in Surrey",
+    "name": "Sutton Manor, 1400",
     "ingredients": [
       {
         "ingredient": "resin",
@@ -2088,7 +2115,7 @@
     "date": 1400,
     "manual": "Il libro dell'arte",
     "page": "121",
-    "name": "Chapter CLXXVI: Waterproofing with Pitch",
+    "name": "Cennini, 1400 – Waterproofing with pitch",
     "ingredients": [
       {
         "ingredient": "ship pitch",
@@ -2124,7 +2151,7 @@
     "date": 1400,
     "manual": "Il libro dell'arte",
     "page": "66",
-    "name": "Chapter CVI:\nHow you should cement for mending stones",
+    "name": "Cennini, 1400 – How you should cement for mending stones",
     "ingredients": [
       {
         "ingredient": "mastic",
@@ -2160,7 +2187,7 @@
     "date": 1404,
     "manual": "Fabric rolls of York Minster",
     "page": "27",
-    "name": "Roll VI – Account of the custos/keeper/guardian of the fabric, in the year 1404 – The head/title of the roll is missing",
+    "name": "York Minster, 1404 – Cement and stones for reparation",
     "ingredients": [
       {
         "ingredient": "cement",
@@ -2185,7 +2212,7 @@
     "date": 1406,
     "manual": "Exch. K.R. Accts; bundle 483 document 7",
     "page": "154",
-    "name": "Berwick, to make cement (cimento)",
+    "name": "Berwick, 1406 – To make cement",
     "ingredients": [
       {
         "ingredient": "barrel pitch",
@@ -2211,7 +2238,7 @@
     "date": 1446,
     "manual": "Fabric rolls of York Minster",
     "page": "61",
-    "name": "Account of master Thomas Beleby, custos of the fabric, from 12 December 1445, until 10 December 1446",
+    "name": "York Minster, 1446 – For the repair of the baptistry",
     "ingredients": [
       {
         "ingredient": "rosin",
@@ -2241,7 +2268,7 @@
     "date": 1474,
     "manual": "Medieval Thames Vocabulary",
     "page": "36",
-    "name": "positioning stones within the river wate",
+    "name": "London Bridge, 1474",
     "ingredients": [
       {
         "ingredient": "stonepitch",
@@ -2265,7 +2292,7 @@
     "date": 1478,
     "manual": "Medieval Thames Vocabulary",
     "page": "33-34",
-    "name": "placing the stones in the river work",
+    "name": "London Bridge, 1478 – Positioning stones within the river water",
     "ingredients": [
       {
         "ingredient": "rosin",
@@ -2294,7 +2321,7 @@
     "date": 1480,
     "manual": "Medieval Thames Vocabulary",
     "page": "35",
-    "name": "the setting of stones in the waterworks",
+    "name": "London Bridge, 1480 – Setting stones in the waterworks",
     "ingredients": [
       {
         "ingredient": "rosin",
@@ -2318,7 +2345,7 @@
     "date": 1504,
     "manual": "Pomponius Garuricus: De Scultura. Florence.  December 25,  1504",
     "page": "242-243",
-    "name": "Stoneworking",
+    "name": "Pomponius Gauricus, 1504 – Stoneworking",
     "ingredients": [
       {
         "ingredient": "mastic",
@@ -2357,7 +2384,7 @@
     "date": 1515,
     "manual": "Exch. K.R. Accts; bundle 474 document 17",
     "page": "154",
-    "name": "London",
+    "name": "London, 1515 – To make cement",
     "ingredients": [
       {
         "ingredient": "rosin",
@@ -2383,7 +2410,7 @@
     "date": 1532,
     "manual": "Exch. Treasury of Receipt, Misc. Books, vols. 237-41, Hampton court accounts. F. 96",
     "page": "154",
-    "name": "Westminster",
+    "name": "Westminster, 1532 – For making cement",
     "ingredients": [
       {
         "ingredient": "part roosen (rosin)",
@@ -2409,7 +2436,7 @@
     "date": 1532,
     "manual": "Exch. Treasury of Receipt, Misc. Books, vols. 237-41, Hampton court accounts. F. 553",
     "page": "154",
-    "name": "Westminster",
+    "name": "Westminster, 1532 – For making cement",
     "ingredients": [
       {
         "ingredient": "wax",
@@ -2430,7 +2457,7 @@
     "date": 1538,
     "manual": "Letters and Papers Henry VIII, xiii (2), 342",
     "page": "154",
-    "name": "Nonesuch (palace?)",
+    "name": "Nonesuch Palace, 1538 – To make cement",
     "ingredients": [
       {
         "ingredient": "rosin",
@@ -2456,7 +2483,7 @@
     "date": 1567,
     "manual": "letter to the court of Duke Albrecht V. of Bavaria regarding the delivery of dismantled sculptures",
     "page": "459",
-    "name": "Castellinj's list of the last antiquities sent",
+    "name": "Castellini, 1567 – Enclosed mestura",
     "ingredients": [],
     "description": "\"(...) as if in the arms of the large mercury, make the pegs out of metal and heat them up. and both parts of the marble to be joined together, but not so much that the marble breaks, only enough that it is difficult to hold your hand on top of it: and at the same time breaking up the mixture that is inside one of the boxes and placing it on the fire in a pot, so that it melts slowly little by little, stirring the mixture all the time so that it does not burn or stick to the pot. Once all the above has been done, and the mixture has been heated at the same time, the pegs and both parts of the marble to be joined together must be placed in the holes, and on the part to be joined, so that it will hold together wonderfully, such that the joined parts cannot be shaken in any way.  \nAnd if a finger or some similar part of the statues breaks off, there is nothing better than to heat the parts to be joined together as above, and while they are hot, put a little of the wax from the votes that stick to the chisels between them, because pressing the broken parts together will consolidate them very well.  \nThis is the advice for the antiquarian and the sculptor.\"",
     "source": "Ellen Weski; Heike Frisien-Leizen (Hrsg.): Das Antiquarium der Münchner Residenz- Katalog der Skulpturen. München, Hirmer Verlag. 1987",
@@ -2476,7 +2503,7 @@
     "date": 1584,
     "manual": "Il Riposo … in cui della pittura, e della scultura si fauella, de'piu illustri pittori, e scultori, e delle piu famose opere loro si fa mentione; e le cose principali appartenenti a dette arti s'insegnano",
     "page": "122-123",
-    "name": "(untitled)",
+    "name": "Borghini, 1584 – Two types of stucco",
     "images": [
       "/img/recipeImages/1584.Bor.01a.png",
       "/img/recipeImages/1584.Bor.01b.png"
@@ -2516,7 +2543,7 @@
     "date": 1584,
     "manual": "Il Riposo … in cui della pittura, e della scultura si fauella, de'piu illustri pittori, e scultori, e delle piu famose opere loro si fa mentione; e le cose principali appartenenti a dette arti s'insegnano",
     "page": "123 p.181 (1807)",
-    "name": "(untitled)",
+    "name": "Borghini, 1584 – White putty",
     "images": [
       "/img/recipeImages/1584.Bor.02.png"
     ],
@@ -2554,7 +2581,7 @@
     "date": 1597,
     "manual": "Istoria delle Pietre",
     "page": "20",
-    "name": "Chapter 98. How to make plaster to stick stones together",
+    "name": "Riccio, 1597 – How to make putty to stick stones together",
     "ingredients": [
       {
         "ingredient": "greek pitch (colophony)",
@@ -2606,7 +2633,7 @@
     "date": 1640,
     "manual": "DIARY OF NICHOLAS STONE, JUNIOR",
     "page": "196",
-    "name": "Rome 1640\na remedy for a flaw or crack in a piece of marble",
+    "name": "Stone, 1640 – Remedy for a flaw or crack in a piece of marble",
     "images": [
       "/img/recipeImages/1640.Sto.01.png"
     ],
@@ -2640,7 +2667,7 @@
     "date": 1640,
     "manual": "DIARY OF NICHOLAS STONE, JUNIOR",
     "page": "196",
-    "name": "Prouaturo, a certain type of cheese made from buffalo’s milk",
+    "name": "Stone, 1640 – Another way to join marble",
     "images": [
       "/img/recipeImages/1640.Sto.02.png"
     ],
@@ -2673,7 +2700,7 @@
     "date": 1640,
     "manual": "DIARY OF NICHOLAS STONE, JUNIOR",
     "page": "196",
-    "name": "cement",
+    "name": "Stone, 1640 – Cement",
     "images": [
       "/img/recipeImages/1640.Sto.03.png"
     ],
@@ -2712,7 +2739,7 @@
     "date": 1640,
     "manual": "DIARY OF NICHOLAS STONE, JUNIOR",
     "page": "196",
-    "name": "(untitled)",
+    "name": "Stone, 1640 – Some cements",
     "images": [
       "/img/recipeImages/1640.Sto.04.png"
     ],
@@ -2752,7 +2779,7 @@
     "date": 1650,
     "manual": "Osseruationi della Scoltura Antica",
     "page": "90-91",
-    "name": "HOW TO MAKE THE MIXTURE FOR ATTACHING",
+    "name": "Boselli, 1650 – How to make the mixture for attaching",
     "images": [
       "/img/recipeImages/1650.Bos.01a.png",
       "/img/recipeImages/1650.Bos.01b.png"
@@ -2792,7 +2819,7 @@
     "date": 1673,
     "manual": "Philosophical Transactions of the Royal Society",
     "page": "6012",
-    "name": "(untitled)",
+    "name": "Royal Society, 1673 – A kind of plaster",
     "images": [
       "/img/recipeImages/1673.Roy.01.png"
     ],
@@ -2849,7 +2876,7 @@
     "date": 1679,
     "manual": "Ars Vitraria Experimentalis",
     "page": "46",
-    "name": "An Excellent Glue\nby which one can bind together wood, stone, glass, and even metal",
+    "name": "Kunckel, 1679 – An excellent glue",
     "images": [
       "/img/recipeImages/1679.Kun.p46.jpg",
       "/img/recipeImages/1679.Kun.title.jpg"
@@ -2918,7 +2945,7 @@
     "date": 1679,
     "manual": "Ars Vitraria Experimentalis",
     "page": "46-47",
-    "name": "A Good Stone Glue or Grotto Cement",
+    "name": "Kunckel, 1679 – A good stone glue or grotto cement",
     "images": [
       "/img/recipeImages/1679.Kun.p46.jpg",
       "/img/recipeImages/1679.Kun.p47.jpg",
@@ -2963,7 +2990,7 @@
     "date": 1681,
     "manual": "Vocabolario Toscano dell'Arte del Disegno",
     "page": "159",
-    "name": "White stucco for matching surfaces",
+    "name": "Baldinucci, 1681 – White stucco for matching surfaces",
     "images": [
       "/img/recipeImages/1681.Bal.01a.png",
       "/img/recipeImages/1681.Bal.01b.png",
@@ -3006,7 +3033,7 @@
     "date": 1681,
     "manual": "Vocabolario Toscano dell'Arte del Disegno",
     "page": "159",
-    "name": "Stucco for chiseling",
+    "name": "Baldinucci, 1681 – Stucco for chiselling",
     "images": [
       "/img/recipeImages/1681.Bal.02.png",
       "/img/recipeImages/1681.Bal.A.png",
@@ -3048,7 +3075,7 @@
     "date": 1681,
     "manual": "Vocabolario Toscano dell'Arte del Disegno",
     "page": "159",
-    "name": "Stucco for reassembling or repairing statues",
+    "name": "Baldinucci, 1681 – Stucco for reassembling or repairing statues",
     "images": [
       "/img/recipeImages/1681.Bal.03.png",
       "/img/recipeImages/1681.Bal.A.png",
@@ -3094,7 +3121,7 @@
     "date": 1703,
     "manual": "complete builders guide",
     "page": "103",
-    "name": "To make hot Cement.",
+    "name": "Neve, 1703 – To make hot cement",
     "images": [
       "/img/recipeImages/1703.Nev.cover.png",
       "/img/recipeImages/1703.Nev.shot.jpg"
@@ -3133,7 +3160,7 @@
     "date": 1703,
     "manual": "Mechanick exercises",
     "page": "243",
-    "name": "Bricklayers work",
+    "name": "Moxon, 1703 – Bricklayers work",
     "ingredients": [
       {
         "ingredient": "lime",
@@ -3179,7 +3206,7 @@
     "date": 1703,
     "manual": "Mechanick exercises",
     "page": "286",
-    "name": "I shall conclude this Exercise with the Art of making two sorts of Cements, for the Cementing Bricks",
+    "name": "Moxon, 1703 – The art of making two sorts of cements, for the cementing bricks",
     "images": [
       "/img/recipeImages/1703.Mox.01.2.jpg",
       "/img/recipeImages/1703.Mox.01.jpg"
@@ -3200,7 +3227,7 @@
     "date": 1703,
     "manual": "Mechanick exercises",
     "page": "286",
-    "name": "To make the cold cement",
+    "name": "Moxon, 1703 – To make the cold cement",
     "images": [
       "/img/recipeImages/1703.Mox.03.jpg"
     ],
@@ -3244,7 +3271,7 @@
     "date": 1703,
     "manual": "Mechanick exercises",
     "page": "287",
-    "name": "To make the hot Cement",
+    "name": "Moxon, 1703 – To make the hot cement",
     "images": [
       "/img/recipeImages/1703.Mox.02.jpg"
     ],
@@ -3279,7 +3306,7 @@
     "date": 1716,
     "manual": "Vocabulario Portuguez & Latino",
     "page": "158",
-    "name": "Lithocola",
+    "name": "Bluteau, 1716 – Lithocola",
     "images": [
       "/img/recipeImages/1716.Blu.01.png"
     ],
@@ -3317,7 +3344,7 @@
     "date": 1736,
     "manual": "Der wohl anführende Mahler",
     "page": "498",
-    "name": "a stone-putty",
+    "name": "Cröcker, 1736 – A stone-putty",
     "images": [
       "/img/recipeImages/1736.Croe.01.png"
     ],
@@ -3361,7 +3388,7 @@
     "date": 1736,
     "manual": "Der wohl anführende Mahler",
     "page": "498-499",
-    "name": "or (a stone-putty)",
+    "name": "Cröcker, 1736 – A stone-putty",
     "images": [
       "/img/recipeImages/1736.Croe.02a.png",
       "/img/recipeImages/1736.Croe.02b.png"
@@ -3398,7 +3425,7 @@
     "date": 1736,
     "manual": "Der wohl anführende Mahler",
     "page": "499",
-    "name": "or (a stone-putty)",
+    "name": "Cröcker, 1736 – A stone-putty",
     "images": [
       "/img/recipeImages/1736.Croe.03.png"
     ],
@@ -3454,7 +3481,7 @@
     "date": 1736,
     "manual": "Der wohl anführende Mahler",
     "page": "499",
-    "name": "or (a stone-putty)",
+    "name": "Cröcker, 1736 – A stone-putty",
     "images": [
       "/img/recipeImages/1736.Croe.04.png"
     ],
@@ -3491,7 +3518,7 @@
     "date": 1736,
     "manual": "Der wohl anführende Mahler",
     "page": "499",
-    "name": "or (a stone-putty)",
+    "name": "Cröcker, 1736 – A stone-putty",
     "images": [
       "/img/recipeImages/1736.Croe.05.png"
     ],
@@ -3543,7 +3570,7 @@
     "date": 1736,
     "manual": "Der wohl anführende Mahler",
     "page": "499",
-    "name": "or (a stone-putty)",
+    "name": "Cröcker, 1736 – A stone-putty",
     "images": [
       "/img/recipeImages/1736.Croe.06.png"
     ],
@@ -3590,7 +3617,7 @@
     "date": 1736,
     "manual": "Der wohl anführende Mahler",
     "page": "500",
-    "name": "a good stone-putty",
+    "name": "Cröcker, 1736 – A good stone-putty",
     "images": [
       "/img/recipeImages/1736.Croe.07.png"
     ],
@@ -3637,7 +3664,7 @@
     "date": 1736,
     "manual": "Der wohl anführende Mahler",
     "page": "504",
-    "name": "stone-putty",
+    "name": "Cröcker, 1736 – Stone-putty",
     "images": [
       "/img/recipeImages/1736.Croe.08.png"
     ],
@@ -3688,7 +3715,7 @@
     "date": 1736,
     "manual": "Der wohl anführende Mahler",
     "page": "505",
-    "name": "Stone- or Wood-Putty",
+    "name": "Cröcker, 1736 – Stone- or wood-putty",
     "ingredients": [
       {
         "ingredient": "wax",
@@ -3736,7 +3763,7 @@
     "date": 1736,
     "manual": "Der wohl anführende Mahler",
     "page": "506",
-    "name": "A stone glue",
+    "name": "Cröcker, 1736 – A stone glue",
     "images": [
       "/img/recipeImages/1736.Croe.10.png"
     ],
@@ -3788,7 +3815,7 @@
     "date": 1736,
     "manual": "Der wohl anführende Mahler",
     "page": "506",
-    "name": "or (a stone glue)",
+    "name": "Cröcker, 1736 – A stone glue",
     "images": [
       "/img/recipeImages/1736.Croe.11.png"
     ],
@@ -3824,7 +3851,7 @@
     "date": 1736,
     "manual": "Der wohl anführende Mahler",
     "page": "506",
-    "name": "or (a stone glue)",
+    "name": "Cröcker, 1736 – A stone glue",
     "images": [
       "/img/recipeImages/1736.Croe.12.png"
     ],
@@ -3860,7 +3887,7 @@
     "date": 1736,
     "manual": "Der wohl anführende Mahler",
     "page": "506",
-    "name": "or (a stone glue)",
+    "name": "Cröcker, 1736 – A stone glue",
     "images": [
       "/img/recipeImages/1736.Croe.13.png"
     ],
@@ -3907,7 +3934,7 @@
     "date": 1736,
     "manual": "Der wohl anführende Mahler",
     "page": "506",
-    "name": "or (a stone glue)",
+    "name": "Cröcker, 1736 – A stone glue",
     "images": [
       "/img/recipeImages/1736.Croe.14.png"
     ],
@@ -3948,7 +3975,7 @@
     "date": 1741,
     "manual": "Chamber's Universal Dictionary of Arts and Sciences",
     "page": "300",
-    "name": "Caement",
+    "name": "Chambers, 1741 – Caement",
     "ingredients": [
       {
         "ingredient": "rosin",
@@ -3986,7 +4013,7 @@
     "date": 1741,
     "manual": "Chamber's Universal Dictionary of Arts and Sciences",
     "page": "300",
-    "name": "Caement",
+    "name": "Chambers, 1741 – Caement",
     "ingredients": [
       {
         "ingredient": "cheshire cheese",
@@ -4022,7 +4049,7 @@
     "date": 1797,
     "manual": "Land-Bau-Kunst",
     "page": "131-132",
-    "name": "Nr. 83 - A good fire- or hot-putty",
+    "name": "Gilly, 1797 – Nr. 83. A good fire- or hot-putty",
     "ingredients": [
       {
         "ingredient": "colophony or pitch",
@@ -4070,7 +4097,7 @@
     "date": 1802,
     "manual": "Istruzione elementare per gli studiosi della scultura",
     "page": "28-29 (1802), p.41 (2002)",
-    "name": "Article 11 - restoring ancient sulptures",
+    "name": "Carradori, 1802 – Article 11. Restoring ancient sculptures",
     "images": [
       "/img/recipeImages/1802.Car.01a.png",
       "/img/recipeImages/1802.Car.01b.png",
@@ -4107,7 +4134,7 @@
     "date": 1807,
     "manual": "Afhandling om Kitt-Arter",
     "page": "6-7",
-    "name": "§ VI",
+    "name": "Hederstøm, 1807",
     "images": [
       "/img/recipeImages/1807.Hed.01a.png",
       "/img/recipeImages/1807.Hed.01b.png"
@@ -4136,7 +4163,7 @@
     "date": 1807,
     "manual": "Afhandling om Kitt-Arter",
     "page": "7-8",
-    "name": "Puns putty",
+    "name": "Hederstøm, 1807 – Puns putty",
     "images": [
       "/img/recipeImages/1807.Hed.02a.png",
       "/img/recipeImages/1807.Hed.02b.png"
@@ -4174,7 +4201,7 @@
     "date": 1807,
     "manual": "Afhandling om Kitt-Arter",
     "page": "8",
-    "name": "Stone grinders putty",
+    "name": "Hederstøm, 1807 – Stone grinders putty",
     "images": [
       "/img/recipeImages/1807.Hed.03.png"
     ],
@@ -4216,7 +4243,7 @@
     "date": 1807,
     "manual": "Afhandling om Kitt-Arter",
     "page": "9",
-    "name": "sulfur putty",
+    "name": "Hederstøm, 1807 – Sulfur putty",
     "images": [
       "/img/recipeImages/1807.Hed.05.png"
     ],
@@ -4257,7 +4284,7 @@
     "date": 1807,
     "manual": "Afhandling om Kitt-Arter",
     "page": "9",
-    "name": "Stonemason's putty",
+    "name": "Hederstøm, 1807 – Stonemason's putty",
     "images": [
       "/img/recipeImages/1807.Hed.04.png"
     ],
@@ -4294,7 +4321,7 @@
     "date": 1812,
     "manual": "Hand- und Hülfsbuch",
     "page": "52",
-    "name": "§. 105.\nmending broken marble",
+    "name": "Gütle, 1812 – §. 105. Mending broken marble",
     "images": [
       "/img/recipeImages/1812.Guet.25.png"
     ],
@@ -4326,7 +4353,7 @@
     "date": 1812,
     "manual": "Hand- und Hülfsbuch",
     "page": "52",
-    "name": "§. 106.\nA simple stone putty",
+    "name": "Gütle, 1812 – §. 106. A simple stone putty",
     "images": [
       "/img/recipeImages/1812.Guet.26.png"
     ],
@@ -4362,7 +4389,7 @@
     "date": 1812,
     "manual": "Hand- und Hülfsbuch",
     "page": "52-53",
-    "name": "§. 107.\nA good stone and grotto putty",
+    "name": "Gütle, 1812 – §. 107. A good stone and grotto putty",
     "images": [
       "/img/recipeImages/1812.Guet.27a.png",
       "/img/recipeImages/1812.Guet.27b.png"
@@ -4400,7 +4427,7 @@
     "date": 1812,
     "manual": "Hand- und Hülfsbuch",
     "page": "53-54",
-    "name": "§. 109.\nMaking stone glue",
+    "name": "Gütle, 1812 – §. 109. Making stone glue",
     "images": [
       "/img/recipeImages/1812.Guet.29a.png",
       "/img/recipeImages/1812.Guet.29b.png"
@@ -4433,7 +4460,7 @@
     "date": 1812,
     "manual": "Hand- und Hülfsbuch",
     "page": "18",
-    "name": "The plaster used by the ancients, which was called ‘Malia,’",
+    "name": "Gütle, 1812 – The plaster used by the ancients, which was called 'Malia'",
     "images": [
       "/img/recipeImages/1812.Guet.01.png"
     ],
@@ -4466,7 +4493,7 @@
     "date": 1812,
     "manual": "Hand- und Hülfsbuch",
     "page": "25-26",
-    "name": "§.54\nTwo types of mortar used in Italy to line and coat cisterns and water containers",
+    "name": "Gütle, 1812 – §. 54. Two types of mortar used in Italy to line and coat cisterns and water containers",
     "images": [
       "/img/recipeImages/1812.Guet.02a.png",
       "/img/recipeImages/1812.Guet.02b.png"
@@ -4508,7 +4535,7 @@
     "date": 1812,
     "manual": "Hand- und Hülfsbuch",
     "page": "39",
-    "name": "§ .75\nA putty which the Romans called Maltha.",
+    "name": "Gütle, 1812 – §. 75. A putty which the Romans called Maltha",
     "images": [
       "/img/recipeImages/1812.Guet.03.png"
     ],
@@ -4569,7 +4596,7 @@
     "date": 1812,
     "manual": "Hand- und Hülfsbuch",
     "page": "41",
-    "name": "§. 78.\nA little-known advantage of permanently and firmly bonding broken stone or marble.",
+    "name": "Gütle, 1812 – §. 78. A little-known advantage of permanently and firmly bonding broken stone or marble",
     "images": [
       "/img/recipeImages/1812.Guet.04.png"
     ],
@@ -4595,7 +4622,7 @@
     "date": 1812,
     "manual": "Hand- und Hülfsbuch",
     "page": "41-42",
-    "name": "§. 79.\nA very useful and solid compound for repairing or filling in corners that have been knocked off or broken off solid walls.",
+    "name": "Gütle, 1812 – §. 79. A very useful and solid compound for repairing or filling in corners that have been knocked off or broken off solid walls",
     "images": [
       "/img/recipeImages/1812.Guet.05a.png",
       "/img/recipeImages/1812.Guet.05b.png"
@@ -4627,7 +4654,7 @@
     "date": 1812,
     "manual": "Hand- und Hülfsbuch",
     "page": "42",
-    "name": "§. 80.\na stone putty",
+    "name": "Gütle, 1812 – §. 80. A stone putty",
     "images": [
       "/img/recipeImages/1812.Guet.06.png"
     ],
@@ -4669,7 +4696,7 @@
     "date": 1812,
     "manual": "Hand- und Hülfsbuch",
     "page": "42",
-    "name": "§. 81.\nA putty used to join broken stones together",
+    "name": "Gütle, 1812 – §. 81. A putty used to join broken stones together",
     "images": [
       "/img/recipeImages/1812.Guet.07.png"
     ],
@@ -4710,7 +4737,7 @@
     "date": 1812,
     "manual": "Hand- und Hülfsbuch",
     "page": "43",
-    "name": "§. 82.\nThe stucco putty, or a good stone and grotto putty",
+    "name": "Gütle, 1812 – §. 82. The stucco putty, or a good stone and grotto putty",
     "images": [
       "/img/recipeImages/1812.Guet.08.png"
     ],
@@ -4756,7 +4783,7 @@
     "date": 1812,
     "manual": "Hand- und Hülfsbuch",
     "page": "43-44",
-    "name": "§. 83.\nLosius' improved stone putty or so-called fire putty",
+    "name": "Gütle, 1812 – §. 83. Losius' improved stone putty or so-called fire putty",
     "images": [
       "/img/recipeImages/1812.Guet.09a.png",
       "/img/recipeImages/1812.Guet.09b.png"
@@ -4808,7 +4835,7 @@
     "date": 1812,
     "manual": "Hand- und Hülfsbuch",
     "page": "44",
-    "name": "§. 84.\nA putty with which the joints of roof tiles can be filled.",
+    "name": "Gütle, 1812 – §. 84. A putty with which the joints of roof tiles can be filled",
     "images": [
       "/img/recipeImages/1812.Guet.10.png"
     ],
@@ -4839,7 +4866,7 @@
     "date": 1812,
     "manual": "Hand- und Hülfsbuch",
     "page": "44-45",
-    "name": "§. 86.\nCement for bonding bricks and stones",
+    "name": "Gütle, 1812 – §. 86. Cement for bonding bricks and stones",
     "images": [
       "/img/recipeImages/1812.Guet.11a.png",
       "/img/recipeImages/1812.Guet.11b.png"
@@ -4882,7 +4909,7 @@
     "date": 1812,
     "manual": "Hand- und Hülfsbuch",
     "page": "45",
-    "name": "§. 87.\na stone putty",
+    "name": "Gütle, 1812 – §. 87. A stone putty",
     "images": [
       "/img/recipeImages/1812.Guet.12.png"
     ],
@@ -4918,7 +4945,7 @@
     "date": 1812,
     "manual": "Hand- und Hülfsbuch",
     "page": "45",
-    "name": "§. 88.\nanother stone putty",
+    "name": "Gütle, 1812 – §. 88. Another stone putty",
     "images": [
       "/img/recipeImages/1812.Guet.13.png"
     ],
@@ -4954,7 +4981,7 @@
     "date": 1812,
     "manual": "Hand- und Hülfsbuch",
     "page": "45-46",
-    "name": "§. 89.\nA putty that can withstand weather and water",
+    "name": "Gütle, 1812 – §. 89. A putty that can withstand weather and water",
     "images": [
       "/img/recipeImages/1812.Guet.14a.png",
       "/img/recipeImages/1812.Guet.14b.png"
@@ -5016,7 +5043,7 @@
     "date": 1812,
     "manual": "Hand- und Hülfsbuch",
     "page": "46",
-    "name": "§. 90.\nAnother provision",
+    "name": "Gütle, 1812 – §. 90. Another provision",
     "images": [
       "/img/recipeImages/1812.Guet.15.png"
     ],
@@ -5082,7 +5109,7 @@
     "date": 1812,
     "manual": "Hand- und Hülfsbuch",
     "page": "46",
-    "name": "§. 91\nA putty for builders to fill door and lock hooks.",
+    "name": "Gütle, 1812 – §. 91. A putty for builders to fill door and lock hooks",
     "images": [
       "/img/recipeImages/1812.Guet.16.png"
     ],
@@ -5123,7 +5150,7 @@
     "date": 1812,
     "manual": "Hand- und Hülfsbuch",
     "page": "47",
-    "name": "§. 92.\nA stone putty to be used when something has broken on window frames or door frames.",
+    "name": "Gütle, 1812 – §. 92. A stone putty to be used when something has broken on window frames or door frames",
     "images": [
       "/img/recipeImages/1812.Guet.17.png"
     ],
@@ -5164,7 +5191,7 @@
     "date": 1812,
     "manual": "Hand- und Hülfsbuch",
     "page": "47",
-    "name": "§.  93.\nanother type",
+    "name": "Gütle, 1812 – §. 93. Another type",
     "images": [
       "/img/recipeImages/1812.Guet.18.png"
     ],
@@ -5215,7 +5242,7 @@
     "date": 1812,
     "manual": "Hand- und Hülfsbuch",
     "page": "47",
-    "name": "§. 94.\nAnother stone putty.",
+    "name": "Gütle, 1812 – §. 94. Another stone putty",
     "images": [
       "/img/recipeImages/1812.Guet.19.png"
     ],
@@ -5251,7 +5278,7 @@
     "date": 1812,
     "manual": "Hand- und Hülfsbuch",
     "page": "47-49",
-    "name": "§. 95.\nA putty to be used for cellar vaults and keystone vaults",
+    "name": "Gütle, 1812 – §. 95. A putty to be used for cellar vaults and keystone vaults",
     "images": [
       "/img/recipeImages/1812.Guet.20a.png",
       "/img/recipeImages/1812.Guet.20b.png",
@@ -5301,7 +5328,7 @@
     "date": 1812,
     "manual": "Hand- und Hülfsbuch",
     "page": "49",
-    "name": "§.98.\nA stone putty to be used cold",
+    "name": "Gütle, 1812 – §. 98. A stone putty to be used cold",
     "images": [
       "/img/recipeImages/1812.Guet.21.png"
     ],
@@ -5343,7 +5370,7 @@
     "date": 1812,
     "manual": "Hand- und Hülfsbuch",
     "page": "49-50",
-    "name": "§. 99.\nA putty that can be used to protect wood and bricks/tiles from weathering.",
+    "name": "Gütle, 1812 – §. 99. A putty that can be used to protect wood and bricks/tiles from weathering",
     "images": [
       "/img/recipeImages/1812.Guet.22a.png",
       "/img/recipeImages/1812.Guet.22b.png"
@@ -5391,7 +5418,7 @@
     "date": 1812,
     "manual": "Hand- und Hülfsbuch",
     "page": "51",
-    "name": "§. 102.\nMending marble",
+    "name": "Gütle, 1812 – §. 102. Mending marble",
     "images": [
       "/img/recipeImages/1812.Guet.23.png",
       "/img/recipeImages/1812.Guet.23b.png"
@@ -5434,7 +5461,7 @@
     "date": 1812,
     "manual": "Hand- und Hülfsbuch",
     "page": "52",
-    "name": "§. 104.\nTo join several pieces of stone together",
+    "name": "Gütle, 1812 – §. 104. To join several pieces of stone together",
     "images": [
       "/img/recipeImages/1812.Guet.24.png"
     ],
@@ -5470,7 +5497,7 @@
     "date": 1812,
     "manual": "Hand- und Hülfsbuch",
     "page": "53",
-    "name": "§. 108.",
+    "name": "Gütle, 1812",
     "images": [
       "/img/recipeImages/1812.Guet.28.png"
     ],
@@ -5501,7 +5528,7 @@
     "date": 1822,
     "manual": "Elements of Science and Art",
     "page": "300",
-    "name": "Cement for Derbyshire Spar (here: fluorit) and other Stones.",
+    "name": "Imison, 1822 – Cement for Derbyshire spar (here: fluorite) and other stones",
     "images": [
       "/img/recipeImages/1822.Imi.02-03.png"
     ],
@@ -5537,7 +5564,7 @@
     "date": 1822,
     "manual": "Elements of Science and Art",
     "page": "300",
-    "name": "Cement for Derbyshire Spar (here: fluorit) and other Stones.",
+    "name": "Imison, 1822 – Cement for Derbyshire spar (here: fluorite) and other stones",
     "images": [
       "/img/recipeImages/1822.Imi.02-03.png"
     ],
@@ -5567,7 +5594,7 @@
     "date": 1822,
     "manual": "Elements of Science and Art",
     "page": "300-301",
-    "name": "A Cement that will stand against boiling Water and even bear a considerable Pressure of Steam.",
+    "name": "Imison, 1822 – A cement that will stand against boiling water and even bear a considerable pressure of steam",
     "ingredients": [
       {
         "ingredient": "boiled loinseed-oil",
@@ -5600,7 +5627,7 @@
     "date": 1822,
     "manual": "Elements of Science and Art",
     "page": "332",
-    "name": "of artificial grottos and shell work",
+    "name": "Imison, 1822 – Of artificial grottos and shell work",
     "images": [
       "/img/recipeImages/1822.Imi.01.png"
     ],
@@ -5647,7 +5674,7 @@
     "date": 1825,
     "manual": "Revisionsprotokoll 1825-1826 v. 12. 3. 1827, DBA, Litt. RP 1",
     "page": "322",
-    "name": "Audit record 1825–1826 of 12 March 1827, DBA, Litt. RP 1",
+    "name": "Cologne Cathedral, 1825 – Audit record 1825–1826 of 12 March 1827, DBA, Litt. RP 1",
     "ingredients": [],
     "description": "No. 72\nfor ingredients for fire-cement [Feuerkitt]\nper invoice No. 54, item 4: 1 [Taler] 29 [Groschen] 10 [Pfennig]",
     "source": "referenced in:  Schumacher, T. (1993). Großbaustelle Kölner Dom: Technik des 19. Jahrhunderts bei der Vollendung einer gotischen Kathedrale (A. Wolff, Hrsg.; Bd. 4, S. 879). Verlag Kölner Dom e.V.",
@@ -5667,7 +5694,7 @@
     "date": 1826,
     "manual": "Rechnungsbelege 1826, DBA, Litt. RB 3, Heft V, Nr. 481, Pos. 4",
     "page": "322",
-    "name": "Invoice 1826",
+    "name": "Cologne Cathedral, 1826 – Invoice 1826",
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -5712,7 +5739,7 @@
     "date": 1837,
     "manual": "Technologische Encyclopädie",
     "page": "395",
-    "name": "IV.Resin putties",
+    "name": "Prechtl, 1837 – IV. Resin putties",
     "images": [
       "/img/recipeImages/1837.Pre.01.png",
       "/img/recipeImages/1837.Pre.p394-395.png",
@@ -5740,7 +5767,7 @@
     "date": 1837,
     "manual": "Technologische Encyclopädie",
     "page": "395-396",
-    "name": "IV.Resin putties",
+    "name": "Prechtl, 1837 – IV. Resin putties",
     "images": [
       "/img/recipeImages/1837.Pre.02a.png",
       "/img/recipeImages/1837.Pre.02b.png",
@@ -5796,7 +5823,7 @@
     "country": "Germany",
     "site": "Prechtl",
     "originalTitle": "IV. Harzkitte",
-    "originalText": "Am gewöhnlichsten werden die Harzkitte zur Anwednug im Großen gebraucht, und man verwendet dann dazu Pech pder Kolophon, theils für sich mit Zement (feinem Sand, Ziegelmehl, gepulverter Kreide oder Kalkstein, Gips) versetzt, theils mit Schwefel gemsicht, wenn eine größere Härte erforderlich ist, theils mit Wachs, Asphalt, Talg, Terpentin- oder Steinkohlentheer versetzt, wenn man den Kitt weniger hart und spröde haben will. \nDiese Kitte werden hauptsächlich zur verbidung von Steinen, zur Auskittung von Terrassen, zur Herstellung eines die Feuchtigkeit abhaltenden Mauerwerks, zum Kitten von Stein auf Holz oder Eisen, oder Einkitten von Eisen in Stein, und in solchen Fällen, wo keine höhere Wärme eintritt, und der Kitt selbst keiner mechanischen Beschädigung ausgesetzt ist, angewendet. Um ihn aufzulegen, müssen vorher die zu verbindenden Flächen gehörig erwärmt werden, weil der geschmolzene Kitt auf den Körper um so besser greift, wenn die Temperatur des letztern wenigstens nicht geringer ist, als die Temperatur des geschmolzenen Kittes."
+    "originalText": "Am gewöhnlichsten werden die Harzkitte zur Anwednug im Großen gebraucht, und man verwendet dann dazu Pech oder Kolophon, theils für sich mit Zement (feinem Sand, Ziegelmehl, gepulverter Kreide oder Kalkstein, Gips) versetzt, theils mit Schwefel gemsicht, wenn eine größere Härte erforderlich ist, theils mit Wachs, Asphalt, Talg, Terpentin- oder Steinkohlentheer versetzt, wenn man den Kitt weniger hart und spröde haben will. \nDiese Kitte werden hauptsächlich zur verbidung von Steinen, zur Auskittung von Terrassen, zur Herstellung eines die Feuchtigkeit abhaltenden Mauerwerks, zum Kitten von Stein auf Holz oder Eisen, oder Einkitten von Eisen in Stein, und in solchen Fällen, wo keine höhere Wärme eintritt, und der Kitt selbst keiner mechanischen Beschädigung ausgesetzt ist, angewendet. Um ihn aufzulegen, müssen vorher die zu verbindenden Flächen gehörig erwärmt werden, weil der geschmolzene Kitt auf den Körper um so besser greift, wenn die Temperatur des letztern wenigstens nicht geringer ist, als die Temperatur des geschmolzenen Kittes."
   },
   {
     "id": "1837.Pre.03",
@@ -5805,7 +5832,7 @@
     "date": 1837,
     "manual": "Technologische Encyclopädie",
     "page": "396",
-    "name": "IV.Resin putties",
+    "name": "Prechtl, 1837 – IV. Resin putties",
     "images": [
       "/img/recipeImages/1837.Pre.03.png",
       "/img/recipeImages/1837.Pre.p396-397.png",
@@ -5844,7 +5871,7 @@
     "date": 1837,
     "manual": "Technologische Encyclopädie",
     "page": "396",
-    "name": "IV.Resin putties",
+    "name": "Prechtl, 1837 – IV. Resin putties",
     "images": [
       "/img/recipeImages/1837.Pre.04.png",
       "/img/recipeImages/1837.Pre.p396-397.png",
@@ -5882,7 +5909,7 @@
     "date": 1837,
     "manual": "Technologische Encyclopädie",
     "page": "396",
-    "name": "IV.Resin putties",
+    "name": "Prechtl, 1837 – IV. Resin putties",
     "images": [
       "/img/recipeImages/1837.Pre.05.png",
       "/img/recipeImages/1837.Pre.p396-397.png",
@@ -5925,7 +5952,7 @@
     "date": 1837,
     "manual": "Technologische Encyclopädie",
     "page": "396",
-    "name": "IV.Resin putties",
+    "name": "Prechtl, 1837 – IV. Resin putties",
     "images": [
       "/img/recipeImages/1837.Pre.06.png",
       "/img/recipeImages/1837.Pre.p396-397.png",
@@ -5973,7 +6000,7 @@
     "date": 1837,
     "manual": "Technologische Encyclopädie",
     "page": "396",
-    "name": "IV.Resin putties",
+    "name": "Prechtl, 1837 – IV. Resin putties",
     "images": [
       "/img/recipeImages/1837.Pre.07.png",
       "/img/recipeImages/1837.Pre.p396-397.png",
@@ -6011,7 +6038,7 @@
     "date": 1837,
     "manual": "Technologische Encyclopädie",
     "page": "396",
-    "name": "IV.Resin putties",
+    "name": "Prechtl, 1837 – IV. Resin putties",
     "images": [
       "/img/recipeImages/1837.Pre.08.png",
       "/img/recipeImages/1837.Pre.p396-397.png",
@@ -6050,7 +6077,7 @@
     "date": 1837,
     "manual": "Technologische Encyclopädie",
     "page": "396",
-    "name": "IV.Resin putties",
+    "name": "Prechtl, 1837 – IV. Resin putties",
     "images": [
       "/img/recipeImages/1837.Pre.09.png",
       "/img/recipeImages/1837.Pre.p396-397.png",
@@ -6103,7 +6130,7 @@
     "date": 1837,
     "manual": "Technologische Encyclopädie",
     "page": "397",
-    "name": "IV.Resin putties",
+    "name": "Prechtl, 1837 – IV. Resin putties",
     "images": [
       "/img/recipeImages/1837.Pre.10.png",
       "/img/recipeImages/1837.Pre.p396-397.png",
@@ -6146,7 +6173,7 @@
     "date": 1837,
     "manual": "Technologische Encyclopädie",
     "page": "397",
-    "name": "IV.Resin putties",
+    "name": "Prechtl, 1837 – IV. Resin putties",
     "images": [
       "/img/recipeImages/1837.Pre.11.png",
       "/img/recipeImages/1837.Pre.p396-397.png",
@@ -6184,7 +6211,7 @@
     "date": 1838,
     "manual": "Maurer-Materialien pro 1838, Öl- und Feuerkitt",
     "page": "???",
-    "name": "Masonry materials pro 1838\nOil putty & fire putty",
+    "name": "Cologne Cathedral, 1838 – Masonry materials pro 1838: oil putty & fire putty",
     "ingredients": [],
     "description": "Masonry materials pro 1838\nOil putty & fire putty [Oelkitt & Feuerkitt]\n\nPurchased in the year 1838\n\n                    Oil putty [Oelkitt]\nItem | Day | Month | File ref.                 | Supp.-No. | Supplier              | Pounds | Price/lb      | Rt | gg | Pf\n1    | 12  | April | XI N: 2 [unclear, 2 char.] | 68        | J. J. Schmitz         | 200    | 1 2/3 [unclear]| 11 | 3  | 4\n2    | 1   | May   | . . 11 . 1                | 77        | [unclear] Bergerhauser| 50     | 1 ½           | 2  | 15 | –\n3    | 4   | \"     | . . . . 2                 | –         | the same              | 100    | \"             | 5  | –  | –\n4    | 23  | June  | . . . . 3                 | –         | the same              | 200    | \"             | 10 | –  | –\n\nTotal                                                                       550     |               | 28 | 18 | 4\n\n[unclear passage, transcriber's interpretation: \"550 pounds of oil putty were used for pointing the joints and for producing the mouldings/profiles on the outer pier sections.\"]\n\n                    Fire putty [Feuerkitt]\nItem | Day | Month     | File ref.            | Supp.-No. | Supplier      | Pounds | Price/lb | Rt | gg | Pf\n1    | 24  | [unclear] | XI N° 15 [unclear] 2 | 81        | J. J. Schmitz | 12     | 10       | 4  | .  | .\n2    | 1   | [unclear] | . . 24 . 1           | 90        | the same      | 15     | 10       | 5  | .  | .\n\nTotal                                                                  27      | for      | 9  | .  | .\n\n[unclear passage, transcriber's interpretation: \"33 pounds of fire putty were used for puttying the finished stones (: in the damaged spots)\"]\n\n= 33 [sum of the pound column, correctly re-checked] [gg/Pf column: illegible]\n\n[unclear sentence, transcriber's interpretation: \"re-measured in the surplus\"]\n\nAB 41",
     "source": "???",
@@ -6202,7 +6229,7 @@
     "date": 1844,
     "manual": "Die Kitt-Kunst oder Anleitung, alle Arten von Kitten und Mörteln zweckmäßig zu bereiten und sie mit Erfolg und Dauer anzuwenden",
     "page": "120",
-    "name": "Nr.149",
+    "name": "Thon, 1844",
     "images": [
       "/img/recipeImages/1844.Tho.01.png"
     ],
@@ -6243,7 +6270,7 @@
     "date": 1844,
     "manual": "Die Kitt-Kunst oder Anleitung, alle Arten von Kitten und Mörteln zweckmäßig zu bereiten und sie mit Erfolg und Dauer anzuwenden",
     "page": "120",
-    "name": "Nr.150",
+    "name": "Thon, 1844",
     "images": [
       "/img/recipeImages/1844.Tho.02.png"
     ],
@@ -6279,7 +6306,7 @@
     "date": 1844,
     "manual": "Die Kitt-Kunst oder Anleitung, alle Arten von Kitten und Mörteln zweckmäßig zu bereiten und sie mit Erfolg und Dauer anzuwenden",
     "page": "120",
-    "name": "Nr. 151",
+    "name": "Thon, 1844",
     "images": [
       "/img/recipeImages/1844.Tho.03.png"
     ],
@@ -6310,7 +6337,7 @@
     "date": 1844,
     "manual": "Die Kitt-Kunst oder Anleitung, alle Arten von Kitten und Mörteln zweckmäßig zu bereiten und sie mit Erfolg und Dauer anzuwenden",
     "page": "120-121",
-    "name": "Nr. 152a",
+    "name": "Thon, 1844",
     "images": [
       "/img/recipeImages/1844.Tho.04a.1.png",
       "/img/recipeImages/1844.Tho.04a.2.png"
@@ -6353,7 +6380,7 @@
     "date": 1844,
     "manual": "Die Kitt-Kunst oder Anleitung, alle Arten von Kitten und Mörteln zweckmäßig zu bereiten und sie mit Erfolg und Dauer anzuwenden",
     "page": "121",
-    "name": "Nr. 152a",
+    "name": "Thon, 1844",
     "images": [
       "/img/recipeImages/1844.Tho.04b.png"
     ],
@@ -6395,7 +6422,7 @@
     "date": 1844,
     "manual": "Die Kitt-Kunst oder Anleitung, alle Arten von Kitten und Mörteln zweckmäßig zu bereiten und sie mit Erfolg und Dauer anzuwenden",
     "page": "121",
-    "name": "Nr.153",
+    "name": "Thon, 1844",
     "images": [
       "/img/recipeImages/1844.Tho.05a-e.png"
     ],
@@ -6442,7 +6469,7 @@
     "date": 1844,
     "manual": "Die Kitt-Kunst oder Anleitung, alle Arten von Kitten und Mörteln zweckmäßig zu bereiten und sie mit Erfolg und Dauer anzuwenden",
     "page": "121-122",
-    "name": "Nr.154",
+    "name": "Thon, 1844",
     "images": [
       "/img/recipeImages/1844.Tho.06a.png",
       "/img/recipeImages/1844.Tho.06b.png"
@@ -6489,7 +6516,7 @@
     "date": 1844,
     "manual": "Die Kitt-Kunst oder Anleitung, alle Arten von Kitten und Mörteln zweckmäßig zu bereiten und sie mit Erfolg und Dauer anzuwenden",
     "page": "122",
-    "name": "Nr.155",
+    "name": "Thon, 1844",
     "images": [
       "/img/recipeImages/1844.Tho.07.png"
     ],
@@ -6530,7 +6557,7 @@
     "date": 1844,
     "manual": "Die Kitt-Kunst oder Anleitung, alle Arten von Kitten und Mörteln zweckmäßig zu bereiten und sie mit Erfolg und Dauer anzuwenden",
     "page": "122",
-    "name": "Nr.156",
+    "name": "Thon, 1844",
     "images": [
       "/img/recipeImages/1844.Tho.08.png"
     ],
@@ -6566,7 +6593,7 @@
     "date": 1844,
     "manual": "Die Kitt-Kunst oder Anleitung, alle Arten von Kitten und Mörteln zweckmäßig zu bereiten und sie mit Erfolg und Dauer anzuwenden",
     "page": "123-124",
-    "name": "Nr.162",
+    "name": "Thon, 1844",
     "images": [
       "/img/recipeImages/1844.Tho.09.1.png",
       "/img/recipeImages/1844.Tho.09.2.png"
@@ -6618,7 +6645,7 @@
     "date": 1844,
     "manual": "Die Kitt-Kunst oder Anleitung, alle Arten von Kitten und Mörteln zweckmäßig zu bereiten und sie mit Erfolg und Dauer anzuwenden",
     "page": "124-125",
-    "name": "Nr.164",
+    "name": "Thon, 1844",
     "images": [
       "/img/recipeImages/1844.Tho.10.1.png",
       "/img/recipeImages/1844.Tho.10.2.png"
@@ -6675,7 +6702,7 @@
     "date": 1844,
     "manual": "Die Kitt-Kunst oder Anleitung, alle Arten von Kitten und Mörteln zweckmäßig zu bereiten und sie mit Erfolg und Dauer anzuwenden",
     "page": "125",
-    "name": "Nr.165",
+    "name": "Thon, 1844",
     "images": [
       "/img/recipeImages/1844.Tho.11.png"
     ],
@@ -6726,7 +6753,7 @@
     "date": 1844,
     "manual": "Die Kitt-Kunst oder Anleitung, alle Arten von Kitten und Mörteln zweckmäßig zu bereiten und sie mit Erfolg und Dauer anzuwenden",
     "page": "125",
-    "name": "Nr.167",
+    "name": "Thon, 1844",
     "images": [
       "/img/recipeImages/1844.Tho.12.png"
     ],
@@ -6772,7 +6799,7 @@
     "date": 1844,
     "manual": "Die Kitt-Kunst oder Anleitung, alle Arten von Kitten und Mörteln zweckmäßig zu bereiten und sie mit Erfolg und Dauer anzuwenden",
     "page": "125-126",
-    "name": "Nr.168",
+    "name": "Thon, 1844",
     "images": [
       "/img/recipeImages/1844.Tho.13.1.png",
       "/img/recipeImages/1844.Tho.13.2.png"
@@ -6814,7 +6841,7 @@
     "date": 1844,
     "manual": "Die Kitt-Kunst oder Anleitung, alle Arten von Kitten und Mörteln zweckmäßig zu bereiten und sie mit Erfolg und Dauer anzuwenden",
     "page": "126",
-    "name": "Nr.169",
+    "name": "Thon, 1844",
     "images": [
       "/img/recipeImages/1844.Tho.14.png"
     ],
@@ -6860,7 +6887,7 @@
     "date": 1844,
     "manual": "Die Kitt-Kunst oder Anleitung, alle Arten von Kitten und Mörteln zweckmäßig zu bereiten und sie mit Erfolg und Dauer anzuwenden",
     "page": "121",
-    "name": "Nr.153",
+    "name": "Thon, 1844",
     "images": [
       "/img/recipeImages/1844.Tho.05a-e.png"
     ],
@@ -6898,7 +6925,7 @@
     "date": 1844,
     "manual": "Die Kitt-Kunst oder Anleitung, alle Arten von Kitten und Mörteln zweckmäßig zu bereiten und sie mit Erfolg und Dauer anzuwenden",
     "page": "121",
-    "name": "Nr.153",
+    "name": "Thon, 1844",
     "images": [
       "/img/recipeImages/1844.Tho.05a-e.png"
     ],
@@ -6946,7 +6973,7 @@
     "date": 1844,
     "manual": "Die Kitt-Kunst oder Anleitung, alle Arten von Kitten und Mörteln zweckmäßig zu bereiten und sie mit Erfolg und Dauer anzuwenden",
     "page": "121",
-    "name": "Nr.153",
+    "name": "Thon, 1844",
     "images": [
       "/img/recipeImages/1844.Tho.05a-e.png"
     ],
@@ -6989,7 +7016,7 @@
     "date": 1844,
     "manual": "Die Kitt-Kunst oder Anleitung, alle Arten von Kitten und Mörteln zweckmäßig zu bereiten und sie mit Erfolg und Dauer anzuwenden",
     "page": "121",
-    "name": "Nr.153",
+    "name": "Thon, 1844",
     "images": [
       "/img/recipeImages/1844.Tho.05a-e.png"
     ],
@@ -7032,7 +7059,7 @@
     "date": 1853,
     "manual": "Notizie storiche riguardanti l'imperiale e Reale Stabilimento dei lavori di commesso in pietre dure di Firenze",
     "page": "20",
-    "name": "(on the construction of the stone floor, Duomo di Siena)",
+    "name": "Zobi, 1853 – On the construction of the stone floor, Duomo di Siena",
     "ingredients": [
       {
         "ingredient": "greek pitch (colophony)",
@@ -7082,7 +7109,7 @@
     "date": 1853,
     "manual": "Notizie storiche riguardanti l'imperiale e Reale Stabilimento dei lavori di commesso in pietre dure di Firenze",
     "page": "128",
-    "name": "(untitled)",
+    "name": "Zobi, 1853",
     "ingredients": [
       {
         "ingredient": "greek pitch (colophony)",
@@ -7110,7 +7137,7 @@
     "date": 1869,
     "manual": "1242) Instruktion v. 6. 7. 1869, DBA, Litt. E sup 111, Fol. 36-37",
     "page": "323",
-    "name": "1242) Instruktion v. 6. 7. 1869, DBA, Litt. E sup 111, Fol. 36-37",
+    "name": "Voigtel, 1869 – Instruktion v. 6. 7. 1869, DBA, Litt. E sup 111, Fol. 36–37",
     "ingredients": [
       {
         "ingredient": "gypsum",
@@ -7138,7 +7165,7 @@
     "date": 1904,
     "manual": "Die Kitte und Klebemittel",
     "page": "30",
-    "name": "Resin putty for knife handles",
+    "name": "Lehner, 1904 – Resin putty for knife handles",
     "images": [
       "/img/recipeImages/1904.Leh.01.png"
     ],
@@ -7176,7 +7203,7 @@
     "date": 1904,
     "manual": "Die Kitte und Klebemittel",
     "page": "32",
-    "name": "Stone putty",
+    "name": "Lehner, 1904 – Stone putty",
     "images": [
       "/img/recipeImages/1904.Leh.02.png"
     ],
@@ -7218,7 +7245,7 @@
     "date": 1904,
     "manual": "Die Kitte und Klebemittel",
     "page": "32",
-    "name": "Putty for terracotta objects",
+    "name": "Lehner, 1904 – Putty for terracotta objects",
     "images": [
       "/img/recipeImages/1904.Leh.03a.png",
       "/img/recipeImages/1904.Leh.03b.png"
@@ -7267,7 +7294,7 @@
     "date": 1904,
     "manual": "Die Kitte und Klebemittel",
     "page": "33",
-    "name": "Cheap sulfur-resin-putty",
+    "name": "Lehner, 1904 – Cheap sulfur-resin-putty",
     "images": [
       "/img/recipeImages/1904.Leh.04.png"
     ],
@@ -7305,7 +7332,7 @@
     "date": 1904,
     "manual": "Die Kitte und Klebemittel",
     "page": "33-34",
-    "name": "Schellac putty",
+    "name": "Lehner, 1904 – Shellac putty",
     "images": [
       "/img/recipeImages/1904.Leh.05a.png",
       "/img/recipeImages/1904.Leh.05b.png"
@@ -7343,7 +7370,7 @@
     "date": 1904,
     "manual": "Die Kitte und Klebemittel",
     "page": "50",
-    "name": "Blood-protein-putty for building work",
+    "name": "Lehner, 1904 – Blood-protein-putty for building work",
     "images": [
       "/img/recipeImages/1904.Leh.06.png"
     ],
@@ -7390,7 +7417,7 @@
     "date": 1904,
     "manual": "Die Kitte und Klebemittel",
     "page": "52",
-    "name": "blood-ash-putty for building work",
+    "name": "Lehner, 1904 – Blood-ash-putty for building work",
     "images": [
       "/img/recipeImages/1904.Leh.07.png"
     ],
@@ -7427,7 +7454,7 @@
     "date": 1907,
     "manual": "Kitte und Klebstoffe",
     "page": "133",
-    "name": "Cheap sulfur-resin-putty",
+    "name": "Breuer, 1907 – Cheap sulfur-resin-putty",
     "images": [
       "/img/recipeImages/1907.Bre.07.png"
     ],
@@ -7463,7 +7490,7 @@
     "date": 1907,
     "manual": "Kitte und Klebstoffe",
     "page": "139",
-    "name": "Stone putty a",
+    "name": "Breuer, 1907 – Stone putty a",
     "images": [
       "/img/recipeImages/1907.Bre.01.png"
     ],
@@ -7514,7 +7541,7 @@
     "date": 1907,
     "manual": "Kitte und Klebstoffe",
     "page": "139",
-    "name": "Stone putty b",
+    "name": "Breuer, 1907 – Stone putty b",
     "images": [
       "/img/recipeImages/1907.Bre.02.png"
     ],
@@ -7555,7 +7582,7 @@
     "date": 1907,
     "manual": "Kitte und Klebstoffe",
     "page": "139",
-    "name": "Stone putty c",
+    "name": "Breuer, 1907 – Stone putty c",
     "images": [
       "/img/recipeImages/1907.Bre.03.png"
     ],
@@ -7591,7 +7618,7 @@
     "date": 1907,
     "manual": "Kitte und Klebstoffe",
     "page": "165",
-    "name": "Stone putty a",
+    "name": "Breuer, 1907 – Stone putty a",
     "images": [
       "/img/recipeImages/1907.Bre.04.png"
     ],
@@ -7627,7 +7654,7 @@
     "date": 1907,
     "manual": "Kitte und Klebstoffe",
     "page": "165",
-    "name": "Stone putty b",
+    "name": "Breuer, 1907 – Stone putty b",
     "images": [
       "/img/recipeImages/1907.Bre.05.png"
     ],
@@ -7663,7 +7690,7 @@
     "date": 1907,
     "manual": "Kitte und Klebstoffe",
     "page": "229",
-    "name": "Rough iron putty",
+    "name": "Breuer, 1907 – Rough iron putty",
     "images": [
       "/img/recipeImages/1907.Bre.06.png"
     ],
@@ -7704,7 +7731,7 @@
     "date": 1909,
     "manual": "Der Marmor",
     "page": "51",
-    "name": "XXIV. The Cementing of Marble",
+    "name": "Weber, 1909 – XXIV. The cementing of marble",
     "ingredients": [
       {
         "ingredient": "parts resin",
@@ -7737,7 +7764,7 @@
     "date": 1909,
     "manual": "Der Marmor",
     "page": "51",
-    "name": "XXIV. The Cementing of Marble",
+    "name": "Weber, 1909 – XXIV. The cementing of marble",
     "ingredients": [
       {
         "ingredient": "beaten egg",
@@ -7775,7 +7802,7 @@
     "date": 1909,
     "manual": "Der Marmor",
     "page": "51",
-    "name": "XXIV. The Cementing of Marble",
+    "name": "Weber, 1909 – XXIV. The cementing of marble",
     "ingredients": [
       {
         "ingredient": "curd cheese",
@@ -7808,7 +7835,7 @@
     "date": 1915,
     "manual": "Kitte für Stein- und Tonsachen",
     "page": "125-126",
-    "name": "Putty for stone and earthenware",
+    "name": "Rathgen, 1915 – Putty for stone and earthenware",
     "ingredients": [
       {
         "ingredient": "parts colophony",
