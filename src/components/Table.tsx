@@ -4,8 +4,7 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 type TableProps = {
   recipes: Recipes[];
-  setOpenDetails: React.Dispatch<React.SetStateAction<boolean>>;
-  setSelectedRecipe: React.Dispatch<React.SetStateAction<Recipes | null>>;
+  onSelect: (recipe: Recipes) => void;
   sortColumn: string | null;
   setSortColumn: React.Dispatch<React.SetStateAction<string | null>>;
   sortOrder: "asc" | "desc";
@@ -14,8 +13,7 @@ type TableProps = {
 
 export function Table({
   recipes,
-  setOpenDetails,
-  setSelectedRecipe,
+  onSelect,
   sortColumn,
   setSortColumn,
   sortOrder,
@@ -144,12 +142,7 @@ export function Table({
             </tr>
           </thead>
           {sortedRecipes?.map((recipe) => (
-            <TableBody
-              key={recipe.id}
-              recipe={recipe}
-              setOpenDetails={setOpenDetails}
-              setSelectedRecipe={setSelectedRecipe}
-            />
+            <TableBody key={recipe.id} recipe={recipe} onSelect={onSelect} />
           ))}
         </table>
       </div>

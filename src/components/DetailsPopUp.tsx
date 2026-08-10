@@ -3,11 +3,11 @@ import { IoMdClose } from "react-icons/io";
 import { Recipes } from "../types";
 
 type DetailsProps = {
-  setOpenDetails: React.Dispatch<React.SetStateAction<boolean>>;
+  onClose: () => void;
   selectedRecipe: Recipes | null;
 };
 
-export function DetailsPopUp({ setOpenDetails, selectedRecipe }: DetailsProps) {
+export function DetailsPopUp({ onClose, selectedRecipe }: DetailsProps) {
   const [failedImages, setFailedImages] = useState<Set<string>>(new Set());
 
   return (
@@ -16,14 +16,14 @@ export function DetailsPopUp({ setOpenDetails, selectedRecipe }: DetailsProps) {
 
       <div
         className="flex justify-center py-10 px-5 fixed inset-0 z-50"
-        onClick={() => setOpenDetails(false)}
+        onClick={onClose}
       >
         <div
           className="bg-paperRaised text-ink pt-8 px-8 pb-8 rounded-2xl shadow-xl relative overflow-y-auto border border-line max-w-3xl w-full"
           onClick={(e) => e.stopPropagation()}
         >
           <button
-            onClick={() => setOpenDetails(false)}
+            onClick={onClose}
             aria-label="Close recipe details"
             className="absolute top-5 right-5 cursor-pointer text-inkSoft hover:text-ink transition-colors"
           >

@@ -3,22 +3,14 @@ import { IoIosArrowForward } from "react-icons/io";
 
 type TableBodyProps = {
   recipe: Recipes;
-  setOpenDetails: React.Dispatch<React.SetStateAction<boolean>>;
-  setSelectedRecipe: React.Dispatch<React.SetStateAction<Recipes | null>>;
+  onSelect: (recipe: Recipes) => void;
 };
 
-export function TableBody({
-  recipe,
-  setOpenDetails,
-  setSelectedRecipe,
-}: TableBodyProps) {
+export function TableBody({ recipe, onSelect }: TableBodyProps) {
   return (
     <tbody key={recipe.id}>
       <tr
-        onClick={() => {
-          setOpenDetails(true);
-          setSelectedRecipe(recipe);
-        }}
+        onClick={() => onSelect(recipe)}
         className="group cursor-pointer border-b border-line transition-colors hover:bg-sand/15"
       >
         <td className="px-5 py-4 align-top break-words">

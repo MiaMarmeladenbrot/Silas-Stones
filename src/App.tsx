@@ -18,6 +18,9 @@ function App() {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<MainPage />} />
+            {/* same element as "/" so the list keeps its search/sort state
+                while the detail view opens and closes */}
+            <Route path="/recipe/:id" element={<MainPage />} />
             {/* <Route path="/" element={<MaintenancePage />} /> */}
             <Route path="/about" element={<AboutPage />} />
             <Route path="/impressum" element={<ImpressumPage />} />

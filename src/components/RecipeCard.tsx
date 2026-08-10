@@ -2,22 +2,14 @@ import { Recipes } from "../types";
 
 type RecipeCardProps = {
   recipe: Recipes;
-  setOpenDetails: React.Dispatch<React.SetStateAction<boolean>>;
-  setSelectedRecipe: React.Dispatch<React.SetStateAction<Recipes | null>>;
+  onSelect: (recipe: Recipes) => void;
 };
 
-export function RecipeCard({
-  recipe,
-  setOpenDetails,
-  setSelectedRecipe,
-}: RecipeCardProps) {
+export function RecipeCard({ recipe, onSelect }: RecipeCardProps) {
   return (
     <div
       className="w-full rounded-xl border border-line bg-paperRaised py-4 px-5 cursor-pointer shadow-sm transition-shadow hover:shadow-md border-l-2 border-l-sand"
-      onClick={() => {
-        setOpenDetails(true);
-        setSelectedRecipe(recipe);
-      }}
+      onClick={() => onSelect(recipe)}
     >
       <div className="mb-2 flex items-start justify-between gap-2">
         <h3 className="text-ink">{recipe.name}</h3>
