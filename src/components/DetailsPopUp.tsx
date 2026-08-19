@@ -76,8 +76,11 @@ export function DetailsPopUp({ onClose, selectedRecipe }: DetailsProps) {
             <div className="mb-6">
               <h5 className="mb-2">Ingredients</h5>
               <ul className="list-disc ml-4 space-y-1">
-                {selectedRecipe?.ingredients.map((ing) => (
-                  <li key={ing.ingredient} className="diagonal-fractions">
+                {selectedRecipe?.ingredients.map((ing, idx) => (
+                  <li
+                    key={`${idx}-${ing.ingredient}`}
+                    className="diagonal-fractions"
+                  >
                     {ing.amount} {ing.unit} {ing.ingredient}
                   </li>
                 ))}

@@ -7,6 +7,7 @@ export type Recipes = {
   page: string;
   name: string;
   images?: string[];
+  curatedMaterials: string[];
   ingredients: { ingredient: string; amount: string; unit: string }[];
   description: string;
   source: string;

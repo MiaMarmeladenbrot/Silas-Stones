@@ -13,6 +13,7 @@
       "/img/recipeImages/1061.Mor.p169.jpg",
       "/img/recipeImages/1061.Mor.p170.jpg"
     ],
+    "curatedMaterials": [],
     "ingredients": [],
     "description": "In the subsequent period, when the buildings of the temple were being constructed on the northern side, the bitumen craftsman (bituminis artifex) (1) was working with his team on the southern side. Now on a certain day, a boy (2) who was handing him stones and cement, placed so heavy a weight of stones on the structure in which they were standing that the structure could not bear the force of such a mass; but, with the entire structure broken, the stones and cement fell with a great noise to the ground. \n\n(1) Bituminis artifex would designate the master worker or cement specialist who, in this cold and humid northern region, was required to coat the masonry with a cement mixture, no doubt highly cohesive and intended to prevent the disastrous effects of moisture in construction. The chronicler considers it necessary to insist on this point, probably because masonry techniques at that time were all the more noteworthy inasmuch as methods of timber-frame construction were still very widely employed in this northern region.\n(2) At this period, we scarcely find any mention in the texts of an assistant mason; this example should be noted for the eleventh century.",
     "source": "Victor Mortet: Recueil de textes relatifs à l'histoire de l'architecture et à la condition des architectes en France au Moyen Age. Paris. 1911",
@@ -31,6 +32,11 @@
     "manual": "Exch. K.R. Accts; bundle 467 document 2",
     "page": "153",
     "name": "Westminster Palace, 1259",
+    "curatedMaterials": [
+      "Charcoal / Coal",
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -66,6 +72,10 @@
     "manual": "Westminster Palace",
     "page": "304-5",
     "name": "Westminster Palace, 1259",
+    "curatedMaterials": [
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -94,6 +104,11 @@
     "manual": "Westminster Palace",
     "page": "354-5",
     "name": "Westminster Palace, 1259",
+    "curatedMaterials": [
+      "Charcoal / Coal",
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -127,6 +142,10 @@
     "manual": "Exch. K.R. Accts; bundle 485 document 22",
     "page": "154",
     "name": "Vale Royal, 1279 – For making cement for broken stones",
+    "curatedMaterials": [
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -153,6 +172,12 @@
     "manual": "Exch. K.R. Accts; bundle 484 document 7",
     "page": "154",
     "name": "Silverston, 1279 – For the steyning of a well",
+    "curatedMaterials": [
+      "Sulfur",
+      "Pitch",
+      "Egg",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "Wax",
@@ -191,6 +216,10 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "373",
     "name": "St. Stephens Chapel, Westminster, 1294 – For cement",
+    "curatedMaterials": [
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "soft pitch",
@@ -224,6 +253,9 @@
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "19",
     "name": "Exeter Cathedral, 1301 – For cement",
+    "curatedMaterials": [
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "wax",
@@ -247,6 +279,9 @@
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "25-26",
     "name": "Exeter Cathedral, 1302 – For cement",
+    "curatedMaterials": [
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "wax",
@@ -270,6 +305,10 @@
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "35",
     "name": "Exeter Cathedral, 1303 – For cement",
+    "curatedMaterials": [
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -298,6 +337,9 @@
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "53",
     "name": "Exeter Cathedral, 1310 – For cement",
+    "curatedMaterials": [
+      "Pitch"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -320,6 +362,9 @@
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "55",
     "name": "Exeter Cathedral, 1310 – For cement",
+    "curatedMaterials": [
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "wax",
@@ -343,6 +388,9 @@
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "56",
     "name": "Exeter Cathedral, 1310 – For cement",
+    "curatedMaterials": [
+      "Pitch"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -366,6 +414,10 @@
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "65",
     "name": "Exeter Cathedral, 1312 – For cement",
+    "curatedMaterials": [
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -393,6 +445,9 @@
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "78",
     "name": "Exeter Cathedral, 1316 – For cement",
+    "curatedMaterials": [
+      "Tools"
+    ],
     "ingredients": [],
     "description": "for one pot (olia) bought for cement 1/4 d.",
     "source": "Audrey M. Erskine (ed. & transl.): The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326. Devon & Cornwall Record Society, Vol. 26. The Devonshire Press. 1983",
@@ -410,6 +465,9 @@
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "92",
     "name": "Exeter Cathedral, 1317 – For cement",
+    "curatedMaterials": [
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "wax",
@@ -432,6 +490,9 @@
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "119",
     "name": "Exeter Cathedral, 1319 – For cement",
+    "curatedMaterials": [
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "wax",
@@ -454,6 +515,9 @@
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "122",
     "name": "Exeter Cathedral, 1319 – For cement",
+    "curatedMaterials": [
+      "Pitch"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -476,6 +540,9 @@
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "123",
     "name": "Exeter Cathedral, 1319 – For cement",
+    "curatedMaterials": [
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "wax",
@@ -498,6 +565,9 @@
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "136",
     "name": "Exeter Cathedral, 1321 – For cement",
+    "curatedMaterials": [
+      "Pitch"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -520,6 +590,9 @@
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "151",
     "name": "Exeter Cathedral, 1323 – For cement",
+    "curatedMaterials": [
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "wax",
@@ -542,6 +615,11 @@
     "manual": "Exch. K.R. Accts; bundle 469 document 9",
     "page": "154",
     "name": "St. Stephens Chapel, Westminster, 1324 – For cement",
+    "curatedMaterials": [
+      "Sulfur",
+      "Resin",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "sulfur",
@@ -564,7 +642,7 @@
     "type": "Account",
     "country": "England",
     "site": "St. Stephens Chapel,  Westminster",
-    "notes": "same as 1325.SSt.02?\noriginal source: Exchequer King's Remembrancer\" …\nmore: https://discovery.nationalarchives.gov.uk/details/r/C565#:~:text=The%20King's%20Remembrancer%20was%2C%20accordingly,writs%20authorising%20consequential%20expenditures%20or",
+    "notes": "Seems to be the same entry as 1325.SSt.02\n\noriginal source: Exchequer King's Remembrancer\" …\nmore: https://discovery.nationalarchives.gov.uk/details/r/C565#:~:text=The%20King's%20Remembrancer%20was%2C%20accordingly,writs%20authorising%20consequential%20expenditures%20or",
     "furtherBibliography": "republished: Louis Francis Salzmann: Building in England down to 1540. A documentary history\nOxford University Press. 1952. Reissued 1992. Special edition for Sandpiper Books 1997."
   },
   {
@@ -575,6 +653,10 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "521",
     "name": "St. Stephens Chapel, Westminster, 1324 – For cement",
+    "curatedMaterials": [
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "Wax",
@@ -602,6 +684,10 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "535",
     "name": "St. Stephens Chapel, Westminster, 1324 – To cement stone",
+    "curatedMaterials": [
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "Wax",
@@ -630,6 +716,10 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "543",
     "name": "St. Stephens Chapel, Westminster, 1324 – To cement stone",
+    "curatedMaterials": [
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "Wax",
@@ -657,6 +747,10 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "581",
     "name": "St. Stephens Chapel, Westminster, 1324 – To cement stone",
+    "curatedMaterials": [
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "Wax",
@@ -684,6 +778,9 @@
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "157",
     "name": "Exeter Cathedral, 1324 – For cement",
+    "curatedMaterials": [
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "wax",
@@ -706,6 +803,10 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "593",
     "name": "St. Stephens Chapel, Westminster, 1325 – For cement",
+    "curatedMaterials": [
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "Wax",
@@ -733,6 +834,11 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "599",
     "name": "St. Stephens Chapel, Westminster, 1325 – To cement stone",
+    "curatedMaterials": [
+      "Sulfur",
+      "Resin",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "Wax",
@@ -756,6 +862,7 @@
     "country": "England",
     "site": "St.Stephens Chapel, Westminster",
     "originalText": "Eidem pro j lb. cere pro cemento ad petram cementandam faciendo vj d. Eidem pro iiij lb. sulfuris precium lb. ij d.: viij d. Eidem pro iiij lb. rosini pro dicto cemento iiij d.",
+    "notes": "Seems to be the same entry as 1324.Sal.01",
     "commentOnText": "here one of the view occasions, where rosin, wax and sulfur were chosen as a basis for cement"
   },
   {
@@ -766,6 +873,10 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "609",
     "name": "St. Stephens Chapel, Westminster, 1325 – To cement stone",
+    "curatedMaterials": [
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "wax",
@@ -793,6 +904,10 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "651",
     "name": "St. Stephens Chapel, Westminster, 1325 – To cement stone",
+    "curatedMaterials": [
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "wax",
@@ -820,6 +935,9 @@
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 1. 1279–1326",
     "page": "165",
     "name": "Exeter Cathedral, 1325 – For cement",
+    "curatedMaterials": [
+      "Pitch"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -842,6 +960,10 @@
     "manual": "Roll 1042",
     "page": "105",
     "name": "Norwich Cathedral, 1326 – For cement",
+    "curatedMaterials": [
+      "Casein",
+      "Pitch"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch (pic')",
@@ -872,6 +994,10 @@
     "manual": "Roll 1043",
     "page": "115",
     "name": "Norwich Cathedral, 1329 – For cement",
+    "curatedMaterials": [
+      "Casein",
+      "Pitch"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch (pice)",
@@ -902,6 +1028,10 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "743",
     "name": "St. Stephens Chapel, Westminster, 1331 – For cement",
+    "curatedMaterials": [
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "wax",
@@ -929,6 +1059,10 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "765",
     "name": "St. Stephens Chapel, Westminster, 1332 – To join stones",
+    "curatedMaterials": [
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "wax",
@@ -957,6 +1091,10 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "775",
     "name": "St. Stephens Chapel, Westminster, 1332 – For making cement",
+    "curatedMaterials": [
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "wax",
@@ -984,6 +1122,9 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "801",
     "name": "St. Stephens Chapel, Westminster, 1332 – For cementing stones",
+    "curatedMaterials": [
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "wax",
@@ -1007,6 +1148,10 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "819",
     "name": "St. Stephens Chapel, Westminster, 1332 – For cementing stones",
+    "curatedMaterials": [
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "wax",
@@ -1035,6 +1180,10 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "831",
     "name": "St. Stephens Chapel, Westminster, 1333 – For making cement",
+    "curatedMaterials": [
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "wax",
@@ -1063,6 +1212,10 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "839",
     "name": "St. Stephens Chapel, Westminster, 1333 – For making cement",
+    "curatedMaterials": [
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "wax",
@@ -1091,6 +1244,11 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "855",
     "name": "St. Stephens Chapel, Westminster, 1333 – For soldering stones",
+    "curatedMaterials": [
+      "Pitch",
+      "Brick dust",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "wax",
@@ -1124,6 +1282,9 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "859",
     "name": "St. Stephens Chapel, Westminster, 1333 – Mason's cement",
+    "curatedMaterials": [
+      "Pitch"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -1147,6 +1308,10 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "861",
     "name": "St. Stephens Chapel, Westminster, 1333 – Cement to join stones",
+    "curatedMaterials": [
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "wax",
@@ -1175,6 +1340,11 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "873",
     "name": "St. Stephens Chapel, Westminster, 1333 – For joining and strengthening stones",
+    "curatedMaterials": [
+      "Pitch",
+      "Charcoal / Coal",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "wax",
@@ -1207,6 +1377,9 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "881",
     "name": "St. Stephens Chapel, Westminster, 1333 – For making cement",
+    "curatedMaterials": [
+      "Pitch"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -1229,6 +1402,10 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "887",
     "name": "St. Stephens Chapel, Westminster, 1333 – Making cement",
+    "curatedMaterials": [
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "wax",
@@ -1256,6 +1433,10 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "893",
     "name": "St. Stephens Chapel, Westminster, 1334 – For making cement",
+    "curatedMaterials": [
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "hard pitch",
@@ -1284,6 +1465,10 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "903",
     "name": "St. Stephens Chapel, Westminster, 1334 – For making cement",
+    "curatedMaterials": [
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "hard pitch",
@@ -1312,6 +1497,10 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "913",
     "name": "St. Stephens Chapel, Westminster, 1334 – To make cement",
+    "curatedMaterials": [
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "hard pitch",
@@ -1340,6 +1529,10 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "917",
     "name": "St. Stephens Chapel, Westminster, 1334 – To make cement",
+    "curatedMaterials": [
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "hard pitch",
@@ -1368,6 +1561,9 @@
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 2. 1328–1353",
     "page": "262",
     "name": "Exeter Cathedral, 1340 – For cement",
+    "curatedMaterials": [
+      "Pitch"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -1390,6 +1586,10 @@
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 2. 1328–1353",
     "page": "263",
     "name": "Exeter Cathedral, 1340 – For making cement",
+    "curatedMaterials": [
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "wax",
@@ -1418,6 +1618,11 @@
     "manual": "Original source: Exch. K.R. Accts; bundle 469 document 1",
     "page": "153",
     "name": "Westminster Palace, 1340 – Repairs to a buttress",
+    "curatedMaterials": [
+      "Tools",
+      "Brick dust",
+      "Pitch"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -1462,6 +1667,9 @@
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 2. 1328–1353",
     "page": "268",
     "name": "Exeter Cathedral, 1341 – For cement",
+    "curatedMaterials": [
+      "Pitch"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -1484,6 +1692,10 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "1023",
     "name": "St. Stephens Chapel, Westminster, 1343 – For making white cement",
+    "curatedMaterials": [
+      "Resin",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "resin",
@@ -1512,6 +1724,11 @@
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 2. 1328–1353",
     "page": "277",
     "name": "Exeter Cathedral, 1347",
+    "curatedMaterials": [
+      "Pitch",
+      "Resin",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "wax",
@@ -1544,6 +1761,9 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "1063",
     "name": "St. Stephens Chapel, Westminster, 1347 – For joining together diverse stones",
+    "curatedMaterials": [
+      "Pitch"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -1567,6 +1787,10 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "1065",
     "name": "St. Stephens Chapel, Westminster, 1347 – For cement for the masons",
+    "curatedMaterials": [
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -1594,6 +1818,9 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "1091",
     "name": "St. Stephens Chapel, Westminster, 1348 – For joining together stones",
+    "curatedMaterials": [
+      "Pitch"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -1617,6 +1844,10 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "1109",
     "name": "St. Stephens Chapel, Westminster, 1348 – For cement for the masons",
+    "curatedMaterials": [
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -1644,6 +1875,9 @@
     "manual": "Roll 1053",
     "page": "38",
     "name": "Norwich Cathedral, 1348 – For cement",
+    "curatedMaterials": [
+      "Pitch"
+    ],
     "ingredients": [
       {
         "ingredient": "rynpick",
@@ -1667,6 +1901,12 @@
     "manual": "Exch. K.R. Accts; bundle 471 document 3",
     "page": "154",
     "name": "London Tower, 1349 – Repair of the foundations",
+    "curatedMaterials": [
+      "Brick dust",
+      "Tools",
+      "Pitch",
+      "Resin"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -1689,7 +1929,32 @@
         "unit": "lbs"
       },
       {
-        "ingredient": "iron pan, cauldron, iron ladel, iron slice, tripod, straw",
+        "ingredient": "iron pan",
+        "amount": "",
+        "unit": ""
+      },
+      {
+        "ingredient": "cauldron",
+        "amount": "",
+        "unit": ""
+      },
+      {
+        "ingredient": "iron ladel",
+        "amount": "",
+        "unit": ""
+      },
+      {
+        "ingredient": "iron slice",
+        "amount": "",
+        "unit": ""
+      },
+      {
+        "ingredient": "tripod",
+        "amount": "",
+        "unit": ""
+      },
+      {
+        "ingredient": "straw",
         "amount": "",
         "unit": ""
       }
@@ -1711,6 +1976,11 @@
     "manual": "The Accounts of the Fabric of Exeter Cathedral, 1279–1353. Part 2. 1328–1353",
     "page": "292",
     "name": "Exeter Cathedral, 1352 – For soldering stones",
+    "curatedMaterials": [
+      "Pitch",
+      "Resin",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "wax",
@@ -1744,6 +2014,10 @@
     "manual": "The Fabric Accounts of St Stephen's Chapel, Westminster, 1292-1396",
     "page": "1197",
     "name": "St. Stephens Chapel, Westminster, 1354 – For making cement",
+    "curatedMaterials": [
+      "Resin",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "rosin",
@@ -1770,6 +2044,10 @@
     "manual": "Exch. K.R. Accts; bundle 502 document 17",
     "page": "143",
     "name": "Westminster, 1355",
+    "curatedMaterials": [
+      "Wax",
+      "Pitch"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -1802,6 +2080,10 @@
     "manual": "Exch. K.R. Accts; bundle 466 document 19",
     "page": "154",
     "name": "Leeds Castle, 1362",
+    "curatedMaterials": [
+      "Resin",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "resin",
@@ -1828,6 +2110,11 @@
     "manual": "Exch. K.R. Accts; bundle 490 document 2",
     "page": "154",
     "name": "Wallingford, 1365 – To make cement for joining stones",
+    "curatedMaterials": [
+      "Pitch",
+      "Resin",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -1859,6 +2146,10 @@
     "manual": "Fabric rolls of York Minster",
     "page": "7",
     "name": "York Minster, 1371 – For the masons",
+    "curatedMaterials": [
+      "Resin",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "wax",
@@ -1897,6 +2188,10 @@
     "images": [
       "/img/recipeImages/1390.Wel.01.png"
     ],
+    "curatedMaterials": [
+      "Resin",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "wax",
@@ -1925,6 +2220,10 @@
     "manual": "Oxford City Docts. (O.H.S.), 310",
     "page": "154",
     "name": "Oxford, 1396",
+    "curatedMaterials": [
+      "Resin",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "resin",
@@ -1951,6 +2250,10 @@
     "manual": "§125. Particulars of Account 1396-9 (P.R.O. E101/ 479/23-4)\nEdited by ELIZABETH GUE and JOHN BLAIR\nE101/479/23\nRoll One (29 April 1396-20 December 1396)",
     "page": "185",
     "name": "Portchester Castle, 1396 – Soldering of the stones",
+    "curatedMaterials": [
+      "Pitch",
+      "Resin"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch and rosin",
@@ -1975,6 +2278,11 @@
     "manual": "§125. Particulars of Account 1396-9 (P.R.O. E101/ 479/23-4)\nEdited by ELIZABETH GUE and JOHN BLAIR\nE101/479/23\nRoll Two (29 January 1397-20 December 1397)",
     "page": "191",
     "name": "Portchester Castle, 1397 – Beer stone set and fixed",
+    "curatedMaterials": [
+      "Pitch",
+      "Resin",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "barrels pitch",
@@ -2009,6 +2317,9 @@
     "manual": "§125. Particulars of Account 1396-9 (P.R.O. E101/ 479/23-4)\nEdited by ELIZABETH GUE and JOHN BLAIR\nE101/479/23\nRoll 3 (1 January-24 June 1398)",
     "page": "196",
     "name": "Portchester Castle, 1398 – Securing and joining stones",
+    "curatedMaterials": [
+      "Resin"
+    ],
     "ingredients": [
       {
         "ingredient": "rosin",
@@ -2033,11 +2344,15 @@
     "manual": "§125. Particulars of Account 1396-9 (P.R.O. E101/ 479/23-4)\nEdited by ELIZABETH GUE and JOHN BLAIR\nE1O1/479/24\nRoll 4 (25 June 1398 to 23 August 1399)",
     "page": "201",
     "name": "Portchester Castle, 1398 – Securing and joining stones",
+    "curatedMaterials": [
+      "Resin",
+      "Wax"
+    ],
     "ingredients": [
       {
-        "ingredient": "? Rosin",
+        "ingredient": "Rosin",
         "amount": "50",
-        "unit": ""
+        "unit": "?"
       },
       {
         "ingredient": "wax",
@@ -2066,6 +2381,9 @@
       "/img/recipeImages/1399.Yor.01.png",
       "/img/recipeImages/1399.Yor.01b.png"
     ],
+    "curatedMaterials": [
+      "Resin"
+    ],
     "ingredients": [
       {
         "ingredient": "rosin",
@@ -2091,6 +2409,10 @@
     "manual": "Exch. K.R. Accts; bundle 502 document 15",
     "page": "154",
     "name": "Sutton Manor, 1400",
+    "curatedMaterials": [
+      "Resin",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "resin",
@@ -2117,6 +2439,10 @@
     "manual": "Il libro dell'arte",
     "page": "121",
     "name": "Cennini, 1400 – Waterproofing with pitch",
+    "curatedMaterials": [
+      "Pitch",
+      "Brick dust"
+    ],
     "ingredients": [
       {
         "ingredient": "ship pitch",
@@ -2153,6 +2479,11 @@
     "manual": "Il libro dell'arte",
     "page": "66",
     "name": "Cennini, 1400 – How you should cement for mending stones",
+    "curatedMaterials": [
+      "Stone dust (general)",
+      "Resin",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "mastic",
@@ -2189,6 +2520,7 @@
     "manual": "Fabric rolls of York Minster",
     "page": "27",
     "name": "York Minster, 1404 – Cement and stones for reparation",
+    "curatedMaterials": [],
     "ingredients": [
       {
         "ingredient": "cement",
@@ -2214,6 +2546,10 @@
     "manual": "Exch. K.R. Accts; bundle 483 document 7",
     "page": "154",
     "name": "Berwick, 1406 – To make cement",
+    "curatedMaterials": [
+      "Pitch",
+      "Resin"
+    ],
     "ingredients": [
       {
         "ingredient": "barrel pitch",
@@ -2240,6 +2576,10 @@
     "manual": "Fabric rolls of York Minster",
     "page": "61",
     "name": "York Minster, 1446 – For the repair of the baptistry",
+    "curatedMaterials": [
+      "Pitch",
+      "Resin"
+    ],
     "ingredients": [
       {
         "ingredient": "rosin",
@@ -2270,6 +2610,9 @@
     "manual": "Medieval Thames Vocabulary",
     "page": "36",
     "name": "London Bridge, 1474",
+    "curatedMaterials": [
+      "Pitch"
+    ],
     "ingredients": [
       {
         "ingredient": "stonepitch",
@@ -2294,6 +2637,10 @@
     "manual": "Medieval Thames Vocabulary",
     "page": "33-34",
     "name": "London Bridge, 1478 – Positioning stones within the river water",
+    "curatedMaterials": [
+      "Pitch",
+      "Resin"
+    ],
     "ingredients": [
       {
         "ingredient": "rosin",
@@ -2323,6 +2670,9 @@
     "manual": "Medieval Thames Vocabulary",
     "page": "35",
     "name": "London Bridge, 1480 – Setting stones in the waterworks",
+    "curatedMaterials": [
+      "Resin"
+    ],
     "ingredients": [
       {
         "ingredient": "rosin",
@@ -2347,6 +2697,12 @@
     "manual": "Pomponius Garuricus: De Scultura. Florence.  December 25,  1504",
     "page": "242-243",
     "name": "Pomponius Gauricus, 1504 – Stoneworking",
+    "curatedMaterials": [
+      "Metal compounds",
+      "Resin",
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "mastic",
@@ -2386,6 +2742,10 @@
     "manual": "Exch. K.R. Accts; bundle 474 document 17",
     "page": "154",
     "name": "London, 1515 – To make cement",
+    "curatedMaterials": [
+      "Resin",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "rosin",
@@ -2412,6 +2772,10 @@
     "manual": "Exch. Treasury of Receipt, Misc. Books, vols. 237-41, Hampton court accounts. F. 96",
     "page": "154",
     "name": "Westminster, 1532 – For making cement",
+    "curatedMaterials": [
+      "Resin",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "roosen (rosin)",
@@ -2438,6 +2802,9 @@
     "manual": "Exch. Treasury of Receipt, Misc. Books, vols. 237-41, Hampton court accounts. F. 553",
     "page": "154",
     "name": "Westminster, 1532 – For making cement",
+    "curatedMaterials": [
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "wax",
@@ -2459,6 +2826,10 @@
     "manual": "Letters and Papers Henry VIII, xiii (2), 342",
     "page": "154",
     "name": "Nonesuch Palace, 1538 – To make cement",
+    "curatedMaterials": [
+      "Resin",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "rosin",
@@ -2485,6 +2856,7 @@
     "manual": "letter to the court of Duke Albrecht V. of Bavaria regarding the delivery of dismantled sculptures",
     "page": "459",
     "name": "Castellini, 1567 – Enclosed mestura",
+    "curatedMaterials": [],
     "ingredients": [],
     "description": "\"(...) as if in the arms of the large mercury, make the pegs out of metal and heat them up. and both parts of the marble to be joined together, but not so much that the marble breaks, only enough that it is difficult to hold your hand on top of it: and at the same time breaking up the mixture that is inside one of the boxes and placing it on the fire in a pot, so that it melts slowly little by little, stirring the mixture all the time so that it does not burn or stick to the pot. Once all the above has been done, and the mixture has been heated at the same time, the pegs and both parts of the marble to be joined together must be placed in the holes, and on the part to be joined, so that it will hold together wonderfully, such that the joined parts cannot be shaken in any way.  \nAnd if a finger or some similar part of the statues breaks off, there is nothing better than to heat the parts to be joined together as above, and while they are hot, put a little of the wax from the votes that stick to the chisels between them, because pressing the broken parts together will consolidate them very well.  \nThis is the advice for the antiquarian and the sculptor.\"",
     "source": "Ellen Weski; Heike Frisien-Leizen (Hrsg.): Das Antiquarium der Münchner Residenz- Katalog der Skulpturen. München, Hirmer Verlag. 1987",
@@ -2503,11 +2875,16 @@
     "authorLastName": "Borghini",
     "date": 1584,
     "manual": "Il Riposo … in cui della pittura, e della scultura si fauella, de'piu illustri pittori, e scultori, e delle piu famose opere loro si fa mentione; e le cose principali appartenenti a dette arti s'insegnano",
-    "page": "122-123",
+    "page": "122-123 (1807)",
     "name": "Borghini, 1584 – Two types of stucco",
     "images": [
       "/img/recipeImages/1584.Bor.01a.png",
       "/img/recipeImages/1584.Bor.01b.png"
+    ],
+    "curatedMaterials": [
+      "Colophony",
+      "Wax",
+      "Turpentine"
     ],
     "ingredients": [
       {
@@ -2548,6 +2925,11 @@
     "images": [
       "/img/recipeImages/1584.Bor.02.png"
     ],
+    "curatedMaterials": [
+      "Mastic",
+      "Marble powder",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "mastico da denti",
@@ -2583,6 +2965,14 @@
     "manual": "Istoria delle Pietre",
     "page": "20",
     "name": "Riccio, 1597 – How to make putty to stick stones together",
+    "curatedMaterials": [
+      "Mastic",
+      "Marble powder",
+      "Colophony",
+      "Wax",
+      "Turpentine",
+      "Resin"
+    ],
     "ingredients": [
       {
         "ingredient": "greek pitch (colophony)",
@@ -2638,6 +3028,10 @@
     "images": [
       "/img/recipeImages/1640.Sto.01.png"
     ],
+    "curatedMaterials": [
+      "Lime",
+      "Egg"
+    ],
     "ingredients": [
       {
         "ingredient": "egg-white",
@@ -2672,6 +3066,10 @@
     "images": [
       "/img/recipeImages/1640.Sto.02.png"
     ],
+    "curatedMaterials": [
+      "Lime",
+      "Casein"
+    ],
     "ingredients": [
       {
         "ingredient": "prouaturo (cheese from buffalo's milk)",
@@ -2704,6 +3102,11 @@
     "name": "Stone, 1640 – Cement",
     "images": [
       "/img/recipeImages/1640.Sto.03.png"
+    ],
+    "curatedMaterials": [
+      "Brick dust",
+      "Wax",
+      "Resin"
     ],
     "ingredients": [
       {
@@ -2743,6 +3146,13 @@
     "name": "Stone, 1640 – Some cements",
     "images": [
       "/img/recipeImages/1640.Sto.04.png"
+    ],
+    "curatedMaterials": [
+      "Turpentine",
+      "Resin",
+      "Colophony",
+      "Wax",
+      "Mastic"
     ],
     "ingredients": [
       {
@@ -2785,6 +3195,11 @@
       "/img/recipeImages/1650.Bos.01a.png",
       "/img/recipeImages/1650.Bos.01b.png"
     ],
+    "curatedMaterials": [
+      "Marble powder",
+      "Colophony",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "greek pitch from Cassa [pece gregu da Cassa]",
@@ -2792,9 +3207,9 @@
         "unit": "pound"
       },
       {
-        "ingredient": "<1 ounce [oncia]  yellow wax [Cera Gialla]",
-        "amount": "",
-        "unit": ""
+        "ingredient": "yellow wax [Cera Gialla]",
+        "amount": "1",
+        "unit": "ounce"
       },
       {
         "ingredient": "powdered marble",
@@ -2823,6 +3238,15 @@
     "name": "Royal Society, 1673 – A kind of plaster",
     "images": [
       "/img/recipeImages/1673.Roy.01.png"
+    ],
+    "curatedMaterials": [
+      "Turpentine",
+      "Sulfur",
+      "Colophony",
+      "Chalk",
+      "Gypsum / Plaster",
+      "Pitch",
+      "Wax"
     ],
     "ingredients": [
       {
@@ -2881,6 +3305,15 @@
     "images": [
       "/img/recipeImages/1679.Kun.p46.jpg",
       "/img/recipeImages/1679.Kun.title.jpg"
+    ],
+    "curatedMaterials": [
+      "Turpentine",
+      "Solvents",
+      "Organic / Other",
+      "Resin",
+      "Mastic",
+      "Chalk",
+      "Animal glue"
     ],
     "ingredients": [
       {
@@ -2957,6 +3390,12 @@
       "/img/recipeImages/1679.Kun.p47.jpg",
       "/img/recipeImages/1679.Kun.title.jpg"
     ],
+    "curatedMaterials": [
+      "Stone dust (general)",
+      "Wax",
+      "Sulfur",
+      "Resin"
+    ],
     "ingredients": [
       {
         "ingredient": "resin",
@@ -3005,6 +3444,11 @@
       "/img/recipeImages/1681.Bal.E.png",
       "/img/recipeImages/1681.Bal.F.png"
     ],
+    "curatedMaterials": [
+      "Marble powder",
+      "Resin",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "tooth mastic",
@@ -3047,6 +3491,11 @@
       "/img/recipeImages/1681.Bal.E.png",
       "/img/recipeImages/1681.Bal.F.png"
     ],
+    "curatedMaterials": [
+      "Brick dust",
+      "Colophony",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "greek pitch (colophony)",
@@ -3088,6 +3537,12 @@
       "/img/recipeImages/1681.Bal.D.png",
       "/img/recipeImages/1681.Bal.E.png",
       "/img/recipeImages/1681.Bal.F.png"
+    ],
+    "curatedMaterials": [
+      "Marble powder",
+      "Colophony",
+      "Wax",
+      "Turpentine"
     ],
     "ingredients": [
       {
@@ -3132,6 +3587,11 @@
       "/img/recipeImages/1703.Nev.cover.png",
       "/img/recipeImages/1703.Nev.shot.jpg"
     ],
+    "curatedMaterials": [
+      "Brick dust",
+      "Wax",
+      "Colophony"
+    ],
     "ingredients": [
       {
         "ingredient": "rosin",
@@ -3167,6 +3627,12 @@
     "manual": "Mechanick exercises",
     "page": "243",
     "name": "Moxon, 1703 – Bricklayers work",
+    "curatedMaterials": [
+      "Organic / Other",
+      "Pitch",
+      "Tallow / Fat",
+      "Lime"
+    ],
     "ingredients": [
       {
         "ingredient": "lime",
@@ -3217,6 +3683,7 @@
       "/img/recipeImages/1703.Mox.01.2.jpg",
       "/img/recipeImages/1703.Mox.01.jpg"
     ],
+    "curatedMaterials": [],
     "ingredients": [],
     "description": "There are two sorts of Cement, which some Bricklayers use in Cementing of Bricks for some kind of Mouldings, or in Cementing a, block of Bricks, as they call it, for the Carving of Scrolls or Capitals or such like, etc. One is called cold Cement, the other is called hot Cement, because the former is made and used without Fire, but the latter is both made and used with Fire; the cold Cement being accounted a Secret, is known but to few Bricklayers, but the hot Cement is common.",
     "source": "Joseph Moxon: Mechanick exercises, or, The doctrine of handy-works : applied to the arts of smithing, joinery, carpentry, turning, bricklayery : to which is added Mechanick dyalling: shewing how to draw a true sun-dyal on any given plane … Printed for Dan. Midwinter and Tho. Leigh. London. 1703",
@@ -3236,6 +3703,12 @@
     "name": "Moxon, 1703 – To make the cold cement",
     "images": [
       "/img/recipeImages/1703.Mox.03.jpg"
+    ],
+    "curatedMaterials": [
+      "Casein",
+      "Lime",
+      "Brick dust",
+      "Egg"
     ],
     "ingredients": [
       {
@@ -3281,6 +3754,11 @@
     "images": [
       "/img/recipeImages/1703.Mox.02.jpg"
     ],
+    "curatedMaterials": [
+      "Brick dust",
+      "Wax",
+      "Resin"
+    ],
     "ingredients": [
       {
         "ingredient": "rosin",
@@ -3315,6 +3793,11 @@
     "name": "Bluteau, 1716 – Lithocola",
     "images": [
       "/img/recipeImages/1716.Blu.01.png"
+    ],
+    "curatedMaterials": [
+      "Marble powder",
+      "Pitch",
+      "Egg"
     ],
     "ingredients": [
       {
@@ -3353,6 +3836,12 @@
     "name": "Cröcker, 1736 – A stone-putty",
     "images": [
       "/img/recipeImages/1736.Croe.01.png"
+    ],
+    "curatedMaterials": [
+      "Sulfur",
+      "Resin",
+      "Chalk",
+      "Glass"
     ],
     "ingredients": [
       {
@@ -3399,6 +3888,11 @@
       "/img/recipeImages/1736.Croe.02a.png",
       "/img/recipeImages/1736.Croe.02b.png"
     ],
+    "curatedMaterials": [
+      "Lead",
+      "Resin",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "wax",
@@ -3434,6 +3928,15 @@
     "name": "Cröcker, 1736 – A stone-putty",
     "images": [
       "/img/recipeImages/1736.Croe.03.png"
+    ],
+    "curatedMaterials": [
+      "Lime",
+      "Brick dust",
+      "Stone dust (general)",
+      "Charcoal / Coal",
+      "Sulfur",
+      "Resin",
+      "Glass"
     ],
     "ingredients": [
       {
@@ -3491,6 +3994,11 @@
     "images": [
       "/img/recipeImages/1736.Croe.04.png"
     ],
+    "curatedMaterials": [
+      "Stone dust (general)",
+      "Sulfur",
+      "Resin"
+    ],
     "ingredients": [
       {
         "ingredient": "sulfur",
@@ -3527,6 +4035,13 @@
     "name": "Cröcker, 1736 – A stone-putty",
     "images": [
       "/img/recipeImages/1736.Croe.05.png"
+    ],
+    "curatedMaterials": [
+      "Metal compounds",
+      "Sulfur",
+      "Pitch",
+      "Resin",
+      "Wax"
     ],
     "ingredients": [
       {
@@ -3580,6 +4095,13 @@
     "images": [
       "/img/recipeImages/1736.Croe.06.png"
     ],
+    "curatedMaterials": [
+      "Glass",
+      "Brick dust",
+      "Sulfur",
+      "Pitch",
+      "Resin"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -3627,6 +4149,15 @@
     "images": [
       "/img/recipeImages/1736.Croe.07.png"
     ],
+    "curatedMaterials": [
+      "Turpentine",
+      "Marble powder",
+      "Brick dust",
+      "Wax",
+      "Colophony",
+      "Resin",
+      "Mastic"
+    ],
     "ingredients": [
       {
         "ingredient": "colophony",
@@ -3673,6 +4204,14 @@
     "name": "Cröcker, 1736 – Stone-putty",
     "images": [
       "/img/recipeImages/1736.Croe.08.png"
+    ],
+    "curatedMaterials": [
+      "Lime",
+      "Glass",
+      "Organic / Fibre",
+      "Tallow / Fat",
+      "Turpentine",
+      "Resin"
     ],
     "ingredients": [
       {
@@ -3722,6 +4261,14 @@
     "manual": "Der wohl anführende Mahler",
     "page": "505",
     "name": "Cröcker, 1736 – Stone- or wood-putty",
+    "curatedMaterials": [
+      "Brick dust",
+      "Sulfur",
+      "Pitch",
+      "Lime",
+      "Linseed oil",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "wax",
@@ -3772,6 +4319,14 @@
     "name": "Cröcker, 1736 – A stone glue",
     "images": [
       "/img/recipeImages/1736.Croe.10.png"
+    ],
+    "curatedMaterials": [
+      "Metal compounds",
+      "Stone dust (general)",
+      "Sulfur",
+      "Pitch",
+      "Resin",
+      "Wax"
     ],
     "ingredients": [
       {
@@ -3825,6 +4380,11 @@
     "images": [
       "/img/recipeImages/1736.Croe.11.png"
     ],
+    "curatedMaterials": [
+      "Glass",
+      "Sulfur",
+      "Resin"
+    ],
     "ingredients": [
       {
         "ingredient": "resin",
@@ -3861,6 +4421,11 @@
     "images": [
       "/img/recipeImages/1736.Croe.12.png"
     ],
+    "curatedMaterials": [
+      "Glass",
+      "Lime",
+      "Resin"
+    ],
     "ingredients": [
       {
         "ingredient": "varnish",
@@ -3896,6 +4461,12 @@
     "name": "Cröcker, 1736 – A stone glue",
     "images": [
       "/img/recipeImages/1736.Croe.13.png"
+    ],
+    "curatedMaterials": [
+      "Lime",
+      "Glass",
+      "Brick dust",
+      "Casein"
     ],
     "ingredients": [
       {
@@ -3944,6 +4515,12 @@
     "images": [
       "/img/recipeImages/1736.Croe.14.png"
     ],
+    "curatedMaterials": [
+      "Lead",
+      "Pitch",
+      "Chalk",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -3982,6 +4559,12 @@
     "manual": "Chamber's Universal Dictionary of Arts and Sciences",
     "page": "300",
     "name": "Chambers, 1741 – Caement",
+    "curatedMaterials": [
+      "Brick dust",
+      "Wax",
+      "Resin",
+      "Chalk"
+    ],
     "ingredients": [
       {
         "ingredient": "rosin",
@@ -4020,6 +4603,11 @@
     "manual": "Chamber's Universal Dictionary of Arts and Sciences",
     "page": "300",
     "name": "Chambers, 1741 – Caement",
+    "curatedMaterials": [
+      "Casein",
+      "Egg",
+      "Lime"
+    ],
     "ingredients": [
       {
         "ingredient": "cheshire cheese",
@@ -4056,6 +4644,16 @@
     "manual": "Land-Bau-Kunst",
     "page": "131-132",
     "name": "Gilly, 1797 – Nr. 83. A good fire- or hot-putty",
+    "curatedMaterials": [
+      "Wax",
+      "Brick dust",
+      "Turpentine",
+      "Colophony",
+      "Resin",
+      "Sulfur",
+      "Pitch",
+      "Mastic"
+    ],
     "ingredients": [
       {
         "ingredient": "colophony or pitch",
@@ -4109,6 +4707,10 @@
       "/img/recipeImages/1802.Car.01b.png",
       "/img/recipeImages/1802.Car.Tavola.XIII.jpg"
     ],
+    "curatedMaterials": [
+      "Marble powder",
+      "Colophony"
+    ],
     "ingredients": [
       {
         "ingredient": "greek pitch (colophony)",
@@ -4145,6 +4747,9 @@
       "/img/recipeImages/1807.Hed.01a.png",
       "/img/recipeImages/1807.Hed.01b.png"
     ],
+    "curatedMaterials": [
+      "Resin"
+    ],
     "ingredients": [
       {
         "ingredient": "resin (Hartz)",
@@ -4173,6 +4778,11 @@
     "images": [
       "/img/recipeImages/1807.Hed.02a.png",
       "/img/recipeImages/1807.Hed.02b.png"
+    ],
+    "curatedMaterials": [
+      "Brick dust",
+      "Tallow / Fat",
+      "Pitch"
     ],
     "ingredients": [
       {
@@ -4210,6 +4820,11 @@
     "name": "Hederstøm, 1807 – Stone grinders putty",
     "images": [
       "/img/recipeImages/1807.Hed.03.png"
+    ],
+    "curatedMaterials": [
+      "Pitch",
+      "Brick dust",
+      "Resin"
     ],
     "ingredients": [
       {
@@ -4253,6 +4868,13 @@
     "images": [
       "/img/recipeImages/1807.Hed.05.png"
     ],
+    "curatedMaterials": [
+      "Glass",
+      "Brick dust",
+      "Resin",
+      "Sulfur",
+      "Pitch"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch (Beck)",
@@ -4294,6 +4916,12 @@
     "images": [
       "/img/recipeImages/1807.Hed.04.png"
     ],
+    "curatedMaterials": [
+      "Lime",
+      "Marble powder",
+      "Gypsum / Plaster",
+      "Pitch"
+    ],
     "ingredients": [
       {
         "ingredient": "Pitch - black, white or Burgundy",
@@ -4331,6 +4959,10 @@
     "images": [
       "/img/recipeImages/1812.Guet.25.png"
     ],
+    "curatedMaterials": [
+      "Marble powder",
+      "Pitch"
+    ],
     "ingredients": [
       {
         "ingredient": "resin-pitch [Harzpech]",
@@ -4362,6 +4994,11 @@
     "name": "Gütle, 1812 – §. 106. A simple stone putty",
     "images": [
       "/img/recipeImages/1812.Guet.26.png"
+    ],
+    "curatedMaterials": [
+      "Lime",
+      "Brick dust",
+      "Resin"
     ],
     "ingredients": [
       {
@@ -4399,6 +5036,11 @@
     "images": [
       "/img/recipeImages/1812.Guet.27a.png",
       "/img/recipeImages/1812.Guet.27b.png"
+    ],
+    "curatedMaterials": [
+      "Stone dust (general)",
+      "Sulfur",
+      "Resin"
     ],
     "ingredients": [
       {
@@ -4438,6 +5080,10 @@
       "/img/recipeImages/1812.Guet.29a.png",
       "/img/recipeImages/1812.Guet.29b.png"
     ],
+    "curatedMaterials": [
+      "Lime",
+      "Casein"
+    ],
     "ingredients": [
       {
         "ingredient": "sweet milk cheese",
@@ -4469,6 +5115,11 @@
     "name": "Gütle, 1812 – The plaster used by the ancients, which was called 'Malia'",
     "images": [
       "/img/recipeImages/1812.Guet.01.png"
+    ],
+    "curatedMaterials": [
+      "Lime",
+      "Tallow / Fat",
+      "Pitch"
     ],
     "ingredients": [
       {
@@ -4503,6 +5154,12 @@
     "images": [
       "/img/recipeImages/1812.Guet.02a.png",
       "/img/recipeImages/1812.Guet.02b.png"
+    ],
+    "curatedMaterials": [
+      "Pitch",
+      "Organic / Other",
+      "Solvents",
+      "Lime"
     ],
     "ingredients": [
       {
@@ -4544,6 +5201,15 @@
     "name": "Gütle, 1812 – §. 75. A putty which the Romans called Maltha",
     "images": [
       "/img/recipeImages/1812.Guet.03.png"
+    ],
+    "curatedMaterials": [
+      "Organic / Other",
+      "Metal compounds",
+      "Brick dust",
+      "Pitch",
+      "Lime",
+      "Wax",
+      "Organic / Fibre"
     ],
     "ingredients": [
       {
@@ -4606,6 +5272,9 @@
     "images": [
       "/img/recipeImages/1812.Guet.04.png"
     ],
+    "curatedMaterials": [
+      "Sulfur"
+    ],
     "ingredients": [
       {
         "ingredient": "sulfur",
@@ -4632,6 +5301,10 @@
     "images": [
       "/img/recipeImages/1812.Guet.05a.png",
       "/img/recipeImages/1812.Guet.05b.png"
+    ],
+    "curatedMaterials": [
+      "Stone dust (general)",
+      "Sulfur"
     ],
     "ingredients": [
       {
@@ -4663,6 +5336,13 @@
     "name": "Gütle, 1812 – §. 80. A stone putty",
     "images": [
       "/img/recipeImages/1812.Guet.06.png"
+    ],
+    "curatedMaterials": [
+      "Metal compounds",
+      "Stone dust (general)",
+      "Sulfur",
+      "Resin",
+      "Wax"
     ],
     "ingredients": [
       {
@@ -4706,6 +5386,12 @@
     "images": [
       "/img/recipeImages/1812.Guet.07.png"
     ],
+    "curatedMaterials": [
+      "Stone dust (general)",
+      "Turpentine",
+      "Sulfur",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "turpentine",
@@ -4746,6 +5432,15 @@
     "name": "Gütle, 1812 – §. 82. The stucco putty, or a good stone and grotto putty",
     "images": [
       "/img/recipeImages/1812.Guet.08.png"
+    ],
+    "curatedMaterials": [
+      "Turpentine",
+      "Brick dust",
+      "Wax",
+      "Stone dust (general)",
+      "Resin",
+      "Marble powder",
+      "Mastic"
     ],
     "ingredients": [
       {
@@ -4793,6 +5488,16 @@
     "images": [
       "/img/recipeImages/1812.Guet.09a.png",
       "/img/recipeImages/1812.Guet.09b.png"
+    ],
+    "curatedMaterials": [
+      "Wax",
+      "Brick dust",
+      "Turpentine",
+      "Colophony",
+      "Sulfur",
+      "Resin",
+      "Pitch",
+      "Mastic"
     ],
     "ingredients": [
       {
@@ -4845,6 +5550,10 @@
     "images": [
       "/img/recipeImages/1812.Guet.10.png"
     ],
+    "curatedMaterials": [
+      "Organic / Other",
+      "Lime"
+    ],
     "ingredients": [
       {
         "ingredient": "lime",
@@ -4876,6 +5585,12 @@
     "images": [
       "/img/recipeImages/1812.Guet.11a.png",
       "/img/recipeImages/1812.Guet.11b.png"
+    ],
+    "curatedMaterials": [
+      "Brick dust",
+      "Resin",
+      "Chalk",
+      "Wax"
     ],
     "ingredients": [
       {
@@ -4919,6 +5634,11 @@
     "images": [
       "/img/recipeImages/1812.Guet.12.png"
     ],
+    "curatedMaterials": [
+      "Metal compounds",
+      "Lime",
+      "Pitch"
+    ],
     "ingredients": [
       {
         "ingredient": "lime",
@@ -4954,6 +5674,11 @@
     "name": "Gütle, 1812 – §. 88. Another stone putty",
     "images": [
       "/img/recipeImages/1812.Guet.13.png"
+    ],
+    "curatedMaterials": [
+      "Marble powder",
+      "Sulfur",
+      "Resin"
     ],
     "ingredients": [
       {
@@ -4991,6 +5716,15 @@
     "images": [
       "/img/recipeImages/1812.Guet.14a.png",
       "/img/recipeImages/1812.Guet.14b.png"
+    ],
+    "curatedMaterials": [
+      "Linseed oil",
+      "Brick dust",
+      "Turpentine",
+      "Lead",
+      "Organic / Fibre",
+      "Sulfur",
+      "Lime"
     ],
     "ingredients": [
       {
@@ -5052,6 +5786,16 @@
     "name": "Gütle, 1812 – §. 90. Another provision",
     "images": [
       "/img/recipeImages/1812.Guet.15.png"
+    ],
+    "curatedMaterials": [
+      "Glass",
+      "Metal compounds",
+      "Linseed oil",
+      "Brick dust",
+      "Turpentine",
+      "Organic / Fibre",
+      "Lead",
+      "Lime"
     ],
     "ingredients": [
       {
@@ -5119,6 +5863,12 @@
     "images": [
       "/img/recipeImages/1812.Guet.16.png"
     ],
+    "curatedMaterials": [
+      "Lime",
+      "Metal compounds",
+      "Egg",
+      "Organic / Other"
+    ],
     "ingredients": [
       {
         "ingredient": "iron filings",
@@ -5159,6 +5909,12 @@
     "name": "Gütle, 1812 – §. 92. A stone putty to be used when something has broken on window frames or door frames",
     "images": [
       "/img/recipeImages/1812.Guet.17.png"
+    ],
+    "curatedMaterials": [
+      "Lime",
+      "Brick dust",
+      "Metal compounds",
+      "Organic / Other"
     ],
     "ingredients": [
       {
@@ -5201,6 +5957,13 @@
     "images": [
       "/img/recipeImages/1812.Guet.18.png"
     ],
+    "curatedMaterials": [
+      "Lime",
+      "Metal compounds",
+      "Brick dust",
+      "Egg",
+      "Organic / Other"
+    ],
     "ingredients": [
       {
         "ingredient": "unslacked lime",
@@ -5228,7 +5991,7 @@
         "unit": ""
       },
       {
-        "ingredient": "eggwhite",
+        "ingredient": "egg white",
         "amount": "",
         "unit": ""
       }
@@ -5251,6 +6014,11 @@
     "name": "Gütle, 1812 – §. 94. Another stone putty",
     "images": [
       "/img/recipeImages/1812.Guet.19.png"
+    ],
+    "curatedMaterials": [
+      "Metal compounds",
+      "Stone dust (general)",
+      "Pitch"
     ],
     "ingredients": [
       {
@@ -5290,6 +6058,11 @@
       "/img/recipeImages/1812.Guet.20b.png",
       "/img/recipeImages/1812.Guet.20c.png",
       "/img/recipeImages/1812.Guet.20d.png"
+    ],
+    "curatedMaterials": [
+      "Linseed oil",
+      "Sand / Clay",
+      "Solvents"
     ],
     "ingredients": [
       {
@@ -5338,6 +6111,12 @@
     "images": [
       "/img/recipeImages/1812.Guet.21.png"
     ],
+    "curatedMaterials": [
+      "Stone dust (general)",
+      "Lime",
+      "Casein",
+      "Egg"
+    ],
     "ingredients": [
       {
         "ingredient": "fresh quak",
@@ -5381,6 +6160,13 @@
       "/img/recipeImages/1812.Guet.22a.png",
       "/img/recipeImages/1812.Guet.22b.png"
     ],
+    "curatedMaterials": [
+      "Gypsum / Plaster",
+      "Lime",
+      "Turpentine",
+      "Charcoal / Coal",
+      "Pitch"
+    ],
     "ingredients": [
       {
         "ingredient": "(hot) tar [Theer]",
@@ -5398,7 +6184,7 @@
         "unit": ""
       },
       {
-        "ingredient": "turpentine and pitch (instead tar)",
+        "ingredient": "turpentine and pitch",
         "amount": "",
         "unit": ""
       },
@@ -5428,6 +6214,12 @@
     "images": [
       "/img/recipeImages/1812.Guet.23.png",
       "/img/recipeImages/1812.Guet.23b.png"
+    ],
+    "curatedMaterials": [
+      "Lead",
+      "Egg",
+      "Resin",
+      "Metal compounds"
     ],
     "ingredients": [
       {
@@ -5471,6 +6263,11 @@
     "images": [
       "/img/recipeImages/1812.Guet.24.png"
     ],
+    "curatedMaterials": [
+      "Colophony",
+      "Gypsum / Plaster",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "colophony",
@@ -5507,6 +6304,10 @@
     "images": [
       "/img/recipeImages/1812.Guet.28.png"
     ],
+    "curatedMaterials": [
+      "Marble powder",
+      "Sulfur"
+    ],
     "ingredients": [
       {
         "ingredient": "melted sulphur",
@@ -5537,6 +6338,11 @@
     "name": "Imison, 1822 – Cement for Derbyshire spar (here: fluorite) and other stones",
     "images": [
       "/img/recipeImages/1822.Imi.02-03.png"
+    ],
+    "curatedMaterials": [
+      "Gypsum / Plaster",
+      "Wax",
+      "Resin"
     ],
     "ingredients": [
       {
@@ -5574,6 +6380,10 @@
     "images": [
       "/img/recipeImages/1822.Imi.02-03.png"
     ],
+    "curatedMaterials": [
+      "Stone dust (general)",
+      "Sulfur"
+    ],
     "ingredients": [
       {
         "ingredient": "melted sulphur",
@@ -5601,6 +6411,10 @@
     "manual": "Elements of Science and Art",
     "page": "300-301",
     "name": "Imison, 1822 – A cement that will stand against boiling water and even bear a considerable pressure of steam",
+    "curatedMaterials": [
+      "Linseed oil",
+      "Lead"
+    ],
     "ingredients": [
       {
         "ingredient": "boiled loinseed-oil",
@@ -5637,6 +6451,13 @@
     "images": [
       "/img/recipeImages/1822.Imi.01.png"
     ],
+    "curatedMaterials": [
+      "Marble powder",
+      "Sulfur",
+      "Pitch",
+      "Resin",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "resin",
@@ -5649,7 +6470,7 @@
         "unit": ""
       },
       {
-        "ingredient": "besswax",
+        "ingredient": "beeswax",
         "amount": "",
         "unit": ""
       },
@@ -5681,6 +6502,7 @@
     "manual": "Revisionsprotokoll 1825-1826 v. 12. 3. 1827, DBA, Litt. RP 1",
     "page": "322",
     "name": "Cologne Cathedral, 1825 – Audit record 1825–1826 of 12 March 1827, DBA, Litt. RP 1",
+    "curatedMaterials": [],
     "ingredients": [],
     "description": "No. 72\nfor ingredients for fire-cement [Feuerkitt]\nper invoice No. 54, item 4: 1 [Taler] 29 [Groschen] 10 [Pfennig]",
     "source": "referenced in:  Schumacher, T. (1993). Großbaustelle Kölner Dom: Technik des 19. Jahrhunderts bei der Vollendung einer gotischen Kathedrale (A. Wolff, Hrsg.; Bd. 4, S. 879). Verlag Kölner Dom e.V.",
@@ -5701,6 +6523,13 @@
     "manual": "Rechnungsbelege 1826, DBA, Litt. RB 3, Heft V, Nr. 481, Pos. 4",
     "page": "322",
     "name": "Cologne Cathedral, 1826 – Invoice 1826",
+    "curatedMaterials": [
+      "Sulfur",
+      "Pitch",
+      "Resin",
+      "Chalk",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch",
@@ -5751,6 +6580,9 @@
       "/img/recipeImages/1837.Pre.p394-395.png",
       "/img/recipeImages/1837.Pre.pIV.png"
     ],
+    "curatedMaterials": [
+      "Shellac"
+    ],
     "ingredients": [
       {
         "ingredient": "shellac",
@@ -5781,6 +6613,19 @@
       "/img/recipeImages/1837.Pre.p396-397.png",
       "/img/recipeImages/1837.Pre.pIV.png"
     ],
+    "curatedMaterials": [
+      "Chalk",
+      "Brick dust",
+      "Turpentine",
+      "Colophony",
+      "Sand / Clay",
+      "Pitch",
+      "Tallow / Fat",
+      "Sulfur",
+      "Gypsum / Plaster",
+      "Charcoal / Coal",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch/colophony",
@@ -5788,7 +6633,7 @@
         "unit": ""
       },
       {
-        "ingredient": "cement ((fine sand, brick dust, powdered chalk or limestone, gypsum)",
+        "ingredient": "cement (fine sand, brick dust, powdered chalk or limestone, gypsum)",
         "amount": "",
         "unit": ""
       },
@@ -5844,6 +6689,11 @@
       "/img/recipeImages/1837.Pre.p396-397.png",
       "/img/recipeImages/1837.Pre.pIV.png"
     ],
+    "curatedMaterials": [
+      "Resin",
+      "Colophony",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "rosin/colophony",
@@ -5883,6 +6733,12 @@
       "/img/recipeImages/1837.Pre.p396-397.png",
       "/img/recipeImages/1837.Pre.pIV.png"
     ],
+    "curatedMaterials": [
+      "Colophony",
+      "Gypsum / Plaster",
+      "Pitch",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "colophony/pitch",
@@ -5920,6 +6776,13 @@
       "/img/recipeImages/1837.Pre.05.png",
       "/img/recipeImages/1837.Pre.p396-397.png",
       "/img/recipeImages/1837.Pre.pIV.png"
+    ],
+    "curatedMaterials": [
+      "Brick dust",
+      "Turpentine",
+      "Colophony",
+      "Pitch",
+      "Wax"
     ],
     "ingredients": [
       {
@@ -5963,6 +6826,14 @@
       "/img/recipeImages/1837.Pre.06.png",
       "/img/recipeImages/1837.Pre.p396-397.png",
       "/img/recipeImages/1837.Pre.pIV.png"
+    ],
+    "curatedMaterials": [
+      "Turpentine",
+      "Brick dust",
+      "Colophony",
+      "Resin",
+      "Gypsum / Plaster",
+      "Wax"
     ],
     "ingredients": [
       {
@@ -6012,6 +6883,13 @@
       "/img/recipeImages/1837.Pre.p396-397.png",
       "/img/recipeImages/1837.Pre.pIV.png"
     ],
+    "curatedMaterials": [
+      "Brick dust",
+      "Colophony",
+      "Tallow / Fat",
+      "Pitch",
+      "Chalk"
+    ],
     "ingredients": [
       {
         "ingredient": "pitch/colophony",
@@ -6049,6 +6927,12 @@
       "/img/recipeImages/1837.Pre.08.png",
       "/img/recipeImages/1837.Pre.p396-397.png",
       "/img/recipeImages/1837.Pre.pIV.png"
+    ],
+    "curatedMaterials": [
+      "Chalk",
+      "Pitch",
+      "Lime",
+      "Wax"
     ],
     "ingredients": [
       {
@@ -6088,6 +6972,12 @@
       "/img/recipeImages/1837.Pre.09.png",
       "/img/recipeImages/1837.Pre.p396-397.png",
       "/img/recipeImages/1837.Pre.pIV.png"
+    ],
+    "curatedMaterials": [
+      "Colophony",
+      "Pitch",
+      "Brick dust",
+      "Wax"
     ],
     "ingredients": [
       {
@@ -6142,6 +7032,13 @@
       "/img/recipeImages/1837.Pre.p396-397.png",
       "/img/recipeImages/1837.Pre.pIV.png"
     ],
+    "curatedMaterials": [
+      "Metal compounds",
+      "Brick dust",
+      "Sand / Clay",
+      "Sulfur",
+      "Resin"
+    ],
     "ingredients": [
       {
         "ingredient": "resin",
@@ -6185,6 +7082,12 @@
       "/img/recipeImages/1837.Pre.p396-397.png",
       "/img/recipeImages/1837.Pre.pIV.png"
     ],
+    "curatedMaterials": [
+      "Brick dust",
+      "Sand / Clay",
+      "Sulfur",
+      "Pitch"
+    ],
     "ingredients": [
       {
         "ingredient": "sulfur",
@@ -6218,6 +7121,7 @@
     "manual": "Maurer-Materialien pro 1838, Öl- und Feuerkitt",
     "page": "???",
     "name": "Cologne Cathedral, 1838 – Masonry materials pro 1838: oil putty & fire putty",
+    "curatedMaterials": [],
     "ingredients": [],
     "description": "Masonry materials pro 1838\nOil putty & fire putty [Oelkitt & Feuerkitt]\n\nPurchased in the year 1838\n\n                    Oil putty [Oelkitt]\nItem | Day | Month | File ref.                 | Supp.-No. | Supplier              | Pounds | Price/lb      | Rt | gg | Pf\n1    | 12  | April | XI N: 2 [unclear, 2 char.] | 68        | J. J. Schmitz         | 200    | 1 2/3 [unclear]| 11 | 3  | 4\n2    | 1   | May   | . . 11 . 1                | 77        | [unclear] Bergerhauser| 50     | 1 ½           | 2  | 15 | –\n3    | 4   | \"     | . . . . 2                 | –         | the same              | 100    | \"             | 5  | –  | –\n4    | 23  | June  | . . . . 3                 | –         | the same              | 200    | \"             | 10 | –  | –\n\nTotal                                                                       550     |               | 28 | 18 | 4\n\n[unclear passage, transcriber's interpretation: \"550 pounds of oil putty were used for pointing the joints and for producing the mouldings/profiles on the outer pier sections.\"]\n\n                    Fire putty [Feuerkitt]\nItem | Day | Month     | File ref.            | Supp.-No. | Supplier      | Pounds | Price/lb | Rt | gg | Pf\n1    | 24  | [unclear] | XI N° 15 [unclear] 2 | 81        | J. J. Schmitz | 12     | 10       | 4  | .  | .\n2    | 1   | [unclear] | . . 24 . 1           | 90        | the same      | 15     | 10       | 5  | .  | .\n\nTotal                                                                  27      | for      | 9  | .  | .\n\n[unclear passage, transcriber's interpretation: \"33 pounds of fire putty were used for puttying the finished stones (: in the damaged spots)\"]\n\n= 33 [sum of the pound column, correctly re-checked] [gg/Pf column: illegible]\n\n[unclear sentence, transcriber's interpretation: \"re-measured in the surplus\"]\n\nAB 41",
     "source": "???",
@@ -6238,6 +7142,13 @@
     "name": "Thon, 1844",
     "images": [
       "/img/recipeImages/1844.Tho.01.png"
+    ],
+    "curatedMaterials": [
+      "Stone dust (general)",
+      "Shellac",
+      "Sulfur",
+      "Resin",
+      "Pitch"
     ],
     "ingredients": [
       {
@@ -6280,6 +7191,11 @@
     "images": [
       "/img/recipeImages/1844.Tho.02.png"
     ],
+    "curatedMaterials": [
+      "Stone dust (general)",
+      "Resin",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "resin",
@@ -6316,6 +7232,10 @@
     "images": [
       "/img/recipeImages/1844.Tho.03.png"
     ],
+    "curatedMaterials": [
+      "Resin",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "Resin",
@@ -6347,6 +7267,12 @@
     "images": [
       "/img/recipeImages/1844.Tho.04a.1.png",
       "/img/recipeImages/1844.Tho.04a.2.png"
+    ],
+    "curatedMaterials": [
+      "Metal compounds",
+      "Stone dust (general)",
+      "Resin",
+      "Wax"
     ],
     "ingredients": [
       {
@@ -6390,6 +7316,12 @@
     "images": [
       "/img/recipeImages/1844.Tho.04b.png"
     ],
+    "curatedMaterials": [
+      "Stone dust (general)",
+      "Turpentine",
+      "Sulfur",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "Turpentine",
@@ -6431,6 +7363,14 @@
     "name": "Thon, 1844",
     "images": [
       "/img/recipeImages/1844.Tho.05a-e.png"
+    ],
+    "curatedMaterials": [
+      "Brick dust",
+      "Stone dust (general)",
+      "Lime",
+      "Sulfur",
+      "Resin",
+      "Glass"
     ],
     "ingredients": [
       {
@@ -6485,6 +7425,13 @@
       "/img/recipeImages/1844.Tho.06a.png",
       "/img/recipeImages/1844.Tho.06b.png"
     ],
+    "curatedMaterials": [
+      "Glass",
+      "Brick dust",
+      "Sulfur",
+      "Resin",
+      "Pitch"
+    ],
     "ingredients": [
       {
         "ingredient": "Pitch",
@@ -6531,6 +7478,12 @@
     "images": [
       "/img/recipeImages/1844.Tho.07.png"
     ],
+    "curatedMaterials": [
+      "Turpentine",
+      "Colophony",
+      "Resin",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "Colophony",
@@ -6572,6 +7525,11 @@
     "images": [
       "/img/recipeImages/1844.Tho.08.png"
     ],
+    "curatedMaterials": [
+      "Lead",
+      "Resin",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "Mastic",
@@ -6608,6 +7566,14 @@
     "images": [
       "/img/recipeImages/1844.Tho.09.1.png",
       "/img/recipeImages/1844.Tho.09.2.png"
+    ],
+    "curatedMaterials": [
+      "Glass",
+      "Lime",
+      "Turpentine",
+      "Tallow / Fat",
+      "Resin",
+      "Organic / Fibre"
     ],
     "ingredients": [
       {
@@ -6660,6 +7626,14 @@
     "images": [
       "/img/recipeImages/1844.Tho.10.1.png",
       "/img/recipeImages/1844.Tho.10.2.png"
+    ],
+    "curatedMaterials": [
+      "Glass",
+      "Metal compounds",
+      "Tallow / Fat",
+      "Brick dust",
+      "Pitch",
+      "Resin"
     ],
     "ingredients": [
       {
@@ -6717,6 +7691,14 @@
     "images": [
       "/img/recipeImages/1844.Tho.11.png"
     ],
+    "curatedMaterials": [
+      "Linseed oil",
+      "Brick dust",
+      "Sulfur",
+      "Tallow / Fat",
+      "Resin",
+      "Glass"
+    ],
     "ingredients": [
       {
         "ingredient": "resin",
@@ -6768,6 +7750,13 @@
     "images": [
       "/img/recipeImages/1844.Tho.12.png"
     ],
+    "curatedMaterials": [
+      "Lead",
+      "Brick dust",
+      "Egg",
+      "Pitch",
+      "Colophony"
+    ],
     "ingredients": [
       {
         "ingredient": "Pitch",
@@ -6815,6 +7804,12 @@
       "/img/recipeImages/1844.Tho.13.1.png",
       "/img/recipeImages/1844.Tho.13.2.png"
     ],
+    "curatedMaterials": [
+      "Charcoal / Coal",
+      "Turpentine",
+      "Resin",
+      "Chalk"
+    ],
     "ingredients": [
       {
         "ingredient": "Yellow or brown resin",
@@ -6855,6 +7850,13 @@
     "name": "Thon, 1844",
     "images": [
       "/img/recipeImages/1844.Tho.14.png"
+    ],
+    "curatedMaterials": [
+      "Metal compounds",
+      "Stone dust (general)",
+      "Sulfur",
+      "Resin",
+      "Wax"
     ],
     "ingredients": [
       {
@@ -6902,6 +7904,11 @@
     "images": [
       "/img/recipeImages/1844.Tho.05a-e.png"
     ],
+    "curatedMaterials": [
+      "Stone dust (general)",
+      "Sulfur",
+      "Resin"
+    ],
     "ingredients": [
       {
         "ingredient": "Sulphur",
@@ -6939,6 +7946,13 @@
     "name": "Thon, 1844",
     "images": [
       "/img/recipeImages/1844.Tho.05a-e.png"
+    ],
+    "curatedMaterials": [
+      "Glass",
+      "Brick dust",
+      "Sulfur",
+      "Pitch",
+      "Resin"
     ],
     "ingredients": [
       {
@@ -6988,6 +8002,12 @@
     "images": [
       "/img/recipeImages/1844.Tho.05a-e.png"
     ],
+    "curatedMaterials": [
+      "Sulfur",
+      "Resin",
+      "Chalk",
+      "Glass"
+    ],
     "ingredients": [
       {
         "ingredient": "resin",
@@ -7031,6 +8051,12 @@
     "images": [
       "/img/recipeImages/1844.Tho.05a-e.png"
     ],
+    "curatedMaterials": [
+      "Stone dust (general)",
+      "Turpentine",
+      "Sulfur",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "turpentine",
@@ -7071,6 +8097,14 @@
     "manual": "Notizie storiche riguardanti l'imperiale e Reale Stabilimento dei lavori di commesso in pietre dure di Firenze",
     "page": "20",
     "name": "Zobi, 1853 – On the construction of the stone floor, Duomo di Siena",
+    "curatedMaterials": [
+      "Pitch",
+      "Colophony",
+      "Marble powder",
+      "Sand / Clay",
+      "Shellac",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "greek pitch (colophony)",
@@ -7121,6 +8155,10 @@
     "manual": "Notizie storiche riguardanti l'imperiale e Reale Stabilimento dei lavori di commesso in pietre dure di Firenze",
     "page": "128",
     "name": "Zobi, 1853",
+    "curatedMaterials": [
+      "Colophony",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "greek pitch (colophony)",
@@ -7149,6 +8187,10 @@
     "manual": "1242) Instruktion v. 6. 7. 1869, DBA, Litt. E sup 111, Fol. 36-37",
     "page": "323",
     "name": "Voigtel, 1869 – Instruktion v. 6. 7. 1869, DBA, Litt. E sup 111, Fol. 36–37",
+    "curatedMaterials": [
+      "Shellac",
+      "Gypsum / Plaster"
+    ],
     "ingredients": [
       {
         "ingredient": "gypsum",
@@ -7179,6 +8221,11 @@
     "name": "Lehner, 1904 – Resin putty for knife handles",
     "images": [
       "/img/recipeImages/1904.Leh.01.png"
+    ],
+    "curatedMaterials": [
+      "Metal compounds",
+      "Sulfur",
+      "Colophony"
     ],
     "ingredients": [
       {
@@ -7217,6 +8264,12 @@
     "name": "Lehner, 1904 – Stone putty",
     "images": [
       "/img/recipeImages/1904.Leh.02.png"
+    ],
+    "curatedMaterials": [
+      "Turpentine",
+      "Gypsum / Plaster",
+      "Colophony",
+      "Wax"
     ],
     "ingredients": [
       {
@@ -7260,6 +8313,13 @@
     "images": [
       "/img/recipeImages/1904.Leh.03a.png",
       "/img/recipeImages/1904.Leh.03b.png"
+    ],
+    "curatedMaterials": [
+      "Metal compounds",
+      "Sulfur",
+      "Resin",
+      "Sand / Clay",
+      "Wax"
     ],
     "ingredients": [
       {
@@ -7309,6 +8369,11 @@
     "images": [
       "/img/recipeImages/1904.Leh.04.png"
     ],
+    "curatedMaterials": [
+      "Pitch",
+      "Sulfur",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "ship's pitch",
@@ -7348,6 +8413,11 @@
       "/img/recipeImages/1904.Leh.05a.png",
       "/img/recipeImages/1904.Leh.05b.png"
     ],
+    "curatedMaterials": [
+      "Shellac",
+      "Solvents",
+      "Borax"
+    ],
     "ingredients": [
       {
         "ingredient": "water",
@@ -7384,6 +8454,13 @@
     "name": "Lehner, 1904 – Blood-protein-putty for building work",
     "images": [
       "/img/recipeImages/1904.Leh.06.png"
+    ],
+    "curatedMaterials": [
+      "Metal compounds",
+      "Lime",
+      "Brick dust",
+      "Organic / Other",
+      "Solvents"
     ],
     "ingredients": [
       {
@@ -7432,6 +8509,11 @@
     "images": [
       "/img/recipeImages/1904.Leh.07.png"
     ],
+    "curatedMaterials": [
+      "Lime",
+      "Organic / Other",
+      "Charcoal / Coal"
+    ],
     "ingredients": [
       {
         "ingredient": "slaked lime",
@@ -7469,6 +8551,10 @@
     "images": [
       "/img/recipeImages/1907.Bre.07.png"
     ],
+    "curatedMaterials": [
+      "Pitch",
+      "Sulfur"
+    ],
     "ingredients": [
       {
         "ingredient": "ceresin",
@@ -7504,6 +8590,14 @@
     "name": "Breuer, 1907 – Stone putty a",
     "images": [
       "/img/recipeImages/1907.Bre.01.png"
+    ],
+    "curatedMaterials": [
+      "Metal compounds",
+      "Wax",
+      "Brick dust",
+      "Sulfur",
+      "Pitch",
+      "Colophony"
     ],
     "ingredients": [
       {
@@ -7556,6 +8650,12 @@
     "images": [
       "/img/recipeImages/1907.Bre.02.png"
     ],
+    "curatedMaterials": [
+      "Brick dust",
+      "Sand / Clay",
+      "Wax",
+      "Colophony"
+    ],
     "ingredients": [
       {
         "ingredient": "brick dust",
@@ -7597,6 +8697,11 @@
     "images": [
       "/img/recipeImages/1907.Bre.03.png"
     ],
+    "curatedMaterials": [
+      "Stone dust (general)",
+      "Sulfur",
+      "Resin"
+    ],
     "ingredients": [
       {
         "ingredient": "spruce resin",
@@ -7632,6 +8737,12 @@
     "name": "Breuer, 1907 – Stone putty a",
     "images": [
       "/img/recipeImages/1907.Bre.04.png"
+    ],
+    "curatedMaterials": [
+      "Linseed oil",
+      "Brick dust",
+      "Lead",
+      "Resin"
     ],
     "ingredients": [
       {
@@ -7669,6 +8780,12 @@
     "images": [
       "/img/recipeImages/1907.Bre.05.png"
     ],
+    "curatedMaterials": [
+      "Linseed oil",
+      "Brick dust",
+      "Lead",
+      "Resin"
+    ],
     "ingredients": [
       {
         "ingredient": "linseed oil varnish",
@@ -7704,6 +8821,12 @@
     "name": "Breuer, 1907 – Rough iron putty",
     "images": [
       "/img/recipeImages/1907.Bre.06.png"
+    ],
+    "curatedMaterials": [
+      "Metal compounds",
+      "Brick dust",
+      "Solvents",
+      "Sulfur"
     ],
     "ingredients": [
       {
@@ -7743,6 +8866,11 @@
     "manual": "Der Marmor",
     "page": "51",
     "name": "Weber, 1909 – XXIV. The cementing of marble",
+    "curatedMaterials": [
+      "Gypsum / Plaster",
+      "Resin",
+      "Wax"
+    ],
     "ingredients": [
       {
         "ingredient": "resin",
@@ -7776,6 +8904,12 @@
     "manual": "Der Marmor",
     "page": "51",
     "name": "Weber, 1909 – XXIV. The cementing of marble",
+    "curatedMaterials": [
+      "Marble powder",
+      "Egg",
+      "Lime",
+      "Casein"
+    ],
     "ingredients": [
       {
         "ingredient": "beaten egg",
@@ -7814,6 +8948,11 @@
     "manual": "Der Marmor",
     "page": "51",
     "name": "Weber, 1909 – XXIV. The cementing of marble",
+    "curatedMaterials": [
+      "Marble powder",
+      "Lime",
+      "Casein"
+    ],
     "ingredients": [
       {
         "ingredient": "curd cheese",
@@ -7847,6 +8986,10 @@
     "manual": "Kitte für Stein- und Tonsachen",
     "page": "125-126",
     "name": "Rathgen, 1915 – Putty for stone and earthenware",
+    "curatedMaterials": [
+      "Colophony",
+      "Chalk"
+    ],
     "ingredients": [
       {
         "ingredient": "colophony",

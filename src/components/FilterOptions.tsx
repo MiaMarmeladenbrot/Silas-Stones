@@ -6,9 +6,9 @@ import { SelectedFilters, Setters } from "./Filter";
 type FilterOptionsProps = {
   sortedDates: number[];
   sortedAuthors: string[];
-  allIngredients: string[];
-  commonIngredients: string[];
-  ingredientCounts: Map<string, number>;
+  allMaterials: string[];
+  commonMaterials: string[];
+  materialCounts: Map<string, number>;
   sourceIds: { id: string; name: string }[];
   typeCounts: [string, number][];
   selected: SelectedFilters;
@@ -24,9 +24,9 @@ const dateInputClass =
 export function FilterOptions({
   sortedDates,
   sortedAuthors,
-  allIngredients,
-  commonIngredients,
-  ingredientCounts,
+  allMaterials,
+  commonMaterials,
+  materialCounts,
   sourceIds,
   typeCounts,
   selected,
@@ -37,7 +37,7 @@ export function FilterOptions({
     setSelectedId,
     setDateFrom,
     setDateTo,
-    setSelectedIngredients,
+    setSelectedMaterials,
     setSelectedTypes,
   } = setters;
   const {
@@ -45,7 +45,7 @@ export function FilterOptions({
     selectedId,
     dateFrom,
     dateTo,
-    selectedIngredients,
+    selectedMaterials,
     selectedTypes,
   } = selected;
 
@@ -54,25 +54,25 @@ export function FilterOptions({
       prev.includes(type) ? prev.filter((t) => t !== type) : [...prev, type],
     );
 
-  const [ingQuery, setIngQuery] = useState("");
+  const [matQuery, setMatQuery] = useState("");
   const [idQuery, setIdQuery] = useState("");
 
   const minYear = sortedDates[0];
   const maxYear = sortedDates[sortedDates.length - 1];
 
-  const query = ingQuery.trim().toLowerCase();
+  const query = matQuery.trim().toLowerCase();
   const matches = query
-    ? allIngredients.filter((i) => i.includes(query)).slice(0, 40)
-    : commonIngredients;
+    ? allMaterials.filter((m) => m.toLowerCase().includes(query)).slice(0, 40)
+    : commonMaterials;
 
   const idq = idQuery.trim().toLowerCase();
   const idMatches = idq
     ? sourceIds.filter((s) => s.id.toLowerCase().includes(idq)).slice(0, 40)
     : [];
 
-  const toggleIngredient = (ing: string) =>
-    setSelectedIngredients((prev) =>
-      prev.includes(ing) ? prev.filter((i) => i !== ing) : [...prev, ing],
+  const toggleMaterial = (mat: string) =>
+    setSelectedMaterials((prev) =>
+      prev.includes(mat) ? prev.filter((m) => m !== mat) : [...prev, mat],
     );
 
   return (
@@ -231,22 +231,22 @@ export function FilterOptions({
         </div>
       </div>
 
-      {/* Ingredients */}
+      {/* Materials */}
       <div>
         <span className="block text-xs uppercase tracking-widest text-inkSoft mb-2">
           Ingredients / Tools
         </span>
 
         {/* currently selected, removable */}
-        {selectedIngredients.length > 0 && (
+        {selectedMaterials.length > 0 && (
           <div className="flex flex-wrap gap-1.5 mb-3">
-            {selectedIngredients.map((ing) => (
+            {selectedMaterials.map((mat) => (
               <button
-                key={ing}
-                onClick={() => toggleIngredient(ing)}
-                className="flex items-center gap-1 rounded-full bg-ink text-paper px-3 py-1 text-sm cursor-pointer capitalize"
+                key={mat}
+                onClick={() => toggleMaterial(mat)}
+                className="flex items-center gap-1 rounded-full bg-ink text-paper px-3 py-1 text-sm cursor-pointer"
               >
-                {ing}
+                {mat}
                 <IoMdClose className="text-base" />
               </button>
             ))}
@@ -258,8 +258,8 @@ export function FilterOptions({
           <IoSearchOutline className="text-lg text-inkSoft shrink-0" />
           <input
             type="search"
-            value={ingQuery}
-            onChange={(e) => setIngQuery(e.target.value)}
+            value={matQuery}
+            onChange={(e) => setMatQuery(e.target.value)}
             placeholder="Search ingredients…"
             className="outline-none w-full bg-transparent text-ink placeholder:text-inkSoft/60"
           />
@@ -270,21 +270,21 @@ export function FilterOptions({
           {query ? "Matches" : "Most common"}
         </p>
         <div className="flex flex-wrap gap-1.5 max-h-40 overflow-y-auto">
-          {matches.map((ing) => {
-            const isSelected = selectedIngredients.includes(ing);
+          {matches.map((mat) => {
+            const isSelected = selectedMaterials.includes(mat);
             return (
               <button
-                key={ing}
-                onClick={() => toggleIngredient(ing)}
-                className={`flex items-center gap-1.5 rounded-full px-3 py-1 text-sm cursor-pointer capitalize transition-colors ${
+                key={mat}
+                onClick={() => toggleMaterial(mat)}
+                className={`flex items-center gap-1.5 rounded-full px-3 py-1 text-sm cursor-pointer transition-colors ${
                   isSelected
                     ? "bg-ink text-paper"
                     : "bg-sand/20 text-ink/80 hover:bg-sand/40"
                 }`}
               >
-                {ing}
+                {mat}
                 <span className="opacity-60 tabular-nums">
-                  {ingredientCounts.get(ing)}
+                  {materialCounts.get(mat)}
                 </span>
               </button>
             );

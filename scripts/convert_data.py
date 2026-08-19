@@ -18,7 +18,10 @@ Defaults point at the _MASTERFILE in ~/Projects/_privat.
 It does three things:
   1. reads every recipe row from the MASTERFILE sheet (carrying forward
      blank file/author/country),
-  2. parses the free-text ingredient column into {ingredient, amount, unit} best-effort,
+  2. takes the curated material names from the INGREDIENTS Website column
+     verbatim (`materials`, used by the table + filter) and parses the
+     free-text ingredient column into {ingredient, amount, unit}
+     best-effort (`ingredients`, used by the detail view for amounts),
   3. either copies + matches a source image folder into public/img/recipeImages,
      OR (with --carry-images) re-uses the image URLs already in data.json,
      matched back to records by id.
@@ -27,6 +30,7 @@ A report is printed at the end (counts, unparsed ranges, unmatched/carried image
 """
 
 import argparse
+from collections import Counter
 import json
 import re
 import shutil
@@ -44,19 +48,23 @@ IMG_DIR = PROJECT / "public/img/recipeImages"
 IMG_URL_PREFIX = "/img/recipeImages"
 
 # Column letters on the MASTERFILE sheet (label row is row 2, data from row 4).
-# Note vs. earlier drops: a new column L ("TITLE Website") was inserted to hold
-# the curated, human-facing display title, so everything from M onward shifted
-# one to the right. This website title is what we now use for the record `name`
-# (falling back to the raw translated/original title). Column A ("YEAR sort") is
-# the pre-cleaned integer date; G ("Score") is an internal field and is
-# intentionally NOT mapped.
+# Two columns have been inserted by the supplier over successive drops, each time
+# shifting everything to their right:
+#   L "TITLE Website"       - the curated, human-facing display title, used for
+#                             the record `name` (falling back to the translated /
+#                             original title); shifted M onward.
+#   P "INGREDIENTS Website" - the curated material names, a closed vocabulary of
+#                             ~30 categories ("Wax", "Brick dust", "Tools", ...);
+#                             shifted Q onward.
+# Column A ("YEAR sort") is the pre-cleaned integer date; G ("Score") is an
+# internal field and is intentionally NOT mapped.
 COL = {
     "year": "A", "year_real": "B", "file": "C", "author": "D", "country": "E",
     "type": "F", "source": "H", "bibl": "I", "page": "J", "abbr": "K",
     "title_website": "L",
-    "title_tr": "M", "text_tr": "N", "ingredients": "O", "transl_kind": "P",
-    "comment_tr": "Q", "title_orig": "R", "text_orig": "S", "comment_text": "T",
-    "link": "U", "notes": "V", "further_bibl": "W",
+    "title_tr": "M", "text_tr": "N", "ingredients": "O", "materials": "P",
+    "transl_kind": "Q", "comment_tr": "R", "title_orig": "S", "text_orig": "T",
+    "comment_text": "U", "link": "V", "notes": "W", "further_bibl": "X",
 }
 
 # Units we recognise at the start of an ingredient line. Longer/multiword first.
@@ -172,6 +180,27 @@ def split_author(full):
     return " ".join(parts[:-1]), parts[-1]
 
 
+def parse_materials(raw):
+    """Column P ("INGREDIENTS Website") -> list of curated material names.
+
+    The supplier maintains this as a closed vocabulary (~30 entries: "Wax",
+    "Pitch", "Brick dust", "Tools", "Organic / Other", ...) written as one
+    comma-separated line per recipe. It is taken VERBATIM — no normalising, no
+    case-folding, no splitting on "/" (names like "Charcoal / Coal" and
+    "Gypsum / Plaster" are single categories). This is what the ingredient
+    filter runs on; the table and the detail view show the verbatim column O
+    lines instead.
+    """
+    if not raw:
+        return []
+    out = []
+    for part in re.split(r"[,\n]", str(raw)):
+        name = re.sub(r"\s+", " ", part).strip()
+        if name and name not in out:
+            out.append(name)
+    return out
+
+
 def parse_ingredients(raw):
     """Free text -> [{ingredient, amount, unit}]. Split on newlines (the only safe
     boundary, since '6,5' uses a decimal comma)."""
@@ -232,6 +261,10 @@ def parse_ingredients(raw):
                     unit = tm.group(2).rstrip(".").strip()
                     name = line[:tm.start()].strip()
         name = name.strip().strip(".").strip()
+        illegible = re.match(r"^\?+[\s.]*(.+)$", name)
+        if illegible:
+            unit = unit or "?"
+            name = illegible.group(1).strip()
         # a leftover leading connector from "<qty> <unit> of <ingredient>"
         # ("1 pound of wax" -> "wax") or an alternative line ("or unslacked lime
         # and pig fat" -> "unslacked lime and pig fat") is not part of the name.
@@ -454,7 +487,7 @@ def main():
         # or ingredients. Otherwise carry-forward would mint a phantom "(untitled)".
         if not any(cell(r, k) for k in ("abbr", "title_website", "title_tr",
                                         "title_orig", "text_tr", "text_orig",
-                                        "ingredients")):
+                                        "ingredients", "materials")):
             continue
         # carry-forward fields
         for k in ("file", "author", "country"):
@@ -497,6 +530,7 @@ def main():
             "name": cell(r, "title_website") or cell(r, "title_tr")
             or cell(r, "title_orig") or "(untitled)",
             "images": [],
+            "curatedMaterials": parse_materials(cell(r, "materials")),
             "ingredients": parse_ingredients(cell(r, "ingredients")),
             "description": cell(r, "text_tr") or "",
             "source": cell(r, "bibl") or "",
@@ -696,6 +730,16 @@ def main():
     if ranges:
         print(f"  year ranges/odd ({len(ranges)}): " +
               ", ".join(f"{a}:{d}" for a, d in ranges[:8]) + (" ..." if len(ranges) > 8 else ""))
+    vocab = Counter(m for rec in records for m in rec["curatedMaterials"])
+    with_mat = sum(1 for r in records if r["curatedMaterials"])
+    print(f"  records with materials: {with_mat}  ({len(vocab)} distinct categories)")
+    print("      " + ", ".join(f"{m} ({n})" for m, n in vocab.most_common()))
+    only_ing = [r["id"] for r in records
+                if r["ingredients"] and not r["curatedMaterials"]]
+    if only_ing:
+        print(f"  ⚠ ingredients but NO material category ({len(only_ing)}): "
+              + ", ".join(only_ing))
+
     # ingredient sanity sample
     print("  ingredient parse sample:")
     shown = 0

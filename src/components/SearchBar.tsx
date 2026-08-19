@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { Recipes } from "../types";
 import { Filter } from "./Filter";
-import { normalizeIngredient } from "../utils/utils";
 import { IoSearchOutline } from "react-icons/io5";
 
 type SearchProps = {
@@ -15,7 +14,7 @@ export function SearchBar({
   handleReset,
   originalData,
 }: SearchProps) {
-  const [selectedIngredients, setSelectedIngredients] = useState<string[]>([]);
+  const [selectedMaterials, setSelectedMaterials] = useState<string[]>([]);
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
   const [selectedAuthor, setSelectedAuthor] = useState<string>("");
   const [selectedId, setSelectedId] = useState<string>("");
@@ -28,7 +27,7 @@ export function SearchBar({
     selectedId,
     dateFrom,
     dateTo,
-    selectedIngredients,
+    selectedMaterials,
     selectedTypes,
   };
 
@@ -37,7 +36,7 @@ export function SearchBar({
     setSelectedId,
     setDateFrom,
     setDateTo,
-    setSelectedIngredients,
+    setSelectedMaterials,
     setSelectedTypes,
   };
 
@@ -58,19 +57,18 @@ export function SearchBar({
         recipe.ingredients.some((ing) =>
           ing.ingredient.toLowerCase().includes(searchQuery.toLowerCase()),
         ) ||
+        recipe.curatedMaterials.some((mat) =>
+          mat.toLowerCase().includes(searchQuery.toLowerCase()),
+        ) ||
         recipe.description.toLowerCase().includes(searchQuery.toLowerCase());
 
       return matchesSearchQuery;
     });
 
     const matched = baseFiltered.filter((recipe) => {
-      const matchesIngredient =
-        selectedIngredients.length === 0 ||
-        selectedIngredients.every((selectedIng) =>
-          recipe.ingredients.some(
-            (ing) => normalizeIngredient(ing.ingredient) === selectedIng,
-          ),
-        );
+      const matchesMaterial =
+        selectedMaterials.length === 0 ||
+        selectedMaterials.every((mat) => recipe.curatedMaterials.includes(mat));
 
       const matchesAuthor =
         !selectedAuthor ||
@@ -87,7 +85,7 @@ export function SearchBar({
         (dateTo === null || (recipe.date !== null && recipe.date <= dateTo));
 
       return (
-        matchesIngredient &&
+        matchesMaterial &&
         matchesAuthor &&
         matchesType &&
         matchesId &&
@@ -101,7 +99,7 @@ export function SearchBar({
     return [...matched].sort((a, b) => (a.date ?? 0) - (b.date ?? 0));
   }, [
     originalData,
-    selectedIngredients,
+    selectedMaterials,
     selectedTypes,
     selectedAuthor,
     selectedId,
@@ -141,7 +139,7 @@ export function SearchBar({
             className="rounded-full border border-ink/25 px-6 py-3 cursor-pointer text-ink text-sm transition-colors hover:bg-ink/5"
             onClick={() => {
               handleReset();
-              setSelectedIngredients([]);
+              setSelectedMaterials([]);
               setSelectedTypes([]);
               setSelectedAuthor("");
               setSelectedId("");

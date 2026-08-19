@@ -36,9 +36,9 @@ export function TableBody({ recipe, onSelect }: TableBodyProps) {
         </td>
         <td className="px-5 py-4 align-top">
           <div className="flex flex-wrap gap-1.5">
-            {recipe.ingredients.map((ing) => (
+            {recipe.ingredients.map((ing, idx) => (
               <span
-                key={ing.ingredient}
+                key={`${idx}-${ing.ingredient}`}
                 className="rounded-full bg-sand/20 text-ink/80 px-2.5 py-0.5 text-xs"
                 title={`${ing.amount} ${ing.unit} ${ing.ingredient}`.trim()}
               >
