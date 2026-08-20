@@ -56,15 +56,10 @@ export function Filter({
     return counts;
   }, [originalData]);
 
-  const allMaterials = useMemo(
-    () => [...materialCounts.keys()].sort((a, b) => a.localeCompare(b)),
-    [materialCounts],
-  );
-  const commonMaterials = useMemo(
+  const materialsByFrequency = useMemo(
     () =>
       [...materialCounts.entries()]
-        .sort((a, b) => b[1] - a[1])
-        .slice(0, 15)
+        .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
         .map(([name]) => name),
     [materialCounts],
   );
@@ -143,8 +138,7 @@ export function Filter({
               <FilterOptions
                 sortedDates={sortedDates}
                 sortedAuthors={sortedAuthors}
-                allMaterials={allMaterials}
-                commonMaterials={commonMaterials}
+                materials={materialsByFrequency}
                 materialCounts={materialCounts}
                 sourceIds={sourceIds}
                 typeCounts={typeCounts}

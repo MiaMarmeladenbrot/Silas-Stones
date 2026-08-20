@@ -6,8 +6,7 @@ import { SelectedFilters, Setters } from "./Filter";
 type FilterOptionsProps = {
   sortedDates: number[];
   sortedAuthors: string[];
-  allMaterials: string[];
-  commonMaterials: string[];
+  materials: string[];
   materialCounts: Map<string, number>;
   sourceIds: { id: string; name: string }[];
   typeCounts: [string, number][];
@@ -24,8 +23,7 @@ const dateInputClass =
 export function FilterOptions({
   sortedDates,
   sortedAuthors,
-  allMaterials,
-  commonMaterials,
+  materials,
   materialCounts,
   sourceIds,
   typeCounts,
@@ -54,16 +52,10 @@ export function FilterOptions({
       prev.includes(type) ? prev.filter((t) => t !== type) : [...prev, type],
     );
 
-  const [matQuery, setMatQuery] = useState("");
   const [idQuery, setIdQuery] = useState("");
 
   const minYear = sortedDates[0];
   const maxYear = sortedDates[sortedDates.length - 1];
-
-  const query = matQuery.trim().toLowerCase();
-  const matches = query
-    ? allMaterials.filter((m) => m.toLowerCase().includes(query)).slice(0, 40)
-    : commonMaterials;
 
   const idq = idQuery.trim().toLowerCase();
   const idMatches = idq
@@ -237,40 +229,8 @@ export function FilterOptions({
           Ingredients / Tools
         </span>
 
-        {/* currently selected, removable */}
-        {selectedMaterials.length > 0 && (
-          <div className="flex flex-wrap gap-1.5 mb-3">
-            {selectedMaterials.map((mat) => (
-              <button
-                key={mat}
-                onClick={() => toggleMaterial(mat)}
-                className="flex items-center gap-1 rounded-full bg-ink text-paper px-3 py-1 text-sm cursor-pointer"
-              >
-                {mat}
-                <IoMdClose className="text-base" />
-              </button>
-            ))}
-          </div>
-        )}
-
-        {/* search field */}
-        <div className="flex items-center gap-2 rounded-xl border border-line bg-paper px-3 py-2.5 focus-within:border-sandDeep transition-colors">
-          <IoSearchOutline className="text-lg text-inkSoft shrink-0" />
-          <input
-            type="search"
-            value={matQuery}
-            onChange={(e) => setMatQuery(e.target.value)}
-            placeholder="Search ingredients…"
-            className="outline-none w-full bg-transparent text-ink placeholder:text-inkSoft/60"
-          />
-        </div>
-
-        {/* matches / common quick-picks */}
-        <p className="mt-3 mb-2 text-xs text-inkSoft">
-          {query ? "Matches" : "Most common"}
-        </p>
-        <div className="flex flex-wrap gap-1.5 max-h-40 overflow-y-auto">
-          {matches.map((mat) => {
+        <div className="flex flex-wrap gap-1.5">
+          {materials.map((mat) => {
             const isSelected = selectedMaterials.includes(mat);
             return (
               <button
@@ -289,11 +249,6 @@ export function FilterOptions({
               </button>
             );
           })}
-          {query && matches.length === 0 && (
-            <span className="text-sm text-inkSoft">
-              No matching ingredients
-            </span>
-          )}
         </div>
       </div>
     </div>
