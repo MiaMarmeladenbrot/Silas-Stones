@@ -63,8 +63,9 @@ COL = {
     "type": "F", "source": "H", "bibl": "I", "page": "J", "abbr": "K",
     "title_website": "L",
     "title_tr": "M", "text_tr": "N", "ingredients": "O", "materials": "P",
-    "transl_kind": "Q", "comment_tr": "R", "title_orig": "S", "text_orig": "T",
-    "comment_text": "U", "link": "V", "notes": "W", "further_bibl": "X",
+    "purpose": "Q",
+    "transl_kind": "R", "comment_tr": "S", "title_orig": "T", "text_orig": "U",
+    "comment_text": "V", "link": "W", "notes": "X", "further_bibl": "Y",
 }
 
 # Units we recognise at the start of an ingredient line. Longer/multiword first.
